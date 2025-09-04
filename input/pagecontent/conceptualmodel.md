@@ -7,7 +7,7 @@ In detail, the European Cancer Common Conceptual Model defines the minimum, exte
 
 For definition of Concepts (also know as Entities), Attributes and Relationship, please  see. 
 
-Figure 3 presents the draft on which we are working in a non-formal way, easily understandable also by clinicians, doctors and researchers.
+The Figure below presents the draft on which we are working in a non-formal way, easily understandable also by clinicians, doctors and researchers.
 
 In details:
 
@@ -42,4 +42,6 @@ it is useful to understand the base of a decision or the source of an informatio
 For this reason, and to not complicate the model, in Figure 3, the blue shapes are connected with blue arrows only with the main Concept or the Attribute that can depend on them to understand the possible EHR source. However in Table 1 are reported all the possible connections between Concepts and the blue shapes.
 
 
+### Glossary
 
+A description of the concepts is provided in the [Glossary page](glossary.html)

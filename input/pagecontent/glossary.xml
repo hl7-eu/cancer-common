@@ -1,0 +1,278 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <h3>Concept Overview</h3>
+  <p>
+    Table 1 provides, for each <em>Concept</em>: a description of what it represents, notes
+    (e.g., exclusions or caveats), alternative terms commonly used to indicate it,
+    and its relationships with other Concepts.
+  </p>
+  <p>
+    <strong>On dates and temporality.</strong> To rebuild a patient’s cancer journey,
+    dates are fundamental. It is therefore important to identify which concepts
+    (or their attributes) can evolve over time, so you can determine when to
+    update the same instance versus when to create a new one.
+  </p>
+
+  <h3 id="table-1">Table 1. Concepts in the first version of the European Cancer Common Conceptual Model</h3>
+  <table>
+    <caption>Table 1: Concepts, descriptions, notes, synonyms, and connections/dependencies.</caption>
+    <thead>
+      <tr>
+        <th scope="col">Concept</th>
+        <th scope="col">Description</th>
+        <th scope="col">Note</th>
+        <th scope="col">Also known as</th>
+        <th scope="col">Connection / Dependency</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Patient -->
+      <tr id="concept-patient">
+        <td><strong>Patient</strong></td>
+        <td>
+          <p>Represents the subject affected by one or more Cancer Conditions. Includes:</p>
+          <ul>
+            <li><strong>Demographics</strong>: demographic information (e.g., sex, birth date or year).</li>
+            <li><strong>Comorbidities</strong>: other relevant diseases that affect the patient.</li>
+          </ul>
+        </td>
+        <td>
+          <p>Demographics and Comorbidities can evolve during the journey.</p>
+        </td>
+        <td>
+          <p>Subject</p>
+        </td>
+        <td>
+          <p><strong>Directly connected</strong> to:</p>
+          <ul>
+            <li>One or more <em>Cancer Conditions</em></li>
+            <li>One or more <em>Treatments</em></li>
+          </ul>
+          <p><strong>Indirectly connected</strong> with other concepts through the Cancer Condition.</p>
+          <p>If available in EHRs, the patient can be connected as the Subject to Procedures and Reports (not shown in Figure 3).</p>
+        </td>
+      </tr>
+
+      <!-- Cancer Condition -->
+      <tr id="concept-cancer-condition">
+        <td><strong>Cancer Condition</strong></td>
+        <td>
+          <p>Represents the diagnosed cancer and the start of the cancer journey.</p>
+          <p>It must have:</p>
+          <ul>
+            <li><strong>Histology Behaviour</strong>: cell type (histology) and behavior (malignant, benign, in situ, uncertain). <em>Does not change</em> even if Disease Status evolves.</li>
+            <li><strong>Body Site</strong>: first location where the Cancer Condition was detected. <em>Does not change</em> even if Disease Status evolves.</li>
+            <li><strong>Tumour Grade</strong>: degree of abnormality and biological aggressiveness. <em>Does not change</em> even if Disease Status evolves.</li>
+            <li><strong>Asserted Date</strong>: first date when presence of the Cancer Condition was detected; must correspond to a documented report (e.g., Visit, Biopsy, Surgery, Imaging, Biomarker, Lab Report).</li>
+            <li><strong>Base of Diagnosis</strong>: type of procedure on which the diagnosis is based (e.g., Visit, Biopsy, Surgery, Imaging, Biomarker, Lab Report).</li>
+            <li><strong>Disease Status</strong> (may be absent until the condition evolves): status evaluated during a Visit based on one or more Treatment Responses, such as:
+              <ul>
+                <li>Progression</li>
+                <li>Partial Remission</li>
+                <li>Complete Remission</li>
+                <li>Recurrence</li>
+              </ul>
+            </li>
+          </ul>
+          <p>It may also specify:</p>
+          <ul>
+            <li><strong>Imaging Type</strong>: image type on which the condition was detected.</li>
+            <li><strong>Biomarker Type</strong>: biomarker type on which the condition was detected.</li>
+          </ul>
+        </td>
+        <td>
+          <p>
+            Each time a patient has a new, unrelated cancer, create a <em>new</em> Cancer Condition.
+            If there is an extension of the original cancer, update the Cancer Stage and reflect it
+            in Disease Status (e.g., as Progression) — the Cancer Condition remains the same.
+          </p>
+          <p>
+            The pair <strong>Histology Behaviour</strong> + <strong>Body Site</strong> identifies the Cancer Condition.
+          </p>
+        </td>
+        <td>
+          <p>
+            Cancer Condition: Primary Cancer, Secondary Primary Condition<br />
+            Histology: Morphology<br />
+            Body Site: Location, Tumor side, Topography
+          </p>
+        </td>
+        <td>
+          <p><strong>Connected with</strong>:</p>
+          <ul>
+            <li>A <em>Patient</em> (Subject)</li>
+            <li>A <em>Cancer Stage</em></li>
+            <li>One or more <em>Treatments</em></li>
+          </ul>
+          <p><strong>Depending on EHR availability</strong>, it can also be connected to:</p>
+          <ul>
+            <li>One or more <em>Procedures</em> (supporting diagnosis)</li>
+            <li>A <em>Biopsy</em> (defines Grading and Histology Behaviour)</li>
+            <li><em>Imaging</em> (supports Body Site)</li>
+            <li>One or more <em>Visits</em> (when Disease Status may be updated)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Cancer Stage -->
+      <tr id="concept-cancer-stage">
+        <td><strong>Cancer Stage</strong><br />(Clinical Stage and Pathological Stage)</td>
+        <td>
+          <p>
+            Represents the stage of the Cancer Condition and describes tumour extent at the time
+            of first definitive treatment. The stage can evolve during the journey.
+          </p>
+          <ul>
+            <li><strong>Clinical Stage</strong>: based on Imaging and clinical evidence.</li>
+            <li><strong>Pathological Stage</strong>: based on Surgery and histopathology.</li>
+          </ul>
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <p><strong>Connected with</strong> Cancer Condition.</p>
+          <p><strong>Depending on EHR availability</strong>, it can also be connected to:</p>
+          <ul>
+            <li><em>Surgery</em> (defines Pathological Stage)</li>
+            <li><em>Procedure</em> (defines Clinical Stage)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Treatment -->
+      <tr id="concept-treatment">
+        <td><strong>Treatment</strong><br />(Surgery, Active Surveillance, Radiotherapy, Drug Administration)</td>
+        <td>
+          <p>
+            Represents the single or combined procedures/therapies defined to treat a Cancer Condition.
+          </p>
+          <p><strong>Intent</strong>: indicates whether curative or symptom-relieving; choose from <em>Definitive</em> or <em>Palliative</em>.</p>
+          <p><strong>Main types</strong>:</p>
+          <ul>
+            <li><strong>Surgery</strong>: characterized by a Date and a Target Side.</li>
+            <li><strong>Active Surveillance</strong>: characterized by Start and End dates.</li>
+            <li><strong>Radiotherapy</strong>: characterized by Start and End dates and a Target Side.</li>
+            <li><strong>Drug Administration</strong>: characterized by Start and End dates and may indicate <em>Ongoing</em> (e.g., immunotherapy).</li>
+          </ul>
+        </td>
+        <td>
+          <p>Diet or Exercise can also be prescribed as Treatments, but are not considered in the first period.</p>
+          <p>A single Treatment can evolve over time.</p>
+        </td>
+        <td>
+          <p>
+            Treatment: Anti-cancer treatment<br />
+            Definitive: Curative
+          </p>
+        </td>
+        <td>
+          <p><strong>Connected to</strong>:</p>
+          <ul>
+            <li>One or more <em>Cancer Conditions</em> (Target/Reason)</li>
+            <li>A <em>Patient</em> (Subject)</li>
+            <li>One or more <em>Treatment Responses</em></li>
+          </ul>
+          <p><strong>Depending on EHR availability</strong>, it can also be connected to:</p>
+          <ul>
+            <li>A <em>Report</em> (if the Treatment is Surgery)</li>
+            <li>A <em>Treatment Plan / Prescription</em> (for Radiotherapy or Drug Administration)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Treatment Response -->
+      <tr id="concept-treatment-response">
+        <td><strong>Treatment Response</strong></td>
+        <td>
+          <p>
+            Standard way to measure how well a cancer patient responds to a single Treatment, evaluated
+            by a clinician during a Visit and based on Evidence (e.g., imaging, labs, biomarkers).
+          </p>
+          <p><strong>Values</strong> include:</p>
+          <ul>
+            <li>Progression</li>
+            <li>Stable Disease</li>
+            <li>Partial Remission</li>
+            <li>Complete Remission</li>
+            <li>Recurrence</li>
+          </ul>
+          <p><strong>Must have</strong>:</p>
+          <ul>
+            <li><strong>Based on</strong>: the type of Evidence used for evaluation (e.g., Imaging, Lab Report, Biomarker).</li>
+            <li><strong>Date</strong>: depends on data-source availability (Visit date or Evidence date), and must correspond to a documented report.</li>
+          </ul>
+        </td>
+        <td>
+          <p>
+            Although it may resemble Disease Status, it serves a different purpose: Treatment Response
+            evaluates the effects of a specific Treatment, whereas Disease Status represents the evolution
+            of the Cancer Condition over time.
+          </p>
+        </td>
+        <td></td>
+        <td>
+          <p><strong>Connected to</strong> a specific <em>Treatment</em>.</p>
+          <p><strong>Depending on EHR availability</strong>, it can also be connected to:</p>
+          <ul>
+            <li>One or more <em>Evidence</em> items</li>
+            <li>A <em>Visit</em> (when the response is evaluated)</li>
+          </ul>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <h3 id="table-2">Table 2. Other concepts discussed but excluded from the first version</h3>
+  <table>
+    <caption>Table 2: Additional concepts considered for future focus.</caption>
+    <thead>
+      <tr>
+        <th scope="col">Concept</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="future-treatment-plan">
+        <td><strong>Treatment Plan</strong></td>
+        <td>
+          <p>
+            Useful to record planned care in addition to actual treatment; treatment may change
+            based on Treatment Response. Could also capture guideline conformance and whether
+            the patient agreed.
+          </p>
+        </td>
+      </tr>
+      <tr id="future-clinical-trials">
+        <td><strong>Clinical Trials</strong></td>
+        <td>
+          <p>Represents participation in clinical trials, including purposes and objectives.</p>
+        </td>
+      </tr>
+      <tr id="future-qol-proms">
+        <td><strong>Quality of Life (QoL) / PROMs</strong></td>
+        <td>
+          <p>
+            Questionnaires to assess quality of life and outcomes; not a priority initially.
+            They could be recorded during a Visit.
+          </p>
+        </td>
+      </tr>
+      <tr id="future-adverse-events">
+        <td><strong>Adverse Events / Late Effects / Toxicities</strong></td>
+        <td>
+          <p>
+            Useful but often difficult to obtain and potentially biased; frequently requires
+            hospitalization to capture reliably.
+          </p>
+        </td>
+      </tr>
+      <tr id="future-risk-factors">
+        <td><strong>Risk Factors / Environmental Factors / Genomic Predisposition / Familiarity</strong></td>
+        <td>
+          <p>Valuable for specific research questions but not prioritized in the first version.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -77,6 +77,8 @@ pages:
     title: Scope and Content
   journey.md:
     title: The Cancer Journey
+  glossary.html:
+    title: Glossary
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -114,6 +116,7 @@ menu:
   Functional:
     Cancer journey: journey.html
     Conceptual Model: conceptualmodel.html
+    Glossary: glossary.html
     Logical Model: logicalmodels.html
   Implementation:
     Mapping to Profiles: profiles.html
