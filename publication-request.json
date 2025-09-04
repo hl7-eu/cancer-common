@@ -1,0 +1,14 @@
+{
+  "package-id" : "hl7.fhir.eu.cancer-common",
+  "version" : "0.1.0-ballot",
+  "path" : "http://hl7.eu/fhir/cancer-common/0.1.0-ballot",
+  "ci-build": "https://build.fhir.org/ig/hl7-eu/cancer-common",
+  "first": true,
+  "desc" : "This is the first ballot of the Medication Prescription and Dispense FHIR IG STU 1", 
+  "category" : "Medication Management",
+  "introduction" : "This guide describes how to represent in HL7 FHIR Prescription and Dispense in the European context.",
+  "title" : "HL7 Europe Medication Prescription and Dispense",
+  "mode": "milestone",
+  "status" : "ballot",
+  "sequence" : "STU 1"
+}

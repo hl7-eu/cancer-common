@@ -1,0 +1,4 @@
+== Suppressed Messages ==
+
+# No schematrons available for Logical Models
+

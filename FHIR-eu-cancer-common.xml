@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/cancer-common/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/cancer-common" defaultVersion="0.1.0-ballot" defaultWorkgroup="eu" url="http://hl7.eu/fhir/cancer-common">
+<version code="current" url="https://build.fhir.org/ig/hl7-eu/cancer-common"/>
+<version code="0.1.0-ballot" url="http://hl7.eu/fhir/cancer-common/0.1.0-ballot"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="authors" name="Authors and Contributors"/>
+<page key="background" name="Background"/>
+<page key="challenges" name="Challenges"/>
+<page key="conceptualmodel" name="Conceptual Model"/>
+<page key="copyright" name="Copyright"/>
+<page key="crossversionanalysis" name="Cross-version Analysis"/>
+<page key="dependencies" name="Dependencies"/>
+<page key="designchoices" name="Design Choices"/>
+<page key="downloads" name="Downloads"/>
+<page key="index" name="Home"/>
+<page key="knownissues" name="Known Issues"/>
+<page key="logicalmodels" name="Logical Models"/>
+<page key="profiles" name="Mapping to Profiles"/>
+<page key="scope" name="Scope and Content"/>
+<page key="references" name="Source and Additional Information"/>
+<page key="toc" name="Table of Contents"/>
+<page key="journey" name="The Cancer Journey"/>
+</specification>
