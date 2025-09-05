@@ -1,6 +1,8 @@
 
 ### The background
 
+*copy of the confluence page - to be rewrite*
+
 This Working Group (WG) was created during the HL7 Europe WGM 2025 that was hosted in Lisbon in February 2025. It was based on the results obtained basing from a survey activity performed after the “European Cancer Mission” track during the HL7 FHIR Connectathon and HL7 Europe WGM 2024 on the data model adopted by different European and national projects on cancer topic.The results of this survey will be summarized in a paper that we are writing and which we will publish on an international journey.
 
 The survey highlighted that:
