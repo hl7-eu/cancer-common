@@ -1,5 +1,6 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <h3>Concept Overview</h3>
+  <a>  </a>
   <p>
     Table 1 provides, for each <em>Concept</em>: a description of what it represents, notes
     (e.g., exclusions or caveats), alternative terms commonly used to indicate it,
@@ -13,6 +14,7 @@
   </p>
 
   <h3 id="table-1">Table 1. Concepts in the first version of the European Cancer Common Conceptual Model</h3>
+  <a> </a>
   <table>
     <caption>Table 1: Concepts, descriptions, notes, synonyms, and connections/dependencies.</caption>
     <thead>
@@ -180,6 +182,16 @@
         </td>
       </tr>
 
+      <!-- Add border to the table -->
+      <style>
+        table, th, td {
+          border: 1px solid #333;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 8px;
+        }
+      </style>
       <!-- Treatment Response -->
       <tr id="concept-treatment-response">
         <td><strong>Treatment Response</strong></td>
@@ -224,7 +236,9 @@
   </table>
 
   <h3 id="table-2">Table 2. Other concepts discussed but excluded from the first version</h3>
+  <a> </a>
   <table>
+
     <caption>Table 2: Additional concepts considered for future focus.</caption>
     <thead>
       <tr>
