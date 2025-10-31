@@ -76,9 +76,11 @@ pages:
   scope.md:
     title: Scope and Content
   journey.md:
-    title: The Cancer Journey
+    title: The Cancer Journey 1
   journey-2.md:
-    title: The Cancer Journey
+    title: The Cancer Journey 2
+  journey-3.md:
+    title: The Cancer Journey 3
   glossary.html:
     title: Glossary
 #
@@ -118,6 +120,7 @@ menu:
   Functional:
     Cancer journey: journey.html
     Cancer journey (2): journey-2.html
+    Cancer journey (3): journey-3.html
     Conceptual Model: conceptualmodel.html
     Glossary: glossary.html
     Logical Model: logicalmodels.html

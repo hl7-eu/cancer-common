@@ -1,0 +1,81 @@
+@startuml
+
+title Cancer data evolution – From Diagnosis to Radiotherapy
+
+skinparam class {
+  BackgroundColor White
+}
+
+' ===========================================
+' DATE 0 – initial capture (conceptual record)
+' ===========================================
+package "Date 0 (2018-xx-xx)\nDiagnosis / First Suspicion" {
+  class Patient <<fixed>> {
+    demographics
+    comorbidities
+  }
+
+  class CancerCondition {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+  }
+
+  class CancerStage {
+    clinical_stage (fixed)
+    pathological_stage (fixed)
+  }
+}
+
+' Links inside Date 0
+Patient --> CancerCondition : subject of
+CancerCondition --> CancerStage : staging target
+
+
+' ===========================================
+' DATE 1 – 2018-06-12 (procedure / surgery)
+' ===========================================
+package "Date 1 (2018-06-12)\nSurgical Procedure" {
+  class Surgery {
+    intent = definitive
+    target_site = ...
+    date = 2018-06-12
+  }
+}
+
+' Surgery is decided from the Date 0 knowledge
+' CancerCondition --> Surgery : indication for
+' CancerStage --> Surgery : decided from
+Surgery --> CancerCondition : target of
+
+
+' ===========================================
+' DATE 2 – 2018-09-10 (radiotherapy)
+' ===========================================
+package "Date 2 (2018-09-10)\nRadiotherapy start" {
+  class Radiotherapy {
+    intent = definitive
+    target_site = ...
+    start_date = 2018-09-10   ' Date 2
+    end_date   = 2018-10-12   ' Date 3
+  }
+}
+' ===========================================
+' DATE 3 – 2018-10-12 (radiotherapy)
+' ===========================================
+package "Date 3 (2018-10-12)\nRadiotherapy end" {
+  class Radiotherapy {
+    intent = definitive
+    target_site = ...
+    start_date = 2018-09-10   ' Date 2
+    end_date   = 2018-10-12   ' Date 3
+  }
+}
+
+' Radiotherapy is also based on the same cancer/stage identified at Date 0
+' CancerCondition --> Radiotherapy : indication for
+' CancerStage --> Radiotherapy : decided from

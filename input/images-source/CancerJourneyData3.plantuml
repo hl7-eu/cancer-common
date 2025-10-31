@@ -1,0 +1,46 @@
+@startuml
+title Cancer Journey – timeline + data collected
+
+
+
+
+partition "TREATMENT" {
+  :Date 8 (2019-09-10);
+}
+
+partition "EVIDENCE + FOLLOWUP VISIT" {
+  :Date 10 (2020-01-02)\nFollow-up visit (No evolution);
+  note right
+    Collect:
+    - Treatment response
+    - Disease evolution data
+    Update:
+    - Cancer Condition
+    - Patient Record (e.g. Life status)
+  end note
+}
+
+partition "EVIDENCE + FOLLOWUP VISIT" {
+
+  :Date 11 (2020-04-15)\nFollow-up visit (Disease evolution);
+    note right
+    Collect:
+    - Disease evolution data
+    Update:
+    - Cancer Condition
+    - Patient Record (e.g. Life status)
+  end note
+}
+
+partition "PATIENT'S DEATH" {
+  :Date 12 (2020-06-28)\nDeath;
+    note right
+    Collect:
+    - Disease evolution data
+    Update:
+    - Cancer Condition
+    - Patient Record (e.g. Life status)
+  end note
+}
+
+@enduml

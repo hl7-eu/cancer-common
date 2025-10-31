@@ -1,0 +1,47 @@
+@startuml
+title Cancer Journey – timeline + data collected
+start
+partition "DIAGNOSIS + FIRST TREATMENT" {
+  :Date 0 (2018-xx-xx)\nDiagnosis / First Suspicion;
+  note right
+    Collect:
+    - Patient Record (Demographics; Comorbidities)
+    - Cancer Condition
+    - Cancer Stage
+  end note
+
+  :Date 1 (2018-06-12)\nSurgical Procedure;
+  note right
+    Collect:
+    - Surgery data
+  end note
+
+  :Date 2 (2018-09-10)\nRadiotherapy start;
+  note right
+    Collect:
+    - Radiotherapy data
+  end note
+
+  :Date 3 (2018-10-12)\nRadiotherapy end;
+  note right
+    Collect:
+    - Radiotherapy data
+  end note
+}
+
+partition "OVERALL TREATMENT RESPONSE" {
+  :Date 4 (2019-10-30)\nResponse assessment;
+  note right
+    Collect:
+    - Overall treatment response
+    Update:
+    - Cancer Condition
+    - Patient Record (e.g. Life status)
+  end note
+}
+
+partition "EVIDENCE + FOLLOWUP VISIT" {
+  :Date 5 (2019-02-28);
+}
+
+@enduml
