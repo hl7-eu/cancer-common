@@ -1,8 +1,7 @@
 @startuml
+
+scale 0.6
 title Cancer Journey – timeline + data collected
-
-
-
 
 partition "TREATMENT" {
   :Date 8 (2019-09-10);

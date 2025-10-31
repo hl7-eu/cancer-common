@@ -1,17 +1,27 @@
+---
+notoc: true
+---
+
+
 A patient’s cancer journey is a longitudinal sequence of events that starts with presentation and evidence gathering, continues through condition assertion and staging, proceeds to treatment (often in overlapping episodes), and is followed by ongoing assessment of response and disease status. Capturing **dates** consistently for each step is essential so the timeline can be accurately reconstructed for care and research.
 
 
 <figure>
-  <a href="journeyOverview.html" target="_blank">
-    <img src="journeyOverview.svg" alt="Cancer Journey" width="70%"></img>
+  <a href="journeyOverview.svg" target="_blank">
+    <img src="journeyOverview.svg" alt="Cancer Journey" width="100%">
   </a>
-  <figcaption><strong>Figure 1: the typical cancer journey</strong></figcaption>
+  <figcaption><strong>Figure 1: the cancer journey [click to zoom]</strong></figcaption>
 </figure>
 
 
 ### Overall journey
 
-{% include CancerJourney.svg %}
+<figure>
+    {% include CancerJourney.svg %}
+    <figcaption><strong>Figure 2: the cancer journey: overall flow</strong></figcaption>
+</figure>
+
+
 
 This diagram shows the main phases of the cancer journey
 and indicates at which phases information is collected.
@@ -20,22 +30,32 @@ and indicates at which phases information is collected.
 
 #### From diagnosis to first follow-up
 
-{% include CancerJourneyData1.svg %}
+<figure>
+    {% include CancerJourneyData1.svg %}
+    <figcaption><strong>Figure 3: the cancer journey: from diagnosis to first follow-up</strong></figcaption>
+</figure>
 
 #### From first follow-up to first drug treatment
 
-{% include CancerJourneyData2.svg %}
+<figure>
+    {% include CancerJourneyData2.svg %}
+    <figcaption><strong>Figure 4: the cancer journey: from first follow-up to first drug treatment</strong></figcaption>
+</figure>
 
 #### From first drug treatment to patient death
 
-{% include CancerJourneyData3.svg %}
+<figure>
+    {% include CancerJourneyData3.svg %}
+    <figcaption><strong>Figure 5: the cancer journey: from first drug treatment to patient death</strong></figcaption>
+</figure>
+
 
 
 ### Data evolution
 
-#### From dignosis to radiotheraphy
+#### From diagnosis to radiotheraphy
 
 <figure>
-    <img src="CancerDataEvolution1.png" alt="Cancer Journey"> </img>
-    <figcaption><strong>Figure x: From dignosis to radiotheraphy</strong></figcaption>
+    <img src="CancerDataEvolution1.png" alt="Cancer Journey">
+    <figcaption><strong>Figure 6 Data evolution: from dignosis to radiotheraphy</strong></figcaption>
 </figure>

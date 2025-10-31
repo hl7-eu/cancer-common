@@ -1,5 +1,9 @@
 @startuml
+
+scale 0.6
+
 title Cancer Journey – timeline + data collected
+
 start
 partition "DIAGNOSIS + FIRST TREATMENT" {
   :Date 0 (2018-xx-xx)\nDiagnosis / First Suspicion;
@@ -41,7 +45,12 @@ partition "OVERALL TREATMENT RESPONSE" {
 }
 
 partition "EVIDENCE + FOLLOWUP VISIT" {
-  :Date 5 (2019-02-28);
+  :Date 5 (2019-02-28);\nFollow-up visit (No evolution);
+    note right
+    Update:
+    - Cancer Condition
+    - Patient Record (e.g. Life status)
+  end note
 }
 
 @enduml
