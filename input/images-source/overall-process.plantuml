@@ -1,0 +1,29 @@
+@startuml
+!include <archimate/Archimate>
+left to right direction
+
+scale 0.8
+
+Business_Event(EV_Diagnosis, "Diagnosis")
+
+Business_Process(PF_FollowUp, "Evidence / Follow-up")
+Business_Process(PF_Treatment, "Treatment")
+
+Business_Event(EV_Death, "Patient death")
+
+' --- Flow Logic ---
+' Rel_Triggering(EV_Diagnosis, PF_FollowUp, "optional")
+Rel_Triggering(EV_Diagnosis, PF_Treatment)
+
+' After any treatment → follow-up
+Rel_Triggering(PF_Treatment, PF_FollowUp, "always")
+
+' Follow-up can lead to treatment again
+Rel_Triggering(PF_FollowUp, PF_Treatment, "if indicated")
+
+' Follow-up can repeat (monitoring period)
+Rel_Triggering(PF_FollowUp, PF_FollowUp, "ongoing monitoring")
+
+' Eventually follow-up leads to end of process (death event)
+Rel_Triggering(PF_FollowUp, EV_Death, "eventual")
+@enduml

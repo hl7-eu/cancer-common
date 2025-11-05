@@ -56,3 +56,5 @@ The figure below provides an overview of the main concepts and of their relation
 ### Glossary
 
 A description of the concepts is provided in the [Glossary page](glossary.html)
+
+

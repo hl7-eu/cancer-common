@@ -1,0 +1,87 @@
+@startuml
+title Cancer data evolution – Progression and Patient Death (Dates 11 & 12)
+
+skinparam class {
+  BackgroundColor White
+}
+scale 0.8
+' =====================================================
+' DATE 11 – 2020-04-15 (Disease progression follow-up)
+' =====================================================
+package progression as "Date 11 (2020-04-15)\nEvidence + Follow-up (Disease Progression)" {
+
+  class CancerCondition_D11 as "Cancer Condition" {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date (fixed)
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    disease_status = Progression
+    last_check = Date 11
+  }
+
+  class DiseaseEvolution_D11 as "Disease Evolution (over time & space)" {
+    extent_type = Recurrence
+    disease_extent (sites)
+    histology_behaviour
+    tumour_grade
+    base_of_diagnosis
+    imaging_type
+    biomarker_type
+    genomics
+    asserted_date = Date 7 (fixed)
+    last_check = Date 11
+  }
+
+  class Patient_D11 as "Patient" <<fixed>> {
+    demographics
+    comorbidities
+    life_status = Alive With Disease (AWD)
+    last_check = Date 11
+  }
+}
+
+
+' =====================================================
+' DATE 12 – 2020-06-28 (Patient’s death)
+' =====================================================
+package death as "Date 12 (2020-06-28)\nPatient's Death" {
+
+  class CancerCondition_D12 as "Cancer Condition" {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date (fixed)
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    disease_status = Progression
+    last_check = Date 12
+  }
+
+  class DiseaseEvolution_D12 as "Disease Evolution (over time & space)" {
+    extent_type = Recurrence
+    disease_extent (sites)
+    histology_behaviour
+    tumour_grade
+    base_of_diagnosis
+    imaging_type
+    biomarker_type
+    genomics
+    asserted_date = Date 7 (fixed)
+    last_check = Date 12
+  }
+
+  class Patient_D12 as "Patient" <<fixed>> {
+    demographics
+    comorbidities
+    life_status = Dead of Disease (DOD)
+    last_check = Date 12
+  }
+}
+
+' Relationships Date 12
+' progression --down[hidden]--> death
+@enduml

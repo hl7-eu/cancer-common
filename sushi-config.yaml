@@ -76,11 +76,13 @@ pages:
   scope.md:
     title: Scope and Content
   journey.md:
-    title: The Cancer Journey 1
-  journey-2.md:
-    title: The Cancer Journey 2
-  journey-3.md:
-    title: The Cancer Journey 3
+    title: The Cancer Patient Journey
+  journey-data-evolution.md:
+    title: Data Evolution in the Cancer Journey
+#  journey-2.md:
+#    title: The Cancer Journey 2
+#  journey-3.md:
+#    title: The Cancer Journey 3
   glossary.html:
     title: Glossary
 #
@@ -118,9 +120,10 @@ menu:
     Challenges: challenges.html
     References: references.html
   Functional:
-    Cancer journey: journey.html
-    Cancer journey (2): journey-2.html
-    Cancer journey (3): journey-3.html
+    Cancer Patient Journey: journey.html
+    Data Evolution: journey-data-evolution.html
+    # Cancer journey (2): journey-2.html
+    # Cancer journey (3): journey-3.html
     Conceptual Model: conceptualmodel.html
     Glossary: glossary.html
     Logical Model: logicalmodels.html

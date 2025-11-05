@@ -6,7 +6,7 @@ title Cancer Journey – timeline + data collected
 
 start
 partition "DIAGNOSIS + FIRST TREATMENT" {
-  :Date 0 (2018-xx-xx)\nDiagnosis / First Suspicion;
+  :Date 0 (2018-04-30)\nDiagnosis / First Suspicion;
   note right
     Collect:
     - Patient Record (Demographics; Comorbidities)

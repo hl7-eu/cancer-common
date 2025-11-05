@@ -1,0 +1,317 @@
+@startuml
+
+!theme vibrant
+
+title EU Cancer Ontology Model
+
+legend
+  |= Tipo di relazione |= Significato |
+  | A <|-- B | B è sottoclasse di A |
+  | A --> B | A ha una relazione con B |
+  | A .. B : equivalentTo | A è equivalente a B |
+  | A --> B : type | A utilizza l'enumerazione B |
+endlegend
+
+enum "DiseaseStatusType" {
+  Complete Remission
+  Partial Remission
+  Progression
+  Recurrence
+  Stable
+
+  .. comment ..
+  It could be one of the following: 
+    Progress...
+}
+
+enum "IntentType" {
+  Curative (Definitive)
+  Palliative
+
+  .. comment ..
+  Type of Intent (Palliative or Curative (Definit...
+}
+
+enum "TiggerEventType" {
+  ...
+  screening
+
+  .. comment ..
+  Type of Trigger Event (Screening or [TBD]
+}
+
+class "ActiveSurveillance" {
+  +date ActiveSurveillianceEndDate
+  +date ActiveSurvelianceStartDate
+
+  .. comment ..
+  Monitoring cancer without immediate treatment
+}
+
+class "Anti-cancerTreatment" {
+}
+
+class "Biomarker" {
+  +date biomarkerDate
+  +string biomarkerType
+
+  .. comment ..
+  Biological markers used for diagnosis and treat...
+}
+
+class "Biopsy" {
+  +date biopsyDate
+
+  .. comment ..
+  Procedure to obtain tissue sample for examination
+}
+
+class "BodySite" {
+  .. comment ..
+  Represents the first location where Cancer Cond...
+}
+
+class "CancerCondition" {
+  +date assertedDate
+
+  .. comment ..
+  Represents the diagnosed cancer and the start o...
+}
+
+class "CancerDefinition" {
+  .. comment ..
+  Cancer Definition è una permette di associare  ...
+}
+
+class "CancerStage" {
+  .. comment ..
+  Classification of the extent of cancer in the body
+}
+
+class "ClinicalStage" {
+  .. comment ..
+  Cancer stage determined from clinical examination
+}
+
+class "Comorbidities" {
+  .. comment ..
+  Other medical conditions that the patient has
+}
+
+class "Demographics" {
+  .. comment ..
+  Demographic information about the patient
+}
+
+class "DiseaseStatus" {
+  +DiseaseStatusType diseaseStatusCanBeOneOfDiseaseStatusType
+
+  .. comment ..
+  (it could be not present until the cancer condi...
+}
+
+class "DrugAdministration" {
+  +date DrugAdministrationEndDate
+  +date DrugAdministrationStarDate
+
+  .. comment ..
+  Administration of drugs for cancer treatment
+}
+
+class "Evidence" {
+  .. comment ..
+  Clinical evidence supporting diagnosis or treat...
+}
+
+class "HistologyBehaviour" {
+  .. comment ..
+  Describes the cell type of the neoplasm and the...
+}
+
+class "Imaging" {
+  +date imagingDate
+  +string imagingType
+
+  .. comment ..
+  Diagnostic imaging procedures
+}
+
+class "Intent" {
+  +IntentType intentHasIntentType
+
+  .. comment ..
+  The therapeutic intent of the treatment. Indica...
+}
+
+class "Lab" {
+  +date labDate
+
+  .. comment ..
+  Provides a detailed summary of tests performed ...
+}
+
+class "Location" {
+}
+
+class "MorphologyBehaviour" {
+}
+
+class "OngoingCycleInformation" {
+  .. comment ..
+  For immunoterapy
+}
+
+class "PathologicalStage" {
+  .. comment ..
+  Cancer stage determined from pathological exami...
+}
+
+class "Patient" {
+  .. comment ..
+  A person who is the subject of cancer care
+}
+
+class "Prescription" {
+  .. comment ..
+  Equivalent of Treatment Plan 
+[verify]
+}
+
+class "PrimaryCancer" {
+}
+
+class "Procedure" {
+  .. comment ..
+  Medical intervention to treat cancer
+}
+
+class "Radiotherapy" {
+  +date radioTerapyEndDate
+  +date radioTerapyStartDate
+
+  .. comment ..
+  Treatment using radiation to kill cancer cells
+}
+
+class "Report" {
+  .. comment ..
+  Clinical Report documenting findings. In the mo...
+}
+
+class "SecondaryPrimaryCondition" {
+}
+
+class "Subject" {
+}
+
+class "Surgery" {
+  +date surgeryDate
+
+  .. comment ..
+  Surgical intervention for cancer treatment
+}
+
+class "TargetSite" {
+  .. comment ..
+  Anatomical site targeted by treatment
+}
+
+class "Topograpy" {
+}
+
+class "Treatment" {
+  .. comment ..
+  Medical procedure performed on the patient
+}
+
+class "TreatmentPlan" {
+  .. comment ..
+  Plan for treatment administration
+}
+
+class "TreatmentResponse" {
+  +DiseaseStatusType treatmentResponsehasResponsetype
+
+  .. comment ..
+  Represents the a standard way to measure how we...
+}
+
+class "TriggerEvent" {
+  +TiggerEventType triggerEventHasEventType
+
+  .. comment ..
+  Event that triggers screening or diagnostic pro...
+}
+
+class "TumorGrade" {
+  .. comment ..
+  Describes a tumour in terms of how abnormal the...
+}
+
+class "TumorSide" {
+}
+
+class "Visit" {
+  +date visitDate
+
+  .. comment ..
+  Patient encounter with healthcare provider
+}
+
+"ActiveSurveillance" --> "TargetSite" : activeSurveillanceHasTargetSite
+"BodySite" --> "Imaging" : bodySiteIsDefinedThroughImaging
+"CancerCondition" --> "Biomarker" : cancerConditionCanHaveBiomarker
+"CancerCondition" --> "Imaging" : cancerConditionCanHaveImaging
+"CancerCondition" --> "CancerStage" : cancerConditionHasAnEvolvingCancerStage
+"CancerCondition" --> "DiseaseStatus" : cancerConditionHasAnEvolvingDiseaseStatus
+"CancerCondition" --> "TumorGrade" : cancerConditionHasTumorGrade
+"CancerCondition" --> "CancerDefinition" : cancerConditionIsDefinedByCancerDefinition
+"CancerCondition" --> "Treatment" : cancerConditionIsTargetOfTreatment
+"CancerDefinition" --> "BodySite" : cancerDefinitionHasBodySite
+"CancerDefinition" --> "HistologyBehaviour" : cancerDefinitionHasHistologyBahaviour
+"ClinicalStage" --> "Procedure" : dedinedTroughProceure
+"PathologicalStage" --> "Surgery" : definedBySurgery
+"ClinicalStage" --> "Treatment" : definedThroughProcedure
+"DiseaseStatus" --> "Visit" : diseaseStatusCanBeUpdatedBasingOnVisit
+"DrugAdministration" --> "OngoingCycleInformation" : drugAdministrationCanHaveOngoingCycleInformation
+"Evidence" --> "Procedure" : evidenceIsBasedOnProcedure
+"HistologyBehaviour" --> "Surgery" : histologyBehaviourIsDefindedBySurgery
+"HistologyBehaviour" --> "Biopsy" : histologyBehaviourIsDefinedByBiopsy
+"Patient" --> "Comorbidities" : patientCanHaveComorbilities
+"Patient" --> "Demographics" : patientHasEvolvingDemographics
+"Patient" --> "CancerCondition" : patientIsAffectedByCancerCondition
+"Procedure" --> "Intent" : procedureHasAnIntent
+"Radiotherapy" --> "TargetSite" : radioterapyHasTargetSite
+"Surgery" --> "TargetSite" : surgeryHasTargetSite
+"Treatment" --> "TreatmentPlan" : treatmentCanBePartOfTreatmentPlan
+"Treatment" --> "TreatmentResponse" : treatmentCanHaveTreatmentResponse
+"Treatment" --> "Procedure" : treatmentIsCobinationOfProcedure
+"TreatmentPlan" --> "Treatment" : treatmentPlanCanIncludeSetOfTreatment
+"TreatmentResponse" --> "Evidence" : treatmentResponseEvaluatedThroughEvidence
+"TreatmentResponse" --> "Visit" : treatmentResponseisEvaluatedDuringVisit
+"TriggerEvent" --> "Treatment" : triggerEventCanCausesTreatment
+"TumorGrade" --> "Biopsy" : tumorGradeIsDefindedByBiopsy
+"Procedure" <|-- "ActiveSurveillance"
+"Anti-cancerTreatment" .. "Treatment" : equivalentTo
+"Procedure" <|-- "Biomarker"
+"Procedure" <|-- "Biopsy"
+"BodySite" .. "Location" : equivalentTo
+"BodySite" .. "Topograpy" : equivalentTo
+"BodySite" .. "TumorSide" : equivalentTo
+"CancerCondition" .. "PrimaryCancer" : equivalentTo
+"CancerCondition" .. "SecondaryPrimaryCondition" : equivalentTo
+"Procedure" <|-- "DrugAdministration"
+"HistologyBehaviour" .. "MorphologyBehaviour" : equivalentTo
+"Procedure" <|-- "Imaging"
+"Procedure" <|-- "Lab"
+"Patient" .. "Subject" : equivalentTo
+"Prescription" .. "TreatmentPlan" : equivalentTo
+"Procedure" .. "Report" : equivalentTo
+"Procedure" <|-- "Radiotherapy"
+"Procedure" <|-- "Surgery"
+"Procedure" <|-- "Visit"
+"DiseaseStatus" --> "DiseaseStatusType" : diseaseStatusCanBeOneOfDiseaseStatusType
+"Intent" --> "IntentType" : intentHasIntentType
+"TreatmentResponse" --> "DiseaseStatusType" : treatmentResponsehasResponsetype
+"TriggerEvent" --> "TiggerEventType" : triggerEventHasEventType
+@enduml

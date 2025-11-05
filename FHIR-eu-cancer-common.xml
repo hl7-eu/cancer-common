@@ -14,6 +14,7 @@
 <page key="conceptualmodel" name="Conceptual Model"/>
 <page key="copyright" name="Copyright"/>
 <page key="crossversionanalysis" name="Cross-version Analysis"/>
+<page key="journey-data-evolution" name="Data Evolution in the Cancer Journey"/>
 <page key="dependencies" name="Dependencies"/>
 <page key="designchoices" name="Design Choices"/>
 <page key="downloads" name="Downloads"/>
@@ -25,7 +26,5 @@
 <page key="scope" name="Scope and Content"/>
 <page key="references" name="Source and Additional Information"/>
 <page key="toc" name="Table of Contents"/>
-<page key="journey" name="The Cancer Journey 1"/>
-<page key="journey-2" name="The Cancer Journey 2"/>
-<page key="journey-3" name="The Cancer Journey 3"/>
+<page key="journey" name="The Cancer Patient Journey"/>
 </specification>

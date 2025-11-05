@@ -1,0 +1,56 @@
+@startuml
+title Cancer data evolution - Evidence + Follow-up Visits (Dates 5 & 6)
+
+skinparam class {
+  BackgroundColor White
+}
+scale 0.8
+
+' ===========================================
+' DATE 5 – 2019-02-28 (evidence + follow-up)
+' ===========================================
+package "Date 5 (2019-02-28)\nEvidence + Follow-up Visit" {
+  class CancerCondition_D5 as "Cancer Condition" {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date (fixed)
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    disease_status = Complete Remission
+    last_check = 2019-02-28
+  }
+
+  class Patient_D5 as "Patient" <<fixed>> {
+    demographics
+    comorbidities
+    life_status = Alive, No Evidence of Disease (NED)
+    last_check = 2019-02-28
+  }
+}
+
+' ===========================================
+' DATE 6 – 2019-05-30 (evidence + follow-up)
+' ===========================================
+package "Date 6 (2019-05-30)\nEvidence + Follow-up Visit" {
+  class CancerCondition_D6 as "Cancer Condition" {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date (fixed)
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    disease_status = Complete Remission
+    last_check = 2019-05-30
+  }
+
+  class Patient_D6 as "Patient" <<fixed>> {
+    demographics
+    comorbidities
+    life_status = Alive, No Evidence of Disease (NED)
+    last_check = 2019-05-30
+  }
+}
+@enduml

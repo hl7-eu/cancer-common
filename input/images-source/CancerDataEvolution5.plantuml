@@ -1,0 +1,83 @@
+@startuml
+title Cancer data evolution – Evidence + Follow-up Visit (Date 10)
+
+left to right direction
+skinparam class {
+  BackgroundColor White
+}
+
+scale 0.8
+
+' =====================================================
+' DATE 10 – 2020-01-02 (evidence + follow-up visit)
+' =====================================================
+package "Date 10 (2020-01-02)\nEvidence + Follow-up Visit" {
+
+  class TR2 as "Treatment Response 2" {
+    treatment_response_type = Partial Remission
+    based_on = latest evidence
+    date = 2020-01-02
+  }
+
+  class CancerCondition_D10 as "Cancer Condition" {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date (fixed)
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    disease_status = Partial Remission
+    last_check = Date 10
+  }
+
+  class DiseaseEvolution1 as "Disease Evolution (over time & space) 1" {
+    extent_type = Recurrence
+    disease_extent (sites)
+    histology_behaviour
+    tumour_grade
+    base_of_diagnosis
+    imaging_type
+    biomarker_type
+    genomics
+    asserted_date = Date 7 (fixed)
+  }
+
+  class Patient_D10 as "Patient" <<fixed>> {
+    demographics
+    comorbidities
+    life_status = Alive With Disease (AWD)
+    last_check = Date 10
+  }
+}
+
+
+package drugTreatment as "Drug Treatment" {
+
+' ===========================================
+' DATE 8 – 2019-09-10 (Drug treatment start)
+' ===========================================
+package date8 as "Date 8 (2019-09-10)\nDrug Treatment Start" {
+  class DrugAdministration_Start as "Drug Administration" {
+    intent = definitive
+    start_date = 2019-09-10
+  }
+}
+
+' ===========================================
+' DATE 9 – 2019-12-16 (Drug treatment end)
+' ===========================================
+package date9 as "Date 9 (2019-12-16)\nDrug Treatment End" {
+  class DrugAdministration_End as "Drug Administration (end)" {
+    intent = definitive
+    end_date = 2019-12-16
+  }
+}
+
+}
+
+TR2 --> drugTreatment : related to
+
+' Relationships (as implied by the picture)
+
+@enduml

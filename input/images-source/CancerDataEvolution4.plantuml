@@ -1,0 +1,81 @@
+@startuml
+title Cancer data evolution – Disease Recurrence and Drug Treatment (Dates 7–9)
+
+skinparam class {
+  BackgroundColor White
+}
+scale 0.8
+
+' ===========================================
+' DATE 7 – 2019-08-31 (Disease Evolution + Follow-up)
+' ===========================================
+package date7 as "Date 7 (2019-08-31)\nEvidence + Follow-up (Disease Evolution)" {
+
+  class CancerCondition_D7 as "Cancer Condition" {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date (fixed)
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    disease_status = Recurrence
+    last_check = 2019-08-31
+  }
+
+  class DiseaseEvolution1 as "Disease Evolution (over time & space) 1" {
+    extent_type = Recurrence
+    disease_extent (sites)
+    histology_behaviour
+    tumour_grade
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    genomics
+    asserted_date = 2019-08-31
+  }
+
+  class Patient_D7 as "Patient" <<fixed>> {
+    demographics
+    comorbidities
+    life_status = Alive With Disease (AWD)
+    last_check = 2019-08-31
+  }
+}
+
+' Relationships at Date 7
+' DiseaseEvolution1 --> CancerCondition_D7 : target
+' DiseaseEvolution1 --> Patient_D7 : affects
+
+package drugTreatment as "Drug Treatment" {
+
+' ===========================================
+' DATE 8 – 2019-09-10 (Drug treatment start)
+' ===========================================
+package date8 as "Date 8 (2019-09-10)\nDrug Treatment Start" {
+  class DrugAdministration_Start as "Drug Administration" {
+    intent = definitive
+    start_date = 2019-09-10
+  }
+}
+
+' ===========================================
+' DATE 9 – 2019-12-16 (Drug treatment end)
+' ===========================================
+package date9 as "Date 9 (2019-12-16)\nDrug Treatment End" {
+  class DrugAdministration_End as "Drug Administration (end)" {
+    intent = definitive
+    end_date = 2019-12-16
+  }
+}
+
+}
+
+' date7 -[hidden]-> drugTreatment
+
+
+' Treatment is based on the recurrence and patient status
+drugTreatment --> DiseaseEvolution1 : related to
+
+
+@enduml

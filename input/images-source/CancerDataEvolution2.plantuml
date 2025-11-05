@@ -1,41 +1,15 @@
 @startuml
-
-
-title Cancer data evolution – From Diagnosis to Radiotherapy
+title Cancer data evolution – Overall Treatment Response
 
 skinparam class {
   BackgroundColor White
 }
 
+scale 0.8
+
 ' ===========================================
-' DATE 0 – initial capture (conceptual record)
+' CONTEXT (already occurred treatments)
 ' ===========================================
-package "Date 0 (2018-04-30)\nDiagnosis / First Suspicion" {
-  class Patient <<fixed>> {
-    demographics
-    comorbidities
-  }
-
-  class CancerCondition {
-    histology_behaviour (fixed)
-    body_site (fixed)
-    tumour_grade
-    asserted_date = procedure date
-    base_of_diagnosis (fixed)
-    imaging_type (fixed)
-    biomarker_type (fixed)
-  }
-
-  class CancerStage {
-    clinical_stage (fixed)
-    pathological_stage (fixed)
-  }
-}
-
-' Links inside Date 0
-Patient --> CancerCondition : subject of
-CancerCondition --> CancerStage : staging target
-
 
 ' ===========================================
 ' DATE 1 – 2018-06-12 (procedure / surgery)
@@ -48,16 +22,10 @@ package "Date 1 (2018-06-12)\nSurgical Procedure" {
   }
 }
 
-' Surgery is decided from the Date 0 knowledge
-' CancerCondition --> Surgery : indication for
-' CancerStage --> Surgery : decided from
-Surgery --> CancerCondition : target of
-
-
 ' ===========================================
 ' Radiotherapy
 ' ===========================================
-package "Radiotherapy" {
+package RT as "Radiotherapy" {
     ' ===========================================
   ' DATE 3 – 2018-10-12 (radiotherapy)
   ' ===========================================
@@ -83,6 +51,42 @@ package "Radiotherapy" {
 
 }
 
-' Radiotherapy is also based on the same cancer/stage identified at Date 0
-' CancerCondition --> Radiotherapy : indication for
-' CancerStage --> Radiotherapy : decided from
+' ===========================================
+' DATE 4 – 2018-10-30 (overall response)
+' ===========================================
+package "Date 4 (2018-10-30)\nOverall Treatment Response" {
+
+  class TR1 as "Treatment Response 1" {
+    treatment_response_type = Complete Remission
+    based_on = surgery + radiotherapy
+    date = 2018-10-30
+  }
+
+  class CancerCondition {
+    histology_behaviour (fixed)
+    body_site (fixed)
+    tumour_grade
+    asserted_date = procedure date (fixed)
+    base_of_diagnosis (fixed)
+    imaging_type (fixed)
+    biomarker_type (fixed)
+    disease_status = Complete Remission
+    last_check = 2018-10-30
+  }
+
+  class Patient <<fixed>> {
+    demographics
+    comorbidities
+    life_status = Alive, No Evidence of Disease (NED)
+    last_check = 2018-10-30
+  }
+}
+
+' ===========================================
+' RELATIONSHIPS (picture arrows)
+' ===========================================
+Surgery <-- TR1 : related to
+RT <-- TR1 : related to
+
+
+@enduml
