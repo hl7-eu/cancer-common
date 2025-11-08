@@ -1,17 +1,12 @@
----
-notoc: true
----
-
-### From diagnosis to radiotheraphy
+### From diagnosis to radiotherapy
 <div>
   <p></p>
 <figure>
-    {% include CancerDataEvolution2.svg %}
-    <figcaption><strong>Figure 1 Data evolution: from diagnosis to radiotheraphy</strong></figcaption>
+    {% include CancerDataEvolution1.svg %}
+    <figcaption><strong>Figure 1 Data evolution: from diagnosis to radiotherapy</strong></figcaption>
 </figure>
   <p></p>
-</div>
-
+ </div>
 ### Treatment Response
 <div>
   <p></p>
@@ -32,7 +27,7 @@ notoc: true
   <p></p>
 </div>
 
-### Disease Recurrence and Drug Treatment (Dates 7–9)
+### Disease Recurrence and Drug Treatment (Dates 7-9)
 <div>
   <p></p>
 <figure>

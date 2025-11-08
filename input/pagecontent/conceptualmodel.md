@@ -18,16 +18,16 @@ In details:
 Events represent all the possible procedures/encounters/episodes of care where a cancer patient is participating as subject (e.g. a visit, a surgery, a laboratory test ect). Documents represent medical reports produced during the Events and digitally signed by a doctor/physician/clinician. 
 
 
-
 <div>
   <p></p>
-  <figure>
+<figure>
+  <a href="conceptual-1.png" target="_blank">
     <img src="conceptual-1.png" alt="Cancer Model" width="50%"/>
-    <figcaption><strong>Figure 1: the first version of European Cancer Common Conceptual Model under development</strong></figcaption>
-  </figure>
+  </a>
+  <figcaption><strong>Figure 1: European Cancer Common Conceptual Model [click to zoom]</strong></figcaption>
+</figure>
   <p></p>
 </div>
-
 
 Please note:
 
