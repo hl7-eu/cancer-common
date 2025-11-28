@@ -1,12 +1,11 @@
 @startuml
-
-scale 0.8
-
 title Cancer data evolution – From Diagnosis to Radiotherapy
 
 skinparam class {
   BackgroundColor White
 }
+
+scale 0.8
 
 ' ===========================================
 ' DATE 0 – initial capture (conceptual record)

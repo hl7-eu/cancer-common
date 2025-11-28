@@ -2,7 +2,7 @@
 <div>
   <p></p>
 <figure>
-    {% include CancerDataEvolution1.svg %}
+    <img src="CancerDataEvolution1.svg" alt="Cancer Model" width="70%"/>
     <figcaption><strong>Figure 1 Data evolution: from diagnosis to radiotherapy</strong></figcaption>
 </figure>
   <p></p>
