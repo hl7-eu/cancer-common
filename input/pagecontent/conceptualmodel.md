@@ -51,9 +51,12 @@ For this reason, and to not complicate the model, in Figure 3, the blue shapes a
 <p>Each condition has an initial <strong>Cancer Stage</strong> (clinical or pathological) and may carry a <strong>Disease Extent</strong> (local, loco-regional, metastatic sites).</p>
 <p>As the journey unfolds, the condition produces successive <strong>Disease over Time and Space</strong> evaluations (disease status plus asserted date and base of assertion).</p>
 <p>Conditions are treated by one or more <strong>Treatments</strong> (surgery, radiotherapy, drug administration, active surveillance) with a declared intent, and each treatment can yield a <strong>Treatment Response</strong> measured during visits based on evidence (imaging, labs, biomarkers).</p>
+</div>
+
+<div>
   <p></p>
   <figure>
-    {% include conceptual-overview-2.svg %}
+      {% include conceptual-overview-2.svg %}    
     <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model OPTION 1</strong></figcaption>
   </figure>
   <p></p>
@@ -62,14 +65,14 @@ For this reason, and to not complicate the model, in Figure 3, the blue shapes a
 <div>
   <p></p>
   <figure>
-    <img src="conceptual-overview.png" alt="Cancer Model Overview" width="50%"/>
+    <img src="conceptual-overview.png" alt="Cancer Model Overview" width="80%"/>
     <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model OPTION 2</strong></figcaption>
   </figure>
   <p></p>
 </div>
 
 
-
+<div>
 <p>  </p>
 </div>
 

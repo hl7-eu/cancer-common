@@ -1,5 +1,4 @@
 @startuml
-!option handwritten true
 skinparam handwritten true
 skinparam backgroundColor #fffaf0
 skinparam rectangle {
@@ -7,24 +6,24 @@ skinparam rectangle {
   Shadowing true
 }
 
+scale 0.7
+
 title Cancer Journey - Conceptual Sketch
 
 rectangle "Patient\n- life status & demographics\n- comorbidities\n- visits / trials" as Patient #FDE68A
 rectangle "Cancer Condition\n- asserted date\n- body site, histology, biomarkers\n- imaging / biopsy as evidence" as Condition #FACC15
 rectangle "Cancer Stage\n- overall stage snapshot\n- evolves across visits" as Stage #FCD34D
-rectangle "Disease Extent\n- primary / loco-regional / metastatic sites\n- defined through imaging" as Extent #FDE047
 rectangle "Disease Over Time & Space\n- progression or recurrence states\n- linked to treatments and assessments" as Evolution #FADB5F
 rectangle "Treatment\n- intent (curative / palliative)\n- combinations of procedures" as Treatment #F8D66D
 rectangle "Treatment Response\n- measured status\n- evidence from visits" as Response #FFE066
 
 Patient "1" -- "1..*" Condition : experiences
 Condition "1" -- "1..*" Stage : has stage
-Condition "1" -- "0..1" Extent : has extent
 Condition "1" -- "1..*" Evolution : changes over time
 Condition "1" -- "1..*" Treatment : is treated by
 Treatment "0..*" -- "1..1" Response : yields
 Evolution "0..*" -- "0..*" Treatment : informs / triggers
-Response "0..*" -- "1" Condition : relates to
+
 
 note bottom of Evolution
   Captures how the condition evolves over
