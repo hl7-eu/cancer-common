@@ -1,3 +1,28 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div><strong>To be done: add model description</strong></div>
 
 
+### Overview
+
+The figure below provides an overview of the main concepts and of their relationships
+
+<div>
+  <p></p>
+  <figure>
+    <img src="static-model-overview.jpg" alt="Cancer Model Overview" width="80%"/>
+    <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model</strong></figcaption>
+  </figure>
+  <p></p>
+</div>
+
+
+
+
+
+<div>
+  <p></p>
+  <figure>
+    <img src="logical-1.jpg" alt="Cancer Model Overview" width="80%"/>
+    <figcaption><strong>Figure 1: Cancer Common Logocal Model</strong></figcaption>
+  </figure>
+  <p></p>
+</div>

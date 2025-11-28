@@ -3,10 +3,8 @@
 
 Based on this timeline diagram reported in Figure 1 and Figure 2 of the [Cancer Journey](journey.html), and on the discussions had on it, and taking inspiration from mCODE, the first version of European Cancer Common Conceptual Model is under development. 
 
-In detail, the European Cancer Common Conceptual Model defines the minimum, extensible, non-exhaustive set of concepts (and their relationship) needed to represent a typical cancer journey starting from the diagnosis considering the disease progression, the treatment and its response evaluation, and patient follow-up including outcomes to support primary and secondary data use. As mentioned, in the first period the activity will be **focused only on solid cancer on adult patients**.
+In detail, the European Cancer Common Conceptual Model defines the minimum, extensible, non-exhaustive set of concepts (and their relationship) needed to represent a typical cancer journey starting from the diagnosis considering the disease progression, the treatment and its response evaluation, and patient follow-up including outcomes to support primary and secondary data use. As mentioned, in the first period the activity will be **focused only on solid cancer on adult patients**. (see Figure below)
 
-
-The Figure below presents the draft on which we are working in a non-formal way, easily understandable also by clinicians, doctors and researchers.
 
 In details:
 
@@ -22,14 +20,19 @@ Events represent all the possible procedures/encounters/episodes of care where a
   <p></p>
 <figure>
   <a href="conceptual-1.png" target="_blank">
-    <img src="conceptual-1.png" alt="Cancer Model" width="50%"/>
+    <img src="conceptual-1.png" alt="Cancer Model" width="70%"/>
   </a>
   <figcaption><strong>Figure 1: European Cancer Common Conceptual Model [click to zoom]</strong></figcaption>
 </figure>
   <p></p>
 </div>
 
-Please note:
+
+
+A description of the concepts is provided in the **[Glossary page](glossary.html)**
+
+
+*Please note:*
 
 At the present we have focused on the first phases of the disease so the diagnosis and the first treatment (so we don't have already considered the cancer extent).
 For some Concepts some Attributes which characterize them or are relevant were defined during the discussion but in the design of the logical model some others could be defined.
@@ -42,16 +45,36 @@ For this reason, and to not complicate the model, in Figure 3, the blue shapes a
 
 ### Overview
 
-The figure below provides an overview of the main concepts and of their relationships
+<div><p>  </p>
+<p>The figure below provides an overview of the main concepts and of their relationships:</p>
+<p>a <strong>Patient</strong> experiences one or more <strong>Cancer Conditions</strong> (defined by body site, histology, grade, biomarkers and an asserted date).</p>
+<p>Each condition has an initial <strong>Cancer Stage</strong> (clinical or pathological) and may carry a <strong>Disease Extent</strong> (local, loco-regional, metastatic sites).</p>
+<p>As the journey unfolds, the condition produces successive <strong>Disease over Time and Space</strong> evaluations (disease status plus asserted date and base of assertion).</p>
+<p>Conditions are treated by one or more <strong>Treatments</strong> (surgery, radiotherapy, drug administration, active surveillance) with a declared intent, and each treatment can yield a <strong>Treatment Response</strong> measured during visits based on evidence (imaging, labs, biomarkers).</p>
+  <p></p>
+  <figure>
+    {% include conceptual-overview-2.svg %}
+    <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model OPTION 1</strong></figcaption>
+  </figure>
+  <p></p>
+</div>
 
 <div>
   <p></p>
   <figure>
-    <img src="static-model-overview.png" alt="Cancer Model Overview" width="50%"/>
-    <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model under development</strong></figcaption>
+    <img src="conceptual-overview.png" alt="Cancer Model Overview" width="50%"/>
+    <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model OPTION 2</strong></figcaption>
   </figure>
   <p></p>
 </div>
+
+
+
+<p>  </p>
+</div>
+
+A detailed representation is provided in the [Logical Model page](logicalmodels.html)
+
 
 ### Glossary
 
