@@ -5,9 +5,7 @@ skinparam classAttributeIconSize 0
 class OverallCancerTreatmentResponse {
   cancerConditionReference : Reference(CancerConditionAtDiagnosis) [1..1]
   clinicalCancerProgressionReference : Reference(ClinicalCancerProgression) [0..1]
-  clinicalCancerProgressionReference : = [^definition]
   treatmentResponseType : CodeableConcept [1..1]
-  treatmentResponseType : = [^definition]
   date : dateTime [1..1]
 }
 

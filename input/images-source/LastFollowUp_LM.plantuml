@@ -5,14 +5,10 @@ skinparam classAttributeIconSize 0
 class LastFollowUp {
   subject : CancerPatient [1..1]
   vitalStatus : CodeableConcept [1..1]
-  vitalStatus : = [^definition]
   evidenceOfDisease : boolean [0..1]
-  evidenceOfDisease : = [^definition]
   causeOfDeath : CodeableConcept [0..1]
-  causeOfDeath : = [^definition]
   date : dateTime [1..1]
   deathDate : dateTime [0..1]
-  deathDate : = [^definition]
 }
 
 @enduml

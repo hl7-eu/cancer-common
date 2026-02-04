@@ -5,15 +5,10 @@ skinparam classAttributeIconSize 0
 class CancerStage {
   cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
   classificationType : CodeableConcept [1..1]
-  classificationType : = [^definition]
   value : Element [1..*]
-  value : = [^definition]
   type : CodeableConcept [1..1]
-  type : = [^definition]
   surgeryReference : Reference(Surgery) [0..1]
-  surgeryReference : = [^definition]
   imagingReference : Reference(Imaging) [0..*]
-  imagingReference : = [^definition]
 }
 
 note right of CancerStage

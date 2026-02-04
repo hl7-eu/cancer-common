@@ -6,15 +6,11 @@ class SystemicTreatment {
   subject : CancerPatient [1..1]
   cancerConditionReference : Reference(CancerConditionAtDiagnosis) [1..1]
   clinicalCancerProgresionReference : Reference(ClinicalCancerProgression) [0..1]
-  clinicalCancerProgresionReference : = [^definition]
   intent : CodeableConcept [1..1]
-  intent : = [^definition]
   type : CodeableConcept [1..1]
   startDate : dateTime [1..1]
   endDate : dateTime [0..1]
-  endDate : = [^definition]
   setting : CodeableConcept [0..1]
-  setting : = [^definition]
 }
 
 @enduml

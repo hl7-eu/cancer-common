@@ -6,9 +6,7 @@ class Surgery {
   subject : CancerPatient [1..1]
   cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
   clinicalCancerProgressionReference : Reference(ClinicalCancerProgression) [0..1]
-  clinicalCancerProgressionReference : = [^definition]
   intent : CodeableConcept [1..1]
-  intent : = [^definition]
   date : dateTime [1..1]
   bodySite : CodeableConcept [1..*]
 }
