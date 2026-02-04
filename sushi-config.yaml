@@ -72,6 +72,28 @@ pages:
     title: Conceptual Model
   modelmap.xml:
     title: Model Map
+  map-cancerpatient.xml:
+    title: CancerPatient Mapping
+  map-cancerconditionatdiagnosis.xml:
+    title: CancerConditionAtDiagnosis Mapping
+  map-cancerstage.xml:
+    title: CancerStage Mapping
+  map-imaging.xml:
+    title: Imaging Mapping
+  map-lastfollowup.xml:
+    title: LastFollowUp Mapping
+  map-clinicalcancerprogression.xml:
+    title: ClinicalCancerProgression Mapping
+  map-surgery.xml:
+    title: Surgery Mapping
+  map-activesurveillance.xml:
+    title: ActiveSurveillance Mapping
+  map-radiotherapy.xml:
+    title: Radiotherapy Mapping
+  map-systemictreatment.xml:
+    title: SystemicTreatment Mapping
+  map-overallcancertreatmentresponse.xml:
+    title: OverallCancerTreatmentResponse Mapping
   profiles.md:
     title: Mapping to Profiles
   references.md:

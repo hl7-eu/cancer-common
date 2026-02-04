@@ -18,10 +18,15 @@
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="map-activesurveillance" name="ActiveSurveillance Mapping"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="authors" name="Authors and Contributors"/>
 <page key="background" name="Background"/>
+<page key="map-cancerconditionatdiagnosis" name="CancerConditionAtDiagnosis Mapping"/>
+<page key="map-cancerpatient" name="CancerPatient Mapping"/>
+<page key="map-cancerstage" name="CancerStage Mapping"/>
 <page key="challenges" name="Challenges"/>
+<page key="map-clinicalcancerprogression" name="ClinicalCancerProgression Mapping"/>
 <page key="conceptualmodel" name="Conceptual Model"/>
 <page key="copyright" name="Copyright"/>
 <page key="crossversionanalysis" name="Cross-version Analysis"/>
@@ -31,12 +36,18 @@
 <page key="downloads" name="Downloads"/>
 <page key="glossary" name="Glossary"/>
 <page key="index" name="Home"/>
+<page key="map-imaging" name="Imaging Mapping"/>
 <page key="knownissues" name="Known Issues"/>
+<page key="map-lastfollowup" name="LastFollowUp Mapping"/>
 <page key="logicalmodels" name="Logical Models"/>
 <page key="profiles" name="Mapping to Profiles"/>
 <page key="modelmap" name="Model Map"/>
+<page key="map-overallcancertreatmentresponse" name="OverallCancerTreatmentResponse Mapping"/>
+<page key="map-radiotherapy" name="Radiotherapy Mapping"/>
 <page key="scope" name="Scope and Content"/>
 <page key="references" name="Source and Additional Information"/>
+<page key="map-surgery" name="Surgery Mapping"/>
+<page key="map-systemictreatment" name="SystemicTreatment Mapping"/>
 <page key="toc" name="Table of Contents"/>
 <page key="journey" name="The Cancer Patient Journey"/>
 </specification>
