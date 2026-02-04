@@ -1,0 +1,21 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class CancerStage {
+  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  classificationType : CodeableConcept [1..1]
+  value : Element [1..*]
+  type : CodeableConcept [1..1]
+  surgeryReference : Reference(Surgery) [0..1]
+  imagingReference : Reference(Imaging) [0..*]
+}
+
+note right of CancerStage
+- classificationType: It represents the classification system to define the stage, such as TNM (Tumor Linphonode Metastasis). nan
+- value: It represents the stage value. Its datatype and cardinality depend on the specific structure of the staging classification being used. For example, in the case of the TNM classification, three string values are expected: one for T (Tumor), one for N (Nodes), and one for M (Metastasis). nan
+- type: It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological
+- surgeryReference: It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical. nan
+- imagingReference: It shall be present when the stage is of type Clinical and shall not be present when the stage is of type Pathological. nan
+end note
+@enduml

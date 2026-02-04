@@ -1,0 +1,18 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class OverallCancerTreatmentResponse {
+  cancerConditionReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  clinicalCancerProgressionReference : Reference(ClinicalCancerProgression) [0..1]
+  treatmentResponseType : CodeableConcept [1..1]
+  date : dateTime [1..1]
+}
+
+note right of OverallCancerTreatmentResponse
+- cancerConditionReference: nan
+- clinicalCancerProgressionReference: It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression.
+- treatmentResponseType: Choice: Progression | Stable Disease | Partial Remission | Complete Remission
+- date: nan
+end note
+@enduml

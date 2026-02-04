@@ -1,0 +1,22 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Radiotherapy {
+  patientReference : Reference(CancerPatient) [1..1]
+  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  clinicalCancerProgresionReference : Reference(ClinicalCancerProgression) [0..1]
+  intent : CodeableConcept [1..1]
+  startDate : dateTime [1..1]
+  endDate : dateTime [0..1]
+  bodySite : CodeableConcept [0..*]
+  setting : CodeableConcept [0..1]
+}
+
+note right of Radiotherapy
+- clinicalCancerProgresionReference: It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression. nan
+- intent: nan Choice: Definitive | Palliative
+- endDate: It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death nan
+- setting: nan Choice: Alone | Neo-adjuvant | Adjuvant | Concomitant
+end note
+@enduml

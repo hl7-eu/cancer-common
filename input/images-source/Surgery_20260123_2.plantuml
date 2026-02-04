@@ -1,0 +1,18 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Surgery {
+  patientReference : Reference(CancerPatient) [1..1]
+  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  clinicalCancerProgressionReference : Reference(ClinicalCancerProgression) [0..1]
+  intent : CodeableConcept [1..1]
+  date : dateTime [1..1]
+  bodySite : CodeableConcept [1..*]
+}
+
+note right of Surgery
+- clinicalCancerProgressionReference: It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression. nan
+- intent: nan Choice: Definitive | Palliative
+end note
+@enduml

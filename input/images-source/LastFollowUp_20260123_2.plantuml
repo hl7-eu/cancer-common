@@ -1,0 +1,20 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class LastFollowUp {
+  patientReference : Reference(CancerPatient) [1..1]
+  vitalStatus : CodeableConcept [1..1]
+  evidenceOfDisease : boolean [0..1]
+  causeOfDeath : CodeableConcept [0..1]
+  date : dateTime [1..1]
+  deathDate : dateTime [0..1]
+}
+
+note right of LastFollowUp
+- vitalStatus: nan Choice: Alive | Dead
+- evidenceOfDisease: If VitalStatus is Alive, then this attribute must be present; otherwise, it must not be present. nan
+- causeOfDeath: If VitalStatus is Dead, then this attribute must be present; otherwise, it must not be present. nan
+- deathDate: If VitalStatus is Dead, then this attribute must be present; otherwise, it must not be present. nan
+end note
+@enduml

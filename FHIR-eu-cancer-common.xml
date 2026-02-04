@@ -5,6 +5,17 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/ActiveSurveillance" key="StructureDefinition-ActiveSurveillance" name="Active Surveillance"/>
+<artifact id="StructureDefinition/CancerPatient" key="StructureDefinition-CancerPatient" name="Cancer Patient"/>
+<artifact id="StructureDefinition/CancerConditionAtDiagnosis" key="StructureDefinition-CancerConditionAtDiagnosis" name="CancerCondition(AtDiagnosis)"/>
+<artifact id="StructureDefinition/CancerStage" key="StructureDefinition-CancerStage" name="CancerStage"/>
+<artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
+<artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
+<artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
+<artifact id="StructureDefinition/OverallCancerTreatmentResponse" key="StructureDefinition-OverallCancerTreatmentResponse" name="OverallCancerTreatmentResponse"/>
+<artifact id="StructureDefinition/Radiotherapy" key="StructureDefinition-Radiotherapy" name="Radiotherapy"/>
+<artifact id="StructureDefinition/Surgery" key="StructureDefinition-Surgery" name="Surgery"/>
+<artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

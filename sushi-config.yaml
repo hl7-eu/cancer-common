@@ -22,6 +22,7 @@ copyright: >-
 #
 dependencies:
 #   hl7.fhir.uv.ips: current
+   hl7.fhir.eu.base: 2.0.0-ballot
    hl7.fhir.extensions.r5: 4.0.1
    
 #   ihe.pharm.cancer-common: current

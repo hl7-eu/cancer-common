@@ -1,0 +1,38 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+' Classes derived from logical models
+class ActiveSurveillance
+class CancerConditionAtDiagnosis
+class CancerPatient
+class CancerStage
+class ClinicalCancerProgression
+class Imaging
+class LastFollowUp
+class OverallCancerTreatmentResponse
+class Radiotherapy
+class Surgery
+class SystemicTreatment
+
+' Relationships derived from Reference() fields
+ActiveSurveillance --> CancerPatient
+ActiveSurveillance --> CancerConditionAtDiagnosis
+CancerConditionAtDiagnosis --> CancerPatient
+CancerStage --> CancerConditionAtDiagnosis
+CancerStage --> Surgery
+CancerStage --> Imaging
+ClinicalCancerProgression --> CancerConditionAtDiagnosis
+LastFollowUp --> CancerPatient
+OverallCancerTreatmentResponse --> CancerConditionAtDiagnosis
+OverallCancerTreatmentResponse --> ClinicalCancerProgression
+Radiotherapy --> CancerPatient
+Radiotherapy --> CancerConditionAtDiagnosis
+Radiotherapy --> ClinicalCancerProgression
+Surgery --> CancerPatient
+Surgery --> CancerConditionAtDiagnosis
+Surgery --> ClinicalCancerProgression
+SystemicTreatment --> CancerPatient
+SystemicTreatment --> CancerConditionAtDiagnosis
+SystemicTreatment --> ClinicalCancerProgression
+@enduml

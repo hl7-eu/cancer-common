@@ -1,0 +1,32 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+' Warning
+note "Warning: This is a preliminary draft subject to revisions." as DraftWarning
+
+' Classes from Cancer_Common_Logical_Model_20260123_2.xlsx
+class "CancerCondition(AtDiagnosis)" as CancerConditionAtDiagnosis
+class Patient
+class CancerStage
+class Imaging
+class LastFollowUp
+class ClinicalCancerProgression
+class Surgery
+class "Active Surveillance" as ActiveSurveillance
+class Radiotherapy
+class SystemicTreatment
+class OverallCancerTreatmentResponse
+
+' Relationships derived from CancerLogicalModel_20251128-static.excalidraw
+CancerConditionAtDiagnosis --> CancerStage
+CancerStage --> Imaging
+SystemicTreatment --> OverallCancerTreatmentResponse
+CancerConditionAtDiagnosis --> ClinicalCancerProgression
+Patient --> CancerConditionAtDiagnosis
+Patient --> LastFollowUp
+ClinicalCancerProgression --> SystemicTreatment
+ClinicalCancerProgression --> ActiveSurveillance
+SystemicTreatment <|-- Radiotherapy
+SystemicTreatment <|-- Surgery
+@enduml
