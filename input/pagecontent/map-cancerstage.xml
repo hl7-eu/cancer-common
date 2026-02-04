@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>CancerStage -> FHIR Resource (TBD)</title>
+  </head>
+  <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The logical models are under active revision and continuous refinement.
+              Updates will be progressively incorporated into this Implementation Guide.
+        </div>
+      </div>
+    </div>
+    <h3>CancerStage -> FHIR Resource (TBD)</h3>
+    <a>  </a>
+    <p></p>
+    <p>
+      This page explains how elements from the CancerStage logical model are expressed
+      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+    </p>
+    <p></p>
+    <div class="table-wrap">
+      <strong>Mapping Context</strong>
+      <ul>
+        <li>
+          <strong>Source logical model:</strong>
+          <a href="StructureDefinition-CancerStage.html">CancerStage</a>
+        </li>
+        <li>
+          <strong>Target FHIR resource:</strong>
+          FHIR Resource (TBD)
+        </li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="table-wrap">
+      <table summary="CancerStage -> FHIR Resource (TBD)">
+        <caption>CancerStage -> FHIR Resource (TBD)</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">CancerStage (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>cancerConditionAtDiagnosisReference</td>
+            <td>CancerCondition AtDiagnosis Reference</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>classificationType</td>
+            <td>It represents the classification system to define the stage, such as TNM (Tumor Linphonode Metastasis). nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>classificationType</td>
+            <td>It represents the classification system to define the stage, such as TNM (Tumor Linphonode Metastasis). nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>value</td>
+            <td>It represents the stage value. Its datatype and cardinality depend on the specific structure of the staging classification being used. For example, in the case of the TNM classification, three string values are expected: one for T (Tumor), one for N (Nodes), and one for M (Metastasis). nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>value</td>
+            <td>It represents the stage value. Its datatype and cardinality depend on the specific structure of the staging classification being used. For example, in the case of the TNM classification, three string values are expected: one for T (Tumor), one for N (Nodes), and one for M (Metastasis). nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>surgeryReference</td>
+            <td>It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>surgeryReference</td>
+            <td>It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>imagingReference</td>
+            <td>It shall be present when the stage is of type Clinical and shall not be present when the stage is of type Pathological. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>imagingReference</td>
+            <td>It shall be present when the stage is of type Clinical and shall not be present when the stage is of type Pathological. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="modelmap.html">Cancer Logical Models -> FHIR Logical Models</a>
+    </p>
+  </body>
+</div>

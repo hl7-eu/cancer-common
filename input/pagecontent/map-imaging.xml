@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Imaging -> FHIR Resource (TBD)</title>
+  </head>
+  <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The logical models are under active revision and continuous refinement.
+              Updates will be progressively incorporated into this Implementation Guide.
+        </div>
+      </div>
+    </div>
+    <h3>Imaging -> FHIR Resource (TBD)</h3>
+    <a>  </a>
+    <p></p>
+    <p>
+      This page explains how elements from the Imaging logical model are expressed
+      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+    </p>
+    <p></p>
+    <div class="table-wrap">
+      <strong>Mapping Context</strong>
+      <ul>
+        <li>
+          <strong>Source logical model:</strong>
+          <a href="StructureDefinition-Imaging.html">Imaging</a>
+        </li>
+        <li>
+          <strong>Target FHIR resource:</strong>
+          FHIR Resource (TBD)
+        </li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="table-wrap">
+      <table summary="Imaging -> FHIR Resource (TBD)">
+        <caption>Imaging -> FHIR Resource (TBD)</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">Imaging (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>type</td>
+            <td>It represents the type of imaging procedure performed (e.g. thoracic MRI) nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>It represents the type of imaging procedure performed (e.g. thoracic MRI) nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>bodySite</td>
+            <td>It represents the body site on which the procedure was performed. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>bodySite</td>
+            <td>It represents the body site on which the procedure was performed. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="modelmap.html">Cancer Logical Models -> FHIR Logical Models</a>
+    </p>
+  </body>
+</div>

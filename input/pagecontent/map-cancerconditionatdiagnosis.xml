@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>CancerConditionAtDiagnosis -> FHIR Resource (TBD)</title>
+  </head>
+  <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The logical models are under active revision and continuous refinement.
+              Updates will be progressively incorporated into this Implementation Guide.
+        </div>
+      </div>
+    </div>
+    <h3>CancerConditionAtDiagnosis -> FHIR Resource (TBD)</h3>
+    <a>  </a>
+    <p></p>
+    <p>
+      This page explains how elements from the CancerConditionAtDiagnosis logical model are expressed
+      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+    </p>
+    <p></p>
+    <div class="table-wrap">
+      <strong>Mapping Context</strong>
+      <ul>
+        <li>
+          <strong>Source logical model:</strong>
+          <a href="StructureDefinition-CancerConditionAtDiagnosis.html">CancerConditionAtDiagnosis</a>
+        </li>
+        <li>
+          <strong>Target FHIR resource:</strong>
+          FHIR Resource (TBD)
+        </li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="table-wrap">
+      <table summary="CancerConditionAtDiagnosis -> FHIR Resource (TBD)">
+        <caption>CancerConditionAtDiagnosis -> FHIR Resource (TBD)</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">CancerConditionAtDiagnosis (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>subject</td>
+            <td>Subject</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>histologyBehaviour</td>
+            <td>WG reccomends ICD03, the WG will monitor possible next versions. This attribute becomes mandatory once the cancer has been diagnosed; however, during the diagnostic workup it may still be absent, as the biopsy resulting from the surgery may not yet be available. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>histologyBehaviour</td>
+            <td>WG reccomends ICD03, the WG will monitor possible next versions. This attribute becomes mandatory once the cancer has been diagnosed; however, during the diagnostic workup it may still be absent, as the biopsy resulting from the surgery may not yet be available. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>bodySite</td>
+            <td>WG reccomends ICD03, the WG will monitor possible next versions. It is required to choose the most specific code available, meaning the most detailed code in the hierarchical terminology that precisely identifies the body site. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>bodySite</td>
+            <td>WG reccomends ICD03, the WG will monitor possible next versions. It is required to choose the most specific code available, meaning the most detailed code in the hierarchical terminology that precisely identifies the body site. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>tumourGradingSystem</td>
+            <td>It represents the classification system used to define the tumor grade, such as Gleason (a grading system for prostate cancer) or FNCLCC (a grading system for soft tissue sarcomas). We need to determine the appropriate cardinality. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>tumourGradingSystem</td>
+            <td>It represents the classification system used to define the tumor grade, such as Gleason (a grading system for prostate cancer) or FNCLCC (a grading system for soft tissue sarcomas). We need to determine the appropriate cardinality. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>tumourGradingValue</td>
+            <td>It represents the measured grade value based on the specific classification defined in the TumorGradingSystem. We need to determine the appropriate cardinality. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>tumourGradingValue</td>
+            <td>It represents the measured grade value based on the specific classification defined in the TumorGradingSystem. We need to determine the appropriate cardinality. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>visitDate</td>
+            <td>At least one of these dates must be present, since the model requires a diagnosis date for the Cancer Condition. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>visitDate</td>
+            <td>At least one of these dates must be present, since the model requires a diagnosis date for the Cancer Condition. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>biopsyDate</td>
+            <td>BiopsyDate</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>imagingDate</td>
+            <td>ImagingDate</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>labReportDate</td>
+            <td>LabReportDate</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="modelmap.html">Cancer Logical Models -> FHIR Logical Models</a>
+    </p>
+  </body>
+</div>

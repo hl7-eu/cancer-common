@@ -70,6 +70,8 @@ pages:
     title: Logical Models
   conceptualmodel.md:
     title: Conceptual Model
+  modelmap.xml:
+    title: Model Map
   profiles.md:
     title: Mapping to Profiles
   references.md:
@@ -130,6 +132,7 @@ menu:
   Logical:
     Logical Model: logicalmodels.html
   Implementation:
+    Model Map: modelmap.html
     Mapping to Profiles: profiles.html
   About:
     Authors and Contributors: authors.html

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Radiotherapy -> FHIR Resource (TBD)</title>
+  </head>
+  <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Ongoing alignment:</strong>
+              The logical models are under active revision and continuous refinement.
+              Updates will be progressively incorporated into this Implementation Guide.
+        </div>
+      </div>
+    </div>
+    <h3>Radiotherapy -> FHIR Resource (TBD)</h3>
+    <a>  </a>
+    <p></p>
+    <p>
+      This page explains how elements from the Radiotherapy logical model are expressed
+      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+    </p>
+    <p></p>
+    <div class="table-wrap">
+      <strong>Mapping Context</strong>
+      <ul>
+        <li>
+          <strong>Source logical model:</strong>
+          <a href="StructureDefinition-Radiotherapy.html">Radiotherapy</a>
+        </li>
+        <li>
+          <strong>Target FHIR resource:</strong>
+          FHIR Resource (TBD)
+        </li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="table-wrap">
+      <table summary="Radiotherapy -> FHIR Resource (TBD)">
+        <caption>Radiotherapy -> FHIR Resource (TBD)</caption>
+        <thead>
+          <tr>
+            <th colspan="2" class="src-head">Radiotherapy (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="src-sub">Description</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Description</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>subject</td>
+            <td>Subject</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>cancerConditionAtDiagnosisReference</td>
+            <td>CancerCondition AtDiagnosis Reference</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>clinicalCancerProgresionReference</td>
+            <td>It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>clinicalCancerProgresionReference</td>
+            <td>It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression. nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>intent</td>
+            <td>nan Choice: Definitive | Palliative</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>intent</td>
+            <td>nan Choice: Definitive | Palliative</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>startDate</td>
+            <td>StartDate</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>endDate</td>
+            <td>It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>endDate</td>
+            <td>It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death nan</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>bodySite</td>
+            <td>BodySite</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>setting</td>
+            <td>nan Choice: Alone | Neo-adjuvant | Adjuvant | Concomitant</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>setting</td>
+            <td>nan Choice: Alone | Neo-adjuvant | Adjuvant | Concomitant</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="modelmap.html">Cancer Logical Models -> FHIR Logical Models</a>
+    </p>
+  </body>
+</div>
