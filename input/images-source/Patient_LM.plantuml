@@ -1,0 +1,12 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Patient {
+  birthDate : dateTime [1..1]
+  sexAtBirth : CodeableConcept [1..1]
+  observedSexGender : CodeableConcept [0..1]
+  comorbiditiesAtCancerDiagnosis : CodeableConcept [0..*]
+}
+
+@enduml

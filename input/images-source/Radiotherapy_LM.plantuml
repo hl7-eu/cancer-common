@@ -1,0 +1,20 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Radiotherapy {
+  subject : CancerPatient [1..1]
+  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  clinicalCancerProgresionReference : Reference(ClinicalCancerProgression) [0..1]
+  clinicalCancerProgresionReference : = [^definition]
+  intent : CodeableConcept [1..1]
+  intent : = [^definition]
+  startDate : dateTime [1..1]
+  endDate : dateTime [0..1]
+  endDate : = [^definition]
+  bodySite : CodeableConcept [0..*]
+  setting : CodeableConcept [0..1]
+  setting : = [^definition]
+}
+
+@enduml

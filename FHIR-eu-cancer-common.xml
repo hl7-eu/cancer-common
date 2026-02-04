@@ -7,7 +7,7 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/ActiveSurveillance" key="StructureDefinition-ActiveSurveillance" name="Active Surveillance"/>
 <artifact id="StructureDefinition/CancerPatient" key="StructureDefinition-CancerPatient" name="Cancer Patient"/>
-<artifact id="StructureDefinition/CancerConditionAtDiagnosis" key="StructureDefinition-CancerConditionAtDiagnosis" name="CancerCondition(AtDiagnosis)"/>
+<artifact id="StructureDefinition/CancerConditionAtDiagnosis" key="StructureDefinition-CancerConditionAtDiagnosis" name="CancerCondition (AtDiagnosis)"/>
 <artifact id="StructureDefinition/CancerStage" key="StructureDefinition-CancerStage" name="CancerStage"/>
 <artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>

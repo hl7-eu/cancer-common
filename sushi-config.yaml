@@ -126,7 +126,8 @@ menu:
     Cancer Patient Journey: journey.html
     Data Evolution: journey-data-evolution.html
     # Cancer journey (2): journey-2.html
-    # Cancer journey (3): journey-3.html
+    # Cancer journey (3): journey-3.html    
+  Logical:
     Logical Model: logicalmodels.html
   Implementation:
     Mapping to Profiles: profiles.html

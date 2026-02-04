@@ -1,0 +1,13 @@
+@startuml
+hide empty members
+skinparam classAttributeIconSize 0
+
+class ActiveSurveillance {
+  subject : CancerPatient [1..1]
+  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  cancerConditionAtDiagnosisReference : = [^definition]
+  startDate : dateTime [1..1]
+  endDate : dateTime [0..1]
+}
+
+@enduml
