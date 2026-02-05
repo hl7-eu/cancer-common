@@ -94,8 +94,6 @@ pages:
     title: SystemicTreatment Mapping
   map-overallcancertreatmentresponse.xml:
     title: OverallCancerTreatmentResponse Mapping
-  profiles.md:
-    title: Mapping to Profiles
   references.md:
     title: Source and Additional Information
   scope.md:
@@ -155,7 +153,6 @@ menu:
     Logical Model: logicalmodels.html
   Implementation:
     Model Map: modelmap.html
-    Mapping to Profiles: profiles.html
   About:
     Authors and Contributors: authors.html
     Known Issues: knownissues.html
