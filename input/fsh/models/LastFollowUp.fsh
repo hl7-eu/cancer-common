@@ -6,7 +6,7 @@ Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Patient Reference"
 * vitalStatus 1..1 CodeableConcept "VitalStatus"
-* vitalStatus ^definition = "nan Choice: Alive | Dead"
+* vitalStatus ^definition = "Choice: Alive | Dead"
 * evidenceOfDisease 0..1 boolean "EvidenceOfDisease"
 * evidenceOfDisease ^definition = "If VitalStatus is Alive, then this attribute must be present; otherwise, it must not be present. nan"
 * causeOfDeath 0..1 CodeableConcept "CauseOfDeath"

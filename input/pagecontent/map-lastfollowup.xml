@@ -5,15 +5,7 @@
     <title>LastFollowUp -> FHIR Resource (TBD)</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The logical models are under active revision and continuous refinement.
-              Updates will be progressively incorporated into this Implementation Guide.
-        </div>
-      </div>
-    </div>
+
     <h3>LastFollowUp -> FHIR Resource (TBD)</h3>
     <a>  </a>
     <p></p>
@@ -66,15 +58,7 @@
           </tr>
           <tr>
             <td>vitalStatus</td>
-            <td>nan Choice: Alive | Dead</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>vitalStatus</td>
-            <td>nan Choice: Alive | Dead</td>
+            <td>Choice: Alive | Dead</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>
@@ -82,23 +66,7 @@
           </tr>
           <tr>
             <td>evidenceOfDisease</td>
-            <td>If VitalStatus is Alive, then this attribute must be present; otherwise, it must not be present. nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>evidenceOfDisease</td>
-            <td>If VitalStatus is Alive, then this attribute must be present; otherwise, it must not be present. nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>causeOfDeath</td>
-            <td>If VitalStatus is Dead, then this attribute must be present; otherwise, it must not be present. nan</td>
+            <td>italStatus is Alive, then this attribute must be present; otherwise, it must not be present. nan</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>
@@ -115,14 +83,6 @@
           <tr>
             <td>date</td>
             <td>Date</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>deathDate</td>
-            <td>If VitalStatus is Dead, then this attribute must be present; otherwise, it must not be present. nan</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>

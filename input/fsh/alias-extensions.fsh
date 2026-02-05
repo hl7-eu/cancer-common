@@ -39,7 +39,7 @@ Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-na
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
 Alias: $procedure-targetBodyStructure = http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure
 Alias: $recordedSexOrGender = http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender
-Alias: $sexForClinicalUse = http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse
+Alias: $sexParameterForClinicalUse = http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse
 Alias: $specimen-collection-body-site-reference-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite.reference
 Alias: $specimen-collection-body-site-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite
 Alias: $specimen-collection-device-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.device
@@ -47,3 +47,11 @@ Alias: $specimen-container-device-r5 = http://hl7.org/fhir/5.0/StructureDefiniti
 Alias: $specimen-feature-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature
 Alias: $specimen-feature-type-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature.type
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
+
+// ---- MCODE Extensions
+Alias: $mcode-comorbidities = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities
+Alias: $mcode-related-condition = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-related-condition
+Alias: $mcode-related-condition-absent = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-related-condition-absent
+Alias: $mcode-procedure-intent = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent
+Alias: $mcode-radiotherapy-dose-delivered-to-volume = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume
+Alias: $mcode-treatment-termination-reason = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason

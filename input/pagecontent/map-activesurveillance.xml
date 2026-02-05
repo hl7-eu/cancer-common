@@ -5,15 +5,6 @@
     <title>ActiveSurveillance -> FHIR Resource (TBD)</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The logical models are under active revision and continuous refinement.
-              Updates will be progressively incorporated into this Implementation Guide.
-        </div>
-      </div>
-    </div>
     <h3>ActiveSurveillance -> FHIR Resource (TBD)</h3>
     <a>  </a>
     <p></p>
@@ -59,14 +50,6 @@
           <tr>
             <td>subject</td>
             <td>Subject</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>cancerConditionAtDiagnosisReference</td>
-            <td>The reference to CancerCondition is limited to the CancerCondition(AtDiagnosis) because ActiveSurveillance is discontinued if a ClinicalCancerProgression occurs, at which point a different treatment strategy is initiated. nan</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>

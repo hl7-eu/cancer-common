@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 * birthDate 1..1 dateTime "BirthDate"
 * birthDate ^definition = "At least the year must be present nan"
 * sexAtBirth 1..1 CodeableConcept "SexAtBirth"
-* sexAtBirth ^definition = "nan Choice: Male | Female | Unknown | Other"
+* sexAtBirth ^definition = "Choice: Male | Female | Unknown | Other"
 * observedSexGender 0..1 CodeableConcept "ObservedSex Gender"
 * observedSexGender ^definition = "See https://confluence.hl7.org/spaces/VOC/pages/40743893/The+Gender+Harmony+Project nan"
 * comorbiditiesAtCancerDiagnosis 0..* CodeableConcept "ComorbiditiesAtCancerDiagnosis"

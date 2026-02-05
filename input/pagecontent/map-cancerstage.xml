@@ -5,15 +5,7 @@
     <title>CancerStage -> FHIR Resource (TBD)</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The logical models are under active revision and continuous refinement.
-              Updates will be progressively incorporated into this Implementation Guide.
-        </div>
-      </div>
-    </div>
+
     <h3>CancerStage -> FHIR Resource (TBD)</h3>
     <a>  </a>
     <p></p>
@@ -73,22 +65,6 @@
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
-            <td>classificationType</td>
-            <td>It represents the classification system to define the stage, such as TNM (Tumor Linphonode Metastasis). nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>value</td>
-            <td>It represents the stage value. Its datatype and cardinality depend on the specific structure of the staging classification being used. For example, in the case of the TNM classification, three string values are expected: one for T (Tumor), one for N (Nodes), and one for M (Metastasis). nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
             <td>value</td>
             <td>It represents the stage value. Its datatype and cardinality depend on the specific structure of the staging classification being used. For example, in the case of the TNM classification, three string values are expected: one for T (Tumor), one for N (Nodes), and one for M (Metastasis). nan</td>
             <td>no map</td>
@@ -105,32 +81,8 @@
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
-            <td>type</td>
-            <td>It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
             <td>surgeryReference</td>
             <td>It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical. nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>surgeryReference</td>
-            <td>It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical. nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>imagingReference</td>
-            <td>It shall be present when the stage is of type Clinical and shall not be present when the stage is of type Pathological. nan</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>

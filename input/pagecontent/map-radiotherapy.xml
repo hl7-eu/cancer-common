@@ -5,15 +5,7 @@
     <title>Radiotherapy -> FHIR Resource (TBD)</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The logical models are under active revision and continuous refinement.
-              Updates will be progressively incorporated into this Implementation Guide.
-        </div>
-      </div>
-    </div>
+
     <h3>Radiotherapy -> FHIR Resource (TBD)</h3>
     <a>  </a>
     <p></p>
@@ -81,22 +73,6 @@
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
-            <td>clinicalCancerProgresionReference</td>
-            <td>It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression. nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>intent</td>
-            <td>nan Choice: Definitive | Palliative</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
             <td>intent</td>
             <td>nan Choice: Definitive | Palliative</td>
             <td>no map</td>
@@ -106,7 +82,7 @@
           </tr>
           <tr>
             <td>startDate</td>
-            <td>StartDate</td>
+            <td>tDate</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>
@@ -114,15 +90,7 @@
           </tr>
           <tr>
             <td>endDate</td>
-            <td>It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>endDate</td>
-            <td>It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death nan</td>
+            <td>ight not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death nan</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>
@@ -131,14 +99,6 @@
           <tr>
             <td>bodySite</td>
             <td>BodySite</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>setting</td>
-            <td>nan Choice: Alone | Neo-adjuvant | Adjuvant | Concomitant</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>

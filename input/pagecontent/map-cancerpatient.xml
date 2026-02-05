@@ -2,24 +2,16 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>CancerPatient -> Patient</title>
+    <title>CancerPatient -> PatientEuCcm / ObservationComorbiditiesEuCcm</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The logical models are under active revision and continuous refinement.
-              Updates will be progressively incorporated into this Implementation Guide.
-        </div>
-      </div>
-    </div>
-    <h3>CancerPatient -> Patient</h3>
+
+    <h3>CancerPatient -> PatientEuCcm / ObservationComorbiditiesEuCcm</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the CancerPatient logical model are expressed
-      in the Patient resource used by this Implementation Guide.
+      in the PatientEuCcm and ObservationComorbiditiesEuCcm profiles used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -30,20 +22,21 @@
           <a href="StructureDefinition-CancerPatient.html">CancerPatient</a>
         </li>
         <li>
-          <strong>Target FHIR resource:</strong>
-          <a href="https://hl7.org/fhir/patient.html">Patient</a>
+          <strong>Target FHIR profiles:</strong>
+          <a href="StructureDefinition-patient-eu-ccm.html">PatientEuCcm</a>,
+          <a href="StructureDefinition-observation-comorbidity-eu-ccm.html">ObservationComorbiditiesEuCcm</a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="CancerPatient -> Patient">
-        <caption>CancerPatient -> Patient</caption>
+      <table summary="CancerPatient -> PatientEuCcm / ObservationComorbiditiesEuCcm">
+        <caption>CancerPatient -> PatientEuCcm / ObservationComorbiditiesEuCcm</caption>
         <thead>
           <tr>
             <th colspan="2" class="src-head">CancerPatient (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">Patient</th>
+            <th colspan="4" class="tgt-head">PatientEuCcm / ObservationComorbiditiesEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -58,67 +51,43 @@
         <tbody>
           <tr>
             <td>birthDate</td>
-            <td>At least the year must be present nan</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>birthDate</td>
-            <td>At least the year must be present nan</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
+            <td>At least the year must be present.</td>
+            <td>equivalent</td>
+            <td>Patient</td><td>birthDate</td>
+            <td>Date of birth.</td>
+            <td>Use partial date if only year/month is known.</td>
           </tr>
           <tr>
             <td>sexAtBirth</td>
-            <td>nan Choice: Male | Female | Unknown | Other</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
+            <td>Choice: Male | Female | Unknown | Other.</td>
+            <td>equivalent</td>
+            <td>Patient</td><td>extension[recordedSexOrGender]</td>
+            <td>Recorded sex or gender.</td>
+            <td>Use recordedSexOrGender with type = $loinc#76689-9 "Sex assigned at birth"</td>
           </tr>
-          <tr>
-            <td>sexAtBirth</td>
-            <td>nan Choice: Male | Female | Unknown | Other</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
+          <tr class="highlight-yellow">
             <td>observedSexGender</td>
-            <td>See https://confluence.hl7.org/spaces/VOC/pages/40743893/The+Gender+Harmony+Project nan</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>observedSexGender</td>
-            <td>See https://confluence.hl7.org/spaces/VOC/pages/40743893/The+Gender+Harmony+Project nan</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
+            <td>Observed sex/gender (see Gender Harmony).</td>
+            <td>related-to</td>
+            <td>Patient</td><td>gender</td>
+            <td>Administrative gender.</td>
+            <td>Use gender when appropriate; consider an extension if distinct from administrative gender.</td>
           </tr>
           <tr>
             <td>comorbiditiesAtCancerDiagnosis</td>
-            <td>Active chronic conditions present at the time of cancer diagnosis nan</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
+            <td>Active chronic conditions present at the time of cancer diagnosis.</td>
+            <td>related-to</td>
+            <td>Observation</td><td>extension[comorbidConditionPresent]</td>
+            <td>Comorbidities present captured as related-condition extension.</td>
+            <td>Use ObservationComorbiditiesEuCcm to represent present comorbidities.</td>
           </tr>
           <tr>
             <td>comorbiditiesAtCancerDiagnosis</td>
-            <td>Active chronic conditions present at the time of cancer diagnosis nan</td>
-            <td>no map</td>
-            <td>Patient</td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
+            <td>Active chronic conditions present at the time of cancer diagnosis.</td>
+            <td>related-to</td>
+            <td>Observation</td><td>extension[comorbidConditionAbsent]</td>
+            <td>Comorbidities absent captured as related-condition extension.</td>
+            <td>Use ObservationComorbiditiesEuCcm to represent absent comorbidities.</td>
           </tr>
         </tbody>
       </table>

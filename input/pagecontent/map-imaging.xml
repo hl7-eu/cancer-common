@@ -5,15 +5,7 @@
     <title>Imaging -> FHIR Resource (TBD)</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The logical models are under active revision and continuous refinement.
-              Updates will be progressively incorporated into this Implementation Guide.
-        </div>
-      </div>
-    </div>
+
     <h3>Imaging -> FHIR Resource (TBD)</h3>
     <a>  </a>
     <p></p>
@@ -59,22 +51,6 @@
           <tr>
             <td>type</td>
             <td>It represents the type of imaging procedure performed (e.g. thoracic MRI) nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>type</td>
-            <td>It represents the type of imaging procedure performed (e.g. thoracic MRI) nan</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>bodySite</td>
-            <td>It represents the body site on which the procedure was performed. nan</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>

@@ -1,5 +1,6 @@
 //============== ALIAS ===============
 // --- Code Systems
+Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $ajcc = http://cancerstaging.org
 Alias: $atc = http://www.whocc.no/atc

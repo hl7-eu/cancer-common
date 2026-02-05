@@ -5,15 +5,7 @@
     <title>ClinicalCancerProgression -> FHIR Resource (TBD)</title>
   </head>
   <body>
-    <div class="model-map-block">
-      <div class="callout-wrapper">
-        <div class="callout-box">
-          <strong>Ongoing alignment:</strong>
-              The logical models are under active revision and continuous refinement.
-              Updates will be progressively incorporated into this Implementation Guide.
-        </div>
-      </div>
-    </div>
+
     <h3>ClinicalCancerProgression -> FHIR Resource (TBD)</h3>
     <a>  </a>
     <p></p>
@@ -73,14 +65,6 @@
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
-            <td>diseaseStatus</td>
-            <td>Choice: Progression | Stable Disease | Partial Remission | Complete Remission | Recurrence</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
             <td>tumourGradingSystem</td>
             <td>TumourGradingSystem</td>
             <td>no map</td>
@@ -113,32 +97,8 @@
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
-            <td>extentType</td>
-            <td>Choice: Local | Loco-regional | Metastatic</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
             <td>locoRegionalSites</td>
             <td>It must be present if the ExtentType is Loco-regional</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>locoRegionalSites</td>
-            <td>It must be present if the ExtentType is Loco-regional</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td></td>
-            <td>Mapping to be defined.</td>
-          </tr>
-          <tr>
-            <td>metastaticSites</td>
-            <td>It must be present if the ExtentType is Metastatic</td>
             <td>no map</td>
             <td></td><td></td>
             <td></td>

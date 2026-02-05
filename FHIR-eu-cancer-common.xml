@@ -12,7 +12,9 @@
 <artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
 <artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
+<artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
 <artifact id="StructureDefinition/OverallCancerTreatmentResponse" key="StructureDefinition-OverallCancerTreatmentResponse" name="OverallCancerTreatmentResponse"/>
+<artifact id="StructureDefinition/patient-eu-ccm" key="StructureDefinition-patient-eu-ccm" name="Patient (CCM)"/>
 <artifact id="StructureDefinition/Radiotherapy" key="StructureDefinition-Radiotherapy" name="Radiotherapy"/>
 <artifact id="StructureDefinition/Surgery" key="StructureDefinition-Surgery" name="Surgery"/>
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
@@ -40,7 +42,6 @@
 <page key="knownissues" name="Known Issues"/>
 <page key="map-lastfollowup" name="LastFollowUp Mapping"/>
 <page key="logicalmodels" name="Logical Models"/>
-<page key="profiles" name="Mapping to Profiles"/>
 <page key="modelmap" name="Model Map"/>
 <page key="map-overallcancertreatmentresponse" name="OverallCancerTreatmentResponse Mapping"/>
 <page key="map-radiotherapy" name="Radiotherapy Mapping"/>
