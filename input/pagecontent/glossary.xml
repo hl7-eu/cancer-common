@@ -24,215 +24,6 @@
       </tr>
     </thead>
     <tbody>
-
-      <!-- Patient -->
-      <tr id="concept-patient">
-        <td><strong>Patient</strong></td>
-        <td>
-          <p>Represents the subject that is affected by one or more Cancer Conditions. It has:</p>
-          <ul>
-            <li><strong>Demographics</strong>: demographic information (e.g., sex, birth date or year).</li>
-            <li><strong>Life Status (and Cause)</strong>: evolving status verified during a Visit, after the first treatment, indicating if the patient is alive (with disease or not) or dead (with cause). It can be:
-              <ul>
-                <li>Alive, No Evidence of Disease (NED)</li>
-                <li>Dead of Disease (DOD)</li>
-                <li>Dead of Other Cause (DOC)</li>
-                <li>Dead of Unknown Cause (DUC)</li>
-                <li>Alive With Disease (AWD)</li>
-              </ul>
-            </li>
-            <li><strong>Last Check</strong>: date of the Visit in which the Life Status (and Cause) was detected.</li>
-            <li><strong>Comorbidities</strong>: other relevant diseases that affect the patient.</li>
-          </ul>
-        </td>
-        <td>
-          <p>Life Status (and Cause), Demographics, and Comorbidity can evolve during the journey.</p>
-        </td>
-        <td>
-          <p>Subject</p>
-        </td>
-        <td>
-          <p><strong>Directly connected</strong> to:</p>
-          <ul>
-            <li>One or more <em>Cancer Conditions</em></li>
-            <li>One or more <em>Treatments</em></li>
-          </ul>
-          <p><strong>Indirectly connected</strong> with other concepts through Cancer Condition.</p>
-          <p>If available in EHR, connected to all possible Procedures and Reports as Subject (not reported in Figure 3).</p>
-          <p><strong>Basing on the availability in EHR</strong>, can be directly or indirectly connected with:</p>
-          <ul>
-            <li>One or more <em>Visits</em> (when the Disease Status could be updated)</li>
-          </ul>
-        </td>
-      </tr>
-
-      <!-- Cancer Condition -->
-      <tr id="concept-cancer-condition">
-        <td><strong>Cancer Condition</strong></td>
-        <td>
-          <p>Represents the cancer condition at the First Diagnosis, which is the start of the cancer journey. It must have:</p>
-          <ul>
-            <li><strong>Histology Behaviour</strong>: cell type of the neoplasm and whether it is malignant, benign, in situ, or uncertain (typically defined with Surgery and Biopsy).</li>
-            <li><strong>Body Site</strong>: first location where the Cancer Condition was detected (typically with Imaging).</li>
-            <li><strong>Tumour Grade</strong>: describes how abnormal the tumour cells/tissues look, indicating biological aggressiveness.</li>
-            <li><strong>Asserted Date</strong>: first date when presence of the Cancer Condition was detected; must correspond to a documented report (e.g., Visit, Biopsy, Surgery, Imaging, Biomarker, Lab Report, Genomics).</li>
-            <li><strong>Base of Assertion</strong>: type of procedure on which the Cancer Condition was detected (e.g., Visit, Biopsy, Surgery, Imaging, Biomarker, Lab Report).</li>
-          </ul>
-          <p>It can have:</p>
-          <ul>
-            <li><strong>Imaging Type</strong>: type of image on which the Cancer Condition was detected.</li>
-            <li><strong>Biomarker Type</strong>: type of biomarker on which the Cancer Condition was detected.</li>
-          </ul>
-        </td>
-        <td>
-          <p>Each time a patient has a new cancer (not related to the first one), create a new Cancer Condition. If, over time, there is an update related to the same cell type, it is reflected in a new Disease over time and space instance.</p>
-          <p>If a cancer is metastatic at the First Diagnosis, the information on the metastasis is collected within the Cancer Stage, not in the Disease over time and space instance.</p>
-          <p>The pair <strong>Histology Behaviour</strong> + <strong>Body Site</strong> identifies the Cancer Condition.</p>
-        </td>
-        <td>
-          <p>
-            Cancer Condition: Primary Cancer, Secondary Primary Condition<br />
-            Histology: Morphology<br />
-            Body Site: location, tumor side, topography
-          </p>
-        </td>
-        <td>
-          <p><strong>Connected with</strong>:</p>
-          <ul>
-            <li>A <em>Patient</em> (Subject)</li>
-            <li>A <em>Cancer Stage</em></li>
-            <li>One or more <em>Treatments</em></li>
-            <li>One or more <em>Disease over time and space</em> instances</li>
-          </ul>
-          <p><strong>Basing on the availability in EHR</strong>, it can be directly or indirectly connected with:</p>
-          <ul>
-            <li>One or more <em>Procedures</em> (on which the diagnosis is based)</li>
-            <li>A <em>Biopsy</em> (on which the Grading and the Histology Behaviour is defined)</li>
-            <li>An <em>Imaging</em> (on which the Body Site is defined)</li>
-            <li>One or more <em>Visits</em> (when the Disease Status could be updated)</li>
-          </ul>
-        </td>
-      </tr>
-
-      <!-- Cancer Stage -->
-      <tr id="concept-cancer-stage">
-        <td><strong>Cancer Stage</strong><br />(Clinical Stage and Pathological Stage)</td>
-        <td>
-          <p>
-            Represents the stage of the Cancer Condition at the First Diagnosis and describes the tumour extent at the time of the first definitive treatment. It never evolves during the cancer journey. The stage can be Clinical (based on Imaging) or Pathological (based on Surgery).
-          </p>
-        </td>
-        <td>
-          <p>If, over time, there is an extension of the Cancer Condition (related to the same cell type), it is reflected in a new Disease over time and space instance with Disease Status (e.g., Progression or Recurrence), while the Cancer Stage does not change.</p>
-          <p>If a cancer is metastatic at the diagnosis, the information on the metastasis is collected within the Cancer Stage, not in the Disease Evolution (over time and space).</p>
-        </td>
-        <td></td>
-        <td>
-          <p><strong>Connected with</strong> Cancer Condition.</p>
-          <p><strong>Basing on the availability in EHR</strong>, it can be connected with:</p>
-          <ul>
-            <li>A <em>Surgery</em> (on which the Pathological Stage is defined)</li>
-            <li>A <em>Procedure</em> (on which the Clinical Stage is defined)</li>
-          </ul>
-        </td>
-      </tr>
-
-      <!-- Disease over time and space -->
-      <tr id="concept-disease-evolution">
-        <td><strong>Disease over time and space</strong></td>
-        <td>
-          <p>Represents the evolution over time and over space of the Cancer Condition. Every time there is a new evaluation, there will be a new instance that must have:</p>
-          <ul>
-            <li><strong>Disease Status</strong>: evaluated during a Visit and could be:
-              <ul>
-                <li>Progression</li>
-                <li>Stable Disease</li>
-                <li>Partial Remission</li>
-                <li>Complete Remission</li>
-                <li>Recurrence</li>
-              </ul>
-            </li>
-            <li><strong>Asserted Date</strong>: date when evolution is recorded; must correspond to a documented report (e.g., Visit, Imaging, Biomarker, Lab Report).</li>
-            <li><strong>Base of Assertion</strong>: type of procedure on which the evaluation is based (e.g., Visit, Biopsy, Surgery, Imaging, Biomarker, Lab Report).</li>
-          </ul>
-          <p>It can have:</p>
-          <ul>
-            <li><strong>Disease Extent</strong>: location where the cancer is extended at the time of assertion (typically evaluated with Imaging), with one or more Extent types:
-              <ul>
-                <li>Local</li>
-                <li>Loco-regional</li>
-                <li>Metastatic</li>
-              </ul>
-              and can include one or more <em>Loco-regional sites</em> and <em>Metastatic sites</em>.
-            </li>
-            <li><strong>Tumour Grade</strong>: new tumor grade, if changed from the first diagnosis (usually does not change).</li>
-            <li><strong>Imaging Type</strong>: type of image on which the assertion is based.</li>
-            <li><strong>Biomarker Type</strong>: type of biomarker on which the assertion is based.</li>
-            <li><strong>Genomics</strong>: genomic description of the extent at the time of assertion.</li>
-          </ul>
-        </td>
-        <td>
-          <p>After the First Diagnosis, every evaluation during a Visit creates a new Disease Evolution instance.</p>
-          <p>If a cancer is metastatic at the First Diagnosis, the information on the metastasis is collected within the Cancer Stage, not in the Disease Evolution over time and space.</p>
-        </td>
-        <td></td>
-        <td>
-          <p><strong>Connected with</strong>:</p>
-          <ul>
-            <li>A <em>Cancer Condition</em></li>
-            <li>One or more <em>Treatments</em></li>
-          </ul>
-          <p><strong>Basing on the availability in EHR</strong>, it can be directly or indirectly connected with:</p>
-          <ul>
-            <li>One or more <em>Procedures</em> (on which the diagnosis is based)</li>
-            <li>A <em>Biopsy</em> (on which the Grading and the Histology Behaviour is defined)</li>
-            <li>An <em>Imaging</em> (on which the Disease Extent sites are defined)</li>
-            <li>One or more <em>Visits</em> (when the disease evolution is evaluated)</li>
-          </ul>
-        </td>
-      </tr>
-
-      <!-- Treatment -->
-      <tr id="concept-treatment">
-        <td><strong>Treatment</strong><br />(Surgery, Active Surveillance, Radiotherapy, Drug Administration)</td>
-        <td>
-          <p>
-            Represents the single or combination of procedures and therapy defined to treat a Cancer Condition or a Disease Extent.
-          </p>
-          <p><strong>Intent</strong>: indicates if it is curative or symptom-relieving; choose from <em>Definitive</em> or <em>Palliative</em>.</p>
-          <p><strong>It can be divided in 4 main types</strong>:</p>
-          <ul>
-            <li><strong>Surgery</strong>: characterized by a Date and a Target Site.</li>
-            <li><strong>Active Surveillance</strong>: characterized by Start Date and End Date.</li>
-            <li><strong>Radiotherapy</strong>: characterized by Start Date, End Date, and Target Site.</li>
-            <li><strong>Drug Administration</strong>: characterized by Start Date, End Date, and a possible indication if the therapy is <em>Ongoing</em> (in case of Immunotherapy).</li>
-          </ul>
-        </td>
-        <td>
-          <p>Typically it is difficult to define if the target is the Cancer Condition or a specific Disease Extent.</p>
-          <p>Diet or Exercise can be prescribed Treatments but are not considered for the first period.</p>
-        </td>
-        <td>
-          <p>
-            Treatment: Anti-cancer treatment<br />
-            Definitive: curative
-          </p>
-        </td>
-        <td>
-          <p><strong>Connected to</strong>:</p>
-          <ul>
-            <li>One or more <em>Cancer Conditions</em> (Target/Reason)</li>
-            <li>A <em>Patient</em> (Subject)</li>
-            <li>One or more <em>Treatment Responses</em></li>
-          </ul>
-          <p><strong>Basing on the availability in EHR</strong>, it can be connected with:</p>
-          <ul>
-            <li>A <em>Report</em> (if the Treatment is a Surgery)</li>
-            <li>A <em>Treatment Plan/Prescription</em> (in case of Radiotherapy or Drug Administration)</li>
-          </ul>
-        </td>
-      </tr>
-
       <!-- Add border to the table -->
       <style>
         table, th, td {
@@ -243,37 +34,401 @@
           padding: 8px;
         }
       </style>
-      <!-- Treatment Response -->
-      <tr id="concept-treatment-response">
-        <td><strong>Treatment Response</strong></td>
+
+      <!-- Cancer Condition at Diagnosis -->
+      <tr id="concept-cancer-condition">
+        <td><strong>CancerConditionAtDiagnosis</strong></td>
+        <td>
+          <p>Represents the <strong>Cancer Condition at the First Diagnosis</strong>, which is the start of the cancer journey. All attributes never change. It <strong>must</strong> have:</p>
+          <ul>
+            <li>An <strong>HistologyBehaviour</strong>: histology describes the cell type of the neoplasm and the behaviour describes whether a tumour is malignant or benign, whether it is a carcinoma in situ or a neoplasm of uncertain malignancy. As the definitive histology and behaviour are usually established through Biopsy performed after Surgery, this information may not be available at the early stages of the diagnostic process; however, it is expected to be present once the diagnostic workup has been completed.</li>
+            <li>A <strong>BodySite</strong>: represents the first location where <em>Cancer Condition</em> was detected (typically with an Imaging). </li>
+            <li>A <strong>TumourGrade</strong>: describes a tumour in terms of how abnormal the tumour cells are. This is compared to normal cells. It also describes how abnormal the tissues look under a microscope. It describes the <strong>biological</strong> aggressiveness of the tumour. The grade provides some idea of how the cancer might behave. A low-grade cancer is likely to grow more slowly and be less likely to spread than a high grade one.</li>
+          </ul>
+          <p>It <strong>must</strong> include at least one of these dates, as they represent the key dates in the diagnostic process:</p>
+          <ul>
+            <li><strong>VisitDate</strong>: the date of the clinical visit that diagnosed the <em>CancerCondition</em>.</li>
+            <li><strong>BiopsyDate</strong>: the date of the biopsy that diagnosed the <em>CancerCondition</em>.</li>
+            <li><strong>LabReportDate</strong>: the date of the laboratory report, including biomarker tests when applicable, that diagnosed the <em>CancerCondition</em>.</li>
+            <li><strong>ImagingDate</strong>: the date of the diagnostic imaging that diagnosed the <em>CancerCondition</em>.</li>
+          </ul>
+        </td>
+        <td>
+          <p>Each time a patient has a new cancer (so not related and independent from the first one), they have a new <em>Cancer Condition</em>. In case in time, there is an updated of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> instance.</p>
+          <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em> instance.</p>
+          <p>The couple <strong>Histology Behaviour</strong> and <strong>Body Site</strong> identifies the <em>Cancer Condition</em>.</p>
+        </td>
         <td>
           <p>
-            Represents the standard way to measure how well a cancer patient responds to a single Treatment. It is evaluated by a clinician during a Visit based on an Evidence (e.g., Imaging, Lab Report, Biomarker).
+            Cancer Condition: Primary Cancer, Secondary Primary Condition<br />
+            Histology: Morphology<br />
+            Body Site: location, tumor side, topography
           </p>
-          <p><strong>Values</strong> include:</p>
+        </td>
+        <td>
+          <p>Connected with:</p>
           <ul>
-            <li>Progression</li>
-            <li>Stable Disease</li>
-            <li>Partial Remission</li>
-            <li>Complete Remission</li>
+            <li>A <em>CancerPatient</em>, which is the Subject</li>
+            <li>One or two <em>CancerStage</em> (it must always have one <em>CancerStage</em> of type Clinical and it may have a <em>CancerStage</em> of type Pathological)</li>
+            <li>One or more <em>CancerTreatment</em></li>
+            <li>One or more <em>OverallCancerTreatmentResponse</em></li>
+            <li>One or more <em>ClinicalCancerProgression </em></li>
           </ul>
-          <p><strong>Must have</strong>:</p>
+          <p>Basing on the availability in EHR, it can be directly or indirectly connected with some other concepts as:</p>
           <ul>
-            <li><strong>Based on</strong>: the type of Evidence used for evaluation (e.g., Imaging, Lab Report, Biomarker).</li>
-            <li><strong>Date</strong>: depends on data source availability (Visit date or Evidence date) and must correspond to a documented report.</li>
+            <li>One or more <em>Evidence</em> (on which the diagnosis is based)</li>
+            <li>A <em>Surgery</em>  (during which the <em>Biopsy</em> specimen is collected)</li>
+            <li>A <em>Biopsy</em>  (on which the <em>TumorGrade</em> and the <em>HistologyBehaviour</em> are defined)</li>
+            <li>An <em>Imaging</em> (on which the <em>BodySite</em> is defined)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Cancer Patient -->
+      <tr id="concept-patient">
+        <td><strong>CancerPatient</strong></td>
+        <td>
+          <p>Represents the subject that is affected by one or more <em>Cancer Conditions</em>. It has:</p>
+          <ul>
+            <li><strong>Demographics</strong> that represents demographic information (e.g. the sex, birth date (or only year)). It can evolve during the time.</li>
+          </ul>
+          <p>It can have:</p>
+          <ul>
+            <li>one or more <strong>ComorbiditiesAtDiagnosis</strong> that represent the active chronic conditions present at the time of the <em>CancerConditionAtDiagnosis</em>.</li>
           </ul>
         </td>
         <td>
-          <p>Although it may resemble Disease Status, it serves a different purpose: Treatment Response evaluates the effects of the Treatment while Disease Status represents the evolution of the Cancer Condition over time.</p>
-          <p>It is the Disease Status that evolves over time, not the Treatment Response.</p>
+          <!-- No notes for the Cancer Patient -->
         </td>
-        <td></td>
         <td>
-          <p><strong>Connected to</strong> a specific <em>Treatment</em>.</p>
-          <p><strong>Basing on the availability in EHR</strong>, it can be connected with:</p>
+          <p>Subject</p>
+        </td>
+        <td>
+          <p>Directly connected with:</p>
           <ul>
-            <li>One or more <em>Evidence</em> items (on which the response is evaluated)</li>
-            <li>A <em>Visit</em> (when the response is evaluated)</li>
+            <li>One or more <em>CancerConditionAtDiagnosis</em></li>
+            <li>One or more <em>CancerTreatment</em></li>
+          </ul>
+          <p>Indirectly connected with other concepts through <em>CancerConditionAtDiagnosis</em>.</p>
+          <p>If available in EHR, connected to all possible <em>Procedures and Reports</em> as Subject (not reported in the model).</p>
+        </td>
+      </tr>
+
+      <!-- Cancer Stage -->
+      <tr id="concept-cancer-stage">
+        <td><strong>CancerStage</strong></td>
+        <td>
+          <p>
+            Represents the stage of the <em>Cancer Condition</em> at the <em>First Diagnosis</em> (<em>CancerConditionAtDiagnosis</em>) and describes the tumour extent. The stage can be Clinical (is based on Imaging) or Pathological (is based on the main Surgery). A <em>CancerConditionAtDiagnosis</em> must always have one <em>CancerStage</em> of type Clinical, which is defined based on <em>Imaging</em>. It may also be associated with a <em>CancerStage</em> of type Pathological, which is defined based on <em>Surgery</em>.
+          </p>
+          <p>It <strong>must</strong> have:</p>
+          <ul>
+            <li>A <strong>Type</strong>: indicates whether the <em>Cancer Stage</em> is Clinical or Pathological.</li>
+            <li>A <strong>ClassificationType</strong>: indicates the name of the staging system used (e.g., TNM (Tumor Linphonode Metastasis)).</li>
+            <li>A <strong>Value</strong>: indicates the stage values as defined by the applied classification.</li>
+          </ul>
+        </td>
+        <td>
+          <p>In case in time, there is an extension of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> instance with <em>Disease Status</em> (as <em>Progression or Recurrence</em>), while the <em>CancerStage</em> will not change.</p>
+          <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em> instance.</p>
+          <p>If a cancer is metastatic at the diagnosis, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em>.</p>
+        </td>
+        <td>
+          <!-- No AKA for CancerStage -->
+        </td>
+        <td>
+          <p>Connected with:</p>
+          <ul>
+            <li>A <em>CancerConditionAtDiagnosis</em></li>
+            <li>One or more <em>Imaging</em> (in case it is Clinical)</li>
+            <li>A <em>Surgery</em> (in case it is Pathological)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Imaging --> 
+      <tr id="concept-imaging">
+        <td><strong>Imaging</strong></td>
+        <td>
+          <p>
+            Represents the <em>Imaging</em> information used to define the Clinical <em>CancerStage</em>.
+          </p>
+          <p>It <strong>must</strong> have:</p>
+          <ul>
+            <li>A <strong>Type</strong>: the type of imaging procedure performed (e.g. thoracic MRI).</li>
+            <li>One or more <strong>BodySite</strong>: represents the body site on which the procedure was performed.</li>
+          </ul>
+        </td>
+        <td>
+          <!-- No notes for Imaging -->
+        </td>
+        <td>
+          <!-- No AKA for Imaging -->
+        </td>
+        <td>
+          <p>Connected with a <em>CancerStage</em> (of type Clinical).</p>
+          <p>Basing on the availability in EHR it can be directly or indirectly connected with an <em>Imaging Report</em>.</p>
+        </td>
+      </tr>
+
+      <!-- Cancer Treatment --> 
+      <tr id="concept-cancer-treatment">
+        <td><strong>CancerTreatment</strong> (Surgery, ActiveSurveillance, Radiotherapy, SystemicTreatment)</td>
+        <td>
+          <p>
+            Represents either a single treatment or a multimodal set of procedures and therapies performed to treat the <em>CancerCondition</em> (i.e., the <em>CancerCondition (AtDiagnosis)</em> and, where applicable, the <em>ClinicalCancerProgression</em>).
+          </p>
+          <p>It can be divided in 4 main types: </p>
+          <ul>
+            <li><em>Surgery</em>: it is characterized by:
+              <ul>
+                <li>A <strong>Date</strong>: indicates the date the procedure was performed.</li>
+                <li>One or more <strong>BodySite</strong>: represents the anatomical site where the procedure was performed.</li>
+                <li>An <strong>Intent</strong>: indicates if it is curative or not (so only to decrease the symptoms) for the <em>Cancer Condition</em>. It can be a choice from: <em>Definitive</em> and <em>Palliative</em>.</li>
+              </ul>
+            </li>
+            <li><em>ActiveSurveillance</em>:
+              <ul>
+                <li>It is characterized by:
+                  <ul>
+                    <li>A <strong>Start Date</strong>: indicates the starting date of the surveillance.</li>
+                  </ul>
+                </li>
+                <li>can have:
+                  <ul>
+                    <li>An <strong>End Date</strong>: indicates the date on which the surveillance was concluded.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><em>Radiotherapy</em>:
+              <ul>
+                <li>It is characterized by:
+                  <ul>
+                    <li>A <strong>Start Date</strong>: indicates the starting date of the procedure.</li>
+                    <li>An <strong>End Date</strong>: indicates the date on which the procedure was concluded.</li>
+                    <li>One or more <strong>BodySite</strong>: represents the anatomical site where the procedure was performed.</li>
+                    <li>An <strong>Intent</strong>: indicates if it is curative or not (so only to decrease the symptoms) for the <em>Cancer Condition</em>. It can be a choice from: <em>Definitive</em> and <em>Palliative</em>.</li>
+                  </ul>
+                </li>
+                <li>can have:
+                  <ul>
+                    <li>A <strong>Setting</strong>: indicates the strategic timing of the <em>CancerTreatments</em>. It can be:
+                      <ul>
+                        <li><strong>Alone</strong>: if it is used as the <strong>primary treatment</strong>, without any type of other <em>CancerTreatments</em>.</li>
+                        <li><strong>Preoperative/Neoadjuvant</strong>: if is administered <strong>before</strong> <em>Surgery</em> or <em>SystemicTreatment</em>.</li>
+                        <li><strong>PostOperative/Adjuvant</strong>: if is delivered <strong>after the primary treatment</strong> (usually <em>Surgery</em> or <em>SystemicTreatment</em>).</li>
+                        <li><strong>Concomitant</strong>: if is administered <strong>simultaneously</strong> with another <em>CancerTreatment</em>.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><em>SystemicTreatment</em>:
+              <ul>
+                <li>It is characterized by:
+                  <ul>
+                    <li>A <strong>Start Date</strong>: indicates the starting date of the procedure.</li>
+                    <li>A possible <strong>End Date</strong>: indicates the date on which the procedure was concluded. It should be present if the therapy is not <em>Ongoing</em>.</li>
+                    <li>A possible <strong>Ongoing</strong>: indicates if the therapy is ongoing (in case of <em>immunotherapy</em> or <em>hormone therapy</em>).</li>
+                    <li>An <strong>Intent</strong>: indicates if it is curative or not (so only to decrease the symptoms) for the <em>Cancer Condition</em>. It can be a choice from: <em>Definitive</em> and <em>Palliative</em>.</li>
+                    <li>A <strong>Type</strong>: specifies the category of the treatment (e.g. Chemotherapy, Immunotherapy, Targeted Therapy, or Hormonal Therapy)</li>
+                  </ul>
+                </li>
+                <li>can have:
+                  <ul>
+                    <li>A <strong>Setting</strong>: indicates the strategic timing of the <em>CancerTreatments</em>. It can be:
+                      <ul>
+                        <li><strong>Alone</strong>: if it is used as the <strong>primary treatment</strong>, without any type of other <em>CancerTreatments</em>.</li>
+                        <li><strong>Preoperative/Neoadjuvant</strong>: if is administered <strong>before</strong> <em>Surgery</em> or <em>SystemicTreatment</em>.</li>
+                        <li><strong>PostOperative/Adjuvant</strong>: if is delivered <strong>after the primary treatment</strong> (usually <em>Surgery</em> or <em>SystemicTreatment</em>).</li>
+                        <li><strong>Concomitant</strong>: if is administered <strong>simultaneously</strong> with another <em>CancerTreatment</em>.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td>
+          <p>Typically it is very difficult to define if the target is the <em>CancerCondition (AtDiagnosis)</em> or to a specific <em>ClinicalCancerProgression</em> because the target is the overall <em>CancerCondition</em>.</p>
+          <p>Also Diet or Exercise can be prescribed <em>Treatments</em> but are not considered for the first period.</p>
+          <p><em>SystemicTreatment</em> excludes drugs administered for other pathologies, such as diabetes or hypertension. Should it be necessary to manage administrations unrelated to the CancerCondition, a separate entity would need to be introduced.</p>
+          <p>In the logical model:</p>
+          <ul>
+            <li>Additional attributes can be defined for each type of treatment</li>
+            <li>The concept <em>CancerTreatment</em> will not be represented, since the different types of treatment have highly specific and significantly different attributes that must be defined individually. Furthermore, both in OMOP and in FHIR it is not possible to represent the concept of a combination of treatments of different types. For this reason, it has been decided that the logical model will represent individual treatments.</li>
+          </ul>
+        </td>
+        <td>
+          <p>Treatment: Anti-cancer treatment</p>
+          <p>Definitive: curative</p>
+        </td>
+        <td>
+          <p>Connected to:</p>
+          <ul>
+            <li>One <em>CancerConditions(AtDiagnosis)</em>, as Target/Reason</li>
+            <li>A possible or more <em>ClinicalCancerProgression</em></li>
+            <li>A <em>CancerPatient</em>, as Subject</li>
+          </ul>
+          <p>Basing on the availability in EHR it can be connected with some other concepts as:</p>
+          <ul>
+            <li>A <em>Report</em> (in case the <em>Treatment</em> is a <em>Surgery</em>)</li>
+            <li>a <em>Treatment Plan/Prescription</em> (in case of <em>Radiotherapy</em> or <em>SystemicTreatment</em>)</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Last Follow Up --> 
+      <tr id="concept-last-follow-up">
+        <td><strong>Last Follow Up</strong></td>
+        <td>
+          <p>
+            Represents the patient’s health status information collected during the most recent follow-up visit. It has: 
+          </p>
+          <ul>
+            <li><strong>VitalStatus</strong>: that represents the evolving life status of the patient verified during a follow-up <em>Visit</em>, <u>after the first treatment</u>, to indicate if the patient is alive or dead, therefore can be:
+              <ul>
+                <li><em>Alive</em></li>
+                <li><em>Dead</em></li>
+              </ul>
+            </li>
+            <li><strong>Date</strong> that represent the date of the follow-up <em>Visit</em>.</li>
+          </ul>
+          <p>In case of a living <em>CancerPatient</em>, it <strong>must</strong> have:</p>
+          <ul>
+            <li><strong>EvidenceOfDisease</strong> that indicates indicates whether, in the case of a living patient, there is evidence of the presence of disease. in case the <em>CancerPatient</em> is alive it <strong>must</strong> be provided and can be set to:
+              <ul>
+                <li><em>Yes</em> when the disease is present</li>
+                <li><em>No</em> when it does not appear to be present.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>In case of a dead <em>CancerPatient</em>, it <strong>must</strong> have:</p>
+          <ul>
+            <li>CauseOfDeath that specifies the reason for death.</li>
+            <li>DeathDate that records the date on which the patient died.</li>
+          </ul>
+        </td>
+        <td>
+          <!-- No notes for LastFollowUp -->
+        </td>
+        <td>
+          <!-- No AKA for LastFollowUp -->
+        </td>
+        <td>
+          <p>Directly connected with:</p>
+          <ul>
+            <li>One <em>CancerPatient</em></li>
+          </ul>
+          <p>Indirectly with other concepts through <em>CancerPatient</em>.</p>
+          <p>Basing on the availability in EHR it can be connected with some other concepts as:</p>
+          <ul>
+            <li>A <em>Visit</em> (when the follow-up was performed). </li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Overall Cancer Treatment Response --> 
+      <tr id="concept-overall-cancer-treatment-response">
+        <td><strong>OverallCancerTreatmentResponse</strong></td>
+        <td>
+          <p>
+            Represents the standard way to measure how well a <em>CancerPatient</em> responds to a all performed <em>Treatments</em> on the <em>Cancer Condition</em>. It is based on whether tumours shrink, stay the same, or get bigger. It is evaluated by clinician during a follow-up <em>Visit</em> based on an <em>Evidence</em>. It can be one of the following:
+          </p>
+          <ul>
+            <li><em>Progression</em> (in case the cancer is grown respect the previous Visit)</li>
+            <li><em>Stable Disease</em> (in case the cancer is not changed respect the previous Visit)</li>
+            <li><em>Partial Remission</em> (in case the cancer shrunk respect the previous Visit)</li>
+            <li><em>Complete Remission</em> (in case the cancer completely disappeared).</li>
+          </ul>
+          <p>It <strong>must</strong> have:</p>
+          <ul>
+            <li>A <strong>Date</strong>: it depends on the data source availability and so it is not possible to define a common date to consider as response evaluation date. It could be the <em>Visit</em> date or the date of the <em>Evidence</em>. The common aspect is that it must correspond to one documented report (e.g. Visit, Imaging, Biomarker, Lab Report).</li>
+          </ul>
+        </td>
+        <td>
+          <p>It could seem like a repetition of the <em>Disease Status</em>, but it doesn’t. It is important to have <em>OverallCancerTreatmentResponse</em> and <em>Disease Status</em> separated because they have different purposes. The <em>OverallCancerTreatmentResponse</em> is used to evaluate the effects of the <em>Treatments</em> while <em>Disease Status</em> is to represent the evolution of the <em>Cancer Condition</em> over time.</p>
+          <p>It is the <em>Disease Status</em> that evolves over the time not the <em>OverallCancerTreatmentResponse</em>.</p>
+          <p>It is difficult to associate a response with a specific individual treatment. Instead, the response represents the cumulative effect of all interventions performed up to that point to treat the <em>Cancer Condition</em>.</p>
+        </td>
+        <td>
+          <!-- No AKA for OverallCancerTreatmentResponse -->
+        </td>
+        <td>
+          <p>Connected to:</p>
+          <ul>
+            <li>One <em>CancerConditions(AtDiagnosis)</em></li>
+            <li>A possible or more <em>ClinicalCancerProgression</em></li>
+          </ul>
+          <p>Basing on the availability in EHR it can be connected with some other concepts as:</p>
+          <ul>
+            <li>One or more <em>Evidence</em> (on which it the response is evaluated)</li>
+            <li>A <em>Visit</em> (when the response is evaluated).</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- ClinicalCancerProgression --> 
+      <tr id="concept-clinical-cancer-progression">
+        <td><strong>ClinicalCancerProgression</strong></td>
+        <td>
+          <p>
+            Represents the evolution over the time and over the space of the <em>Cancer Condition</em>. Every time that there is a new evaluation, there will be a new instance of <em>ClinicalCancerProgression</em> that <strong>must</strong> have:
+          </p>
+          <ul>
+            <li>A <strong>Disease Status</strong>: represents the status of the <em>Cancer Condition</em> evaluated during a <em>Visit</em>. It could be one of the following: 
+              <ul>
+                <li><em>Progression</em>: in case the cancer is grown respect the previous <em>Visit</em></li>
+                <li><em>Stable Disease</em>: in case the cancer is not grown or shrunk respect the previous <em>Visit</em></li>
+                <li><em>Partial Remission</em>: in case the cancer shrunk respect the previous <em>Visit</em></li>
+                <li><em>Complete Remission</em>: in case the cancer completely disappeared</li>
+                <li><em>Recurrence</em>: in case the cancer after complete remission re-appeared or cancer that has recurred (come back), usually after a period of time during which the cancer <strong>could not be detected</strong>.</li>
+              </ul>
+            </li>
+            <li>An <strong>Asserted Date</strong>: represents the date when evolution is recorded. It depends on the data source availability and so it is not possible to define a common date to consider as asserted date. It could be the <em>Visit</em> date or the date of the <em>Evidence</em>. The common aspect is that it must correspond to one documented report (e.g. Visit, Imaging, Biomarker, Lab Report).</li>
+          </ul>
+          <p>and it <strong>can</strong> have attributes to represent the location where the cancer is extended at the time of the assertion (typically evaluated with an <em>Imaging</em>) that can be:</p>
+          <ul>
+            <li>One or more <em>Extent type</em> that can be:
+              <ul>
+                <li><em>Local</em>: in case the site is the primary site (the site of the <em>ClinicalCancerProgression</em> is the same of <em>CancerConditionAtDiagnosis</em>)</li>
+                <li><em>Loco-regional</em>: in case the site is the primary site and the surrounding anatomical region (also to the regional lymph nodes but with no distant metastases)</li>
+                <li><em>Metastatic</em>: in case there are also distant metastases.</li>
+              </ul>
+            </li>
+            <li>Can have one or more:
+              <ul>
+                <li><em>Loco-regional site</em>: the specific site of the surrounding anatomical region involved (it must be present if the the <em>ExtentType</em> is <em>Loco-regional</em>)</li>
+                <li><em>Metastatic site</em>: the specific site of the metastases (It must be present if the <em>ExtentType</em> is <em>Metastatic</em>).</li>
+              </ul>
+            </li>
+            <li>A <strong>Tumour Grade</strong>: the new tumor grade, in case it is changed respect the first diagnosis (it usually doesn't change).</li>
+          </ul>
+        </td>
+        <td>
+          <p>After the First Diagnosis, every time that there is an evaluation of the Cancer Condition during a <em>Visit</em>, a new instance of <em>ClinicalCancerProgression</em> is created.</p>
+          <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em>.</p>
+          <p>Please note that, although the term <em>ClinicalCancerProgression</em> includes the word <em>progression</em>, it is intended to describe the <strong>evolution of the disease over time</strong>, which does <strong>not necessarily imply a worsening or progression of the disease</strong>.</p>
+        </td>
+        <td>
+          <!-- No AKA for ClinicalCancerProgression -->
+        </td>
+        <td>
+          <p>Connected with:</p>
+          <ul>
+            <li>A <em>CancerConditionAtDiagnosis</em></li>
+            <li>One or more <em>CancerTreatment</em></li>
+            <li>One or more <em>OverallCancerTreatmentResponse</em></li>
+          </ul>
+          <p>Basing on the availability in EHR it can be directly or indirectly connected with some other concepts as:</p>
+          <ul>
+            <li>One or more <em>Evidence</em> (on which it the diagnosis is based)</li>
+            <li>An <em>Imaging</em> (on which the <em>ExtentType</em> and the possible <em>Loco-regional sites</em> or <em>Metastatic sites</em> are defined)</li>
+            <li>One or more <em>Visit</em> (when the disease evolution is evaluated).</li>
+            <li>a <em>Biopsy</em> (on which the <em>Grading</em> and the <em>Histology Behaviour</em> is defined)</li>
           </ul>
         </td>
       </tr>
@@ -297,7 +452,7 @@
         <td><strong>Treatment Plan</strong></td>
         <td>
           <p>
-            It could be useful to record not only the actual treatment, but also what was planned. Treatment can change based on the Treatment Response. Could also capture guidelines and whether the patient agreed.
+            It could be useful to record not only the actual treatment, but also what was planned. In fact, the <em>Treatment</em> can change based on the <em>Treatment Response</em>. It could be also useful to consider guidelines and if a patient has agreed or not.
           </p>
         </td>
       </tr>
@@ -308,10 +463,10 @@
         </td>
       </tr>
       <tr id="future-qol-proms">
-        <td><strong>Quality of Life (QoL) / PROMs</strong></td>
+        <td><strong>Quality of Life (QoL)/ Patient-Reported Outcome Measures (PROMs) ect..</strong></td>
         <td>
           <p>
-            It could be useful to consider questionnaires to evaluate the quality of life and outcomes, but not with priority. They could be recorded during a Visit.
+            It could be useful to consider questionnaires to evaluate the quality of life and outcomes, but not with priority. They could be recorded during a <em>Visit</em>.
           </p>
         </td>
       </tr>
@@ -319,14 +474,20 @@
         <td><strong>Adverse Events / Late Effects / Toxicities</strong></td>
         <td>
           <p>
-            It could be useful, but is difficult to have and can be biased; it often requires hospitalization.
+            It could be useful, but is difficult to have and can be biased, it requires hospitalization.
           </p>
         </td>
       </tr>
       <tr id="future-risk-factors">
         <td><strong>Risk Factors / Environmental Factors / Genomic Predisposition / Familiarity</strong></td>
         <td>
-          <p>Valuable for specific research questions but not prioritized in the first version.</p>
+          <p>It could be useful to have to cover specific research, but not with priority.</p>
+        </td>
+      </tr>
+      <tr id="future-genomics">
+        <td><strong>Genomics / Biomarker</strong></td>
+        <td>
+          <p>They could be important, but their scope and usage needs specific discussions, so they are not included in the version 1, but are the next candidate future model extensions.</p>
         </td>
       </tr>
     </tbody>
