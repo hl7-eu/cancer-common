@@ -5,6 +5,6 @@ Description: "Imaging logical model from Cancer_Common_Logical_Model_20260123_2.
 Characteristics: #can-be-target
 
 * type 1..1 CodeableConcept "Type"
-* type ^definition = "It represents the type of imaging procedure performed (e.g. thoracic MRI) nan"
+* type ^definition = "It represents the type of imaging procedure performed (e.g. thoracic MRI)"
 * bodySite 1..* CodeableConcept "BodySite"
-* bodySite ^definition = "It represents the body site on which the procedure was performed. nan"
+* bodySite ^definition = "It represents the body site on which the procedure was performed."

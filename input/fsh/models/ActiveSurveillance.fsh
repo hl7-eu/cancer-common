@@ -6,6 +6,6 @@ Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Subject"
 * cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerCondition AtDiagnosis Reference"
-* cancerConditionAtDiagnosisReference ^definition = "The reference to CancerCondition is limited to the CancerCondition(AtDiagnosis) because ActiveSurveillance is discontinued if a ClinicalCancerProgression occurs, at which point a different treatment strategy is initiated. nan"
+* cancerConditionAtDiagnosisReference ^definition = "The reference to CancerCondition is limited to the CancerCondition(AtDiagnosis) because ActiveSurveillance is discontinued if a ClinicalCancerProgression occurs, at which point a different treatment strategy is initiated."
 * startDate 1..1 dateTime "StartDate"
 * endDate 0..1 dateTime "EndDate"

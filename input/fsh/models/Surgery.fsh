@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 * subject 1..1 CancerPatient "Subject"
 * cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerCondition AtDiagnosis Reference"
 * clinicalCancerProgressionReference 0..1 Reference(ClinicalCancerProgression) "ClinicalCancerProgressionReference"
-* clinicalCancerProgressionReference ^definition = "It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression. nan"
+* clinicalCancerProgressionReference ^definition = "It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression."
 * intent 1..1 CodeableConcept "Intent"
 * intent ^definition = "Choice: Definitive | Palliative"
 * date 1..1 dateTime "Date"
