@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <title>Cancer Logical Models to FHIR Logical Models</title>
   </head>
-  <h3>Cancer Logical Models ? FHIR Logical Models</h3>
+  <h3>Cancer Logical Models → FHIR Logical Models</h3>
   <a>  </a>
   <p>
     The table below lists the cancer logical models and their corresponding FHIR logical models in this IG.
@@ -16,7 +16,7 @@
     <li>a placeholder link for mapping details</li>
   </ul>
   <h4>
-    <span class="group-emoji">??</span> Cancer Logical Models
+    <span class="group-emoji">🧩</span> Cancer Logical Models
   </h4>
   <a>   </a>
   <div class="table-wrapper">
