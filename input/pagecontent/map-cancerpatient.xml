@@ -5,6 +5,14 @@
     <title>CancerPatient -> PatientEuCcm / ObservationComorbiditiesEuCcm</title>
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
 
     <h3>CancerPatient -> PatientEuCcm / ObservationComorbiditiesEuCcm</h3>
     <a>  </a>
@@ -34,59 +42,47 @@
         <caption>CancerPatient -> PatientEuCcm / ObservationComorbiditiesEuCcm</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">CancerPatient (Logical Model)</th>
+            <th colspan="1" class="src-head">CancerPatient (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">PatientEuCcm / ObservationComorbiditiesEuCcm</th>
+            <th colspan="3" class="tgt-head">PatientEuCcm / ObservationComorbiditiesEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>birthDate</td>
-            <td>At least the year must be present.</td>
             <td>equivalent</td>
             <td>Patient</td><td>birthDate</td>
-            <td>Date of birth.</td>
             <td>Use partial date if only year/month is known.</td>
           </tr>
           <tr>
             <td>sexAtBirth</td>
-            <td>Choice: Male | Female | Unknown | Other.</td>
             <td>equivalent</td>
             <td>Patient</td><td>extension[recordedSexOrGender]</td>
-            <td>Recorded sex or gender.</td>
             <td>Use recordedSexOrGender with type = $loinc#76689-9 "Sex assigned at birth"</td>
           </tr>
           <tr class="highlight-yellow">
             <td>observedSexGender</td>
-            <td>Observed sex/gender (see Gender Harmony).</td>
             <td>related-to</td>
             <td>Patient</td><td>gender</td>
-            <td>Administrative gender.</td>
             <td>Use gender when appropriate; consider an extension if distinct from administrative gender.</td>
           </tr>
           <tr>
             <td>comorbiditiesAtCancerDiagnosis</td>
-            <td>Active chronic conditions present at the time of cancer diagnosis.</td>
             <td>related-to</td>
             <td>Observation</td><td>extension[comorbidConditionPresent]</td>
-            <td>Comorbidities present captured as related-condition extension.</td>
             <td>Use ObservationComorbiditiesEuCcm to represent present comorbidities.</td>
           </tr>
           <tr>
             <td>comorbiditiesAtCancerDiagnosis</td>
-            <td>Active chronic conditions present at the time of cancer diagnosis.</td>
             <td>related-to</td>
             <td>Observation</td><td>extension[comorbidConditionAbsent]</td>
-            <td>Comorbidities absent captured as related-condition extension.</td>
             <td>Use ObservationComorbiditiesEuCcm to represent absent comorbidities.</td>
           </tr>
         </tbody>
@@ -97,3 +93,4 @@
     </p>
   </body>
 </div>
+

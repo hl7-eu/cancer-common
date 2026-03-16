@@ -5,6 +5,14 @@
     <title>CancerConditionAtDiagnosis -> FHIR Resource (TBD)</title>
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
 
     <h3>CancerConditionAtDiagnosis -> FHIR Resource (TBD)</h3>
     <a>  </a>
@@ -33,91 +41,71 @@
         <caption>CancerConditionAtDiagnosis -> FHIR Resource (TBD)</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">CancerConditionAtDiagnosis (Logical Model)</th>
+            <th colspan="1" class="src-head">CancerConditionAtDiagnosis (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>subject</td>
-            <td>Subject</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>histologyBehaviour</td>
-            <td>WG reccomends ICD03, the WG will monitor possible next versions. This attribute becomes mandatory once the cancer has been diagnosed; however, during the diagnostic workup it may still be absent, as the biopsy resulting from the surgery may not yet be available. nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>bodySite</td>
-            <td>WG reccomends ICD03, the WG will monitor possible next versions. It is required to choose the most specific code available, meaning the most detailed code in the hierarchical terminology that precisely identifies the body site. nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>tumourGradingSystem</td>
-            <td>It represents the classification system used to define the tumor grade, such as Gleason (a grading system for prostate cancer) or FNCLCC (a grading system for soft tissue sarcomas). We need to determine the appropriate cardinality. nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>tumourGradingValue</td>
-            <td>It represents the measured grade value based on the specific classification defined in the TumorGradingSystem. We need to determine the appropriate cardinality. nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>visitDate</td>
-            <td>At least one of these dates must be present, since the model requires a diagnosis date for the Cancer Condition. nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>biopsyDate</td>
-            <td>BiopsyDate</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>imagingDate</td>
-            <td>ImagingDate</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>labReportDate</td>
-            <td>LabReportDate</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
         </tbody>
@@ -128,3 +116,4 @@
     </p>
   </body>
 </div>
+

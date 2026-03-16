@@ -12,7 +12,7 @@
   <p>Each row shows:</p>
   <ul>
     <li>the logical model</li>
-    <li>the FHIR logical model in this IG</li>
+    <li>the HL7 FHIR target profile or resource</li>
     <li>a placeholder link for mapping details</li>
   </ul>
   <h4>
@@ -24,7 +24,7 @@
       <thead>
         <tr>
           <th>Cancer Logical Model</th>
-          <th>FHIR Logical Model in this IG</th>
+          <th>HL7 FHIR Target Profile / Resource</th>
           <th>Mapping Details</th>
         </tr>
       </thead>
@@ -34,7 +34,8 @@
             <a href="StructureDefinition-CancerPatient.html">CancerPatient</a>
           </td>
           <td>
-            <a href="StructureDefinition-CancerPatient.html"><code>CancerPatient</code></a>
+            <a href="StructureDefinition-patient-eu-ccm.html"><code>PatientEuCcm</code></a>,
+            <a href="StructureDefinition-observation-comorbidity-eu-ccm.html"><code>ObservationComorbiditiesEuCcm</code></a>
           </td>
           <td>
             <a class="pill" href="map-cancerpatient.html">CancerPatient Mapping</a>
@@ -45,7 +46,7 @@
             <a href="StructureDefinition-CancerConditionAtDiagnosis.html">CancerConditionAtDiagnosis</a>
           </td>
           <td>
-            <a href="StructureDefinition-CancerConditionAtDiagnosis.html"><code>CancerConditionAtDiagnosis</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-cancerconditionatdiagnosis.html">CancerConditionAtDiagnosis Mapping</a>
@@ -56,7 +57,7 @@
             <a href="StructureDefinition-CancerStage.html">CancerStage</a>
           </td>
           <td>
-            <a href="StructureDefinition-CancerStage.html"><code>CancerStage</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-cancerstage.html">CancerStage Mapping</a>
@@ -67,7 +68,7 @@
             <a href="StructureDefinition-Imaging.html">Imaging</a>
           </td>
           <td>
-            <a href="StructureDefinition-Imaging.html"><code>Imaging</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-imaging.html">Imaging Mapping</a>
@@ -78,7 +79,7 @@
             <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
           </td>
           <td>
-            <a href="StructureDefinition-LastFollowUp.html"><code>LastFollowUp</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-lastfollowup.html">LastFollowUp Mapping</a>
@@ -89,7 +90,7 @@
             <a href="StructureDefinition-ClinicalCancerProgression.html">ClinicalCancerProgression</a>
           </td>
           <td>
-            <a href="StructureDefinition-ClinicalCancerProgression.html"><code>ClinicalCancerProgression</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-clinicalcancerprogression.html">ClinicalCancerProgression Mapping</a>
@@ -100,7 +101,7 @@
             <a href="StructureDefinition-Surgery.html">Surgery</a>
           </td>
           <td>
-            <a href="StructureDefinition-Surgery.html"><code>Surgery</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-surgery.html">Surgery Mapping</a>
@@ -111,7 +112,7 @@
             <a href="StructureDefinition-ActiveSurveillance.html">ActiveSurveillance</a>
           </td>
           <td>
-            <a href="StructureDefinition-ActiveSurveillance.html"><code>ActiveSurveillance</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-activesurveillance.html">ActiveSurveillance Mapping</a>
@@ -122,7 +123,7 @@
             <a href="StructureDefinition-Radiotherapy.html">Radiotherapy</a>
           </td>
           <td>
-            <a href="StructureDefinition-Radiotherapy.html"><code>Radiotherapy</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-radiotherapy.html">Radiotherapy Mapping</a>
@@ -133,7 +134,7 @@
             <a href="StructureDefinition-SystemicTreatment.html">SystemicTreatment</a>
           </td>
           <td>
-            <a href="StructureDefinition-SystemicTreatment.html"><code>SystemicTreatment</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-systemictreatment.html">SystemicTreatment Mapping</a>
@@ -144,7 +145,7 @@
             <a href="StructureDefinition-OverallCancerTreatmentResponse.html">OverallCancerTreatmentResponse</a>
           </td>
           <td>
-            <a href="StructureDefinition-OverallCancerTreatmentResponse.html"><code>OverallCancerTreatmentResponse</code></a>
+            <code>FHIR Resource (TBD)</code>
           </td>
           <td>
             <a class="pill" href="map-overallcancertreatmentresponse.html">OverallCancerTreatmentResponse Mapping</a>

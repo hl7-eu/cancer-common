@@ -5,6 +5,14 @@
     <title>ClinicalCancerProgression -> FHIR Resource (TBD)</title>
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
 
     <h3>ClinicalCancerProgression -> FHIR Resource (TBD)</h3>
     <a>  </a>
@@ -33,83 +41,65 @@
         <caption>ClinicalCancerProgression -> FHIR Resource (TBD)</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">ClinicalCancerProgression (Logical Model)</th>
+            <th colspan="1" class="src-head">ClinicalCancerProgression (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>cancerConditionReference</td>
-            <td>CancerConditionReference</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>diseaseStatus</td>
-            <td>Choice: Progression | Stable Disease | Partial Remission | Complete Remission | Recurrence</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>tumourGradingSystem</td>
-            <td>TumourGradingSystem</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>tumourGradeValue</td>
-            <td>TumourGradeValue</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>assertedDate</td>
-            <td>AssertedDate</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>extentType</td>
-            <td>Choice: Local | Loco-regional | Metastatic</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>locoRegionalSites</td>
-            <td>It must be present if the ExtentType is Loco-regional</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>metastaticSites</td>
-            <td>It must be present if the ExtentType is Metastatic</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
         </tbody>
@@ -120,3 +110,4 @@
     </p>
   </body>
 </div>
+

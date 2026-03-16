@@ -5,6 +5,14 @@
     <title>SystemicTreatment -> FHIR Resource (TBD)</title>
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
 
     <h3>SystemicTreatment -> FHIR Resource (TBD)</h3>
     <a>  </a>
@@ -33,83 +41,65 @@
         <caption>SystemicTreatment -> FHIR Resource (TBD)</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">SystemicTreatment (Logical Model)</th>
+            <th colspan="1" class="src-head">SystemicTreatment (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>subject</td>
-            <td>Subject</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>cancerConditionReference</td>
-            <td>CancerConditionReference</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>clinicalCancerProgresionReference</td>
-            <td>It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression. nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>intent</td>
-            <td>Choice: Definitive | Palliative</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>type</td>
-            <td>Type</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>startDate</td>
-            <td>StartDate</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>endDate</td>
-            <td>It might not be available while the treatment is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>setting</td>
-            <td>Choice: Alone | Neo-adjuvant | Adjuvant | Concomitant</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
         </tbody>
@@ -120,3 +110,4 @@
     </p>
   </body>
 </div>
+

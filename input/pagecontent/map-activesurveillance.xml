@@ -5,6 +5,14 @@
     <title>ActiveSurveillance -> FHIR Resource (TBD)</title>
   </head>
   <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
     <h3>ActiveSurveillance -> FHIR Resource (TBD)</h3>
     <a>  </a>
     <p></p>
@@ -32,51 +40,41 @@
         <caption>ActiveSurveillance -> FHIR Resource (TBD)</caption>
         <thead>
           <tr>
-            <th colspan="2" class="src-head">ActiveSurveillance (Logical Model)</th>
+            <th colspan="1" class="src-head">ActiveSurveillance (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="4" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
-            <th class="src-sub">Description</th>
             <th class="relsub">Relation</th>
             <th class="tgt-sub">Resource</th>
             <th class="tgt-sub">Element</th>
-            <th class="tgt-sub">Description</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>subject</td>
-            <td>Subject</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>cancerConditionAtDiagnosisReference</td>
-            <td>The reference to CancerCondition is limited to the CancerCondition(AtDiagnosis) because ActiveSurveillance is discontinued if a ClinicalCancerProgression occurs, at which point a different treatment strategy is initiated. nan</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>startDate</td>
-            <td>StartDate</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
             <td>endDate</td>
-            <td>EndDate</td>
             <td>no map</td>
             <td></td><td></td>
-            <td></td>
             <td>Mapping to be defined.</td>
           </tr>
         </tbody>
@@ -87,3 +85,4 @@
     </p>
   </body>
 </div>
+
