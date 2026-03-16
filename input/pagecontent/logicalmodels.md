@@ -11,15 +11,6 @@ The figure below provides an overview of the main concepts and of their relation
   <p></p>
 </div>
 
-<div>
-  <p></p>
-  <figure>
-    {% include CancerLogicalModel_LM_refs.svg %}
-    <figcaption><strong>Figure 2: Cancer Common Logical Model (References)</strong></figcaption>
-  </figure>
-  <p></p>
-</div>
-
 
 ### Logical Models
 
@@ -31,7 +22,7 @@ Represents the subject affected by one or more cancer conditions, including demo
   <p></p>
   <figure>
     {% include Patient_LM.svg %}
-    <figcaption><strong>Figure 3: CancerPatient logical model</strong></figcaption>
+    <figcaption><strong>Figure 2: CancerPatient logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -46,7 +37,7 @@ Represents the cancer condition at first diagnosis and captures histology behavi
   <p></p>
   <figure>
     {% include CancerConditionAtDiagnosis_LM.svg %}
-    <figcaption><strong>Figure 4: CancerConditionAtDiagnosis logical model</strong></figcaption>
+    <figcaption><strong>Figure 3: CancerConditionAtDiagnosis logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -61,7 +52,7 @@ Represents the stage at first diagnosis and tumour extent at the time of the fir
   <p></p>
   <figure>
     {% include CancerStage_LM.svg %}
-    <figcaption><strong>Figure 5: CancerStage logical model</strong></figcaption>
+    <figcaption><strong>Figure 4: CancerStage logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -76,7 +67,7 @@ Referenced in the glossary as evidence/procedure used to detect the cancer condi
   <p></p>
   <figure>
     {% include Imaging_LM.svg %}
-    <figcaption><strong>Figure 6: Imaging logical model</strong></figcaption>
+    <figcaption><strong>Figure 5: Imaging logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -91,7 +82,7 @@ Corresponds to the Last Check in the glossary: the date of the visit in which li
   <p></p>
   <figure>
     {% include LastFollowUp_LM.svg %}
-    <figcaption><strong>Figure 7: LastFollowUp logical model</strong></figcaption>
+    <figcaption><strong>Figure 6: LastFollowUp logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -106,7 +97,7 @@ Represents disease over time and space; each evaluation creates a new instance w
   <p></p>
   <figure>
     {% include ClinicalCancerProgression_LM.svg %}
-    <figcaption><strong>Figure 8: ClinicalCancerProgression logical model</strong></figcaption>
+    <figcaption><strong>Figure 7: ClinicalCancerProgression logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -121,7 +112,7 @@ Treatment type characterized by a date and a target site.
   <p></p>
   <figure>
     {% include Surgery_LM.svg %}
-    <figcaption><strong>Figure 9: Surgery logical model</strong></figcaption>
+    <figcaption><strong>Figure 8: Surgery logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -136,7 +127,7 @@ Treatment type characterized by start date and end date.
   <p></p>
   <figure>
     {% include ActiveSurveillance_LM.svg %}
-    <figcaption><strong>Figure 10: ActiveSurveillance logical model</strong></figcaption>
+    <figcaption><strong>Figure 9: ActiveSurveillance logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -151,7 +142,7 @@ Treatment type characterized by start date, end date, and target site.
   <p></p>
   <figure>
     {% include Radiotherapy_LM.svg %}
-    <figcaption><strong>Figure 11: Radiotherapy logical model</strong></figcaption>
+    <figcaption><strong>Figure 10: Radiotherapy logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -166,7 +157,7 @@ Corresponds to drug administration treatment, characterized by start/end date an
   <p></p>
   <figure>
     {% include SystemicTreatment_LM.svg %}
-    <figcaption><strong>Figure 12: SystemicTreatment logical model</strong></figcaption>
+    <figcaption><strong>Figure 11: SystemicTreatment logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
@@ -181,10 +172,20 @@ Represents how well a cancer patient responds to a treatment (e.g., progression,
   <p></p>
   <figure>
     {% include OverallCancerTreatmentResponse_LM.svg %}
-    <figcaption><strong>Figure 13: OverallCancerTreatmentResponse logical model</strong></figcaption>
+    <figcaption><strong>Figure 12: OverallCancerTreatmentResponse logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
 
 FHIR Logical Model: [StructureDefinition-OverallCancerTreatmentResponse.html](StructureDefinition-OverallCancerTreatmentResponse.html)
 
+### Models' relationship
+
+<div>
+  <p></p>
+  <figure>
+    {% include CancerLogicalModel_LM_refs.svg %}
+    <figcaption><strong>Figure 13: Cancer Common Logical Model (References)</strong></figcaption>
+  </figure>
+  <p></p>
+</div>
