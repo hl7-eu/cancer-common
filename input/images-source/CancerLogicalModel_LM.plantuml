@@ -6,27 +6,42 @@ skinparam classAttributeIconSize 0
 note "Warning: This is a preliminary draft subject to revisions." as DraftWarning
 
 ' Classes from Cancer_Common_Logical_Model_20260123_2.xlsx
-class "CancerCondition(AtDiagnosis)" as CancerConditionAtDiagnosis
-class Patient
+class CancerConditionAtDiagnosis
+class CancerPatient
 class CancerStage
 class Imaging
 class LastFollowUp
 class ClinicalCancerProgression
 class Surgery
-class "Active Surveillance" as ActiveSurveillance
+class ActiveSurveillance
 class Radiotherapy
 class SystemicTreatment
 class OverallCancerTreatmentResponse
+abstract class CancerTreatment
 
 ' Relationships derived from CancerLogicalModel_20251128-static.excalidraw
 CancerConditionAtDiagnosis --> CancerStage
+CancerStage --> Surgery
+note on link
+onlyIfType=Pathological
+end note
 CancerStage --> Imaging
-SystemicTreatment --> OverallCancerTreatmentResponse
+note on link
+onlyIfType=Clinical
+end note
+CancerConditionAtDiagnosis <-- CancerPatient
+CancerPatient --> LastFollowUp
+CancerConditionAtDiagnosis --> OverallCancerTreatmentResponse
 CancerConditionAtDiagnosis --> ClinicalCancerProgression
-Patient --> CancerConditionAtDiagnosis
-Patient --> LastFollowUp
-ClinicalCancerProgression --> SystemicTreatment
-ClinicalCancerProgression --> ActiveSurveillance
-SystemicTreatment <|-- Radiotherapy
-SystemicTreatment <|-- Surgery
+CancerConditionAtDiagnosis --> CancerTreatment
+CancerTreatment <|-- Radiotherapy
+CancerTreatment <|-- SystemicTreatment
+CancerTreatment <|-- Surgery
+CancerTreatment <|-- ActiveSurveillance
+note bottom of ActiveSurveillance
+Applicable only before 
+ClinicalCancerProgression.
+Discontinued when progression occurs.
+end note
+ 
 @enduml

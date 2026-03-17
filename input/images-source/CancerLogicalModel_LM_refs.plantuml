@@ -16,12 +16,18 @@ class Surgery
 class SystemicTreatment
 
 ' Relationships derived from Reference() fields
-ActiveSurveillance --> CancerPatient
+/' ActiveSurveillance --> CancerPatient
 ActiveSurveillance --> CancerConditionAtDiagnosis
 CancerConditionAtDiagnosis --> CancerPatient
 CancerStage --> CancerConditionAtDiagnosis
 CancerStage --> Surgery
+note on link
+onlyIfType=Pathological
+end note
 CancerStage --> Imaging
+note on link
+onlyIfType=Clinical
+end note
 ClinicalCancerProgression --> CancerConditionAtDiagnosis
 LastFollowUp --> CancerPatient
 OverallCancerTreatmentResponse --> CancerConditionAtDiagnosis
@@ -34,5 +40,37 @@ Surgery --> CancerConditionAtDiagnosis
 Surgery --> ClinicalCancerProgression
 SystemicTreatment --> CancerPatient
 SystemicTreatment --> CancerConditionAtDiagnosis
-SystemicTreatment --> ClinicalCancerProgression
+SystemicTreatment --> ClinicalCancerProgression '/
+
+
+abstract class CancerTreatment
+
+CancerTreatment-u->CancerConditionAtDiagnosis
+CancerTreatment --> CancerPatient
+CancerConditionAtDiagnosis --> CancerPatient
+CancerStage -u-> CancerConditionAtDiagnosis
+CancerStage --> Surgery
+note on link
+onlyIfType=Pathological
+end note
+CancerStage --> Imaging
+note on link
+onlyIfType=Clinical
+end note
+ClinicalCancerProgression -u-> CancerConditionAtDiagnosis
+LastFollowUp -u-> CancerPatient
+OverallCancerTreatmentResponse -u-> CancerConditionAtDiagnosis
+OverallCancerTreatmentResponse -u-> ClinicalCancerProgression
+CancerTreatment --> ClinicalCancerProgression
+CancerTreatment <|-- Radiotherapy
+CancerTreatment <|-- SystemicTreatment
+CancerTreatment <|-- Surgery
+CancerTreatment <|-- ActiveSurveillance
+note bottom of ActiveSurveillance
+Applicable only before 
+ClinicalCancerProgression.
+Discontinued when progression occurs.
+end note
+
+
 @enduml
