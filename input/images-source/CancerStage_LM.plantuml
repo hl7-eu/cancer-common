@@ -11,7 +11,8 @@ class CancerStage {
   imagingReference : Reference(Imaging) [0..*]
 }
 
-note right of CancerStage
-- type: It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological
+note left of CancerStage::type
+- Indicates whether the stage instance is of type Clinical or Pathological. 
+- Choice: Clinical | Pathological
 end note
 @enduml

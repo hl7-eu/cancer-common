@@ -6,10 +6,10 @@ Characteristics: #can-be-target
 
 * obeys ccp-1
 * obeys ccp-2
-* cancerConditionReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerConditionReference"
+* cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerConditionReference"
 * diseaseStatus 1..1 CodeableConcept "DiseaseStatus"
 * diseaseStatus ^definition = "Choice: Progression | Stable Disease | Partial Remission | Complete Remission | Recurrence"
-* tumourGradingSystem 0..1 CodeableConcept "TumourGradingSystem"
+* tumourGradeSystem 0..1 CodeableConcept "TumourGradeSystem"
 * tumourGradeValue 0..1 string "TumourGradeValue"
 * assertedDate 1..1 dateTime "AssertedDate"
 * extentType 0..1 CodeableConcept "ExtentType"

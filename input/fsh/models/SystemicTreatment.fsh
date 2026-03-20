@@ -5,7 +5,7 @@ Description: "SystemicTreatment logical model from Cancer_Common_Logical_Model_2
 Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Subject"
-* cancerConditionReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerConditionReference"
+* cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerConditionAtDiagnosisReference"
 * clinicalCancerProgresionReference 0..1 Reference(ClinicalCancerProgression) "ClinicalCancerProgresionReference"
 * clinicalCancerProgresionReference ^definition = "It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression."
 * intent 1..1 CodeableConcept "Intent"
@@ -14,5 +14,7 @@ Characteristics: #can-be-target
 * startDate 1..1 dateTime "StartDate"
 * endDate 0..1 dateTime "EndDate"
 * endDate ^definition = "It might not be available while the treatment is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death."
+* ongoing 0..1 boolean "Ongoing"
+* ongoing ^definition = "Indicates that the treatment is ongoing when EndDate is not available (applicable to immunotherapy and hormone therapy). In case of immunotherapy and hormone therapy, if the EndDate is not provided because it is ongoing, it must be indicates as True"
 * setting 0..1 CodeableConcept "Setting"
 * setting ^definition = "Choice: Alone |  Preoperative/Neoadjuvant | Postoperative/Adjuvant | Concomitant"
