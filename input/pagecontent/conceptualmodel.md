@@ -1,87 +1,190 @@
 
 ### The European Cancer Common Conceptual Model
 
-Based on this timeline diagram reported in Figure 1 and Figure 2 of the [Cancer Journey](journey.html), and on the discussions had on it, and taking inspiration from mCODE, the first version of European Cancer Common Conceptual Model is under development. 
+The European Cancer Common Conceptual Model represents the foundational layer of the European Cancer Common Data Model (ECCDM). It defines a **minimum, extensible, and non exhaustive set of cancer related concepts and their relationships**, providing a shared, platform independent representation of the cancer domain.
 
-In detail, the European Cancer Common Conceptual Model defines the minimum, extensible, non-exhaustive set of concepts (and their relationship) needed to represent a typical cancer journey starting from the diagnosis considering the disease progression, the treatment and its response evaluation, and patient follow-up including outcomes to support primary and secondary data use. As mentioned, in the first period the activity will be **focused only on solid cancer on adult patients**. (see Figure below)
+The purpose of the conceptual model is to establish a **common semantic backbone** that can be reused consistently across different technical representations and standards. It focuses on defining *what the core cancer concepts are* and *how they relate to each other* throughout the cancer journey, independently from implementation and technology choices.
 
+In its initial scope, the conceptual model focuses on **adult patients with solid tumours**, considering **one cancer condition at a time**, in order to limit modelling complexity and ensure feasibility in early iterations.
 
-In details:
+This conceptual backbone is refined through the [Logical Model](https://build.fhir.org/ig/hl7-eu/cancer-common/logicalmodels.html) and, within this Implementation Guide, explicitly mapped to both [HL7 FHIR](https://build.fhir.org/ig/hl7-eu/cancer-common/modelmap.html) and OMOP, demonstrating how a single shared model can support interoperable representations across different technical ecosystems.
 
-* Black rectangles with rounded corners represent Concepts
-* Black rectangles with dotted edges represent Attributes
-* Black rectangle represent possible Values for the Attributes  
-* Blue shapes represent Events that are reported in Documents.
+### Overview
 
-Events represent all the possible procedures/encounters/episodes of care where a cancer patient is participating as subject (e.g. a visit, a surgery, a laboratory test ect). Documents represent medical reports produced during the Events and digitally signed by a doctor/physician/clinician. 
+At a high level, the European Cancer Common Conceptual Model represents how a **Cancer Patient** is affected by one or more **Cancer Conditions**, how each condition is characterised at diagnosis, staged, treated, evaluated, and how it evolves over time.
 
+The model captures the core structure of a typical cancer journey, including:
+*	the patient as the subject of care;
+* the diagnosis of one or more cancer conditions;
+* staging assessments associated with each condition;
+*	treatments administered with an explicit intent;
+*	evaluation of treatment response based on clinical evidence;
+*	clinical progression of the disease over time;
+*	follow up information summarising the most recent known patient status.
+
+This overview introduces the main building blocks of the model before presenting the complete conceptual representation.
 
 <div style="text-align:center;">
   <p></p>
     <figure>
-      <a href="conceptual-1.png" target="_blank">
-        <img src="conceptual-1.png" alt="Cancer Model" style="width:95%; cursor:zoom-in; border:1px solid #ddd; border-radius:6px;"/>
+      <a href="conceptual-overview.png" target="_blank">
+        <img src="conceptual-overview.png" alt="Conceptual Overview of the model" style="width:95%; cursor:zoom-in;"/>
       </a>
+      </br>
       <figcaption>
-        <strong>Figure 1: European Cancer Common Conceptual Model [click to zoom]</strong>
+        <strong>Figure 1: Overview of the Cancer Common Conceptual Model [click to zoom]</strong>
       </figcaption>
     </figure>
   <p></p>
 </div>
 
+### Overview of the conceptual Entities
 
-A description of the concepts is provided in the **[Glossary page](glossary.html)**
+#### CancerPatient
 
+The **CancerPatient** represents the subject of care.
 
-*Please note:*
+A patient may be affected by **one or more cancer conditions** over time, potentially at different points in their life.
 
-At the present we have focused on the first phases of the disease so the diagnosis and the first treatment (so we don't have already considered the cancer extent).
-For some Concepts some Attributes which characterize them or are relevant were defined during the discussion but in the design of the logical model some others could be defined.
-Considering that the model can be used for secondary use, where the data available can be the only ones related to the specific use case, study, research, it is not possible to consider each concept as mandatory, so most of them will be optional, but if present, all the date element must be provided.
-During the discussion other possible Concepts were cited, but will not be part of the first release of the model. Please see Table 2.
-The blue shapes will not be part of Concepts that will be the focus of the model design, but the were introduced because:
-they could be available (even if not usually) in electronic format in an EHR
-it is useful to understand the base of a decision or the source of an information.
-For this reason, and to not complicate the model, in Figure 3, the blue shapes are connected with blue arrows only with the main Concept or the Attribute that can depend on them to understand the possible EHR source. However in Table 1 are reported all the possible connections between Concepts and the blue shapes.
+The patient is associated with overall follow up information, including the **Last Follow up**, which captures the most recent known clinical status.
 
-### Overview
+#### CancerConditionAtDiagnosis
 
-<div><p>  </p>
-<p>The figure below provides an overview of the main concepts and of their relationships:</p>
-<p>a <strong>Patient</strong> experiences one or more <strong>Cancer Conditions</strong> (defined by body site, histology, grade, biomarkers and an asserted date).</p>
-<p>Each condition has an initial <strong>Cancer Stage</strong> (clinical or pathological) and may carry a <strong>Disease Extent</strong> (local, loco-regional, metastatic sites).</p>
-<p>As the journey unfolds, the condition produces successive <strong>Disease over Time and Space</strong> evaluations (disease status plus asserted date and base of assertion).</p>
-<p>Conditions are treated by one or more <strong>Treatments</strong> (surgery, radiotherapy, drug administration, active surveillance) with a declared intent, and each treatment can yield a <strong>Treatment Response</strong> measured during visits based on evidence (imaging, labs, biomarkers).</p>
+A **CancerConditionAtDiagnosis** represents a cancer diagnosis asserted for a patient at a specific point in time and represent the start point of the cancer journey.
+
+It captures key diagnostic characteristics such as body site, histology, grade, and the asserted dates, based on available clinical evidence (e.g. imaging, biopsy).
+
+Each cancer condition:
+*	is associated with one or two **CancerStages** (at least the Clinical Stage);
+*	may be treated by one or more **CancerTreatments**;
+*	may evolve over time through **ClinicalCancerProgression**.
+
+Although the model supports multiple cancer conditions for the same patient, each condition is considered independently within the model.
+
+#### CancerStage
+
+A **CancerStage** represents the staging assessment associated with a cancer condition.
+
+A stage can be:
+*	**clinical**, defined based on one or more imaging assessments;
+*	**pathological**, defined based on surgical procedures.
+
+Multiple stage assessments may be associated with the same cancer condition as new information becomes available. 
+
+#### CancerTreatment
+
+A **CancerTreatment** represents the intervention, or combination of interventions, administered to treat a cancer condition.
+
+Each treatment is characterised by an explicit **intent** (e.g. curative, palliative) and may be applied alone or in combination with other treatments.
+
+The model distinguishes four main cancer treatment categories:
+*	**Surgery**
+*	**Radiotherapy**
+*	**SystemicTreatment**
+*	**ActiveSurveillance**
+
+A cancer condition can be associated with one or more treatments over time.
+
+#### OverallCancerTreatmentResponse
+
+The **OverallCancerTreatmentResponse** represents the evaluation of how a cancer condition responds to treatment.
+
+Response assessments are based on clinical evidence such as imaging, laboratory tests, or biomarkers and reflect the outcome of a given treatment or treatment phase in relation to the cancer condition.
+
+#### ClinicalCancerProgression
+
+**ClinicalCancerProgression** describes how a cancer condition evolves over time.
+
+It captures disease states such as stability, progression, recurrence, or remission, together with the date and the basis of assessment.
+
+A cancer condition may evolve through **one or more progression events** over time.
+
+#### Follow-up
+
+The **LastFollowUp** captures the most recent follow up information available for the patient.
+
+It provides a summary view of the latest known clinical status within the context of the overall cancer journey.
+
+### Detailes Conceptual Model
+
+This section presents the **complete conceptual representation** of the first release of the European Cancer Common Conceptual Model, including all concepts, attributes, and relationships.
+
+<div style="text-align:center;">
+  <p></p>
+    <figure>
+      <a href="conceptual-1.png" target="_blank">
+        <img src="conceptual-1.png" alt="Cancer Model" style="width:95%; cursor:zoom-in;"/>
+      </a>
+      </br>
+      <figcaption>
+        <strong>Figure 2: European Cancer Common Conceptual Model [click to zoom]</strong>
+      </figcaption>
+    </figure>
+  <p></p>
 </div>
 
-<div>
-  <p></p>
-  <figure>
-      {% include conceptual-overview-2.svg %}    
-    <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model OPTION 1</strong></figcaption>
-  </figure>
-  <p></p>
-</div>
+The detailed conceptual diagrams adopt a set of **representation conventions** aimed at balancing clarity for clinicians, researchers, and domain experts with sufficient precision to support downstream modelling activities.
 
-<div>
-  <p></p>
-  <figure>
-    <img src="conceptual-overview.png" alt="Cancer Model Overview" width="80%"/>
-    <figcaption><strong>Figure 2: Overview of the Cancer Common Conceptual Model OPTION 2</strong></figcaption>
-  </figure>
-  <p></p>
-</div>
+In the conceptual diagrams:
+*	**Black rectangles with rounded corners** represent **Concepts**
+*	**Black rectangles with dotted edges** represent **Attributes**
+*	**Black rectangles** represent possible **Values** of attributes
+*	**Blue shapes** represent **Events** and **Documents**
 
+Events represent all procedures, encounters, or episodes of care in which a cancer patient participates as subject (e.g. outpatient visits, surgery, imaging examinations, laboratory tests).
+Documents represent medical reports produced during events and digitally signed by a doctor, physician, or clinician.
 
-<div>
-<p>  </p>
-</div>
+Events and documents are included to reflect real world EHR artefacts and to support traceability of information, while keeping the conceptual model focused on cancer domain concepts rather than on workflow or document management.
 
-A detailed representation is provided in the [Logical Model page](logicalmodels.html)
+The conceptual representation is also organised around the notion of a typical cancer journey. In addition to defining concepts and relationships, the model captures how cancer related information unfolds over time, from diagnosis through treatment, response evaluation, disease progression, and follow up. 
 
+To support understanding and validation of the model, a reference typical [cancer patient journey](https://build.fhir.org/ig/hl7-eu/cancer-common/journey.html) has been defined, together with an [illustrative example](https://build.fhir.org/ig/hl7-eu/cancer-common/journey-data-evolution.html) showing how the conceptual entities can be instantiated and populated over time. This example is intended to make the model easier to understand for clinicians, researchers, and implementers, and to demonstrate its applicability in real world scenarios.
 
-### Glossary
+A detailed description of the typical [cancer patient journey](https://build.fhir.org/ig/hl7-eu/cancer-common/journey.html) and an [example](https://build.fhir.org/ig/hl7-eu/cancer-common/journey-data-evolution.html) of model population are provided in the dedicated pages, which complement the conceptual and logical representations presented in this Implementation Guide.
 
-A description of the concepts is provided in the [Glossary page](glossary.html)
+### Modelling assumptions and design considerations
 
+The following modelling assumptions apply to the first version of the European Cancer Common Conceptual Model:
+*	During the discussions, additional concepts were identified but intentionally excluded from the first release of the model. These concepts are documented separately and represent candidate areas for future extensions.
+*	The **blue shapes (events and documents)** are not considered core conceptual entities and are therefore not the focus of the model design. They are included because: 
+    *	they may be available (even if not systematically) in electronic format in EHR systems;
+    *	they help understand the **source of information** or the **basis of a clinical decision**.
+*	To avoid unnecessary complexity, in the conceptual diagrams the blue shapes are connected only to the main concept or attribute they inform, in order to indicate possible EHR sources. 
+*	Although the conceptual model supports concurrent cancer conditions, to limit modelling complexity in the initial phase **only one cancer condition at a time is considered**.
 
+### Temporal representation
+
+For the first release of the model, all temporal information is explicitly preserved.
+
+Dates are collected for all entities, and new instances are created for each time point, rather than overwriting existing ones, even when observed values remain unchanged.
+
+This approach ensures correct longitudinal representation of the cancer journey and supports retrospective analyses, research use cases, and temporal reasoning.
+
+### Concepts Excluded from the First Release
+
+During the working group discussions, additional concepts were identified but intentionally excluded from the first release of the model. These concepts represent **candidate areas for future extensions**.
+
+Examples include:
+*	Treatment Plan
+*	Clinical Trials participation
+*	Quality of Life (QoL) and Patient Reported Outcome Measures (PROMs)
+*	Adverse Events, Late Effects, and Toxicities
+*	Risk and Environmental factors, Genomic Predisposition, Familiarity
+*	Genomics and advanced Biomarker models
+
+These topics require dedicated scoping and discussion and will be addressed in future iterations of the model.
+
+### From Conceptual Model to Logical Model and Implementations
+
+The conceptual model does not stand alone.
+Together with the [Logical Model](https://build.fhir.org/ig/hl7-eu/cancer-common/logicalmodels.html), it forms a shared backbone that supports consistent and systematic mappings across standards.
+
+Within this Implementation Guide:
+*	a detailed definition of all concepts and attributes is provided in the [Glossary](https://build.fhir.org/ig/hl7-eu/cancer-common/glossary.html) page;
+*	the [cancer patient journey](https://build.fhir.org/ig/hl7-eu/cancer-common/journey.html) page describes a reference cancer journey used to guide and validate the conceptual model.
+*	the [example of model population](https://build.fhir.org/ig/hl7-eu/cancer-common/journey-data-evolution.html) page provides an illustrative example of how the conceptual and logical models can be instantiated over time.
+*	the [Logical Model](https://build.fhir.org/ig/hl7-eu/cancer-common/logicalmodels.html) refines the concepts introduced here by defining entities, attributes, relationships, and cardinalities;
+*	mappings of the shared backbone to [HL7 FHIR](https://build.fhir.org/ig/hl7-eu/cancer-common/modelmap.html) are documented;
+*	mappings of the same backbone to **OMOP** are documented to support research and data reuse.
+
+By presenting these mappings within a single Implementation Guide, ECCDM demonstrates how a common semantic foundation can support interoperability across different technical ecosystems without redefining the underlying meaning of the data.
