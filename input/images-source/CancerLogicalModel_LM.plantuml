@@ -6,17 +6,17 @@ skinparam classAttributeIconSize 0
 note "Warning: This is a preliminary draft subject to revisions." as DraftWarning
 
 ' Classes from Cancer_Common_Logical_Model_20260123_2.xlsx
-class CancerConditionAtDiagnosis
-class CancerPatient
-class CancerStage
-class Imaging
-class LastFollowUp
-class ClinicalCancerProgression
-class Surgery
-class ActiveSurveillance
-class Radiotherapy
-class SystemicTreatment
-class OverallCancerTreatmentResponse
+class CancerConditionAtDiagnosis [[StructureDefinition-CancerConditionAtDiagnosis.html]]
+class CancerPatient [[StructureDefinition-CancerPatient.html]]
+class CancerStage [[StructureDefinition-CancerStage.html]]
+class Imaging [[StructureDefinition-Imaging.html]]
+class LastFollowUp [[StructureDefinition-LastFollowUp.html]]
+class ClinicalCancerProgression [[StructureDefinition-ClinicalCancerProgression.html]]
+class Surgery [[StructureDefinition-Surgery.html]]
+class ActiveSurveillance [[StructureDefinition-ActiveSurveillance.html]]
+class Radiotherapy [[StructureDefinition-Radiotherapy.html]]
+class SystemicTreatment [[StructureDefinition-SystemicTreatment.html]]
+class OverallCancerTreatmentResponse [[StructureDefinition-OverallCancerTreatmentResponse.html]]
 abstract class CancerTreatment
 
 ' Relationships derived from CancerLogicalModel_20251128-static.excalidraw

@@ -3,17 +3,17 @@ hide empty members
 skinparam classAttributeIconSize 0
 
 ' Classes derived from logical models
-class ActiveSurveillance
-class CancerConditionAtDiagnosis
-class CancerPatient
-class CancerStage
-class ClinicalCancerProgression
-class Imaging
-class LastFollowUp
-class OverallCancerTreatmentResponse
-class Radiotherapy
-class Surgery
-class SystemicTreatment
+class ActiveSurveillance [[StructureDefinition-ActiveSurveillance.html]]
+class CancerConditionAtDiagnosis [[StructureDefinition-CancerConditionAtDiagnosis.html]]
+class CancerPatient [[StructureDefinition-CancerPatient.html]]
+class CancerStage [[StructureDefinition-CancerStage.html]]
+class ClinicalCancerProgression [[StructureDefinition-ClinicalCancerProgression.html]]
+class Imaging [[StructureDefinition-Imaging.html]]
+class LastFollowUp [[StructureDefinition-LastFollowUp.html]]
+class OverallCancerTreatmentResponse [[StructureDefinition-OverallCancerTreatmentResponse.html]]
+class Radiotherapy [[StructureDefinition-Radiotherapy.html]]
+class Surgery [[StructureDefinition-Surgery.html]]
+class SystemicTreatment [[StructureDefinition-SystemicTreatment.html]]
 
 ' Relationships derived from Reference() fields
 /' ActiveSurveillance --> CancerPatient

@@ -2,15 +2,22 @@
 
 The figure below provides an overview of the main concepts and of their relationships
 
-<div>
+<style>
+  .uml-diagram svg {
+    width: 100% !important;
+    height: auto !important;
+  }
+</style>
+<div style="text-align:center;">
   <p></p>
-  <figure>
-    {% include CancerLogicalModel_LM.svg %}
-    <figcaption><strong>Figure 1: Cancer Common Logical Model Overview</strong></figcaption>
-  </figure>
+    <figure class="uml-diagram" style="width:95%;">
+      {% include CancerLogicalModel_LM.svg %}
+      <figcaption>
+        <strong>Figure 1: Cancer Common Logical Model Overview</strong>
+      </figcaption>
+    </figure>
   <p></p>
 </div>
-
 
 ### Logical Models
 
@@ -18,7 +25,7 @@ The figure below provides an overview of the main concepts and of their relation
 
 Represents the subject affected by one or more cancer conditions, including demographics, life status/cause, last check date, and comorbidities.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include Patient_LM.svg %}
@@ -33,7 +40,7 @@ FHIR Logical Model: [StructureDefinition-CancerPatient.html](StructureDefinition
 
 Represents the cancer condition at first diagnosis and captures histology behaviour, body site, tumour grade, asserted date, and base of assertion.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include CancerConditionAtDiagnosis_LM.svg %}
@@ -48,7 +55,7 @@ FHIR Logical Model: [StructureDefinition-CancerConditionAtDiagnosis.html](Struct
 
 Represents the stage at first diagnosis and tumour extent at the time of the first definitive treatment; clinical (imaging) or pathological (surgery), and it does not evolve.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include CancerStage_LM.svg %}
@@ -63,7 +70,7 @@ FHIR Logical Model: [StructureDefinition-CancerStage.html](StructureDefinition-C
 
 Referenced in the glossary as evidence/procedure used to detect the cancer condition, define body site, support clinical stage, and assess disease evolution.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include Imaging_LM.svg %}
@@ -78,7 +85,7 @@ FHIR Logical Model: [StructureDefinition-Imaging.html](StructureDefinition-Imagi
 
 Corresponds to the Last Check in the glossary: the date of the visit in which life status (and cause) is detected.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include LastFollowUp_LM.svg %}
@@ -93,7 +100,7 @@ FHIR Logical Model: [StructureDefinition-LastFollowUp.html](StructureDefinition-
 
 Represents disease over time and space; each evaluation creates a new instance with disease status, asserted date, and base of assertion, and may include disease extent and related findings.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include ClinicalCancerProgression_LM.svg %}
@@ -108,7 +115,7 @@ FHIR Logical Model: [StructureDefinition-ClinicalCancerProgression.html](Structu
 
 Treatment type characterized by a date and a target site.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include Surgery_LM.svg %}
@@ -123,7 +130,7 @@ FHIR Logical Model: [StructureDefinition-Surgery.html](StructureDefinition-Surge
 
 Treatment type characterized by start date and end date.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include ActiveSurveillance_LM.svg %}
@@ -138,7 +145,7 @@ FHIR Logical Model: [StructureDefinition-ActiveSurveillance.html](StructureDefin
 
 Treatment type characterized by start date, end date, and target site.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include Radiotherapy_LM.svg %}
@@ -153,7 +160,7 @@ FHIR Logical Model: [StructureDefinition-Radiotherapy.html](StructureDefinition-
 
 Corresponds to drug administration treatment, characterized by start/end date and possible ongoing indication (e.g., immunotherapy).
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include SystemicTreatment_LM.svg %}
@@ -168,7 +175,7 @@ FHIR Logical Model: [StructureDefinition-SystemicTreatment.html](StructureDefini
 
 Represents how well a cancer patient responds to a treatment (e.g., progression, stable disease, partial/complete remission) based on evidence and date.
 
-<div>
+<div style="text-align:center;">
   <p></p>
   <figure>
     {% include OverallCancerTreatmentResponse_LM.svg %}
@@ -181,11 +188,13 @@ FHIR Logical Model: [StructureDefinition-OverallCancerTreatmentResponse.html](St
 
 ### Models' relationship
 
-<div>
+<div style="text-align:center;">
   <p></p>
-  <figure>
-    {% include CancerLogicalModel_LM_refs.svg %}
-    <figcaption><strong>Figure 13: Cancer Common Logical Model (References)</strong></figcaption>
-  </figure>
+    <figure class="uml-diagram" style="width:95%;">
+      {% include CancerLogicalModel_LM_refs.svg %}
+      <figcaption>
+        <strong>Figure 13: Cancer Common Logical Model (References)</strong>
+      </figcaption>
+    </figure>
   <p></p>
 </div>
