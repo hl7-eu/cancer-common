@@ -4,26 +4,52 @@ left to right direction
 
 scale 0.8
 
+' Business_Event(EV_Diagnosis, "Diagnosis")
+
+' Business_Process(PF_FollowUp, "Evidence / Follow-up")
+' Business_Process(PF_Treatment, "Treatment")
+
+' Business_Event(EV_Death, "Patient death")
+
+Business_Event(EV_Evidence1, "Evidence")
 Business_Event(EV_Diagnosis, "Diagnosis")
-
-Business_Process(PF_FollowUp, "Evidence / Follow-up")
 Business_Process(PF_Treatment, "Treatment")
-
+Business_Event(EV_Evidence2, "Evidence")
+Business_Process(PF_FollowUp, "Follow-up")
 Business_Event(EV_Death, "Patient death")
+Business_Event(EV_Safe, "Follow-up end")
 
 ' --- Flow Logic ---
 ' Rel_Triggering(EV_Diagnosis, PF_FollowUp, "optional")
+'Rel_Triggering(EV_Diagnosis, EV_Diagnosis)
+
+'Evidence that causes the Diagnosis
+Rel_Triggering(EV_Evidence1, EV_Diagnosis, "defines")
+
+'Diagnosis can need other evidences
+Rel_Triggering(EV_Diagnosis, EV_Evidence1, "can request others")
+
+'Diagnosis can need other evidences
 Rel_Triggering(EV_Diagnosis, PF_Treatment)
 
-' After any treatment → follow-up
-Rel_Triggering(PF_Treatment, PF_FollowUp, "always")
+' After any treatment → evidence 
+Rel_Triggering(PF_Treatment, EV_Evidence2, "always")
+
+' After any evidence → follow-up
+Rel_Triggering(EV_Evidence2, PF_FollowUp)
 
 ' Follow-up can lead to treatment again
 Rel_Triggering(PF_FollowUp, PF_Treatment, "if indicated")
 
-' Follow-up can repeat (monitoring period)
-Rel_Triggering(PF_FollowUp, PF_FollowUp, "ongoing monitoring")
+' Follow-up can lead to evidence again
+Rel_Triggering(PF_FollowUp, EV_Evidence2, "on going monitoring")
+
+'' Follow-up can repeat (monitoring period)
+'Rel_Triggering(PF_FollowUp, PF_FollowUp, "ongoing monitoring")
 
 ' Eventually follow-up leads to end of process (death event)
 Rel_Triggering(PF_FollowUp, EV_Death, "eventual")
+
+' Eventually follow-up leads to end of process (cancer condition finished)
+Rel_Triggering(PF_FollowUp, EV_Safe, "eventual")
 @enduml
