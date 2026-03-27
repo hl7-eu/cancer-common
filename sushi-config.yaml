@@ -71,30 +71,54 @@ pages:
     title: Logical Models
   conceptualmodel.md:
     title: Conceptual Model
-  modelmap.xml:
-    title: Model Map
-  map-cancerpatient.xml:
-    title: CancerPatient Mapping
-  map-cancerconditionatdiagnosis.xml:
-    title: CancerConditionAtDiagnosis Mapping
-  map-cancerstage.xml:
-    title: CancerStage Mapping
-  map-imaging.xml:
-    title: Imaging Mapping
-  map-lastfollowup.xml:
-    title: LastFollowUp Mapping
-  map-clinicalcancerprogression.xml:
-    title: ClinicalCancerProgression Mapping
-  map-surgery.xml:
-    title: Surgery Mapping
-  map-activesurveillance.xml:
-    title: ActiveSurveillance Mapping
-  map-radiotherapy.xml:
-    title: Radiotherapy Mapping
-  map-systemictreatment.xml:
-    title: SystemicTreatment Mapping
-  map-overallcancertreatmentresponse.xml:
-    title: OverallCancerTreatmentResponse Mapping
+  fhirmodelmap.xml:
+    title: Model Map - FHIR
+  fhirmap-cancerpatient.xml:
+    title: CancerPatient Mapping - FHIR
+  fhirmap-cancerconditionatdiagnosis.xml:
+    title: CancerConditionAtDiagnosis Mapping - FHIR
+  fhirmap-cancerstage.xml:
+    title: CancerStage Mapping - FHIR
+  fhirmap-imaging.xml:
+    title: Imaging Mapping - FHIR
+  fhirmap-lastfollowup.xml:
+    title: LastFollowUp Mapping - FHIR
+  fhirmap-clinicalcancerprogression.xml:
+    title: ClinicalCancerProgression Mapping - FHIR
+  fhirmap-surgery.xml:
+    title: Surgery Mapping - FHIR
+  fhirmap-activesurveillance.xml:
+    title: ActiveSurveillance Mapping - FHIR
+  fhirmap-radiotherapy.xml:
+    title: Radiotherapy Mapping - FHIR
+  fhirmap-systemictreatment.xml:
+    title: SystemicTreatment Mapping - FHIR
+  fhirmap-overallcancertreatmentresponse.xml:
+    title: OverallCancerTreatmentResponse Mapping - FHIR
+  omopmodelmap.xml:
+    title: Model Map - OMOP
+  omopmap-cancerpatient.xml:
+    title: CancerPatient Mapping - OMOP
+  omopmap-cancerconditionatdiagnosis.xml:
+    title: CancerConditionAtDiagnosis Mapping - OMOP
+  omopmap-cancerstage.xml:
+    title: CancerStage Mapping - OMOP
+  omopmap-imaging.xml:
+    title: Imaging Mapping - OMOP
+  omopmap-lastfollowup.xml:
+    title: LastFollowUp Mapping - OMOP
+  omopmap-clinicalcancerprogression.xml:
+    title: ClinicalCancerProgression Mapping - OMOP
+  omopmap-surgery.xml:
+    title: Surgery Mapping - OMOP
+  omopmap-activesurveillance.xml:
+    title: ActiveSurveillance Mapping - OMOP
+  omopmap-radiotherapy.xml:
+    title: Radiotherapy Mapping - OMOP
+  omopmap-systemictreatment.xml:
+    title: SystemicTreatment Mapping - OMOP
+  omopmap-overallcancertreatmentresponse.xml:
+    title: OverallCancerTreatmentResponse Mapping - OMOP
   references.md:
     title: Source and Additional Information
   scope.md:
@@ -153,7 +177,8 @@ menu:
   Logical:
     Logical Model: logicalmodels.html
   Implementation:
-    Model Map: modelmap.html
+    Model Map - FHIR: fhirmodelmap.html
+    Model Map - OMOP: omopmodelmap.html
   About:
     Authors and Contributors: authors.html
     Known Issues: knownissues.html

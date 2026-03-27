@@ -2,17 +2,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" class="model-map-block">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>Cancer Logical Models to FHIR Logical Models</title>
+    <title>Cancer Logical Models to OMOP</title>
   </head>
-  <h3>Cancer Logical Models → FHIR Logical Models</h3>
-  <a>  </a>
+  <h3>Cancer Logical Models → OMOP</h3>
+  <a>   </a>
   <p>
-    The table below lists the cancer logical models and their corresponding FHIR logical models in this IG.
+    The table below lists the cancer logical models and their corresponding OMOP tables in this IG.
   </p>
   <p>Each row shows:</p>
   <ul>
     <li>the logical model</li>
-    <li>the HL7 FHIR target profile or resource</li>
+    <li>the OMOP target table</li>
     <li>a placeholder link for mapping details</li>
   </ul>
   <h4>
@@ -24,7 +24,7 @@
       <thead>
         <tr>
           <th>Cancer Logical Model</th>
-          <th>HL7 FHIR Target Profile / Resource</th>
+          <th>OMOP Table</th>
           <th>Mapping Details</th>
         </tr>
       </thead>
@@ -34,11 +34,10 @@
             <a href="StructureDefinition-CancerPatient.html">CancerPatient</a>
           </td>
           <td>
-            <a href="StructureDefinition-patient-eu-ccm.html"><code>PatientEuCcm</code></a>,
-            <a href="StructureDefinition-observation-comorbidity-eu-ccm.html"><code>ObservationComorbiditiesEuCcm</code></a>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-cancerpatient.html">CancerPatient Mapping</a>
+            <a class="pill" href="omopmap-cancerpatient.html">CancerPatient Mapping</a>
           </td>
         </tr>
         <tr>
@@ -46,10 +45,10 @@
             <a href="StructureDefinition-CancerConditionAtDiagnosis.html">CancerConditionAtDiagnosis</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-cancerconditionatdiagnosis.html">CancerConditionAtDiagnosis Mapping</a>
+            <a class="pill" href="omopmap-cancerconditionatdiagnosis.html">CancerConditionAtDiagnosis Mapping</a>
           </td>
         </tr>
         <tr>
@@ -57,10 +56,10 @@
             <a href="StructureDefinition-CancerStage.html">CancerStage</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-cancerstage.html">CancerStage Mapping</a>
+            <a class="pill" href="omopmap-cancerstage.html">CancerStage Mapping</a>
           </td>
         </tr>
         <tr>
@@ -68,10 +67,10 @@
             <a href="StructureDefinition-Imaging.html">Imaging</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-imaging.html">Imaging Mapping</a>
+            <a class="pill" href="omopmap-imaging.html">Imaging Mapping</a>
           </td>
         </tr>
         <tr>
@@ -79,10 +78,10 @@
             <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-lastfollowup.html">LastFollowUp Mapping</a>
+            <a class="pill" href="omopmap-lastfollowup.html">LastFollowUp Mapping</a>
           </td>
         </tr>
         <tr>
@@ -90,10 +89,10 @@
             <a href="StructureDefinition-ClinicalCancerProgression.html">ClinicalCancerProgression</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-clinicalcancerprogression.html">ClinicalCancerProgression Mapping</a>
+            <a class="pill" href="omopmap-clinicalcancerprogression.html">ClinicalCancerProgression Mapping</a>
           </td>
         </tr>
         <tr>
@@ -101,10 +100,10 @@
             <a href="StructureDefinition-Surgery.html">Surgery</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-surgery.html">Surgery Mapping</a>
+            <a class="pill" href="omopmap-surgery.html">Surgery Mapping</a>
           </td>
         </tr>
         <tr>
@@ -112,10 +111,10 @@
             <a href="StructureDefinition-ActiveSurveillance.html">ActiveSurveillance</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-activesurveillance.html">ActiveSurveillance Mapping</a>
+            <a class="pill" href="omopmap-activesurveillance.html">ActiveSurveillance Mapping</a>
           </td>
         </tr>
         <tr>
@@ -123,10 +122,10 @@
             <a href="StructureDefinition-Radiotherapy.html">Radiotherapy</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-radiotherapy.html">Radiotherapy Mapping</a>
+            <a class="pill" href="omopmap-radiotherapy.html">Radiotherapy Mapping</a>
           </td>
         </tr>
         <tr>
@@ -134,10 +133,10 @@
             <a href="StructureDefinition-SystemicTreatment.html">SystemicTreatment</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-systemictreatment.html">SystemicTreatment Mapping</a>
+            <a class="pill" href="omopmap-systemictreatment.html">SystemicTreatment Mapping</a>
           </td>
         </tr>
         <tr>
@@ -145,10 +144,10 @@
             <a href="StructureDefinition-OverallCancerTreatmentResponse.html">OverallCancerTreatmentResponse</a>
           </td>
           <td>
-            <code>FHIR Resource (TBD)</code>
+            <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="map-overallcancertreatmentresponse.html">OverallCancerTreatmentResponse Mapping</a>
+            <a class="pill" href="omopmap-overallcancertreatmentresponse.html">OverallCancerTreatmentResponse Mapping</a>
           </td>
         </tr>
       </tbody>

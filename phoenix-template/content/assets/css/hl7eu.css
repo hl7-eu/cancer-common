@@ -127,11 +127,11 @@ caption {
   margin-bottom: 0.5rem;
 }
 .relhead {
-  background-color: #6f2e80 !important;
+  background-color: #20945e !important;
   color: #ffffff !important;
 }
 .relsub {
-  background-color: #e6d7ec !important;
+  background-color: #a2ffd4 !important;
   font-weight: bold;
 }
 .src-head {
@@ -139,7 +139,7 @@ caption {
   color: #ffffff;
 }
 .tgt-head {
-  background-color: #be072f;
+  background-color: #c27510;
   color: #ffffff;
 }
 .src-sub {
@@ -147,7 +147,7 @@ caption {
   font-weight: bold;
 }
 .tgt-sub {
-  background-color: #d78496;
+  background-color: #ffd9a7;
   font-weight: bold;
 }
 .highlight-yellow {

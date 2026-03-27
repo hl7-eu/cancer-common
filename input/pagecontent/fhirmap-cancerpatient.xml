@@ -89,7 +89,7 @@
       </table>
     </div>
     <p style="margin-top:2rem;color:#555;">
-      Return to overview: <a href="modelmap.html">Cancer Logical Models -> FHIR Logical Models</a>
+      Return to overview: <a href="fhirmodelmap.html">Cancer Logical Models -> FHIR Logical Models</a>
     </p>
   </body>
 </div>
