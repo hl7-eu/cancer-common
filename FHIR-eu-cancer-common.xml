@@ -20,15 +20,20 @@
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
-<page key="map-activesurveillance" name="ActiveSurveillance Mapping"/>
+<page key="fhirmap-activesurveillance" name="ActiveSurveillance Mapping - FHIR"/>
+<page key="omopmap-activesurveillance" name="ActiveSurveillance Mapping - OMOP"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="authors" name="Authors and Contributors"/>
 <page key="background" name="Background"/>
-<page key="map-cancerconditionatdiagnosis" name="CancerConditionAtDiagnosis Mapping"/>
-<page key="map-cancerpatient" name="CancerPatient Mapping"/>
-<page key="map-cancerstage" name="CancerStage Mapping"/>
+<page key="fhirmap-cancerconditionatdiagnosis" name="CancerConditionAtDiagnosis Mapping - FHIR"/>
+<page key="omopmap-cancerconditionatdiagnosis" name="CancerConditionAtDiagnosis Mapping - OMOP"/>
+<page key="fhirmap-cancerpatient" name="CancerPatient Mapping - FHIR"/>
+<page key="omopmap-cancerpatient" name="CancerPatient Mapping - OMOP"/>
+<page key="fhirmap-cancerstage" name="CancerStage Mapping - FHIR"/>
+<page key="omopmap-cancerstage" name="CancerStage Mapping - OMOP"/>
 <page key="challenges" name="Challenges"/>
-<page key="map-clinicalcancerprogression" name="ClinicalCancerProgression Mapping"/>
+<page key="fhirmap-clinicalcancerprogression" name="ClinicalCancerProgression Mapping - FHIR"/>
+<page key="omopmap-clinicalcancerprogression" name="ClinicalCancerProgression Mapping - OMOP"/>
 <page key="conceptualmodel" name="Conceptual Model"/>
 <page key="copyright" name="Copyright"/>
 <page key="crossversionanalysis" name="Cross-version Analysis"/>
@@ -38,17 +43,24 @@
 <page key="downloads" name="Downloads"/>
 <page key="glossary" name="Glossary"/>
 <page key="index" name="Home"/>
-<page key="map-imaging" name="Imaging Mapping"/>
+<page key="fhirmap-imaging" name="Imaging Mapping - FHIR"/>
+<page key="omopmap-imaging" name="Imaging Mapping - OMOP"/>
 <page key="knownissues" name="Known Issues"/>
-<page key="map-lastfollowup" name="LastFollowUp Mapping"/>
+<page key="fhirmap-lastfollowup" name="LastFollowUp Mapping - FHIR"/>
+<page key="omopmap-lastfollowup" name="LastFollowUp Mapping - OMOP"/>
 <page key="logicalmodels" name="Logical Models"/>
-<page key="modelmap" name="Model Map"/>
-<page key="map-overallcancertreatmentresponse" name="OverallCancerTreatmentResponse Mapping"/>
-<page key="map-radiotherapy" name="Radiotherapy Mapping"/>
+<page key="fhirmodelmap" name="Model Map - FHIR"/>
+<page key="omopmodelmap" name="Model Map - OMOP"/>
+<page key="fhirmap-overallcancertreatmentresponse" name="OverallCancerTreatmentResponse Mapping - FHIR"/>
+<page key="omopmap-overallcancertreatmentresponse" name="OverallCancerTreatmentResponse Mapping - OMOP"/>
+<page key="fhirmap-radiotherapy" name="Radiotherapy Mapping - FHIR"/>
+<page key="omopmap-radiotherapy" name="Radiotherapy Mapping - OMOP"/>
 <page key="scope" name="Scope and Content"/>
 <page key="references" name="Source and Additional Information"/>
-<page key="map-surgery" name="Surgery Mapping"/>
-<page key="map-systemictreatment" name="SystemicTreatment Mapping"/>
+<page key="fhirmap-surgery" name="Surgery Mapping - FHIR"/>
+<page key="omopmap-surgery" name="Surgery Mapping - OMOP"/>
+<page key="fhirmap-systemictreatment" name="SystemicTreatment Mapping - FHIR"/>
+<page key="omopmap-systemictreatment" name="SystemicTreatment Mapping - OMOP"/>
 <page key="toc" name="Table of Contents"/>
 <page key="journey" name="The Cancer Patient Journey"/>
 </specification>

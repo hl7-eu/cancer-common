@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>SystemicTreatment -> OMOP (TBD)</title>
+  </head>
+  <body>
+    <div class="model-map-block">
+      <div class="callout-wrapper">
+        <div class="callout-box">
+          <strong>Yellow row/cells:</strong>
+              In this ballot publication, some row/cells of the mapping table have been left in yellow to indicate areas requiring further review or refinement; including feedback from the Xt-EHR joint action (see note above). These highlights will be addressed in subsequent updates to ensure accuracy and completeness of the mappings.
+        </div>
+      </div>
+    </div>
+
+    <h3>SystemicTreatment -> OMOP (TBD)</h3>
+    <a>  </a>
+    <p></p>
+    <p>
+      This page explains how elements from the SystemicTreatment logical model are expressed
+      in OMOP (TBD).
+    </p>
+    <p></p>
+    <div class="table-wrap">
+      <strong>Mapping Context</strong>
+      <ul>
+        <li>
+          <strong>Source logical model:</strong>
+          <a href="StructureDefinition-SystemicTreatment.html">SystemicTreatment</a>
+        </li>
+        <li>
+          <strong>Target OMOP Tables:</strong>
+          <code>TBD</code>
+        </li>
+      </ul>
+    </div>
+    <p></p>
+    <div class="table-wrap">
+      <table summary="SystemicTreatment -> OMOP (TBD)">
+        <caption>SystemicTreatment -> OMOP (TBD)</caption>
+        <thead>
+          <tr>
+            <th colspan="1" class="src-head">SystemicTreatment (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th colspan="3" class="tgt-head">OMOP (TBD)</th>
+          </tr>
+          <tr>
+            <th class="src-sub">Element</th>
+            <th class="relsub">Relation</th>
+            <th class="tgt-sub">Resource</th>
+            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>subject</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>cancerConditionReference</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>clinicalCancerProgresionReference</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>intent</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>startDate</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>endDate</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+          <tr>
+            <td>setting</td>
+            <td>no map</td>
+            <td></td><td></td>
+            <td>Mapping to be defined.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:2rem;color:#555;">
+      Return to overview: <a href="omopmodelmap.html">Cancer Logical Models -> OMOP</a>
+    </p>
+  </body>
+</div>
+

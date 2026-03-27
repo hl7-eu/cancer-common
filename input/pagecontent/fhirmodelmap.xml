@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" class="model-map-block">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Cancer Logical Models to FHIR Logical Models</title>
+  </head>
+  <h3>Cancer Logical Models → FHIR Logical Models</h3>
+  <a>  </a>
+  <p>
+    The table below lists the cancer logical models and their corresponding FHIR logical models in this IG.
+  </p>
+  <p>Each row shows:</p>
+  <ul>
+    <li>the logical model</li>
+    <li>the HL7 FHIR target profile or resource</li>
+    <li>a placeholder link for mapping details</li>
+  </ul>
+  <h4>
+    <span class="group-emoji">🧩</span> Cancer Logical Models
+  </h4>
+  <a>   </a>
+  <div class="table-wrapper">
+    <table class="model-index">
+      <thead>
+        <tr>
+          <th>Cancer Logical Model</th>
+          <th>HL7 FHIR Target Profile / Resource</th>
+          <th>Mapping Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href="StructureDefinition-CancerPatient.html">CancerPatient</a>
+          </td>
+          <td>
+            <a href="StructureDefinition-patient-eu-ccm.html"><code>PatientEuCcm</code></a>,
+            <a href="StructureDefinition-observation-comorbidity-eu-ccm.html"><code>ObservationComorbiditiesEuCcm</code></a>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-cancerpatient.html">CancerPatient Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-CancerConditionAtDiagnosis.html">CancerConditionAtDiagnosis</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-cancerconditionatdiagnosis.html">CancerConditionAtDiagnosis Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-CancerStage.html">CancerStage</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-cancerstage.html">CancerStage Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-Imaging.html">Imaging</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-imaging.html">Imaging Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-lastfollowup.html">LastFollowUp Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-ClinicalCancerProgression.html">ClinicalCancerProgression</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-clinicalcancerprogression.html">ClinicalCancerProgression Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-Surgery.html">Surgery</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-surgery.html">Surgery Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-ActiveSurveillance.html">ActiveSurveillance</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-activesurveillance.html">ActiveSurveillance Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-Radiotherapy.html">Radiotherapy</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-radiotherapy.html">Radiotherapy Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-SystemicTreatment.html">SystemicTreatment</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-systemictreatment.html">SystemicTreatment Mapping</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="StructureDefinition-OverallCancerTreatmentResponse.html">OverallCancerTreatmentResponse</a>
+          </td>
+          <td>
+            <code>FHIR Resource (TBD)</code>
+          </td>
+          <td>
+            <a class="pill" href="fhirmap-overallcancertreatmentresponse.html">OverallCancerTreatmentResponse Mapping</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
