@@ -34,7 +34,7 @@
             <a href="StructureDefinition-CancerPatient.html">CancerPatient</a>
           </td>
           <td>
-            <code>OMOP Table (TBD)</code>
+            <code>PERSON / OBSERVATION / CONDITION_OCCURRENCE</code>
           </td>
           <td>
             <a class="pill" href="omopmap-cancerpatient.html">CancerPatient Mapping</a>

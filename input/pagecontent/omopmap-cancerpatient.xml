@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>CancerPatient -> OMOP (TBD)</title>
+    <title>CancerPatient -> PERSON / OBSERVATION / CONDITION_OCCURRENCE</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -14,12 +14,12 @@
       </div>
     </div>
 
-    <h3>CancerPatient -> TBD</h3>
+    <h3>CancerPatient -> PERSON / OBSERVATION / CONDITION_OCCURRENCE</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the CancerPatient logical model are expressed
-      in OMOP.
+      in OMOP, using the PERSON, OBSERVATION and CONDITION_OCCURRENCE table.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -31,58 +31,98 @@
         </li>
         <li>
           <strong>Target OMOP Tables:</strong>
-          <code>TBD</code>
+          <code>PERSON / OBSERVATION / CONDITION_OCCURRENCE</code>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="CancerPatient -> OMOP (TBD)">
-        <caption>CancerPatient -> OMOP (TBD)</caption>
+      <table summary="CancerPatient -> PERSON / OBSERVATION / CONDITION_OCCURRENCE">
+        <caption>CancerPatient -> PERSON / OBSERVATION / CONDITION_OCCURRENCE</caption>
         <thead>
           <tr>
             <th colspan="1" class="src-head">CancerPatient (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">OMOP (TBD)</th>
+            <th colspan="3" class="tgt-head">PERSON / OBSERVATION / CONDITION_OCCURRENCE</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
             <th class="relsub">Relation</th>
-            <th class="tgt-sub">Resource</th>
-            <th class="tgt-sub">Element</th>
+            <th class="tgt-sub">Table</th>
+            <th class="tgt-sub">Field(s)</th>
             <th class="tgt-sub">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>birthDate</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>PERSON</td>
+            <td>year_of_birth, month_of_birth, day_of_birth</td>
+            <td>Only <strong>year_of_birth</strong> is mandatory</td>
           </tr>
           <tr>
             <td>sexAtBirth</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>PERSON</td>
+            <td>gender_concept_id</td>
+            <td>See <a href="omopmap-cancerpatient.html#sexAtBirthMapping">below</a> for code mapping.</td>
           </tr>
-          <tr class="highlight-yellow">
+          <tr>
             <td>observedSexGender</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>OBSERVATION</td>
+            <td>observation_concept_id</td>
+            <td>More information <a href="https://ohdsi.github.io/Themis/gender_identity.html">here</a>. Codings can be found <a href="https://athena.ohdsi.org/search-terms/terms/4110772">here</a>.</td>
           </tr>
           <tr>
             <td>comorbiditiesAtCancerDiagnosis</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>CONDITION_OCCURRENCE</td>
+            <td>condition_concept_id</td>
+            <td></td>
           </tr>
           <tr>
             <td>comorbiditiesAtCancerDiagnosis</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>OBSERVATION</td>
+            <td>observation_concept_id</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p></p>
+    <div id="sexAtBirthMapping" class="table-wrap">
+      <table summary="sexAtBirth Logical Model Coding -> OMOP Coding">
+        <caption>sexAtBirth Logical Model Coding -> OMOP Coding</caption>
+        <thead>
+          <tr>
+            <th class="src-head">sexAtBirth (Logical Model)</th>
+            <th class="relhead">Relationship</th>
+            <th class="tgt-head">gender_concept_id (OMOP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Male</td>
+            <td>equivalent</td>
+            <td><a href="https://athena.ohdsi.org/search-terms/terms/8507">8507</a></td>
+          </tr>
+          <tr>
+            <td>Female</td>
+            <td>equivalent</td>
+            <td><a href="https://athena.ohdsi.org/search-terms/terms/8532">8532</a></td>
+          </tr>
+          <tr>
+            <td>Unknown</td>
+            <td>equivalent</td>
+            <td><a href="https://athena.ohdsi.org/search-terms/terms/0">0</a></td>
+          </tr>
+          <tr>
+            <td>Other</td>
+            <td>equivalent</td>
+            <td><a href="https://athena.ohdsi.org/search-terms/terms/0">0</a></td>
           </tr>
         </tbody>
       </table>
