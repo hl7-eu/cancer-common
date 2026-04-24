@@ -1,0 +1,70 @@
+@startuml
+top to bottom direction
+hide methods
+skinparam classAttributeIconSize 0
+
+' ======================
+' ENTITIES
+' ======================
+
+class "CancerPatient-Example" as CancerPatientExample [[Binary-CancerPatient-Example.html]] {
+  birthDate: 1975
+  sexAtBirth: Female
+}
+
+class "CancerConditionAtDiagnosis-Example" as CCAD [[Binary-CancerConditionAtDiagnosis-Example.html]] {
+  histologyBehaviour: Adenocarcinoma, NOS
+  bodySite: Lower lobe, lung
+  tumourGradeSystem: Standard Histological Grading System
+  tumourGradeValue: G3
+  visitDate: 2024-01-15T10:00:00+01:00
+}
+
+class "CancerStageClinical-Example" as CSC [[Binary-CancerStageClinical-Example.html]] {
+  classificationType: Tumor Linphonode Metastasis
+  type: Clinical
+  value: T2, N0, M0
+}
+
+class "CancerStagePathological-Example" as CSP [[Binary-CancerStagePathological-Example.html]] {
+  classificationType: Tumor Linphonode Metastasis
+  type: Pathological
+  value: T2, N1, M0
+}
+
+class "Imaging-Example" as Imaging [[Binary-Imaging-Example.html]] {
+  type: tbd
+  bodySite: Lower lobe, lung
+}
+
+class "Surgery-Example" as Surgery [[Binary-Surgery-Example.html]] {
+  intent: Definitive
+  date: 2018-06-12
+  bodySite: Lower lobe, lung
+}
+
+' ======================
+' RELATIONSHIPS
+' ======================
+
+CCAD --> CancerPatientExample : subject
+
+Surgery --> CancerPatientExample : subject
+Surgery --> CCAD : cancerConditionAtDiagnosis
+
+CSC --> CCAD : cancerConditionAtDiagnosis
+CSC --> Imaging : imaging
+
+CSP --> CCAD : cancerConditionAtDiagnosis
+CSP --> Surgery : surgery
+
+' ======================
+' LAYOUT HINTS (invisible)
+' ======================
+
+CancerPatientExample -[hidden]-> CCAD
+CCAD -[hidden]-> Surgery
+CCAD -[hidden]-> CSC
+CCAD -[hidden]-> CSP
+
+@enduml

@@ -153,6 +153,16 @@ caption {
 .highlight-yellow {
   background-color: #fff3b0; /* soft yellow */
 }
+
+/* Hover vert */
+.navbar-nav li a.maturity-green:hover {
+  background: #28a745 !important;
+}
+
+/* Hover orange */
+.navbar-nav li a.maturity-orange:hover {
+  background: #fd7e14 !important;
+}
 /****************************
      * SCOPED STYLES
      ****************************/
