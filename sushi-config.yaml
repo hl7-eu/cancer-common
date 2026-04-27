@@ -127,10 +127,8 @@ pages:
     title: The Cancer Patient Journey
   journey-data-evolution.md:
     title: Data Evolution in the Cancer Journey
-#  journey-2.md:
-#    title: The Cancer Journey 2
-#  journey-3.md:
-#    title: The Cancer Journey 3
+  journey-example.md:
+    title: Cancer Patient Journey Example
   glossary.html:
     title: Glossary
 #
@@ -160,33 +158,34 @@ pages:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-menu:
-  Home: index.html
-  Introduction: 
-    Scope and Content: scope.html
-    Background: background.html
-    Challenges: challenges.html
-    References: references.html
-  Functional:
-    Conceptual Model: conceptualmodel.html
-    Glossary: glossary.html
-    Cancer Patient Journey: journey.html
-    Data Evolution: journey-data-evolution.html
-    # Cancer journey (2): journey-2.html
-    # Cancer journey (3): journey-3.html    
-  Logical:
-    Logical Model: logicalmodels.html
-  Implementation:
-    Model Map - FHIR: fhirmodelmap.html
-    Model Map - OMOP: omopmodelmap.html
-  About:
-    Authors and Contributors: authors.html
-    Known Issues: knownissues.html
-    Download: downloads.html
-    Dependencies: dependencies.html
-    Copyright: copyright.html
-    Cross-version Analysis: crossversionanalysis.html
-  Artifacts: artifacts.html
+# Replaced with menu.xml for maturity level display on menu links
+# menu:
+#   Home: index.html
+#   Introduction: 
+#     Scope and Content: scope.html
+#     Background: background.html
+#     Challenges: challenges.html
+#     References: references.html
+#   Functional:
+#     Conceptual Model: conceptualmodel.html
+#     Glossary: glossary.html
+#     Cancer Patient Journey: journey.html
+#     Data Evolution: journey-data-evolution.html
+#     # Cancer journey (2): journey-2.html
+#     # Cancer journey (3): journey-3.html    
+#   Logical:
+#     Logical Model: logicalmodels.html
+#   Implementation:
+#     Model Map - FHIR: fhirmodelmap.html
+#     Model Map - OMOP: omopmodelmap.html
+#   About:
+#     Authors and Contributors: authors.html
+#     Known Issues: knownissues.html
+#     Download: downloads.html
+#     Dependencies: dependencies.html
+#     Copyright: copyright.html
+#     Cross-version Analysis: crossversionanalysis.html
+#   Artifacts: artifacts.html
 
 
   

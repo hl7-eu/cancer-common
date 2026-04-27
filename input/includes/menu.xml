@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+    <li>
+        <a href="index.html">Home</a>
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item maturity-green" href="scope.html">Scope and Content</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-green" href="background.html">Background</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-green" href="challenges.html">Challenges</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-green" href="references.html">References</a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item maturity-green" href="conceptualmodel.html">Conceptual Model</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-green" href="glossary.html">Glossary</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-orange" href="journey.html">Cancer Patient Journey</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-orange" href="journey-data-evolution.html">Data Evolution</a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Logical<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item maturity-orange" href="logicalmodels.html">Logical Model</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-orange" href="journey-example.html">Cancer Patient Journey Example</a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item maturity-orange" href="fhirmodelmap.html">Model Map - FHIR</a>
+            </li>
+            <li>
+                <a class="dropdown-item maturity-orange" href="omopmodelmap.html">Model Map - OMOP</a>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">About<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item" href="authors.html">Authors and Contributors</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="knownissues.html">Known Issues</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="downloads.html">Download</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="dependencies.html">Dependencies</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="copyright.html">Copyright</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="crossversionanalysis.html">Cross-version Analysis</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="artifacts.html">Artifacts</a>
+    </li>
+</ul>

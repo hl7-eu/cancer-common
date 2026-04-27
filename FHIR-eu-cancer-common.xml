@@ -8,15 +8,21 @@
 <artifact id="StructureDefinition/ActiveSurveillance" key="StructureDefinition-ActiveSurveillance" name="Active Surveillance"/>
 <artifact id="StructureDefinition/CancerPatient" key="StructureDefinition-CancerPatient" name="Cancer Patient"/>
 <artifact id="StructureDefinition/CancerConditionAtDiagnosis" key="StructureDefinition-CancerConditionAtDiagnosis" name="CancerCondition (AtDiagnosis)"/>
+<artifact id="Binary/CancerConditionAtDiagnosis-Example" key="Binary-CancerConditionAtDiagnosis-Example" name="CancerConditionAtDiagnosis-Example"/>
+<artifact id="Binary/CancerPatient-Example" key="Binary-CancerPatient-Example" name="CancerPatient-Example"/>
 <artifact id="StructureDefinition/CancerStage" key="StructureDefinition-CancerStage" name="CancerStage"/>
+<artifact id="Binary/CancerStageClinical-Example" key="Binary-CancerStageClinical-Example" name="CancerStageClinical-Example"/>
+<artifact id="Binary/CancerStagePathological-Example" key="Binary-CancerStagePathological-Example" name="CancerStagePathological-Example"/>
 <artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
+<artifact id="Binary/Imaging-Example" key="Binary-Imaging-Example" name="Imaging-Example"/>
 <artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
 <artifact id="StructureDefinition/OverallCancerTreatmentResponse" key="StructureDefinition-OverallCancerTreatmentResponse" name="OverallCancerTreatmentResponse"/>
 <artifact id="StructureDefinition/patient-eu-ccm" key="StructureDefinition-patient-eu-ccm" name="Patient (CCM)"/>
 <artifact id="StructureDefinition/Radiotherapy" key="StructureDefinition-Radiotherapy" name="Radiotherapy"/>
 <artifact id="StructureDefinition/Surgery" key="StructureDefinition-Surgery" name="Surgery"/>
+<artifact id="Binary/Surgery-Example" key="Binary-Surgery-Example" name="Surgery-Example"/>
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
@@ -25,6 +31,7 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="authors" name="Authors and Contributors"/>
 <page key="background" name="Background"/>
+<page key="journey-example" name="Cancer Patient Journey Example"/>
 <page key="fhirmap-cancerconditionatdiagnosis" name="CancerConditionAtDiagnosis Mapping - FHIR"/>
 <page key="omopmap-cancerconditionatdiagnosis" name="CancerConditionAtDiagnosis Mapping - OMOP"/>
 <page key="fhirmap-cancerpatient" name="CancerPatient Mapping - FHIR"/>
