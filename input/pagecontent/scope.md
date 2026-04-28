@@ -6,7 +6,7 @@ The scope of the initiative is to define a **model** that is **agnostic to cance
 
 The scope of this Implementation Guide is to describe this common model and to support its implementation by providing **mappings** of the model to **HL7 FHIR** and to **OMOP**, explicitly addressing the coexistence of these standards in the European context, where HL7 FHIR is especially used for data exchange and interoperability and OMOP is widely adopted for research and secondary use of data.
 
-By defining consistent concepts, relationships, and longitudinal structures, the model enables—among other outcomes—the reconstruction of a typical cancer journey.
+By defining consistent concepts, relationships, and longitudinal structures, the model enables, among other outcomes, the reconstruction of a typical cancer journey.
 
 ### Content
 

@@ -44,8 +44,9 @@ At each follow up visit, **patient status** is also assessed by recording:
 Based on follow up assessments, different outcomes are possible:
 *	**Continuation of follow up**, through further monitoring visits or additional evidence collection;
 *	**Initiation of additional treatment**, in response to stable disease, recurrence, or progression;
-*	**Completion of active cancer follow up**, when the patient remains alive with no evidence of disease and, for the specific cancer type and clinical context, no further routine cancer specific follow up is considered necessary;
-*	**Death of the patient**.
+* **Follow-up end**, which may occur in one of the following cases:
+  *	**Completion of active cancer follow up**, when the patient remains alive with no evidence of disease and, for the specific cancer type and clinical context, no further routine cancer specific follow up is considered necessary;
+  *	**Death of the patient**.
 
 Completion of active cancer follow up reflects a clinical decision that cancer specific monitoring is no longer required and does not imply the absence of general healthcare follow up for other conditions.
 
@@ -97,7 +98,7 @@ An example of this journey is described in Figure 2 where steps, relevant dates,
 
 
 
-#### Data Collection per step
+<!-- #### Data Collection per step
 
 ##### From diagnosis to first follow-up
 <div style="text-align:center;">
@@ -156,5 +157,5 @@ Key data captured in this phase
 
 #### Data evolution
 
-Details are provided on the page [Data evolution](journey-data-evolution.html)
+Details are provided on the page [Data evolution](journey-data-evolution.html) -->
 

@@ -16,8 +16,9 @@ Business_Event(EV_Diagnosis, "Diagnosis")
 Business_Process(PF_Treatment, "Treatment")
 Business_Event(EV_Evidence2, "Evidence")
 Business_Process(PF_FollowUp, "Follow-up")
-Business_Event(EV_Death, "Patient death")
-Business_Event(EV_Safe, "Follow-up end")
+Business_Event(EV_End, "Follow-up end")
+' Business_Event(EV_Death, "Patient death")
+' Business_Event(EV_Safe, "Follow-up end")
 
 ' --- Flow Logic ---
 ' Rel_Triggering(EV_Diagnosis, PF_FollowUp, "optional")
@@ -47,9 +48,9 @@ Rel_Triggering(PF_FollowUp, EV_Evidence2, "on going monitoring")
 '' Follow-up can repeat (monitoring period)
 'Rel_Triggering(PF_FollowUp, PF_FollowUp, "ongoing monitoring")
 
-' Eventually follow-up leads to end of process (death event)
-Rel_Triggering(PF_FollowUp, EV_Death, "eventual")
+' Eventually follow-up leads to end of process (cancer condition finished or death event)
+Rel_Triggering(PF_FollowUp, EV_End, "active cancer follow up completion or patient death")
 
-' Eventually follow-up leads to end of process (cancer condition finished)
-Rel_Triggering(PF_FollowUp, EV_Safe, "eventual")
+'' Eventually follow-up leads to end of process (cancer condition finished)
+'Rel_Triggering(PF_FollowUp, EV_Safe, "eventual")
 @enduml

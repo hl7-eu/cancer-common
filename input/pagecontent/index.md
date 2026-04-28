@@ -6,7 +6,7 @@ The scope of the initiative is to define a model that is **agnostic to cancer ty
 
 The scope of this Implementation Guide is to document this common model and to support its implementation by providing mappings of the model to **HL7 FHIR** and to **OMOP**, enabling interoperability between primary data exchange and secondary data use in research contexts.
 
-By defining consistent concepts, relationships, and longitudinal structures, the model enables—among other outcomes—the reconstruction of a typical cancer journey.
+By defining consistent concepts, relationships, and longitudinal structures, the model enables, among other outcomes, the reconstruction of a typical cancer journey.
 
 ### Purpose
 
