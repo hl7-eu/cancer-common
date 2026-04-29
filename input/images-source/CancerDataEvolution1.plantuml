@@ -17,9 +17,9 @@ package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
   }
   
   class CancerConditionAtDiagnosis <<fixed>> {
-    tumourGrade
-    histologyBehaviour
-    bodySite
+    tumourGrade = XXX
+    histologyBehaviour = XXX
+    bodySite = XXX
     visitDate 
     biopsyDate 
     labReportDate[biomarker] 
@@ -28,13 +28,13 @@ package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
 
   class CancerStage1 <<fixed>> {
     type = Clinical
-    classificationType
-    value
+    classificationType = TNM
+    value = T2,N0,M0
   }
 
   class Imaging1 <<fixed>> {
-    type 
-    bodySite
+    type = MRI
+    bodySite = XXX
   }
  
 }
@@ -56,7 +56,7 @@ package "Cancer Treatment 1" {
   package "Date 2 (2018-09-10) - Date 3 (2018-10-12)\nRadiotherapy" {
     class Radiotherapy1 {
       intent = Definitive
-      bodySite
+      bodySite = XXX
       settings = Postoperative/Adjuvant
       startDate = 2018-09-10   'Date 2
       endDate   = 2018-10-12   'Date 3
@@ -82,13 +82,13 @@ package "Cancer Treatment 1" {
 package "Date 1 (2018-06-12)\nSurgery" {
   class Surgery1 {
     intent = Definitive
-    bodySite
+    bodySite = XXX
     date = 2018-06-12 'Date 1
   }
   class CancerStage2 <<fixed>> {
     type = Pathological
-    classificationType
-    value
+    classificationType = TNM
+    value = T2,N1,M0
   }
 
 }

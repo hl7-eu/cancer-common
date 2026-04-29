@@ -15,9 +15,9 @@ package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
   }
   
   class CancerConditionAtDiagnosis <<fixed>> {
-    tumourGrade
-    histologyBehaviour
-    bodySite
+   tumourGrade = XXX
+    histologyBehaviour = XXX
+    bodySite = XXX
     visitDate 
     biopsyDate 
     labReportDate[biomarker] 
