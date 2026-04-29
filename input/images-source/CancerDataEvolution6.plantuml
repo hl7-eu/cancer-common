@@ -1,5 +1,5 @@
 @startuml
-title Cancer data evolution – Evidence + Follow-up Visit (progression) and Patient's Death (Date 11 - 12) 
+title Cancer data evolution – Evidence + Follow-up Visit (Progression) and Patient's Death (Date 11 - 12) 
 
 skinparam class {
   BackgroundColor White
