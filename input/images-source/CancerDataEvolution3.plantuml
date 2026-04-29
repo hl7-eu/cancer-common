@@ -1,12 +1,81 @@
 @startuml
-title Cancer data evolution - Evidence + Follow-up Visits (Dates 5 & 6)
+title Cancer data evolution - Evidence + Follow-up Visits (Complete Remission) (Date 5 - 6)
 
 skinparam class {
   BackgroundColor White
 }
 scale 0.8
 
-' ===========================================
+package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
+  class CancerPatient <<fixed>> {
+    demographics
+    comorbiditiesAtDiagnosis
+  }
+  
+  class CancerConditionAtDiagnosis <<fixed>> {
+    tumourGrade
+    histologyBehaviour
+    bodySite
+    visitDate 
+    biopsyDate 
+    labReportDate[biomarker] 
+    ImagingDate = 2018-05-01 'Date 0
+  }
+ 
+}
+
+' Links inside Date 0
+CancerPatient --> CancerConditionAtDiagnosis : is affected by
+
+ package "Date 5 (2019-02-28) \nEvidence + Follow-up (Complete Remission)" {
+    
+    class LastFollowUp2 {
+     vitalStatus = Alive
+     evidenceOfDisease = No
+     causeOfDeath = Null
+     deathDate = Null
+     date = 2019-02-28   'Date 5
+  }
+
+    class ClinicalCancerProgression2 {
+      diseaseStatus = Complete Remission
+      extentType = Null
+      loco-regionalSite = Null
+      MetastaticSite = Null
+      tumourGrade
+      assertedDate = 2019-02-28   'Date 5
+    }
+
+ }
+
+CancerPatient --> LastFollowUp2 : has
+CancerConditionAtDiagnosis --> ClinicalCancerProgression2 : evolves throught
+
+package "Date 6 (2019-05-30) \nEvidence + Follow-up (Complete Remission)" {
+    
+    class LastFollowUp3 {
+     vitalStatus = Alive
+     evidenceOfDisease = No
+     causeOfDeath = Null
+     deathDate = Null
+     date = 2019-05-30   'Date 6
+  }
+
+    class ClinicalCancerProgression3 {
+      diseaseStatus = Complete Remission
+      extentType = Null
+      loco-regionalSite = Null
+      MetastaticSite = Null
+      tumourGrade
+      assertedDate = 2019-05-30   'Date 6
+    }
+
+ }
+
+CancerPatient --> LastFollowUp3 : has
+CancerConditionAtDiagnosis --> ClinicalCancerProgression3 : evolves throught
+
+/' ' ===========================================
 ' DATE 5 – 2019-02-28 (evidence + follow-up)
 ' ===========================================
 package "Date 5 (2019-02-28)\nEvidence + Follow-up Visit" {
@@ -31,7 +100,7 @@ package "Date 5 (2019-02-28)\nEvidence + Follow-up Visit" {
 }
 
 ' ===========================================
-' DATE 6 – 2019-05-30 (evidence + follow-up)
+'Date 6 – 2019-05-30 (evidence + follow-up)
 ' ===========================================
 package "Date 6 (2019-05-30)\nEvidence + Follow-up Visit" {
   class CancerCondition_D6 as "Cancer Condition" {
@@ -52,5 +121,5 @@ package "Date 6 (2019-05-30)\nEvidence + Follow-up Visit" {
     life_status = Alive, No Evidence of Disease (NED)
     last_check = 2019-05-30
   }
-}
+} '/
 @enduml

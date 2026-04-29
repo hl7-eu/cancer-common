@@ -1,5 +1,5 @@
 @startuml
-title Cancer data evolution – Overall Treatment Response
+title Cancer data evolution – Evidence + Overall Treatment Response (Complete Remission) (Date 4)
 
 skinparam class {
   BackgroundColor White
@@ -8,85 +8,53 @@ skinparam class {
 scale 0.8
 
 ' ===========================================
-' CONTEXT (already occurred treatments)
+' DATE 0 – initial capture (conceptual record)
 ' ===========================================
-
-' ===========================================
-' DATE 1 – 2018-06-12 (procedure / surgery)
-' ===========================================
-package "Date 1 (2018-06-12)\nSurgical Procedure" {
-  class Surgery {
-    intent = definitive
-    target_site = ...
-    date = 2018-06-12
-  }
-}
-
-' ===========================================
-' Radiotherapy
-' ===========================================
-package RT as "Radiotherapy" {
-    ' ===========================================
-  ' DATE 3 – 2018-10-12 (radiotherapy)
-  ' ===========================================
-  package "Date 3 (2018-10-12)\nRadiotherapy end" {
-    class Radiotherapy {
-      intent = definitive
-      target_site = ...
-      start_date = 2018-09-10   ' Date 2
-      end_date   = 2018-10-12   ' Date 3
-    }
-}
-  ' ===========================================
-' DATE 2 – 2018-09-10 (radiotherapy)
-' ===========================================
-  package "Date 2 (2018-09-10)\nRadiotherapy start" {
-    class Radiotherapy {
-      intent = definitive
-      target_site = ...
-      start_date = 2018-09-10   ' Date 2
-      end_date   = 2018-10-12   ' Date 3
-    }
-  }
-
-}
-
-' ===========================================
-' DATE 4 – 2018-10-30 (overall response)
-' ===========================================
-package "Date 4 (2018-10-30)\nOverall Treatment Response" {
-
-  class TR1 as "Treatment Response 1" {
-    treatment_response_type = Complete Remission
-    based_on = surgery + radiotherapy
-    date = 2018-10-30
-  }
-
-  class CancerCondition {
-    histology_behaviour (fixed)
-    body_site (fixed)
-    tumour_grade
-    asserted_date = procedure date (fixed)
-    base_of_diagnosis (fixed)
-    imaging_type (fixed)
-    biomarker_type (fixed)
-    disease_status = Complete Remission
-    last_check = 2018-10-30
-  }
-
-  class Patient <<fixed>> {
+package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
+  class CancerPatient <<fixed>> {
     demographics
-    comorbidities
-    life_status = Alive, No Evidence of Disease (NED)
-    last_check = 2018-10-30
+    comorbiditiesAtDiagnosis
   }
+  
+  class CancerConditionAtDiagnosis <<fixed>> {
+    tumourGrade
+    histologyBehaviour
+    bodySite
+    visitDate 
+    biopsyDate 
+    labReportDate[biomarker] 
+    ImagingDate = 2018-05-01 'Date 0
+  }
+ 
 }
 
-' ===========================================
-' RELATIONSHIPS (picture arrows)
-' ===========================================
-Surgery <-- TR1 : related to
-RT <-- TR1 : related to
+' Links inside Date 0
+CancerPatient --> CancerConditionAtDiagnosis : is affected by
 
+ package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete Remission)" {
+    class OverallTreatmentResponse1 {
+      treatmentResponseType = Complete Remission
+      date = 2018-10-30   'Date 4
+    }
+    class LastFollowUp1 {
+     vitalStatus = Alive
+     evidenceOfDisease = No
+     causeOfDeath = Null
+     deathDate = Null
+     date = 2018-10-30   'Date 4
+  }
 
-@enduml
+    class ClinicalCancerProgression1 {
+      diseaseStatus = CompleteRemission
+      extentType = Null
+      loco-regionalSite = Null
+      MetastaticSite = Null
+      tumourGrade
+      assertedDate = 2018-10-30   'Date 4
+    }
+
+ }
+
+CancerConditionAtDiagnosis --> OverallTreatmentResponse1 : has
+CancerPatient --> LastFollowUp1 : has
+CancerConditionAtDiagnosis --> ClinicalCancerProgression1 : evolves throught

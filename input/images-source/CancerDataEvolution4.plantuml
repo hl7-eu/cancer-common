@@ -1,13 +1,74 @@
 @startuml
-title Cancer data evolution – Disease Recurrence and Drug Treatment (Dates 7–9)
+title Cancer data evolution – Evidence + Follow-up Visit (Disease Evolution - Recurrence) + Second Treatment (Date 7 - 9)
 
 skinparam class {
   BackgroundColor White
 }
 scale 0.8
 
-' ===========================================
-' DATE 7 – 2019-08-31 (Disease Evolution + Follow-up)
+package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
+  class CancerPatient <<fixed>> {
+    demographics
+    comorbiditiesAtDiagnosis
+  }
+  
+  class CancerConditionAtDiagnosis <<fixed>> {
+    tumourGrade
+    histologyBehaviour
+    bodySite
+    visitDate 
+    biopsyDate 
+    labReportDate[biomarker] 
+    ImagingDate = 2018-05-01 'Date 0
+  }
+ 
+}
+
+' Links inside Date 0
+CancerPatient --> CancerConditionAtDiagnosis : is affected by
+
+ package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
+    
+    class LastFollowUp4 {
+     vitalStatus = Alive
+     evidenceOfDisease = Yes
+     causeOfDeath = Null
+     deathDate = Null
+     date = 2019-08-31   'Date 7
+  }
+
+    class ClinicalCancerProgression4 {
+      diseaseStatus = Recurrence
+      extentType 
+      loco-regionalSite 
+      MetastaticSite 
+      tumourGrade
+      assertedDate = 2019-08-31   'Date 7
+    }
+
+ }
+
+CancerPatient --> LastFollowUp4 : has
+CancerConditionAtDiagnosis --> ClinicalCancerProgression4 : evolves throught
+
+
+package "Date 8 (2019-09-10) - Date 9 (2019-12-16)\n Cancer Treatment 2" {
+    
+    class SystemicTreatment1 {
+      intent = Definitive
+      settings = Alone
+      type
+      ongoning = Null
+      startDate = 2019-09-10   'Date 8
+      endDate = 2019-12-16   'Date 9
+    }
+
+ }
+
+CancerConditionAtDiagnosis --> SystemicTreatment1 : is the target of
+ClinicalCancerProgression4 --> SystemicTreatment1 : is the target of
+/' ' ===========================================
+'Date 7 – 2019-08-31 (Disease Evolution + Follow-up)
 ' ===========================================
 package date7 as "Date 7 (2019-08-31)\nEvidence + Follow-up (Disease Evolution)" {
 
@@ -50,7 +111,7 @@ package date7 as "Date 7 (2019-08-31)\nEvidence + Follow-up (Disease Evolution)"
 package drugTreatment as "Drug Treatment" {
 
 ' ===========================================
-' DATE 8 – 2019-09-10 (Drug treatment start)
+'Date 8 – 2019-09-10 (Drug treatment start)
 ' ===========================================
 package date8 as "Date 8 (2019-09-10)\nDrug Treatment Start" {
   class DrugAdministration_Start as "Drug Administration" {
@@ -60,7 +121,7 @@ package date8 as "Date 8 (2019-09-10)\nDrug Treatment Start" {
 }
 
 ' ===========================================
-' DATE 9 – 2019-12-16 (Drug treatment end)
+'Date 9 – 2019-12-16 (Drug treatment end)
 ' ===========================================
 package date9 as "Date 9 (2019-12-16)\nDrug Treatment End" {
   class DrugAdministration_End as "Drug Administration (end)" {
@@ -71,11 +132,11 @@ package date9 as "Date 9 (2019-12-16)\nDrug Treatment End" {
 
 }
 
-' date7 -[hidden]-> drugTreatment
+'Date7 -[hidden]-> drugTreatment
 
 
 ' Treatment is based on the recurrence and patient status
 drugTreatment --> DiseaseEvolution1 : related to
 
-
+ '/
 @enduml

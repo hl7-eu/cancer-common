@@ -1,12 +1,72 @@
 @startuml
-title Cancer data evolution – Progression and Patient Death (Dates 11 & 12)
+title Cancer data evolution – Evidence + Follow-up Visit (progression) and Patient's Death (Date 11 - 12) 
 
 skinparam class {
   BackgroundColor White
 }
 scale 0.8
-' =====================================================
-' DATE 11 – 2020-04-15 (Disease progression follow-up)
+
+
+package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
+  class CancerPatient <<fixed>> {
+    demographics
+    comorbiditiesAtDiagnosis
+  }
+  
+  class CancerConditionAtDiagnosis <<fixed>> {
+    tumourGrade
+    histologyBehaviour
+    bodySite
+    visitDate 
+    biopsyDate 
+    labReportDate[biomarker] 
+    ImagingDate = 2018-05-01 'Date 0
+  }
+ 
+}
+
+' Links inside Date 0
+CancerPatient --> CancerConditionAtDiagnosis : is affected by
+
+ package "Date 11 (2020-04-15) \nEvidence + Follow-up (Progression)" {
+    
+    class LastFollowUp6 {
+     vitalStatus = Alive
+     evidenceOfDisease = Yes
+     causeOfDeath = Null
+     deathDate = Null
+     date = 2020-04-15   'Date 11
+  }
+
+    class ClinicalCancerProgression6 {
+      diseaseStatus = Progression
+      extentType 
+      loco-regionalSite 
+      MetastaticSite 
+      tumourGrade
+      assertedDate = 2020-04-15   'Date 11
+    }
+
+ }
+
+CancerPatient --> LastFollowUp6 : has
+CancerConditionAtDiagnosis --> ClinicalCancerProgression6 : evolves throught
+
+package "Date 12 (2020-06-28)\nPatient's Death" {
+
+  class LastFollowUp7 {
+     vitalStatus = Dead
+     evidenceOfDisease = Null
+     causeOfDeath 
+     deathDate = 2020-06-28   'Date 12
+     date = 2020-06-28   'Date 12
+  }
+}
+
+CancerPatient --> LastFollowUp7 : has
+
+/' ' =====================================================
+'Date 11 – 2020-04-15 (Disease progression follow-up)
 ' =====================================================
 package progression as "Date 11 (2020-04-15)\nEvidence + Follow-up (Disease Progression)" {
 
@@ -45,7 +105,7 @@ package progression as "Date 11 (2020-04-15)\nEvidence + Follow-up (Disease Prog
 
 
 ' =====================================================
-' DATE 12 – 2020-06-28 (Patient’s death)
+'Date 12 – 2020-06-28 (Patient’s death)
 ' =====================================================
 package death as "Date 12 (2020-06-28)\nPatient's Death" {
 
@@ -83,5 +143,5 @@ package death as "Date 12 (2020-06-28)\nPatient's Death" {
 }
 
 ' Relationships Date 12
-' progression --down[hidden]--> death
+' progression --down[hidden]--> death '/
 @enduml

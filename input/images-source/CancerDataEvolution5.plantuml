@@ -1,5 +1,5 @@
 @startuml
-title Cancer data evolution – Evidence + Follow-up Visit (Date 10)
+title Cancer data evolution – Evidence + Follow-up Visit (Partial Remission) (Date 10)
 
 left to right direction
 skinparam class {
@@ -8,8 +8,74 @@ skinparam class {
 
 scale 0.8
 
-' =====================================================
-' DATE 10 – 2020-01-02 (evidence + follow-up visit)
+package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
+  class CancerPatient <<fixed>> {
+    demographics
+    comorbiditiesAtDiagnosis
+  }
+  
+  class CancerConditionAtDiagnosis <<fixed>> {
+    tumourGrade
+    histologyBehaviour
+    bodySite
+    visitDate 
+    biopsyDate 
+    labReportDate[biomarker] 
+    ImagingDate = 2018-05-01 'Date 0
+  }
+ 
+}
+
+' Links inside Date 0
+CancerPatient --> CancerConditionAtDiagnosis : is affected by
+
+package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
+     class ClinicalCancerProgression4 {
+      diseaseStatus = Recurrence
+      extentType 
+      loco-regionalSite 
+      MetastaticSite 
+      tumourGrade
+      assertedDate = 2019-08-31   'Date 7
+    }
+
+ }
+
+  package "Date 10 (2020-01-02) \nEvidence + Follow-up (Partial Remission)" {
+    
+    class OverallTreatmentResponse2 {
+      treatmentResponseType = Partial Remission
+      date = 2020-01-02   'Date 10
+    }
+
+    class LastFollowUp5 {
+     vitalStatus = Alive
+     evidenceOfDisease = Yes
+     causeOfDeath = Null
+     deathDate = Null
+     date = 2020-01-02   'Date 10
+  }
+
+    class ClinicalCancerProgression5 {
+      diseaseStatus = Partial Remission
+      extentType 
+      loco-regionalSite 
+      MetastaticSite 
+      tumourGrade
+      assertedDate = 2020-01-02   'Date 10
+    }
+
+ }
+
+CancerConditionAtDiagnosis --> ClinicalCancerProgression4 : evolves throught
+CancerConditionAtDiagnosis --> OverallTreatmentResponse2 : has
+ClinicalCancerProgression4 --> OverallTreatmentResponse2 : has
+CancerPatient --> LastFollowUp5 : has
+CancerConditionAtDiagnosis --> ClinicalCancerProgression5 : evolves throught
+
+
+/' ' =====================================================
+'Date 10 – 2020-01-02 (evidence + follow-up visit)
 ' =====================================================
 package "Date 10 (2020-01-02)\nEvidence + Follow-up Visit" {
 
@@ -55,7 +121,7 @@ package "Date 10 (2020-01-02)\nEvidence + Follow-up Visit" {
 package drugTreatment as "Drug Treatment" {
 
 ' ===========================================
-' DATE 8 – 2019-09-10 (Drug treatment start)
+'Date 8 – 2019-09-10 (Drug treatment start)
 ' ===========================================
 package date8 as "Date 8 (2019-09-10)\nDrug Treatment Start" {
   class DrugAdministration_Start as "Drug Administration" {
@@ -65,7 +131,7 @@ package date8 as "Date 8 (2019-09-10)\nDrug Treatment Start" {
 }
 
 ' ===========================================
-' DATE 9 – 2019-12-16 (Drug treatment end)
+'Date 9 – 2019-12-16 (Drug treatment end)
 ' ===========================================
 package date9 as "Date 9 (2019-12-16)\nDrug Treatment End" {
   class DrugAdministration_End as "Drug Administration (end)" {
@@ -78,6 +144,6 @@ package date9 as "Date 9 (2019-12-16)\nDrug Treatment End" {
 
 TR2 --> drugTreatment : related to
 
-' Relationships (as implied by the picture)
+' Relationships (as implied by the picture) '/
 
 @enduml

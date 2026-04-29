@@ -27,7 +27,7 @@ Once a cancer condition has been asserted, clinicians may decide to initiate a *
 
 After a treatment has been delivered, new clinical **evidence** is collected. This post treatment evidence is required to support a **follow up visit**, during which the effect of the treatment is evaluated, the current status of the disease is determined and the next steps are defined. This cycle of **evidence collection → assessment → decision** may repeat multiple times over the course of the disease.
 
-### 2.1	Follow-up visit
+### Follow-up visit
 
 More generally, follow up visits are events in which decisions about the continuation, modification, or conclusion of the cancer journey are made. They are always based on available evidence and represent the clinical events in which the disease and patient status are evaluated.
 
