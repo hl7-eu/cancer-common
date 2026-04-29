@@ -45,7 +45,7 @@ CancerPatient --> CancerConditionAtDiagnosis : is affected by
   }
 
     class ClinicalCancerProgression1 {
-      diseaseStatus = CompleteRemission
+      diseaseStatus = Complete Remission
       extentType = Null
       loco-regionalSite = Null
       MetastaticSite = Null

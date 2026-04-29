@@ -5,7 +5,7 @@ skinparam classAttributeIconSize 0
 ' Warning
 note "Warning: This is a preliminary draft subject to revisions." as DraftWarning
 
-' Classes from Cancer_Common_Logical_Model_20260123_2.xlsx
+' Classes from Cancer_Common_Logical_Model_20260408.xlsx
 class CancerConditionAtDiagnosis [[StructureDefinition-CancerConditionAtDiagnosis.html]]
 class CancerPatient [[StructureDefinition-CancerPatient.html]]
 class CancerStage [[StructureDefinition-CancerStage.html]]
