@@ -7,12 +7,12 @@ skinparam class {
 scale 0.8
 
 package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
-  class CancerPatient <<fixed>> {
+  class CancerPatient1 <<fixed>> {
     demographics
     comorbiditiesAtDiagnosis
   }
   
-  class CancerConditionAtDiagnosis <<fixed>> {
+  class CancerConditionAtDiagnosis1 <<fixed>> {
     tumourGrade = XXX
     histologyBehaviour = XXX
     bodySite = XXX
@@ -25,7 +25,7 @@ package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
 }
 
 ' Links inside Date 0
-CancerPatient --> CancerConditionAtDiagnosis : is affected by
+CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
  package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
     
@@ -48,8 +48,8 @@ CancerPatient --> CancerConditionAtDiagnosis : is affected by
 
  }
 
-CancerPatient --> LastFollowUp4 : has
-CancerConditionAtDiagnosis --> ClinicalCancerProgression4 : evolves throught
+CancerPatient1 --> LastFollowUp4 : has
+CancerConditionAtDiagnosis1 --> ClinicalCancerProgression4 : evolves throught
 
 
 package "Date 8 (2019-09-10) - Date 9 (2019-12-16)\n Cancer Treatment 2" {
@@ -65,7 +65,7 @@ package "Date 8 (2019-09-10) - Date 9 (2019-12-16)\n Cancer Treatment 2" {
 
  }
 
-CancerConditionAtDiagnosis --> SystemicTreatment1 : is the target of
+CancerConditionAtDiagnosis1 --> SystemicTreatment1 : is the target of
 ClinicalCancerProgression4 --> SystemicTreatment1 : is the target of
 /' ' ===========================================
 'Date 7 – 2019-08-31 (Disease Evolution + Follow-up)

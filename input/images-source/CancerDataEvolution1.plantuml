@@ -11,12 +11,12 @@ scale 0.8
 ' DATE 0 – initial capture (conceptual record)
 ' ===========================================
 package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
-  class CancerPatient <<fixed>> {
+  class CancerPatient1 <<fixed>> {
     demographics
     comorbiditiesAtDiagnosis
   }
   
-  class CancerConditionAtDiagnosis <<fixed>> {
+  class CancerConditionAtDiagnosis1 <<fixed>> {
     tumourGrade = XXX
     histologyBehaviour = XXX
     bodySite = XXX
@@ -40,8 +40,8 @@ package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
 }
 
 ' Links inside Date 0
-CancerPatient --> CancerConditionAtDiagnosis : is affected by
-CancerConditionAtDiagnosis --> CancerStage1 : has a
+CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
+CancerConditionAtDiagnosis1 --> CancerStage1 : has a
 CancerStage1 --> Imaging1 : defined throught a
 
 package "Cancer Treatment 1" {
@@ -94,14 +94,14 @@ package "Date 1 (2018-06-12)\nSurgery" {
 }
 
 
-CancerConditionAtDiagnosis --> Surgery1 : is the target of
+CancerConditionAtDiagnosis1 --> Surgery1 : is the target of
 'CancerStage2 --> Surgery1 : defined throught a
 Surgery1 <-- CancerStage2 : defined throught a
-CancerConditionAtDiagnosis --> CancerStage2 : can have a
-CancerConditionAtDiagnosis --> Radiotherapy1 : is the target of
+CancerConditionAtDiagnosis1 --> CancerStage2 : can have a
+CancerConditionAtDiagnosis1 --> Radiotherapy1 : is the target of
 Surgery1 -[hidden]-> Radiotherapy1
-CancerPatient --> Surgery1 : is the subject of
-CancerPatient --> Radiotherapy1 : is the subject of
+CancerPatient1 --> Surgery1 : is the subject of
+CancerPatient1 --> Radiotherapy1 : is the subject of
 } 
 
 

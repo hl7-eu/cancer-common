@@ -11,12 +11,12 @@ scale 0.8
 ' DATE 0 – initial capture (conceptual record)
 ' ===========================================
 package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
-  class CancerPatient <<fixed>> {
+  class CancerPatient1 <<fixed>> {
     demographics
     comorbiditiesAtDiagnosis
   }
   
-  class CancerConditionAtDiagnosis <<fixed>> {
+  class CancerConditionAtDiagnosis1 <<fixed>> {
     tumourGrade = XXX
     histologyBehaviour = XXX
     bodySite = XXX
@@ -29,7 +29,7 @@ package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
 }
 
 ' Links inside Date 0
-CancerPatient --> CancerConditionAtDiagnosis : is affected by
+CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
  package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete Remission)" {
     class OverallTreatmentResponse1 {
@@ -55,6 +55,6 @@ CancerPatient --> CancerConditionAtDiagnosis : is affected by
 
  }
 
-CancerConditionAtDiagnosis --> OverallTreatmentResponse1 : has
-CancerPatient --> LastFollowUp1 : has
-CancerConditionAtDiagnosis --> ClinicalCancerProgression1 : evolves throught
+CancerConditionAtDiagnosis1 --> OverallTreatmentResponse1 : has
+CancerPatient1 --> LastFollowUp1 : has
+CancerConditionAtDiagnosis1 --> ClinicalCancerProgression1 : evolves throught
