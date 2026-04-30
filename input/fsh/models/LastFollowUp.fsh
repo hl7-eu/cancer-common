@@ -8,7 +8,7 @@ Characteristics: #can-be-target
 * obeys lfu-2
 * obeys lfu-3
 * subject 1..1 CancerPatient "Patient Reference"
-* subject ^definition "Reference to the patient (subject) for whom follow-up information is recorded."
+* subject ^definition = "Reference to the patient (subject) for whom follow-up information is recorded."
 * vitalStatus 1..1 CodeableConcept "VitalStatus"
 * vitalStatus ^definition = "Patient vital status at the time of follow-up (Alive or Dead)."
 * vitalStatus ^comment = "Choice: Alive | Dead"

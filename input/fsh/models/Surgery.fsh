@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 * subject 1..1 CancerPatient "Subject"
 * subject ^definition = "Reference to the patient (subject) undergoing the surgery."
 * cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerCondition AtDiagnosis Reference"
-* cancerConditionAtDiagnosisReference ^definition "Reference to the cancer condition at diagnosis targeted by the surgery."
+* cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at diagnosis targeted by the surgery."
 * clinicalCancerProgressionReference 0..1 Reference(ClinicalCancerProgression) "ClinicalCancerProgressionReference"
 * clinicalCancerProgressionReference ^definition = "Reference to the clinical progression event, if surgery is performed in response to progression."
 * clinicalCancerProgressionReference ^comment = "It shall not be provided at the time of diagnosis, but shall always be provided in the event of ClinicalCancerProgression."

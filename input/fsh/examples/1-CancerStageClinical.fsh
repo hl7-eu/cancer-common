@@ -10,4 +10,4 @@ Usage: #example
 * value[+].id = "M0"
 * type.coding[0].code = #Clinical
 * type.coding[0].display = "Clinical"
-* imagingReference = Reference(Imaging-Example)
+* evidenceReference = Reference(Imaging-Example)
