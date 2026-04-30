@@ -15,9 +15,9 @@ Characteristics: #can-be-target
 * type 1..1 CodeableConcept "Type"
 * type ^definition = "It indicates whether the stage instance is of type Clinical or Pathological."
 * type ^comment = "It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological"
-* EvidenceReference[x] 0..* Surgery or Imaging "EvidenceReference"
-* EvidenceReference[x] ^definition = "Reference(s) to imaging (in case the stage is Clinical) or to surgery (in case the stage is Pathological)."
-* EvidenceReference[x] ^comment = "It shall be present. The reference shall be to one or more imaging (in case the stage is Clinical) or to one surgery (in case the stage is Pathological)."
+* evidenceReference[x] 0..* Surgery or Imaging "EvidenceReference"
+* evidenceReference[x] ^definition = "Reference(s) to imaging (in case the stage is Clinical) or to surgery (in case the stage is Pathological)."
+* evidenceReference[x] ^comment = "It shall be present. The reference shall be to one or more imaging (in case the stage is Clinical) or to one surgery (in case the stage is Pathological)."
 
 /* * surgeryReference 0..1 Reference(Surgery) "SurgeryReference"
 * surgeryReference ^definition = "It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical."

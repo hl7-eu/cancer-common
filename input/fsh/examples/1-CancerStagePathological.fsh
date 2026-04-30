@@ -10,4 +10,5 @@ Usage: #example
 * value[+].id = "M0"
 * type.coding[0].code = #Pathological
 * type.coding[0].display = "Pathological"
-* evidenceReference = Reference(Surgery-Example)
+/* To be updated*/
+/* * evidenceReference = Reference(Surgery-Example) */
