@@ -295,11 +295,11 @@
                 <li><em>Dead</em></li>
               </ul>
             </li>
-            <li><strong>Date</strong> that represent the date of the follow-up <em>Visit</em>.</li>
+            <li><strong>Date</strong> that represents the date of the follow-up <em>Visit</em>.</li>
           </ul>
           <p>In case of a living <em>CancerPatient</em>, it <strong>must</strong> have:</p>
           <ul>
-            <li><strong>EvidenceOfDisease</strong> that indicates indicates whether, in the case of a living patient, there is evidence of the presence of disease. in case the <em>CancerPatient</em> is alive it <strong>must</strong> be provided and can be set to:
+            <li><strong>EvidenceOfDisease</strong> that indicates whether, in the case of a living patient, there is evidence of the presence of disease. in case the <em>CancerPatient</em> is alive it <strong>must</strong> be provided and can be set to:
               <ul>
                 <li><em>Yes</em> when the disease is present</li>
                 <li><em>No</em> when it does not appear to be present.</li>
