@@ -1,4 +1,6 @@
 Instance: ClinicalCancerProgression1-Example
+Title: "Clinical Cancer Progression 1 Example"
+Description: "Example clinical cancer progression showing complete remission on 2018-10-30."
 InstanceOf: ClinicalCancerProgression
 Usage: #example
 

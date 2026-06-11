@@ -1,4 +1,6 @@
 Instance: CancerConditionAtDiagnosis1-Example
+Title: "Cancer Condition at Diagnosis Example"
+Description: "Example cancer condition at diagnosis for a lung adenocarcinoma case."
 InstanceOf: CancerConditionAtDiagnosis
 Usage: #example
 

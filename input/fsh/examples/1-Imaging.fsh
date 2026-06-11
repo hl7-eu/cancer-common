@@ -1,4 +1,6 @@
 Instance: Imaging1-Example
+Title: "Imaging Example"
+Description: "Example magnetic resonance imaging record for the lower lobe of the lung."
 InstanceOf: Imaging
 Usage: #example
 

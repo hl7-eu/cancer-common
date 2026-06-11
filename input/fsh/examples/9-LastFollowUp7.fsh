@@ -1,4 +1,6 @@
 Instance: LastFollowUp7-Example
+Title: "Last Follow-Up 7 Example"
+Description: "Example final follow-up documenting death from malignant neoplasm of bronchus and lung."
 InstanceOf: LastFollowUp
 Usage: #example
 
