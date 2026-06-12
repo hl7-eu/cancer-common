@@ -10,8 +10,9 @@
       This page is provided to show the expected direction of future implementation work. It is not part of the proposed material for evaluation in this publication; mappings, target artefacts and profiling details are expected to evolve in subsequent iterations of this guide.
     </div>
   </div>
-  <h3>Cancer Logical Models to FHIR Logical Models</h3>
-  <a>  </a>
+  <a name="cancer-logical-models">  </a>
+  <h3 id="cancer-logical-models">Cancer Logical Models to FHIR Logical Models</h3>
+  <a>   </a>
   <p>
     The table below lists the cancer logical models and their corresponding FHIR logical models in this IG.
   </p>
@@ -21,6 +22,7 @@
     <li>the HL7 FHIR target profile or resource</li>
     <li>a placeholder link for mapping details</li>
   </ul>
+  <a name="cancer-logical-models-details">  </a>
   <h4>
     <span class="group-emoji"></span> Cancer Logical Models
   </h4>

@@ -1,4 +1,6 @@
 Instance: Surgery1-Example
+Title: "Surgery Example"
+Description: "Example definitive surgery for the lower lobe lung cancer condition."
 InstanceOf: Surgery
 Usage: #example
 

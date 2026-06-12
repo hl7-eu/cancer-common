@@ -1,4 +1,6 @@
 Instance: SystemicTreatment1-Example
+Title: "Systemic Treatment 1 Example"
+Description: "Example chemotherapy treatment following the loco-regional recurrence."
 InstanceOf: SystemicTreatment
 Usage: #example
 

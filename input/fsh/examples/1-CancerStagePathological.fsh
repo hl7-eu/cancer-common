@@ -1,4 +1,6 @@
 Instance: CancerStagePathological1-Example
+Title: "Pathological Cancer Stage Example"
+Description: "Example pathological TNM stage supported by the surgery example."
 InstanceOf: CancerStage
 Usage: #example
 

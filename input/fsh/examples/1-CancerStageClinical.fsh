@@ -1,4 +1,6 @@
 Instance: CancerStageClinical1-Example
+Title: "Clinical Cancer Stage Example"
+Description: "Example clinical TNM stage for the cancer condition at diagnosis."
 InstanceOf: CancerStage
 Usage: #example
 

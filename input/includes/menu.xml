@@ -80,6 +80,9 @@
             <li>
                 <a class="dropdown-item" href="crossversionanalysis.html">Cross-version Analysis</a>
             </li>
+            <li>
+                <a class="dropdown-item" href="expansion-params.html">Parameters for Expansion</a>
+            </li>
         </ul>
     </li>
     <li class="dropdown">

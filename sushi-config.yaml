@@ -3,11 +3,11 @@ canonical: http://hl7.eu/fhir/cancer-common # check if this may create issues
 name:  Hl7EucancerCommonIg
 title: HL7 Europe Common Cancer Model
 description: This guide describes a Common Cancer Model in the European context
-status: draft # draft | active | retired | unknown
-version: 0.1.0
+status: active # draft | active | retired | unknown
+version: 1.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: 	http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe" # urn:iso:std:iso:3166#EU
 publisher:
@@ -131,6 +131,8 @@ pages:
     title: Cancer Patient Journey Example
   glossary.html:
     title: Glossary
+  expansion-params.md:
+    title: Parameters for Expansion
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -140,11 +142,11 @@ pages:
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 #
-# parameters:
+parameters:
 #  produce-jekyll-data: true
 #  special-url:
 #    - https://spor.ema.europa.eu/v1/lists/100000000004
-
+  path-expansion-params: ../resources/Parameters-exp-params.json
 
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]

@@ -1,4 +1,6 @@
 Instance: Radiotherapy1-Example
+Title: "Radiotherapy Example"
+Description: "Example postoperative adjuvant radiotherapy treatment for the cancer condition."
 InstanceOf: Radiotherapy
 Usage: #example
 
