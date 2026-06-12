@@ -38,11 +38,13 @@ Characteristics: #can-be-target
 Invariant: cs-ev-e1
 Description: "If type is Clinical, imaging evidence must not be provided."
 Severity: #error
-Expression: "type.text = 'Clinical' implies evidenceReference.resolve().ofType(Imaging).empty()"
+//Imaging type is not known
+//Expression: "type.text = 'Clinical' implies evidenceReference.resolve().ofType(Imaging).empty()"
 Invariant: cs-ev-e2
 Description: "If type is Pathological, surgery evidence must not be provided."
 Severity: #error
-Expression: "type.text = 'Pathological' implies evidenceReference.resolve().ofType(Surgery).empty()"
+//Surgery type is not known
+//Expression: "type.text = 'Pathological' implies evidenceReference.resolve().ofType(Surgery).empty()"
 Invariant: cs-tnm-1
 Description: "If classificationType is TNM, 3 values is expected."
 Severity: #warning
