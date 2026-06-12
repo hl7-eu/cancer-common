@@ -26,7 +26,13 @@ There are multiple different potential matches for the url 'http://hl7.org/fhir/
 There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender'%
 There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/recorded-sex-or-gender-type'%
 
-# Expressions not translatable to FHIRPath
-Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+# No validations on the Logical Model
+Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())'
 The constraint 'cs-ev-e1' has no computable expression, so validators will not be able to check it
 The constraint 'cs-ev-e2' has no computable expression, so validators will not be able to check it
+
+# type is uri, warning is wrong
+The parameter 'system-version' has the same name as a parameter for at least one operation in the core specification. In the base specification, the parameter has a type of canonical, but this parameter instead has a value of type uri. Check that this is correct
+
+# Deprecated extension not specified by this IG
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'	

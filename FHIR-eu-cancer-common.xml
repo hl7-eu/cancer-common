@@ -19,6 +19,7 @@
 <artifact id="Binary/ClinicalCancerProgression6-Example" key="Binary-ClinicalCancerProgression6-Example" name="Clinical Cancer Progression 6 Example"/>
 <artifact id="Binary/CancerStageClinical1-Example" key="Binary-CancerStageClinical1-Example" name="Clinical Cancer Stage Example"/>
 <artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
+<artifact id="Observation/ComorbidityObservation1-Example" key="Observation-ComorbidityObservation1-Example" name="ComorbidityObservation1-Example"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
 <artifact id="Binary/Imaging1-Example" key="Binary-Imaging1-Example" name="Imaging Example"/>
 <artifact id="Binary/LastFollowUp1-Example" key="Binary-LastFollowUp1-Example" name="Last Follow-Up 1 Example"/>
@@ -36,6 +37,8 @@
 <artifact id="Parameters/exp-params" key="Parameters-exp-params" name="Parameters for Terminology expansion using Snomed-CT international edition"/>
 <artifact id="Binary/CancerStagePathological1-Example" key="Binary-CancerStagePathological1-Example" name="Pathological Cancer Stage Example"/>
 <artifact id="StructureDefinition/patient-eu-ccm" key="StructureDefinition-patient-eu-ccm" name="Patient (CCM)"/>
+<artifact id="Patient/Patient1-Example" key="Patient-Patient1-Example" name="Patient1-Example"/>
+<artifact id="Practitioner/Practitioner1-Example" key="Practitioner-Practitioner1-Example" name="Practitioner1-Example"/>
 <artifact id="StructureDefinition/Radiotherapy" key="StructureDefinition-Radiotherapy" name="Radiotherapy"/>
 <artifact id="Binary/Radiotherapy1-Example" key="Binary-Radiotherapy1-Example" name="Radiotherapy Example"/>
 <artifact id="StructureDefinition/Surgery" key="StructureDefinition-Surgery" name="Surgery"/>
