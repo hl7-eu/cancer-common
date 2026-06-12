@@ -14,3 +14,19 @@ Unknown Code 'C77.0' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/ic
 
 # Detailed description in page journey-example.html
 Unable to find ImplementationGuide.definition.resource.description for the resource Binary%
+
+# Versions of the profiles and bindings are intentionally not fixed
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'%
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse'%
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/individual-genderIdentity'%
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/individual-pronouns'%
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship'%
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality'%
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthTime'%
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender'%
+There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/recorded-sex-or-gender-type'%
+
+# Expressions not translatable to FHIRPath
+Constraint failed: eld-21: 'Constraints should have an expression or else validators will not be able to enforce them (expression.exists())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+The constraint 'cs-ev-e1' has no computable expression, so validators will not be able to check it
+The constraint 'cs-ev-e2' has no computable expression, so validators will not be able to check it
