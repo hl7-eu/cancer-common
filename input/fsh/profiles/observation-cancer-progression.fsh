@@ -71,7 +71,7 @@ Context: Observation
 // ValueSet needs improvement! Not final!
 ValueSet: DiseaseStatusVS
 Id: disease-status-vs
-Title: "Disease Status VS"
+Title: "Disease Status"
 Description: "This Value Set describes the status of the cancer disease."
 * $sct#263853000 "Recurrent episode (qualifier value)"
 * $sct#103338009 "In full remission (qualifier value)"
@@ -83,7 +83,7 @@ Description: "This Value Set describes the status of the cancer disease."
 // ValueSet needs improvement! Not final!
 ValueSet: ExtentTypeVS
 Id: extent-type-vs
-Title: "Extent Type VS"
+Title: "Extent Type"
 Description: "This Value Set describes the extent of disease at this timepoint"
 * $sct#410674003 "Regional (qualifier value)"
 * $sct#255470001 "Local (qualifier value)"

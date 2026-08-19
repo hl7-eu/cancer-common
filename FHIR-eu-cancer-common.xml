@@ -26,10 +26,14 @@
 <artifact id="ValueSet/dead-or-alive-vs" key="ValueSet-dead-or-alive-vs" name="Dead or Alive"/>
 <artifact id="StructureDefinition/death-info" key="StructureDefinition-death-info" name="Death Information"/>
 <artifact id="StructureDefinition/diagnosis-date" key="StructureDefinition-diagnosis-date" name="Diagnosis Date"/>
+<artifact id="ValueSet/disease-status-vs" key="ValueSet-disease-status-vs" name="Disease Status"/>
 <artifact id="StructureDefinition/cancer-stage-evidence-reference" key="StructureDefinition-cancer-stage-evidence-reference" name="Evidence Reference"/>
 <artifact id="StructureDefinition/evidence-of-disease" key="StructureDefinition-evidence-of-disease" name="Evidence of Disease"/>
+<artifact id="StructureDefinition/extent-type" key="StructureDefinition-extent-type" name="Evidence of Disease"/>
+<artifact id="ValueSet/extent-type-vs" key="ValueSet-extent-type-vs" name="Extent Type"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
 <artifact id="Binary/Imaging1-Example" key="Binary-Imaging1-Example" name="Imaging Example"/>
+<artifact id="StructureDefinition/surgery-intent" key="StructureDefinition-surgery-intent" name="Intent of the Surgery"/>
 <artifact id="Binary/LastFollowUp1-Example" key="Binary-LastFollowUp1-Example" name="Last Follow-Up 1 Example"/>
 <artifact id="Binary/LastFollowUp2-Example" key="Binary-LastFollowUp2-Example" name="Last Follow-Up 2 Example"/>
 <artifact id="Binary/LastFollowUp3-Example" key="Binary-LastFollowUp3-Example" name="Last Follow-Up 3 Example"/>
@@ -38,6 +42,9 @@
 <artifact id="Binary/LastFollowUp6-Example" key="Binary-LastFollowUp6-Example" name="Last Follow-Up 6 Example"/>
 <artifact id="Binary/LastFollowUp7-Example" key="Binary-LastFollowUp7-Example" name="Last Follow-Up 7 Example"/>
 <artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
+<artifact id="StructureDefinition/loco-regional-sites" key="StructureDefinition-loco-regional-sites" name="Loco-regional Site"/>
+<artifact id="StructureDefinition/metastatic-sites" key="StructureDefinition-metastatic-sites" name="Metastatic Site"/>
+<artifact id="StructureDefinition/observation-cancer-progression-eu-ccm" key="StructureDefinition-observation-cancer-progression-eu-ccm" name="Observation: Cancer Progression"/>
 <artifact id="StructureDefinition/observation-cancer-stage-eu-ccm" key="StructureDefinition-observation-cancer-stage-eu-ccm" name="Observation: Cancer Stage"/>
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
 <artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation: Histology Behaviour"/>
@@ -51,10 +58,12 @@
 <artifact id="StructureDefinition/patient-eu-ccm" key="StructureDefinition-patient-eu-ccm" name="Patient (CCM)"/>
 <artifact id="Patient/Patient1-Example" key="Patient-Patient1-Example" name="Patient1-Example"/>
 <artifact id="Practitioner/Practitioner1-Example" key="Practitioner-Practitioner1-Example" name="Practitioner1-Example"/>
+<artifact id="StructureDefinition/procedure-surgery-eu-ccm" key="StructureDefinition-procedure-surgery-eu-ccm" name="Procedure: Surgery"/>
 <artifact id="StructureDefinition/Radiotherapy" key="StructureDefinition-Radiotherapy" name="Radiotherapy"/>
 <artifact id="Binary/Radiotherapy1-Example" key="Binary-Radiotherapy1-Example" name="Radiotherapy Example"/>
 <artifact id="StructureDefinition/Surgery" key="StructureDefinition-Surgery" name="Surgery"/>
 <artifact id="Binary/Surgery1-Example" key="Binary-Surgery1-Example" name="Surgery Example"/>
+<artifact id="ValueSet/surgery-intent-vs" key="ValueSet-surgery-intent-vs" name="Surgery Intent"/>
 <artifact id="Binary/SystemicTreatment1-Example" key="Binary-SystemicTreatment1-Example" name="Systemic Treatment 1 Example"/>
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
 <artifact id="StructureDefinition/vital-status" key="StructureDefinition-vital-status" name="Vital Status"/>
