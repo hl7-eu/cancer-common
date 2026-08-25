@@ -8,7 +8,7 @@ Description: """This informative profile constrains the Observation resource to 
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 * insert SetFmmandStatusRule ( 0, informative )
-* code = $sct#360037004 "Imaging - action (qualifier value)" 
+* code = $sct#360037004 "Imaging - action (qualifier value)" // No suitable LOINC Code found
 
 * method 1..1
 * method ^definition = "Represents the type of imaging procedure performed (e.g. thoracic MRI)"

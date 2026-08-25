@@ -42,7 +42,7 @@ Extension: SurgeryIntent
 Id: surgery-intent
 Title: "Intent of the Surgery"
 Description: "Defines weather the intent of the surgery was 'definitive' or 'palliative'."
-Context: Observation
+Context: Procedure
 * value[x] only CodeableConcept
 * value[x] 1..1
 * valueCodeableConcept from SurgeryIntentVS (required)
@@ -52,6 +52,8 @@ ValueSet: SurgeryIntentVS
 Id: surgery-intent-vs
 Title: "Surgery Intent"
 Description: "Describes weather the intent of the surgery was 'definitive' or 'palliative'."
+* ^status = #draft
+* ^experimental = false
 * $sct#363676003 "Palliative - procedure intent (qualifier value)"
 * $sct#373808002 "Curative - procedure intent (qualifier value)"
 

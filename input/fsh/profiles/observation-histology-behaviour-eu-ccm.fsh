@@ -8,7 +8,7 @@ Description: """This informative profile constrains the Observation resource to 
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 * insert SetFmmandStatusRule ( 0, informative )
-* code = $sct#95531003 "Neoplasm observable (observable entity)" 
+* code = $sct#395531003 "Neoplasm observable (observable entity)" // Possibility in LOINC:22036-8 Histology Cancer Narrative
 * valueCodeableConcept 1..
 * valueCodeableConcept ^short = "Histology and behaviour of the neoplasm at first diagnosis."
 * valueCodeableConcept ^definition = "Histology and behaviour of the neoplasm at first diagnosis. Histology describes the tumour cell type (morphology), while behaviour indicates whether the tumour is malignant, benign, carcinoma in situ, or of uncertain/borderline malignancy. This information may be unavailable during early diagnostic workup (e.g., before biopsy results are final) but is expected to be present once the diagnostic workup is completed."
