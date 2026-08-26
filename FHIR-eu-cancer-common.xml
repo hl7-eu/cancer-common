@@ -6,6 +6,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/ActiveSurveillance" key="StructureDefinition-ActiveSurveillance" name="Active Surveillance"/>
+<artifact id="StructureDefinition/additional-body-site" key="StructureDefinition-additional-body-site" name="Additional Body Site"/>
 <artifact id="StructureDefinition/cancer-condition-at-diagnosis-eu-ccm" key="StructureDefinition-cancer-condition-at-diagnosis-eu-ccm" name="Cancer Condition at Diagnosis (CCM)"/>
 <artifact id="Binary/CancerConditionAtDiagnosis1-Example" key="Binary-CancerConditionAtDiagnosis1-Example" name="Cancer Condition at Diagnosis Example"/>
 <artifact id="StructureDefinition/CancerPatient" key="StructureDefinition-CancerPatient" name="Cancer Patient"/>
@@ -58,11 +59,11 @@
 <artifact id="StructureDefinition/metastatic-sites" key="StructureDefinition-metastatic-sites" name="Metastatic Site"/>
 <artifact id="StructureDefinition/observation-cancer-stage-eu-ccm" key="StructureDefinition-observation-cancer-stage-eu-ccm" name="Observation Cancer Stage (CCM)"/>
 <artifact id="StructureDefinition/observation-clinical-cancer-progression-eu-ccm" key="StructureDefinition-observation-clinical-cancer-progression-eu-ccm" name="Observation Clinical Cancer Progression (CCM)"/>
-<artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation Histology Behaviour (CCM)"/>
 <artifact id="StructureDefinition/observation-imaging-eu-ccm" key="StructureDefinition-observation-imaging-eu-ccm" name="Observation Imaging (CCM)"/>
 <artifact id="StructureDefinition/observation-last-follow-up-eu-ccm" key="StructureDefinition-observation-last-follow-up-eu-ccm" name="Observation Last Follow Up (CCM)"/>
 <artifact id="StructureDefinition/observation-treatment-response-eu-ccm" key="StructureDefinition-observation-treatment-response-eu-ccm" name="Observation Treatment Response (CCM)"/>
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
+<artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation: Histology Behaviour"/>
 <artifact id="Observation/ObservationCancerStage1-Example" key="Observation-ObservationCancerStage1-Example" name="ObservationCancerStage1-Example"/>
 <artifact id="Observation/ObservationClinicalCancerProgression1-Example" key="Observation-ObservationClinicalCancerProgression1-Example" name="ObservationClinicalCancerProgression1-Example"/>
 <artifact id="Observation/ObservationClinicalCancerProgression2-Example" key="Observation-ObservationClinicalCancerProgression2-Example" name="ObservationClinicalCancerProgression2-Example"/>
