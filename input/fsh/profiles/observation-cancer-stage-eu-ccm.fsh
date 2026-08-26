@@ -3,7 +3,7 @@ Profile: ObservationCancerStage
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Parent: Observation
 Id: observation-cancer-stage-eu-ccm
-Title: "Observation: Cancer Stage"
+Title: "Observation Cancer Stage (CCM)"
 Description: """This informative profile constrains the Observation resource to represent the Cancer Stage for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
@@ -24,11 +24,11 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * component.value[x] ^short = "For TNM, this carries the component value (e.g. T2, N0, M0). For single-value systems, this carries the stage group/value (e.g. IIIB)."
 
 
-* extension contains ClinicalOrPathological named clinicalorpathological 1..1
-* extension contains EvidenceReference named evidencereference 0..*
+* extension contains CinicalorPathological named CinicalorPathological 1..1
+* extension contains EvidenceReference named EvidenceReference 0..*
 
 
-Extension: ClinicalOrPathological
+Extension: CinicalorPathological
 Id: clinical-or-pathological
 Title: "Clinical or Pathological"
 Description: "Indicates whether the reported cancer stage was determined clinically or pathologically."
@@ -45,7 +45,7 @@ Id: cancer-stage-evidence-reference
 Title: "Evidence Reference"
 Description: "A reference to supporting evidence (e.g. an imaging or pathology report) for the reported cancer stage. It shall be present. The reference shall be to one or more imaging (in case the stage is Clinical) or to one surgery (in case the stage is Pathological)."
 Context: Observation
-* value[x] only Reference(Procedure or DiagnosticReport or Observation)
+* value[x] only Reference(ProcedureSurgery or ObservationImagingEuCcm)
 
 ValueSet: ClinicalOrPathologicalVS
 Id: clinical-or-pathological-vs

@@ -7,7 +7,7 @@ class CancerStage {
   classificationType : codeableConcept [0..1]
   stage : BackboneElement [1..*]
   type : codeableConcept [1..1]
-  evidenceReference : Reference(Surgery,Imaging) [0..*]  
+  EvidenceReference : Reference(Surgery,Imaging) [0..*]  
 }
 
 note left of CancerStage::classificationType

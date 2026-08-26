@@ -1,7 +1,7 @@
 Instance: ProcedureSurgery1-Example
 InstanceOf: procedure-surgery-eu-ccm
 Usage: #example
-Description: "Example of a surgery effecting the lung"
+Description: "Example of a surgery effecting the lung."
 
 * status = #completed
 
@@ -11,7 +11,7 @@ Description: "Example of a surgery effecting the lung"
 
 * performedDateTime = "2018-06-12"
 
-* extension[surgeryintent].valueCodeableConcept = $sct#373808002 "Curative - procedure intent (qualifier value)"
+* extension[SurgeryIntent].valueCodeableConcept = $sct#373808002 "Curative - procedure intent (qualifier value)"
 
 * bodySite = $icd03#C34.3 "Lower lobe, lung"
 

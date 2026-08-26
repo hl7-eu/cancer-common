@@ -3,8 +3,8 @@ Profile: EOCSystematicTreatment
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Parent: EpisodeOfCare
 Id: episode-of-care-systematic-treatment-eu-ccm
-Title: "Episode of Care: Systematic Treatment"
-Description: """This informative profile constrains the EpisodeOfCare resource to represent the Systematic treatment done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
+Title: "Episode of Care Systematic Treatment (CCM)"
+Description: """This informative profile constrains the EpisodeOfCare resource to represent the Systematic Treatment done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 
@@ -17,9 +17,9 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * diagnosis.condition only Reference(CancerConditionAtDiagnosisEuCcm)
 
 
-* extension contains CancerProgressionReferenceST named cancerprogressionreferencest 0..1
+* extension contains CancerProgressionReferenceST named CancerProgressionReferenceST 0..1
 
-* extension contains SystematicTreatmentIntent named systematictreatmentintent 1..1
+* extension contains SystematicTreatmentIntent named SystematicTreatmentIntent 1..1
 
 * type 1..1
 * type ^definition = "Category of systemic treatment (e.g. chemotherapy, immunotherapy, targeted therapy, hormonal therapy)."
@@ -27,9 +27,12 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * period 1..1
 * period.start 1..1
 
-* extension contains SystematicTreatmentOngoing named systematictreatmenongoing 0..1
+* period.end 0..1
+* period.end ^definition = "End date of the systemic treatment course (may be missing while ongoing). It might not be available while the treatment is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death."
 
-* extension contains SystematicTreatmentSetting named systematictreatmentsetting 0..1
+* extension contains SystematicTreatmentOngoing named SystematicTreatmentOngoing 0..1
+
+* extension contains SystematicTreatmentSetting named SystematicTreatmentSetting 0..1
 
 
 
@@ -40,7 +43,7 @@ Id: cancer-progression-reference-st
 Title: "Cancer Progression Reference Systematic Treatment"
 Description: "A reference for stating the cancer progression"
 Context: EpisodeOfCare
-* value[x] only Reference(ObservationCancerProgression)
+* value[x] only Reference(ObservationClinicalCancerProgression)
 
 
 Extension: SystematicTreatmentIntent

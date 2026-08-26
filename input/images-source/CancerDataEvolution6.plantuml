@@ -31,8 +31,8 @@ CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
  package "Date 11 (2020-04-15) \nEvidence + Follow-up (Progression)" {
     
     class LastFollowUp6 {
-     vitalStatus = Alive
-     evidenceOfDisease = Yes
+     VitalStatus = Alive
+     EvidenceOfDisease = Yes
      causeOfDeath = Null
      deathDate = Null
      date = 2020-04-15   'Date 11
@@ -40,7 +40,7 @@ CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
     class ClinicalCancerProgression6 {
       diseaseStatus = Progression
-      extentType 
+      ExtentType 
       loco-regionalSite 
       MetastaticSite 
       tumourGrade
@@ -55,8 +55,8 @@ CancerConditionAtDiagnosis1 --> ClinicalCancerProgression6 : evolves throught
 package "Date 12 (2020-06-28)\nPatient's Death" {
 
   class LastFollowUp7 {
-     vitalStatus = Dead
-     evidenceOfDisease = Null
+     VitalStatus = Dead
+     EvidenceOfDisease = Null
      causeOfDeath 
      deathDate = 2020-06-28   'Date 12
      date = 2020-06-28   'Date 12

@@ -5,6 +5,6 @@ InstanceOf: LastFollowUp
 Usage: #example
 
 * subject = Reference(CancerPatient1-Example)
-* vitalStatus.text = "Alive"
-* evidenceOfDisease = true
+* VitalStatus.text = "Alive"
+* EvidenceOfDisease = true
 * date = "2020-04-15"

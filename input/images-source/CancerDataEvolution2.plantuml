@@ -37,8 +37,8 @@ package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete R
   }
 
   class LastFollowUp1 {
-     vitalStatus = Alive
-     evidenceOfDisease = No
+     VitalStatus = Alive
+     EvidenceOfDisease = No
      causeOfDeath = Null
      deathDate = Null
      date = 2018-10-30   'Date 4
@@ -46,7 +46,7 @@ package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete R
 
   class ClinicalCancerProgression1 {
     diseaseStatus = Complete Remission
-    extentType = Null
+    ExtentType = Null
     loco-regionalSite
     MetastaticSite = Null
     tumourGrade

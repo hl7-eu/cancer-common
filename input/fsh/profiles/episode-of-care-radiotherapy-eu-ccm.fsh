@@ -3,7 +3,7 @@ Profile: EOCRadiotherapy
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Parent: EpisodeOfCare
 Id: episode-of-care-radiotherapy-eu-ccm
-Title: "Episode of Care: Radiotherapy"
+Title: "Episode of Care Radiotherapy (CCM)"
 Description: """This informative profile constrains the EpisodeOfCare resource to represent the Radiotherapy treatment done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
@@ -12,30 +12,32 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * insert SetFmmandStatusRule ( 0, informative )
 
 * patient only Reference(PatientEuCcm)
+* patient ^definition = "Here the cancer patient must be referenced."
 
 * diagnosis 1..1
 * diagnosis.condition only Reference(CancerConditionAtDiagnosisEuCcm)
+* diagnosis ^definition = "Here the cancer diagnosis must be referenced"
 
+* extension contains CancerProgressionReferenceRT named CancerProgressionReferenceRT 0..1
 
-* extension contains CancerProgressionReferenceRT named cancerprogressionreferencert 0..1
+* extension contains RadiotherapyIntent named RadiotherapyIntent 1..1
 
-* extension contains RadiotherapyIntent named radiotherapyintent 1..1
+* extension contains RadiotherapyBodySite named RadiotherapyBodySite 1..*
 
-* extension contains RadiotherapyBodySite named radiotherapybodysite 1..*
-
-* extension contains RadiotherapySetting named radiotherapysetting 0..1
+* extension contains RadiotherapySetting named RadiotherapySetting 0..1
 
 * period 1..1
 * period.start 1..1
-
-
+* period.start ^definition = "This element notes the start date of the radiotherpay"
+* period.end 0..1
+* period.end  ^definition = "This element notes the end of the radiotherapy. It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death."
 
 Extension: CancerProgressionReferenceRT
 Id: cancer-progression-reference-rt
 Title: "Cancer Progression Reference Radiotherapy"
 Description: "A reference for stating the cancer progression"
 Context: EpisodeOfCare
-* value[x] only Reference(ObservationCancerProgression)
+* value[x] only Reference(ObservationClinicalCancerProgression)
 
 
 Extension: RadiotherapyIntent
@@ -66,6 +68,7 @@ Context: EpisodeOfCare
 * value[x] 1..1
 
 Extension: RadiotherapySetting
+
 Id: radiotherapy-setting
 Title: "Radioterhapy Setting"
 Description: "Strategic timing/setting of radiotherapy (e.g. neoadjuvant, adjuvant, concomitant, alone)."

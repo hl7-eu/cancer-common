@@ -13,10 +13,10 @@ Description: "This informative profile defines how to represent the Cancer Consi
 * . ^definition = "Information about the cancer condition at the point of diagnosis."
 
 * subject only Reference(PatientEuCcm)
-* subject 1..
+* subject 1..1
 * subject ^definition = "The patient whose cancer condition is being diagnosed"
 
-* bodySite 1..
+* bodySite 1..1
 * bodySite ^comment = "It is required to choose the most specific code available, meaning the most detailed code in the hierarchical terminology that precisely identifies the body site."
 
 * stage 0..

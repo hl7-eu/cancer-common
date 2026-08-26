@@ -1,7 +1,7 @@
 Instance: ObservationTreatmentResponse1-Example
 InstanceOf: observation-treatment-response-eu-ccm
 Usage: #example
-Description: "Example comorbidity observation documenting the Charlson Comorbidity Index and associated comorbid conditions."
+Description: "Example of an observation reporting the overall treatment response."
 
 * status = #final
 * code = $loinc#88040-1 "Response to cancer treatment"

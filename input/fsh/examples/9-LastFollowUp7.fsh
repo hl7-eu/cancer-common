@@ -5,7 +5,7 @@ InstanceOf: LastFollowUp
 Usage: #example
 
 * subject = Reference(CancerPatient1-Example)
-* vitalStatus.text = "Dead"
+* VitalStatus.text = "Dead"
 * causeOfDeath.coding[0].system = "http://hl7.org/fhir/sid/icd-10"
 * causeOfDeath.coding[0].code = #C34
 * causeOfDeath.coding[0].display = "Malignant neoplasm of bronchus and lung"

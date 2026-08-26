@@ -8,7 +8,7 @@ class ClinicalCancerProgression {
   tumourGradeSystem : codeableConcept [0..1]
   tumourGradeValue : string [0..1]
   assertedDate : dateTime [1..1]
-  extentType : codeableConcept [0..1]
+  ExtentType : codeableConcept [0..1]
   locoRegionalSites : codeableConcept [0..*]
   metastaticSites : codeableConcept [0..*]
 }
@@ -17,7 +17,7 @@ note left of ClinicalCancerProgression::diseaseStatus
 Choice: Progression | Stable Disease 
 | Partial Remission | Complete Remission | Recurrence
 end note 
-note left of ClinicalCancerProgression::extentType
-extentType: Choice: Local | Loco-regional | Metastatic
+note left of ClinicalCancerProgression::ExtentType
+ExtentType: Choice: Local | Loco-regional | Metastatic
 end note
 @enduml

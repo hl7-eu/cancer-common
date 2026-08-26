@@ -9,7 +9,7 @@ Description: "Example describes the episode of a Systematic Treatment the patien
 
 * diagnosis.condition = Reference(ConditionAtDiagnosis1-Example)
 
-* extension[systematictreatmentintent].valueCodeableConcept = $sct#363676003 "Palliative - procedure intent (qualifier value)"
+* extension[SystematicTreatmentIntent].valueCodeableConcept = $sct#363676003 "Palliative - procedure intent (qualifier value)"
 
 * type = $sct#367336001 "Chemotherapy (procedure)"
 
@@ -17,7 +17,7 @@ Description: "Example describes the episode of a Systematic Treatment the patien
 
 * period.end = "2019-12-16"
 
-* extension[systematictreatmenongoing].valueBoolean = false
+* extension[SystematicTreatmentOngoing].valueBoolean = false
 
-* extension[systematictreatmentsetting].valueCodeableConcept = $sct#229803000 "Single episode (qualifier value)"
+* extension[SystematicTreatmentSetting].valueCodeableConcept = $sct#229803000 "Single episode (qualifier value)"
 

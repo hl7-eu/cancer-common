@@ -19,4 +19,4 @@ Usage: #example
 * type.coding[0].display = "Pathological"
 * type.text = "Pathological"
 
-* evidenceReference[+] = Reference(Surgery1-Example)
+* EvidenceReference[+] = Reference(Surgery1-Example)

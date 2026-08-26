@@ -4,14 +4,14 @@ skinparam classAttributeIconSize 0
 
 class LastFollowUp {
   subject : CancerPatient [1..1]
-  vitalStatus : codeableConcept [1..1]
-  evidenceOfDisease : boolean [0..1]
+  VitalStatus : codeableConcept [1..1]
+  EvidenceOfDisease : boolean [0..1]
   causeOfDeath : codeableConcept [0..1]
   date : dateTime [1..1]
   deathDate : dateTime [0..1]
 }
 
-note left of LastFollowUp::vitalStatus
+note left of LastFollowUp::VitalStatus
 Choice: Alive | Dead
 end note
 

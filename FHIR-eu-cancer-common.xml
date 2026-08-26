@@ -33,9 +33,9 @@
 <artifact id="EpisodeOfCare/EOCActiveSurveillance1-Example" key="EpisodeOfCare-EOCActiveSurveillance1-Example" name="EOCActiveSurveillance1-Example"/>
 <artifact id="EpisodeOfCare/EOCRadiotherpay1-Example" key="EpisodeOfCare-EOCRadiotherpay1-Example" name="EOCRadiotherpay1-Example"/>
 <artifact id="EpisodeOfCare/EOCSystemartictreatment1-Example" key="EpisodeOfCare-EOCSystemartictreatment1-Example" name="EOCSystemartictreatment1-Example"/>
-<artifact id="StructureDefinition/episode-of-care-surveillance-eu-ccm" key="StructureDefinition-episode-of-care-surveillance-eu-ccm" name="Episode of Care: Active Surveillance"/>
-<artifact id="StructureDefinition/episode-of-care-radiotherapy-eu-ccm" key="StructureDefinition-episode-of-care-radiotherapy-eu-ccm" name="Episode of Care: Radiotherapy"/>
-<artifact id="StructureDefinition/episode-of-care-systematic-treatment-eu-ccm" key="StructureDefinition-episode-of-care-systematic-treatment-eu-ccm" name="Episode of Care: Systematic Treatment"/>
+<artifact id="StructureDefinition/episode-of-care-surveillance-eu-ccm" key="StructureDefinition-episode-of-care-surveillance-eu-ccm" name="Episode of Care Active Surveillance (CCM)"/>
+<artifact id="StructureDefinition/episode-of-care-radiotherapy-eu-ccm" key="StructureDefinition-episode-of-care-radiotherapy-eu-ccm" name="Episode of Care Radiotherapy (CCM)"/>
+<artifact id="StructureDefinition/episode-of-care-systematic-treatment-eu-ccm" key="StructureDefinition-episode-of-care-systematic-treatment-eu-ccm" name="Episode of Care Systematic Treatment (CCM)"/>
 <artifact id="StructureDefinition/cancer-stage-evidence-reference" key="StructureDefinition-cancer-stage-evidence-reference" name="Evidence Reference"/>
 <artifact id="StructureDefinition/evidence-of-disease" key="StructureDefinition-evidence-of-disease" name="Evidence of Disease"/>
 <artifact id="StructureDefinition/extent-type" key="StructureDefinition-extent-type" name="Evidence of Disease"/>
@@ -56,18 +56,19 @@
 <artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
 <artifact id="StructureDefinition/loco-regional-sites" key="StructureDefinition-loco-regional-sites" name="Loco-regional Site"/>
 <artifact id="StructureDefinition/metastatic-sites" key="StructureDefinition-metastatic-sites" name="Metastatic Site"/>
-<artifact id="StructureDefinition/observation-cancer-progression-eu-ccm" key="StructureDefinition-observation-cancer-progression-eu-ccm" name="Observation: Cancer Progression"/>
-<artifact id="StructureDefinition/observation-cancer-stage-eu-ccm" key="StructureDefinition-observation-cancer-stage-eu-ccm" name="Observation: Cancer Stage"/>
+<artifact id="StructureDefinition/observation-cancer-stage-eu-ccm" key="StructureDefinition-observation-cancer-stage-eu-ccm" name="Observation Cancer Stage (CCM)"/>
+<artifact id="StructureDefinition/observation-clinical-cancer-progression-eu-ccm" key="StructureDefinition-observation-clinical-cancer-progression-eu-ccm" name="Observation Clinical Cancer Progression (CCM)"/>
+<artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation Histology Behaviour (CCM)"/>
+<artifact id="StructureDefinition/observation-imaging-eu-ccm" key="StructureDefinition-observation-imaging-eu-ccm" name="Observation Imaging (CCM)"/>
+<artifact id="StructureDefinition/observation-last-follow-up-eu-ccm" key="StructureDefinition-observation-last-follow-up-eu-ccm" name="Observation Last Follow Up (CCM)"/>
+<artifact id="StructureDefinition/observation-treatment-response-eu-ccm" key="StructureDefinition-observation-treatment-response-eu-ccm" name="Observation Treatment Response (CCM)"/>
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
-<artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation: Histology Behaviour"/>
-<artifact id="StructureDefinition/observation-imaging-eu-ccm" key="StructureDefinition-observation-imaging-eu-ccm" name="Observation: Imaging"/>
-<artifact id="StructureDefinition/observation-last-follow-up-eu-ccm" key="StructureDefinition-observation-last-follow-up-eu-ccm" name="Observation: Last Follow Up"/>
-<artifact id="StructureDefinition/observation-treatment-response-eu-ccm" key="StructureDefinition-observation-treatment-response-eu-ccm" name="Observation: Treatment Response"/>
-<artifact id="Observation/ObservationCancerProgression1-Example" key="Observation-ObservationCancerProgression1-Example" name="ObservationCancerProgression1-Example"/>
-<artifact id="Observation/ObservationCancerProgression2-Example" key="Observation-ObservationCancerProgression2-Example" name="ObservationCancerProgression2-Example"/>
 <artifact id="Observation/ObservationCancerStage1-Example" key="Observation-ObservationCancerStage1-Example" name="ObservationCancerStage1-Example"/>
+<artifact id="Observation/ObservationClinicalCancerProgression1-Example" key="Observation-ObservationClinicalCancerProgression1-Example" name="ObservationClinicalCancerProgression1-Example"/>
+<artifact id="Observation/ObservationClinicalCancerProgression2-Example" key="Observation-ObservationClinicalCancerProgression2-Example" name="ObservationClinicalCancerProgression2-Example"/>
 <artifact id="Observation/ObservationFollowUp1-Example" key="Observation-ObservationFollowUp1-Example" name="ObservationFollowUp1-Example"/>
 <artifact id="Observation/ObservationFollowUp2-Example" key="Observation-ObservationFollowUp2-Example" name="ObservationFollowUp2-Example"/>
+<artifact id="Observation/ObservationHistologyBehaviour1-Example" key="Observation-ObservationHistologyBehaviour1-Example" name="ObservationHistologyBehaviour1-Example"/>
 <artifact id="Observation/ObservationTreatmentResponse1-Example" key="Observation-ObservationTreatmentResponse1-Example" name="ObservationTreatmentResponse1-Example"/>
 <artifact id="Binary/OverallCancerTreatmentResponse1-Example" key="Binary-OverallCancerTreatmentResponse1-Example" name="Overall Cancer Treatment Response 1 Example"/>
 <artifact id="Binary/OverallCancerTreatmentResponse2-Example" key="Binary-OverallCancerTreatmentResponse2-Example" name="Overall Cancer Treatment Response 2 Example"/>
@@ -77,7 +78,7 @@
 <artifact id="StructureDefinition/patient-eu-ccm" key="StructureDefinition-patient-eu-ccm" name="Patient (CCM)"/>
 <artifact id="Patient/Patient1-Example" key="Patient-Patient1-Example" name="Patient1-Example"/>
 <artifact id="Practitioner/Practitioner1-Example" key="Practitioner-Practitioner1-Example" name="Practitioner1-Example"/>
-<artifact id="StructureDefinition/procedure-surgery-eu-ccm" key="StructureDefinition-procedure-surgery-eu-ccm" name="Procedure: Surgery"/>
+<artifact id="StructureDefinition/procedure-surgery-eu-ccm" key="StructureDefinition-procedure-surgery-eu-ccm" name="Procedure Surgery (CCM)"/>
 <artifact id="Procedure/ProcedureSurgery1-Example" key="Procedure-ProcedureSurgery1-Example" name="ProcedureSurgery1-Example"/>
 <artifact id="StructureDefinition/radiotherapy-intent" key="StructureDefinition-radiotherapy-intent" name="Radioterhapy Intent"/>
 <artifact id="StructureDefinition/radiotherapy-setting" key="StructureDefinition-radiotherapy-setting" name="Radioterhapy Setting"/>

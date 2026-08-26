@@ -17,14 +17,14 @@ Description: "Example comorbidity observation documenting the Charlson Comorbidi
 * component[2].code = $loinc#67207-1 "Deprecated TNM clinical staging - distant metastases - M [PhenX]"
 * component[2].valueCodeableConcept = $loinc#LA4629-7 "M0"
 
-* extension[clinicalorpathological].valueCodeableConcept = $sct#260998006 "Clinical staging (qualifier value)"
+* extension[CinicalorPathological].valueCodeableConcept = $sct#260998006 "Clinical staging (qualifier value)"
 
-* extension[evidencereference].valueReference = Reference(Imaging-Cancer-Stage)
+* extension[EvidenceReference].valueReference = Reference(Imaging-Cancer-Stage)
 
 Instance: Imaging-Cancer-Stage
 InstanceOf: observation-imaging-eu-ccm
 Usage: #example
-Description: "Example comorbidity observation documenting the Charlson Comorbidity Index and associated comorbid conditions."
+Description: "Example of the observation of a imaging done on the patient."
 
 * status = #final 
 

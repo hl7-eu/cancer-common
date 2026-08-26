@@ -4,7 +4,7 @@ Profile: ObservationHitsologyBehaviourEuCcm
 Parent: Observation
 Id: observation-histology-behaviour-eu-ccm
 Title: "Observation: Histology Behaviour"
-Description: """This informative profile constrains the Observation resource to represent the Histology behaviour of the neoplasm at the firt diagnosis for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
+Description: """This informative profile constrains the Observation resource to represent the Histology Behaviour of the neoplasm at the firt diagnosis for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 * insert SetFmmandStatusRule ( 0, informative )

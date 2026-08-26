@@ -1,5 +1,5 @@
-Instance: ObservationCancerProgression1-Example
-InstanceOf: observation-cancer-progression-eu-ccm
+Instance: ObservationClinicalCancerProgression1-Example
+InstanceOf: observation-clinical-cancer-progression-eu-ccm
 Usage: #example
 Description: "Example of describing the cancer progression."
 
@@ -16,7 +16,7 @@ Description: "Example of describing the cancer progression."
 
 * effectiveDateTime = "2019-08-31"
 
-* extension[extenttype].valueCodeableConcept = $sct#14799000 "Neoplasm, metastatic (morphologic abnormality)"
+* extension[ExtentType].valueCodeableConcept = $sct#14799000 "Neoplasm, metastatic (morphologic abnormality)"
 
 * extension[metastaticsites].valueCodeableConcept = $icd03#C77.1 "Intrathoracic lymph nodes"
 
@@ -27,8 +27,8 @@ Description: "Example of describing the cancer progression."
 
 
 
-Instance: ObservationCancerProgression2-Example
-InstanceOf: observation-cancer-progression-eu-ccm
+Instance: ObservationClinicalCancerProgression2-Example
+InstanceOf: observation-clinical-cancer-progression-eu-ccm
 Usage: #example
 Description: "Example of describing the cancer progression."
 
@@ -45,6 +45,6 @@ Description: "Example of describing the cancer progression."
 
 * effectiveDateTime = "2019-11-30"
 
-* extension[extenttype].valueCodeableConcept = $sct#410674003 "Regional (qualifier value)"
+* extension[ExtentType].valueCodeableConcept = $sct#410674003 "Regional (qualifier value)"
 
 * extension[locoregionalsites].valueCodeableConcept = $icd03#C77.1 "Intrathoracic lymph nodes"

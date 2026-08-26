@@ -9,11 +9,11 @@ Description: "Example describes the Radiotherapy Care a patient has gotten in a 
 
 * diagnosis.condition = Reference(ConditionAtDiagnosis1-Example)
 
-* extension[radiotherapyintent].valueCodeableConcept = $sct#373808002 "Curative - procedure intent (qualifier value)"
+* extension[RadiotherapyIntent].valueCodeableConcept = $sct#373808002 "Curative - procedure intent (qualifier value)"
 
-* extension[radiotherapybodysite].valueCodeableConcept = $icd03##C34.3 "Lower lobe, lung"
+* extension[RadiotherapyBodySite].valueCodeableConcept = $icd03##C34.3 "Lower lobe, lung"
 
-* extension[radiotherapysetting].valueCodeableConcept = $sct#262061000 "Postoperative period (qualifier value)"
+* extension[RadiotherapySetting].valueCodeableConcept = $sct#262061000 "Postoperative period (qualifier value)"
 
 * period.start = "2018-09-10"
 

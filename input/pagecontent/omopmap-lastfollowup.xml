@@ -67,13 +67,13 @@
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
-            <td>vitalStatus</td>
+            <td>VitalStatus</td>
             <td>no map</td>
             <td></td><td></td>
             <td>Mapping to be defined.</td>
           </tr>
           <tr>
-            <td>evidenceOfDisease</td>
+            <td>EvidenceOfDisease</td>
             <td>no map</td>
             <td></td><td></td>
             <td>Mapping to be defined.</td>
@@ -104,6 +104,3 @@
     </p>
   </body>
 </div>
-
-
-

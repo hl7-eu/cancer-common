@@ -3,8 +3,8 @@ Profile: ProcedureSurgery
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Parent: Procedure
 Id: procedure-surgery-eu-ccm
-Title: "Procedure: Surgery"
-Description: """This informative profile constrains the Procedure resource to represent the surgery done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
+Title: "Procedure Surgery (CCM)"
+Description: """This informative profile constrains the Procedure resource to represent the Surgery done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 
@@ -13,7 +13,7 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 
 
 * subject only Reference(PatientEuCcm)
-* subject 1..
+* subject 1..1
 * subject ^definition = "The patient on which the imaging was done."
 
 * reasonReference ^slicing.discriminator.type = #type
@@ -26,14 +26,15 @@ This profiles is adapted from the mCode FHIR Implementation Guide
     progression 0..1
 
 * reasonReference[condition] only Reference(CancerConditionAtDiagnosisEuCcm)
-* reasonReference[progression] only Reference(ObservationCancerProgression)
+* reasonReference[progression] only Reference(ObservationClinicalCancerProgression)
 
 * performedDateTime 1..1
 * performedDateTime ^short = "Date when the surgery was performed."
 
-* extension contains SurgeryIntent named surgeryintent 1..1
+* extension contains SurgeryIntent named SurgeryIntent 1..1
 
 * bodySite 1..*
+
 
 
 

@@ -32,7 +32,7 @@ CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
      class ClinicalCancerProgression4 {
       diseaseStatus = Recurrence
-      extentType 
+      ExtentType 
       loco-regionalSite 
       MetastaticSite 
       tumourGrade
@@ -49,8 +49,8 @@ package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
     }
 
     class LastFollowUp5 {
-     vitalStatus = Alive
-     evidenceOfDisease = Yes
+     VitalStatus = Alive
+     EvidenceOfDisease = Yes
      causeOfDeath = Null
      deathDate = Null
      date = 2020-01-02   'Date 10
@@ -58,7 +58,7 @@ package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
 
     class ClinicalCancerProgression5 {
       diseaseStatus = Partial Remission
-      extentType 
+      ExtentType 
       loco-regionalSite 
       MetastaticSite 
       tumourGrade

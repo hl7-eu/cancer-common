@@ -1,16 +1,17 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile: ObservationCancerProgression
+Profile: ObservationClinicalCancerProgression
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Parent: Observation
-Id: observation-cancer-progression-eu-ccm
-Title: "Observation: Cancer Progression"
-Description: """This informative profile constrains the Observation resource to represent the cancer prgression done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
+Id: observation-clinical-cancer-progression-eu-ccm
+Title: "Observation Clinical Cancer Progression (CCM)"
+Description: """This informative profile constrains the Observation resource to represent the Cancer Progression done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 
 
 * insert SetFmmandStatusRule ( 0, informative )
 * code = $loinc#97509-4 "Cancer disease progression" 
+
 
 * focus only Reference(CancerConditionAtDiagnosisEuCcm)
 * focus 1..
@@ -20,17 +21,17 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * valueCodeableConcept from DiseaseStatusVS (required)
 
 * component 0..1
-* component.code ^short = "Classification system used to define tumour grade."
+* component.code ^definition = "Classification system used to define tumour grade."
 * component.value[x] only string
-* component.value[x] 1..1
-* component.value[x] ^short = "Grade value assigned according to the selected TumourGradeSystem."
+* component.value[x] 0..1
+* component.value[x] ^definition = "Grade value assigned according to the selected TumourGradeSystem."
 
 * effectiveDateTime 1..1
-* effectiveDateTime ^short = "Date when the status was recoded."
+* effectiveDateTime ^definition = "Date when this progression/status was asserted/recorded."
 
 
 
-* extension contains ExtentType named extenttype 0..1
+* extension contains ExtentType named ExtentType 0..1
 
 * extension contains LocoRegionalSites named locoregionalsites 0..*
 

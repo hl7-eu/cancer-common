@@ -3,7 +3,7 @@ Profile: ObservationTreatmentResponseEuCcm
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Parent: Observation
 Id: observation-treatment-response-eu-ccm
-Title: "Observation: Treatment Response"
+Title: "Observation Treatment Response (CCM)"
 Description: """This informative profile constrains the Observation resource to represent the Overall Cancer Treatment Response for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
@@ -20,7 +20,7 @@ This profiles is adapted from the mCode FHIR Implementation Guide
     progression 0..1
 
 * focus[condition] only Reference(CancerConditionAtDiagnosisEuCcm)
-* focus[progression] only Reference(ObservationCancerProgression)
+* focus[progression] only Reference(ObservationClinicalCancerProgression)
 
 
 * valueCodeableConcept 1..1
