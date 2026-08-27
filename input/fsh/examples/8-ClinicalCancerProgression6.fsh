@@ -8,6 +8,6 @@ Usage: #example
 * diseaseStatus.text = "Progression"
 * assertedDate = "2020-04-15"
 * ExtentType.text = "Metastatic"
-* metastaticSites.coding[0].system = "http://terminology.hl7.org/CodeSystem/icd-o-3"
-* metastaticSites.coding[0].code = #C40.1
-* metastaticSites.coding[0].display = "Short bones of upper limb and associated joints"
+* MetastaticSites.coding[0].system = "http://terminology.hl7.org/CodeSystem/icd-o-3"
+* MetastaticSites.coding[0].code = #C40.1
+* MetastaticSites.coding[0].display = "Short bones of upper limb and associated joints"

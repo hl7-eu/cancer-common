@@ -20,19 +20,19 @@ Characteristics: #can-be-target
 * ExtentType 0..1 CodeableConcept "ExtentType"
 * ExtentType ^definition = "Extent of disease at this time point (Local, Loco-regional, Metastatic)."
 * ExtentType ^comment = "Choice: Local | Loco-regional | Metastatic"
-* locoRegionalSites 0..* CodeableConcept "LocoRegionalSites"
-* locoRegionalSites ^definition = "Sites involved when ExtentType is Loco-regional."
-* locoRegionalSites ^comment = "It must be present if the ExtentType is Loco-regional"
-* metastaticSites 0..* CodeableConcept "MetastaticSites"
-* metastaticSites ^definition = "Sites involved when ExtentType is Metastatic."
-* metastaticSites ^comment = "It must be present if the ExtentType is Metastatic"
+* LocoRegionalSites 0..* CodeableConcept "LocoRegionalSites"
+* LocoRegionalSites ^definition = "Sites involved when ExtentType is Loco-regional."
+* LocoRegionalSites ^comment = "It must be present if the ExtentType is Loco-regional"
+* MetastaticSites 0..* CodeableConcept "MetastaticSites"
+* MetastaticSites ^definition = "Sites involved when ExtentType is Metastatic."
+* MetastaticSites ^comment = "It must be present if the ExtentType is Metastatic"
 
 Invariant: ccp-1
 Description: "LocoRegionalSites must be present if ExtentType is Loco-regional"
-Expression: "ExtentType.coding.where(code = 'Loco-regional').exists() implies locoRegionalSites.exists()"
+Expression: "ExtentType.coding.where(code = 'Loco-regional').exists() implies LocoRegionalSites.exists()"
 Severity: #error
 
 Invariant: ccp-2
 Description: "MetastaticSites must be present if ExtentType is Metastatic"
-Expression: "ExtentType.coding.where(code = 'Metastatic').exists() implies metastaticSites.exists()"
+Expression: "ExtentType.coding.where(code = 'Metastatic').exists() implies MetastaticSites.exists()"
 Severity: #error

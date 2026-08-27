@@ -9,8 +9,8 @@ class ClinicalCancerProgression {
   tumourGradeValue : string [0..1]
   assertedDate : dateTime [1..1]
   ExtentType : codeableConcept [0..1]
-  locoRegionalSites : codeableConcept [0..*]
-  metastaticSites : codeableConcept [0..*]
+  LocoRegionalSites : codeableConcept [0..*]
+  MetastaticSites : codeableConcept [0..*]
 }
 
 note left of ClinicalCancerProgression::diseaseStatus

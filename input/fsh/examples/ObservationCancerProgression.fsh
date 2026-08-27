@@ -18,7 +18,7 @@ Description: "Example of describing the cancer progression."
 
 * extension[ExtentType].valueCodeableConcept = $sct#14799000 "Neoplasm, metastatic (morphologic abnormality)"
 
-* extension[metastaticsites].valueCodeableConcept = $icd03#C77.1 "Intrathoracic lymph nodes"
+* extension[MetastaticSites].valueCodeableConcept = $icd03#C77.1 "Intrathoracic lymph nodes"
 
 
 
@@ -47,4 +47,4 @@ Description: "Example of describing the cancer progression."
 
 * extension[ExtentType].valueCodeableConcept = $sct#410674003 "Regional (qualifier value)"
 
-* extension[locoregionalsites].valueCodeableConcept = $icd03#C77.1 "Intrathoracic lymph nodes"
+* extension[LocoRegionalSites].valueCodeableConcept = $icd03#C77.1 "Intrathoracic lymph nodes"

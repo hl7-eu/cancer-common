@@ -93,7 +93,7 @@
           <tr>
             <td>endDate</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>periode.end</td>
+            <td>Episode of Care</td><td>period.end</td>
             <td>here the end date of the radiotherapy must be noted, if available. </td>
           </tr>
           <tr>

@@ -97,13 +97,13 @@
             <td>Here the extent of disease can be recorded. Here values out of a Snomed CT Value set is requiered to use.</td>
           </tr>
           <tr>
-            <td>locoRegionalSites</td>
+            <td>LocoRegionalSites</td>
             <td>equivalent</td>
             <td>Observation</td><td>extension[LocoRegionalSites]</td>
             <td>This extension is only present, when the extent type is loco-regional.</td>
           </tr>
           <tr>
-            <td>metastaticSites</td>
+            <td>MetastaticSites</td>
             <td>equivalent</td>
             <td>Observation</td><td>extension[MetastaticSites]</td>
             <td>This extension is only present, when the extent type is metastatic.</td>

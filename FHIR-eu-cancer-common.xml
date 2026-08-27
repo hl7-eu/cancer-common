@@ -27,6 +27,7 @@
 <artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
 <artifact id="Observation/ComorbidityObservation1-Example" key="Observation-ComorbidityObservation1-Example" name="ComorbidityObservation1-Example"/>
 <artifact id="Condition/ConditionAtDiagnosis1-Example" key="Condition-ConditionAtDiagnosis1-Example" name="ConditionAtDiagnosis1-Example"/>
+<artifact id="Condition/ConditionAtDiagnosis2-Example" key="Condition-ConditionAtDiagnosis2-Example" name="ConditionAtDiagnosis2-Example"/>
 <artifact id="ValueSet/dead-or-alive-vs" key="ValueSet-dead-or-alive-vs" name="Dead or Alive"/>
 <artifact id="StructureDefinition/death-info" key="StructureDefinition-death-info" name="Death Information"/>
 <artifact id="StructureDefinition/diagnosis-date" key="StructureDefinition-diagnosis-date" name="Diagnosis Date"/>
@@ -37,10 +38,12 @@
 <artifact id="StructureDefinition/episode-of-care-surveillance-eu-ccm" key="StructureDefinition-episode-of-care-surveillance-eu-ccm" name="Episode of Care Active Surveillance (CCM)"/>
 <artifact id="StructureDefinition/episode-of-care-radiotherapy-eu-ccm" key="StructureDefinition-episode-of-care-radiotherapy-eu-ccm" name="Episode of Care Radiotherapy (CCM)"/>
 <artifact id="StructureDefinition/episode-of-care-systematic-treatment-eu-ccm" key="StructureDefinition-episode-of-care-systematic-treatment-eu-ccm" name="Episode of Care Systematic Treatment (CCM)"/>
-<artifact id="StructureDefinition/cancer-stage-evidence-reference" key="StructureDefinition-cancer-stage-evidence-reference" name="Evidence Reference"/>
+<artifact id="StructureDefinition/cancer-stage-evidence-reference-imaging" key="StructureDefinition-cancer-stage-evidence-reference-imaging" name="Evidence Reference (Imaging)"/>
+<artifact id="StructureDefinition/cancer-stage-evidence-reference-surgery" key="StructureDefinition-cancer-stage-evidence-reference-surgery" name="Evidence Reference (Surgery)"/>
 <artifact id="StructureDefinition/evidence-of-disease" key="StructureDefinition-evidence-of-disease" name="Evidence of Disease"/>
 <artifact id="StructureDefinition/extent-type" key="StructureDefinition-extent-type" name="Evidence of Disease"/>
 <artifact id="ValueSet/extent-type-vs" key="ValueSet-extent-type-vs" name="Extent Type"/>
+<artifact id="StructureDefinition/cancer-histology-behaviour-reference" key="StructureDefinition-cancer-histology-behaviour-reference" name="Histology Behaviour"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
 <artifact id="Binary/Imaging1-Example" key="Binary-Imaging1-Example" name="Imaging Example"/>
 <artifact id="Observation/Imaging-Cancer-Stage" key="Observation-Imaging-Cancer-Stage" name="Imaging-Cancer-Stage"/>
@@ -65,6 +68,7 @@
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
 <artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation: Histology Behaviour"/>
 <artifact id="Observation/ObservationCancerStage1-Example" key="Observation-ObservationCancerStage1-Example" name="ObservationCancerStage1-Example"/>
+<artifact id="Observation/ObservationCancerStage2-Example" key="Observation-ObservationCancerStage2-Example" name="ObservationCancerStage2-Example"/>
 <artifact id="Observation/ObservationClinicalCancerProgression1-Example" key="Observation-ObservationClinicalCancerProgression1-Example" name="ObservationClinicalCancerProgression1-Example"/>
 <artifact id="Observation/ObservationClinicalCancerProgression2-Example" key="Observation-ObservationClinicalCancerProgression2-Example" name="ObservationClinicalCancerProgression2-Example"/>
 <artifact id="Observation/ObservationFollowUp1-Example" key="Observation-ObservationFollowUp1-Example" name="ObservationFollowUp1-Example"/>

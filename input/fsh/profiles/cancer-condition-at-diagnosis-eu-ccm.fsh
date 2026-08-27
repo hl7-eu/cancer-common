@@ -25,6 +25,10 @@ Description: "This informative profile defines how to represent the Cancer Consi
 
 * extension contains DiagnosisDate named diagnosisDate 1..1
 
+* extension contains HistologyBehaviour named HistologyBehaviour 0..1
+
+* obeys diagnosis-date-required
+
 Extension: DiagnosisDate
 Id: diagnosis-date
 Title: "Diagnosis Date"
@@ -47,11 +51,16 @@ Context: Condition
 * extension[LabReportDate].value[x] only dateTime
 * extension[LabReportDate] ^short = "Lab Date"
 * extension[LabReportDate] ^definition = "Date of the laboratory report supporting the diagnosis, including biomarkers when applicable."
-* obeys diagnosis-date-required
+
+Extension: HistologyBehaviour
+Id: cancer-histology-behaviour-reference
+Title: "Histology Behaviour"
+Description: "A reference to descirbe the histology behaviour of the tumor through an observation."
+Context: Condition
+* value[x] only Reference(ObservationHitsologyBehaviourEuCcm)
 
 Invariant: diagnosis-date-required
 Description: "At least one of VisitDate, BiopsyDate, ImagingDate, LabReportDate must be present."
 Severity: #error
-Expression: "extension('VisitDate').exists() or extension('BiopsyDate').exists() or extension('ImagingDate').exists() or extension('LabReportDate').exists()"
-
+Expression: "extension('http://hl7.eu/fhir/cancer-common/StructureDefinition/diagnosis-date').extension.where(url = 'VisitDate' or url = 'BiopsyDate' or url = 'ImagingDate' or url = 'LabReportDate').exists()"
 

@@ -75,8 +75,8 @@
           <tr>
             <td>stage.value</td>
             <td>related-to</td>
-            <td>Observation</td><td>component.value</td>
-            <td>Here the reported value of the staging is entered, this must be seen as a pair with the component.code, as this elements codes the staging component being reported.</td>
+            <td>Observation</td><td>value or component.value</td>
+            <td>For a single component grading system use the value element. For multi component system use the component.value element. This must be seen as a pair with the component.code, as this elements codes the staging component being reported.</td>
           </tr>
           <tr>
             <td>stage.type</td>
@@ -87,20 +87,20 @@
           <tr>
             <td>type</td>
             <td>equivalent</td>
-            <td>Observation</td><td>extension[CinicalorPathological]</td>
+            <td>Observation</td><td>extension[CinicalOrPathological]</td>
             <td>Smomed CT ValueSet must be used.</td>
           </tr>
           <tr>
             <td>surgeryReference</td>
             <td>equivalent</td>
-            <td>Observation</td><td>extension[EvidenceReference]</td>
-            <td>One option in the extnecion to be linked id the ProcedureSurgeryCcm profile. This should be filled out, if the type is pathological.</td>
+            <td>Observation</td><td>extension[EvidenceReferenceSurgery]</td>
+            <td>Here the ProcedureSurgeryEuCcm can be referenced. This should be filled out, if the type is pathological</td>
           </tr>
           <tr>
             <td>imagingReference</td>
             <td>equivalent</td>
-            <td>Observation</td><td>extension[EvidenceReference]</td>
-            <td>OAnotheroption in the extnecion to be linked id the ObservationCancerStageEuCcm profile. This should be filled out, if the type is clinical.</td>
+            <td>Observation</td><td>extension[EvidenceReferenceImaging]</td>
+            <td>Here the ObservationImagingEuCcm can be referenced. This should be filled out, if the type is clinical.</td>
           </tr>
         </tbody>
       </table>

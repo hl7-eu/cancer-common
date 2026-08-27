@@ -14,11 +14,12 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 
 
 * focus only Reference(CancerConditionAtDiagnosisEuCcm)
-* focus 1..
+* focus 1..1
 * focus ^definition = "The cancer condition which stage is defined."
 
 
 * valueCodeableConcept from DiseaseStatusVS (required)
+* valueCodeableConcept 1..1
 
 * component 0..1
 * component.code ^definition = "Classification system used to define tumour grade."
@@ -33,9 +34,9 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 
 * extension contains ExtentType named ExtentType 0..1
 
-* extension contains LocoRegionalSites named locoregionalsites 0..*
+* extension contains LocoRegionalSites named LocoRegionalSites 0..*
 
-* extension contains MetastaticSites named metastaticsites 0..*
+* extension contains MetastaticSites named MetastaticSites 0..*
 
 * obeys loco-regional-or-metatstatic-sites-1
 

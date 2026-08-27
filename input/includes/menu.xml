@@ -48,16 +48,11 @@
             </li>
         </ul>
     </li>
-    <li class="dropdown">
-        <a data-toggle="dropdown" href="#" class="dropdown-toggle maturity-gray">Implementation<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li>
-                <a class="dropdown-item maturity-gray" href="fhirmodelmap.html">Model Map - FHIR</a>
-            </li>
-            <li>
-                <a class="dropdown-item maturity-gray" href="omopmodelmap.html">Model Map - OMOP</a>
-            </li>
-        </ul>
+    <li>
+        <a href="fhirmodelmap.html">Implementation FHIR</a>
+    </li>
+    <li>
+        <a href="omopmodelmap.html">Implementation OMOP</a>
     </li>
     <li class="dropdown">
         <a data-toggle="dropdown" href="#" class="dropdown-toggle">About<b class="caret"></b></a>
