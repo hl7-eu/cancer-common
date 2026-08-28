@@ -42,7 +42,7 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 Extension: SurgeryIntent
 Id: surgery-intent
 Title: "Intent of the Surgery"
-Description: "Defines weather the intent of the surgery was 'definitive' or 'palliative'."
+Description: "Defines whether the intent of the surgery was 'definitive' or 'palliative'."
 Context: Procedure
 * value[x] only CodeableConcept
 * value[x] 1..1
@@ -52,7 +52,7 @@ Context: Procedure
 ValueSet: SurgeryIntentVS
 Id: surgery-intent-vs
 Title: "Surgery Intent"
-Description: "Describes weather the intent of the surgery was 'definitive' or 'palliative'."
+Description: "Describes whether the intent of the surgery was 'definitive' or 'palliative'."
 * ^status = #draft
 * ^experimental = false
 * $sct#363676003 "Palliative - procedure intent (qualifier value)"

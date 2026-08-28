@@ -25,8 +25,6 @@ Description: "Example of the histology behaviour of a cancer at first diagnosis.
 
 * code = $sct#395531003 "Neoplasm observable (observable entity)"
 
-* focus = Reference(ConditionAtDiagnosis1-Example)
-
 * valueCodeableConcept = $icd03#8140/3 "Adenocarcinoma, NOS"
 
 

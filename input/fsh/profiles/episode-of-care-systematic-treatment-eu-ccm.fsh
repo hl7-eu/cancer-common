@@ -59,7 +59,7 @@ Context: EpisodeOfCare
 ValueSet: SystematicTreatmentIntentVS
 Id: systematic-treatment-intent-vs
 Title: "Intent of Systematic Treatment"
-Description: "Determinse the intent of the systematic treatment."
+Description: "Determines the intent of the systematic treatment."
 * ^status = #draft
 * ^experimental = false
 * $sct#363676003 "Palliative - procedure intent (qualifier value)"
@@ -76,7 +76,7 @@ Context: EpisodeOfCare
 
 Extension: SystematicTreatmentSetting
 Id: systematic-treatment-setting
-Title: "Systematic Treatment Settinf"
+Title: "Systematic Treatment Setting"
 Description: "Strategic timing/setting of systematic treatment (e.g. neoadjuvant, adjuvant, concomitant, alone)."
 Context: EpisodeOfCare
 * value[x] only CodeableConcept
@@ -87,7 +87,7 @@ Context: EpisodeOfCare
 ValueSet: SystematicTreatmentSettingVS
 Id: systematic-treatment-setting-vs
 Title: "Value Set for strategic timing/setting of systematic treatment"
-Description: "Determinse the setting of the systematic treatment."
+Description: "Determines the setting of the systematic treatment."
 * ^status = #draft
 * ^experimental = false
 * $sct#79970003 "Simultaneous (qualifier value)"

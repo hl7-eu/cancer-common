@@ -85,17 +85,17 @@
 <artifact id="Practitioner/Practitioner1-Example" key="Practitioner-Practitioner1-Example" name="Practitioner1-Example"/>
 <artifact id="StructureDefinition/procedure-surgery-eu-ccm" key="StructureDefinition-procedure-surgery-eu-ccm" name="Procedure Surgery (CCM)"/>
 <artifact id="Procedure/ProcedureSurgery1-Example" key="Procedure-ProcedureSurgery1-Example" name="ProcedureSurgery1-Example"/>
-<artifact id="StructureDefinition/radiotherapy-intent" key="StructureDefinition-radiotherapy-intent" name="Radioterhapy Intent"/>
-<artifact id="StructureDefinition/radiotherapy-setting" key="StructureDefinition-radiotherapy-setting" name="Radioterhapy Setting"/>
-<artifact id="StructureDefinition/radiotherapy-body-site" key="StructureDefinition-radiotherapy-body-site" name="Radioterhapy Site"/>
 <artifact id="StructureDefinition/Radiotherapy" key="StructureDefinition-Radiotherapy" name="Radiotherapy"/>
 <artifact id="Binary/Radiotherapy1-Example" key="Binary-Radiotherapy1-Example" name="Radiotherapy Example"/>
+<artifact id="StructureDefinition/radiotherapy-intent" key="StructureDefinition-radiotherapy-intent" name="Radiotherapy Intent"/>
+<artifact id="StructureDefinition/radiotherapy-setting" key="StructureDefinition-radiotherapy-setting" name="Radiotherapy Setting"/>
+<artifact id="StructureDefinition/radiotherapy-body-site" key="StructureDefinition-radiotherapy-body-site" name="Radiotherapy Site"/>
 <artifact id="StructureDefinition/Surgery" key="StructureDefinition-Surgery" name="Surgery"/>
 <artifact id="Binary/Surgery1-Example" key="Binary-Surgery1-Example" name="Surgery Example"/>
 <artifact id="ValueSet/surgery-intent-vs" key="ValueSet-surgery-intent-vs" name="Surgery Intent"/>
 <artifact id="StructureDefinition/systematic-treatemmt-intent" key="StructureDefinition-systematic-treatemmt-intent" name="Systematic Treatment Intent"/>
 <artifact id="StructureDefinition/systematic-treatemmt-ongoing" key="StructureDefinition-systematic-treatemmt-ongoing" name="Systematic Treatment Ongoing"/>
-<artifact id="StructureDefinition/systematic-treatment-setting" key="StructureDefinition-systematic-treatment-setting" name="Systematic Treatment Settinf"/>
+<artifact id="StructureDefinition/systematic-treatment-setting" key="StructureDefinition-systematic-treatment-setting" name="Systematic Treatment Setting"/>
 <artifact id="Binary/SystemicTreatment1-Example" key="Binary-SystemicTreatment1-Example" name="Systemic Treatment 1 Example"/>
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
 <artifact id="ValueSet/treatment-response-type-vs" key="ValueSet-treatment-response-type-vs" name="Treatment Response Type VS"/>

@@ -1,7 +1,7 @@
 Instance: EOCSystemartictreatment1-Example
 InstanceOf: episode-of-care-systematic-treatment-eu-ccm
 Usage: #example
-Description: "Example describes the episode of a Systematic Treatment the patient has recieved."
+Description: "Example describes the episode of a Systematic Treatment the patient has received."
 
 * status = #finished 
 

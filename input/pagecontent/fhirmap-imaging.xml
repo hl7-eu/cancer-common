@@ -70,7 +70,7 @@
             <td>bodySite</td>
             <td>equivalent</td>
             <td>Observation</td><td>bodySite</td>
-            <td>Here the anatomical site on which the imaging was performed can be stated. Addiotional body sites can be coded through an extension named AdditionalBodySite. </td>
+            <td>Here the anatomical site on which the imaging was performed can be stated. Additional body sites can be coded through an extension named AdditionalBodySite. </td>
           </tr>
         </tbody>
       </table>

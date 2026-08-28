@@ -76,7 +76,7 @@
             <td>treatmentResponseType</td>
             <td>related-to</td>
             <td>Observation</td><td>valueCode</td>
-            <td>Here out of a Snomed CT value set, which is requiered, a code must be selected.</td>
+            <td>Here out of a Snomed CT value set, which is required, a code must be selected.</td>
           </tr>
           <tr>
             <td>date</td>

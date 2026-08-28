@@ -5,7 +5,7 @@ Profile:  CancerConditionAtDiagnosisEuCcm
 Parent:   Condition
 Id:       cancer-condition-at-diagnosis-eu-ccm
 Title:    "Cancer Condition at Diagnosis (CCM)"
-Description: "This informative profile defines how to represent the Cancer Consition at Diagnosis in FHIR for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide."
+Description: "This informative profile defines how to represent the Cancer Condition at Diagnosis in FHIR for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide."
 * insert SetFmmandStatusRule ( 0, informative )
 
 //-------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ Context: Condition
 Extension: HistologyBehaviour
 Id: cancer-histology-behaviour-reference
 Title: "Histology Behaviour"
-Description: "A reference to descirbe the histology behaviour of the tumor through an observation."
+Description: "A reference to describe the histology behaviour of the tumour through an observation."
 Context: Condition
 * value[x] only Reference(ObservationHitsologyBehaviourEuCcm)
 

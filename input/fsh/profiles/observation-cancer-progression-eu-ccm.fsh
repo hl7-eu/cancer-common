@@ -102,6 +102,6 @@ Description: "This Value Set describes the extent of disease at this timepoint"
 
 
 Invariant: loco-regional-or-metatstatic-sites-1
-Description: "If the ExtentType is loco-regional the loco-regioal site must be present, if the Extent Type is metastatic the metastatic-site must be present"
+Description: "If the ExtentType is loco-regional the loco-regional site must be present, if the Extent Type is metastatic the metastatic-site must be present"
 Severity: #error
 Expression: "(extension('http://hl7.eu/fhir/cancer-common/StructureDefinition/extent-type').value.coding.code = '410674003' implies extension('http://hl7.eu/fhir/cancer-common/StructureDefinition/loco-regional-sites').exists()) and (extension('http://hl7.eu/fhir/cancer-common/StructureDefinition/extent-type').value.coding.code = '14799000' implies extension('http://hl7.eu/fhir/cancer-common/StructureDefinition/metastatic-sites').exists())"

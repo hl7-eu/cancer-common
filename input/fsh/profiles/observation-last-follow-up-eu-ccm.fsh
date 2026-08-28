@@ -57,7 +57,7 @@ Context: Observation
 Extension: VitalStatus
 Id: vital-status
 Title: "Vital Status"
-Description: "Indicates whether the patient is alive or deade at the date of the scheduled follow-up."
+Description: "Indicates whether the patient is alive or dead at the date of the scheduled follow-up."
 Context: Observation
 * value[x] only CodeableConcept
 * value[x] 1..1

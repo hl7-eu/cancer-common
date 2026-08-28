@@ -93,13 +93,13 @@
           <tr>
             <td>startDate</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td></td>
+            <td>Episode of Care</td><td>period.start</td>
             <td>Here the start date of the systematic treatment must be noted.</td>
           </tr>
           <tr>
             <td>endDate</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td></td>
+            <td>Episode of Care</td><td>period.end</td>
             <td>Here the end date of the systematic treatment shall be noted. It might not be available while the treatment is still ongoing; however, an end date must eventually be recorded.</td>
           </tr>
           <tr>
@@ -112,7 +112,7 @@
             <td>setting</td>
             <td>equivalent</td>
             <td>Episode of Care</td><td>extension[SystematicTreatmentSetting]</td>
-            <td>Here the setting of the systematic treatment can be noted. Here a requiered Snomed CT value set is provided, from which the code must be chosen.</td>
+            <td>Here the setting of the systematic treatment can be noted. Here a required Snomed CT value set is provided, from which the code must be chosen.</td>
           </tr>
         </tbody>
       </table>

@@ -70,13 +70,13 @@
             <td>VitalStatus</td>
             <td>related-to</td>
             <td>Observation</td><td>extension[VitalStatus]</td>
-            <td>For the vital status an extension is used. Here from a requiered Snomed CT value set a value can be chosen.</td>
+            <td>For the vital status an extension is used. Here from a required Snomed CT value set a value can be chosen.</td>
           </tr>
           <tr>
             <td>EvidenceOfDisease</td>
             <td>equivalent</td>
             <td>Observation</td><td>extension[EvidenceOfDisease]</td>
-            <td>For the evidence of disease an extnesion is used. Here then a boolean value must be entered.</td>
+            <td>For the evidence of disease an extension is used. Here then a boolean value must be entered.</td>
           </tr>
           <tr>
             <td>causeOfDeath</td>
@@ -93,7 +93,7 @@
           <tr>
             <td>deathDate</td>
             <td>related-to</td>
-            <td>Observation</td><td>extension[Death].extension[deahthDate]</td>
+            <td>Observation</td><td>extension[Death].extension[deathDate]</td>
             <td>This information must be filled out, when the vital status is dead.</td>
           </tr>
         </tbody>

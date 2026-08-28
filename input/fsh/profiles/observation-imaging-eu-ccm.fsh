@@ -4,7 +4,7 @@ Profile: ObservationImagingEuCcm
 Parent: Observation
 Id: observation-imaging-eu-ccm
 Title: "Observation Imaging (CCM)"
-Description: """This informative profile constrains the Observation resource to represent the Imaging methode and location done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
+Description: """This informative profile constrains the Observation resource to represent the Imaging method and location done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 * insert SetFmmandStatusRule ( 0, informative )

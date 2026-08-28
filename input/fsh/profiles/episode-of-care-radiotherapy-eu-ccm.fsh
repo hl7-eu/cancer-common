@@ -28,7 +28,7 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 
 * period 1..1
 * period.start 1..1
-* period.start ^definition = "This element notes the start date of the radiotherpay"
+* period.start ^definition = "This element notes the start date of the radiotherapy"
 * period.end 0..1
 * period.end  ^definition = "This element notes the end of the radiotherapy. It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded, which in the most extreme case will coincide with the patient's date of death."
 
@@ -42,7 +42,7 @@ Context: EpisodeOfCare
 
 Extension: RadiotherapyIntent
 Id: radiotherapy-intent
-Title: "Radioterhapy Intent"
+Title: "Radiotherapy Intent"
 Description: "Indicates which intent the radiotherapy had."
 Context: EpisodeOfCare
 * value[x] only CodeableConcept
@@ -53,7 +53,7 @@ Context: EpisodeOfCare
 ValueSet: RadiotherapyIntentVS
 Id: radiotherapy-intent-vs
 Title: "Intent of Radiotherapy"
-Description: "Determinse the intent of the radiotherapy."
+Description: "Determines the intent of the radiotherapy."
 * ^status = #draft
 * ^experimental = false
 * $sct#363676003 "Palliative - procedure intent (qualifier value)"
@@ -61,7 +61,7 @@ Description: "Determinse the intent of the radiotherapy."
 
 Extension: RadiotherapyBodySite
 Id: radiotherapy-body-site
-Title: "Radioterhapy Site"
+Title: "Radiotherapy Site"
 Description: "Anatomical site(s) targeted by radiotherapy."
 Context: EpisodeOfCare
 * value[x] only CodeableConcept
@@ -70,7 +70,7 @@ Context: EpisodeOfCare
 Extension: RadiotherapySetting
 
 Id: radiotherapy-setting
-Title: "Radioterhapy Setting"
+Title: "Radiotherapy Setting"
 Description: "Strategic timing/setting of radiotherapy (e.g. neoadjuvant, adjuvant, concomitant, alone)."
 Context: EpisodeOfCare
 * value[x] only CodeableConcept
@@ -81,7 +81,7 @@ Context: EpisodeOfCare
 ValueSet: RadiotherapySettingVS
 Id: radiotherapy-setting-vs
 Title: "Value Set for strategic timing/setting of radiotherapy"
-Description: "Determinse the setting of the radiotherapy."
+Description: "Determines the setting of the radiotherapy."
 * ^status = #draft
 * ^experimental = false
 * $sct#79970003 "Simultaneous (qualifier value)"

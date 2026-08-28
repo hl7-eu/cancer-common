@@ -69,20 +69,20 @@
           <tr>
             <td>diseaseStatus</td>
             <td>related-to</td>
-            <td>Observation</td><td>valueCodableConcept</td>
-            <td>Here the status of the disease at this time is being set. Here values out of a Snomed CT Value set is requiered to use.</td>
+            <td>Observation</td><td>valueCodeableConcept</td>
+            <td>Here the status of the disease at this time is being set. Here values out of a Snomed CT Value set is required to use.</td>
           </tr>
           <tr>
             <td>tumourGradeSystem</td>
             <td>related-to</td>
             <td>Observation</td><td>component.code</td>
-            <td>Here the classification system used for the tumor grading can be entered.</td>
+            <td>Here the classification system used for the tumour grading can be entered.</td>
           </tr>
           <tr>
             <td>tumourGradeValue</td>
             <td>related-to</td>
             <td>Observation</td><td>component.value</td>
-            <td>Here the corresponding value of the classification system used to grade the tumor can be entered.</td>
+            <td>Here the corresponding value of the classification system used to grade the tumour can be entered.</td>
           </tr>
           <tr>
             <td>assertedDate</td>
@@ -94,7 +94,7 @@
             <td>extenttype</td>
             <td>equivalent</td>
             <td>Observation</td><td>extension[ExtentType]</td>
-            <td>Here the extent of disease can be recorded. Here values out of a Snomed CT Value set is requiered to use.</td>
+            <td>Here the extent of disease can be recorded. Here values out of a Snomed CT Value set is required to use.</td>
           </tr>
           <tr>
             <td>LocoRegionalSites</td>

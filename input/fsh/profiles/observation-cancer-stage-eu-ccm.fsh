@@ -12,7 +12,7 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * code ^comment = "For TNM, this element should be populated with 'TNM'. For single-value staging systems, this represents the staging system/measure being used (e.g. 'FIGO stage group') "
 
 * focus only Reference(CancerConditionAtDiagnosisEuCcm)
-* focus 1..
+* focus 1..1
 * focus ^definition = "The cancer condition which stage is defined."
 
 * value[x] 0..1

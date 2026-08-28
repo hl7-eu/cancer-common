@@ -21,4 +21,4 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * period.start ^definition = "Start date of the active surveillance period."
 * period.end 0..1
 * period.end ^definition = "End date of the active surveillance period (if concluded)."
-* period.end ^comment = "It might not be available while the active surveillanceis still ongoing; however, an end date must eventually be recorded."
+* period.end ^comment = "It might not be available while the active surveillance is still ongoing; however, an end date must eventually be recorded."

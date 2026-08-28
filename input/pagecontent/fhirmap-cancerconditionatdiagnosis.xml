@@ -65,31 +65,31 @@
             <td>subject</td>
             <td>equivalent</td>
             <td>Condition</td><td>subject</td>
-            <td>Must refere to a PateintEuCcm patient profile.</td>
+            <td>Must refer to a PatientEuCcm patient profile.</td>
           </tr>
           <tr>
             <td>histologyBehaviour</td>
             <td>related-to</td>
             <td>Observation</td><td>value</td>
-            <td>ObservationHistologyBehaviourEuCcm is used to define the histology behaviour. Here the code of the observation is fixed: code = $sct#395531003 "Neoplasm observable (observable entity). The histology behaviour is then noted in the valueCodableConcept element."  </td>
+            <td>ObservationHistologyBehaviourEuCcm is used to define the histology behaviour. Here the code of the observation is fixed: code = $sct#395531003 "Neoplasm observable (observable entity). The histology behaviour is then noted in the valueCodeableConcept element. The CancerConditionAtDiagnosisEuCcm profile references the Observation in extension[HistologyBehaviour]</td>
           </tr>
           <tr>
             <td>bodySite</td>
             <td>equivalent</td>
             <td>Condition</td><td>bodySite</td>
-            <td>Here the ICD03 codesystem is recommedned by the WG community, but the most specific code if requiered to use.</td>
+            <td>Here the ICD03 codesystem is recommended by the WG community, but the most specific code if required to use.</td>
           </tr>
           <tr>
             <td>tumourGradeSystem</td>
             <td>related-to</td>
             <td>Condition</td><td>stage.type</td>
-            <td>Defines the classification system for the tumor grading.</td>
+            <td>Defines the classification system for the tumour grading.</td>
           </tr>
           <tr>
             <td>tumourGradeValue</td>
             <td>related-to</td>
-            <td>Condition</td>stage.summary<td></td>
-            <td>Represents the measured grade. Here the text element of the CodableConcept is filled out. If a code is available, it can be entered through the CodableConept. </td>
+            <td>Condition</td><td>stage.summary</td>
+            <td>Represents the measured grade. Here the text element of the CodeableConcept is filled out. If a code is available, it can be entered through the CodeableConcept. </td>
           </tr>
           <tr>
             <td>visitDate</td>

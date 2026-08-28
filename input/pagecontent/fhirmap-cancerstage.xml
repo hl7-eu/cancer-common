@@ -70,7 +70,7 @@
             <td>classificationType</td>
             <td>related-to</td>
             <td>Observation</td><td>code</td>
-            <td>In this element the code of the clissification system used must be entered.</td>
+            <td>In this element the code of the classification system used must be entered.</td>
           </tr>
           <tr>
             <td>stage.value</td>
@@ -88,7 +88,7 @@
             <td>type</td>
             <td>equivalent</td>
             <td>Observation</td><td>extension[CinicalOrPathological]</td>
-            <td>Smomed CT ValueSet must be used.</td>
+            <td>Snomed CT ValueSet must be used.</td>
           </tr>
           <tr>
             <td>surgeryReference</td>

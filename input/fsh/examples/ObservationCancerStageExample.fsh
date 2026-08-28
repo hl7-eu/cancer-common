@@ -1,7 +1,7 @@
 Instance: ObservationCancerStage1-Example
 InstanceOf: observation-cancer-stage-eu-ccm
 Usage: #example
-Description: "Example of the cancer stage being representet through a three component TNM clinical staging system."
+Description: "Example of the cancer stage being represented through a three component TNM clinical staging system."
 
 * status = #final
 * code = $loinc#67204-8 "Deprecated TNM clinical staging [PhenX]"
