@@ -1,2 +1,5 @@
 # cancer-common
-HL7 Europe Cancer Common FHIR Implementation Guide
+HL7 Europe Common Cancer Model FHIR Implementation Guide
+
+Release: https://hl7.eu/fhir/cancer-common/
+ci-build: https://build.fhir.org/ig/hl7-eu/cancer-common
