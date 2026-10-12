@@ -91,9 +91,6 @@
             <li>
                 <a class="dropdown-item" href="artifacts.html">Artifacts Summary</a>
             </li>
-            <li>
-                <a class="dropdown-item" href="downloads.html">Downloads</a>
-            </li>
         </ul>
     </li>
 </ul>
