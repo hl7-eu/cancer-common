@@ -201,7 +201,7 @@ FHIR Logical Model: [StructureDefinition-SystemicTreatment.html](StructureDefini
 
 #### OverallCancerTreatmentResponse
 
-Represents the overall assessment of how the cancer condition has responded to one or more treatment episodes ((e.g., progression, stable disease, partial/complete remission)) at a specific time point, based on evidence.
+Represents the overall assessment of how the cancer condition has responded to one or more treatment episodes (e.g., progression, stable disease, partial/complete remission) at a specific time point, based on evidence.
 
 <div style="text-align:center;">
   <p></p>

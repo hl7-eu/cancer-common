@@ -54,7 +54,7 @@
           </ul>
         </td>
         <td>
-          <p>Each time a patient has a new cancer (so not related and independent from the first one), they have a new <em>Cancer Condition</em>. In case in time, there is an updated of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> instance.</p>
+          <p>Each time a patient has a new cancer (so not related and independent from the first one), they have a new <em>Cancer Condition</em>. In case in time, there is an update of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> instance.</p>
           <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em> instance.</p>
           <p>The couple <strong>Histology Behaviour</strong> and <strong>Body Site</strong> identifies the <em>Cancer Condition</em>.</p>
         </td>
@@ -72,9 +72,9 @@
             <li>One or two <em>CancerStage</em> (it must always have one <em>CancerStage</em> of type Clinical and it may have a <em>CancerStage</em> of type Pathological)</li>
             <li>One or more <em>CancerTreatment</em></li>
             <li>One or more <em>OverallCancerTreatmentResponse</em></li>
-            <li>One or more <em>ClinicalCancerProgression </em></li>
+            <li>One or more <em>ClinicalCancerProgression</em></li>
           </ul>
-          <p>Basing on the availability in EHR, it can be directly or indirectly connected with some other concepts as:</p>
+          <p>Based on the availability in EHR, it can be directly or indirectly connected with some other concepts as:</p>
           <ul>
             <li>One or more pieces of <em>Evidence</em> (on which the diagnosis is based)</li>
             <li>A <em>Surgery</em>  (during which the <em>Biopsy</em> specimen is collected)</li>
@@ -124,7 +124,7 @@
           <p>It <strong>must</strong> have:</p>
           <ul>
             <li>A <strong>Type</strong>: indicates whether the <em>Cancer Stage</em> is Clinical or Pathological.</li>
-            <li>A <strong>ClassificationType</strong>: indicates the name of the staging system used (e.g., TNM (Tumor Linphonode Metastasis)).</li>
+            <li>A <strong>ClassificationType</strong>: indicates the name of the staging system used (e.g., TNM (Tumour, Node, Metastasis)).</li>
             <li>A <strong>Value</strong>: indicates the stage values as defined by the applied classification.</li>
           </ul>
         </td>
@@ -167,7 +167,7 @@
         </td>
         <td>
           <p>Connected with a <em>CancerStage</em> (of type Clinical).</p>
-          <p>Basing on the availability in EHR it can be directly or indirectly connected with an <em>Imaging Report</em>.</p>
+          <p>Based on the availability in EHR it can be directly or indirectly connected with an <em>Imaging Report</em>.</p>
         </td>
       </tr>
 
@@ -273,7 +273,7 @@
             <li>A possible or more <em>ClinicalCancerProgression</em></li>
             <li>A <em>CancerPatient</em>, as Subject</li>
           </ul>
-          <p>Basing on the availability in EHR it can be connected with some other concepts as:</p>
+          <p>Based on the availability in EHR it can be connected with some other concepts as:</p>
           <ul>
             <li>A <em>Report</em> (in case the <em>Treatment</em> is a <em>Surgery</em>)</li>
             <li>a <em>Treatment Plan/Prescription</em> (in case of <em>Radiotherapy</em> or <em>SystemicTreatment</em>)</li>
@@ -324,7 +324,7 @@
             <li>One <em>CancerPatient</em></li>
           </ul>
           <p>Indirectly with other concepts through <em>CancerPatient</em>.</p>
-          <p>Basing on the availability in EHR it can be connected with some other concepts as:</p>
+          <p>Based on the availability in EHR it can be connected with some other concepts as:</p>
           <ul>
             <li>A <em>Visit</em> (when the follow-up was performed). </li>
           </ul>
@@ -336,12 +336,12 @@
         <td><strong>OverallCancerTreatmentResponse</strong></td>
         <td>
           <p>
-            Represents the standard way to measure how well a <em>CancerPatient</em> responds to a all performed <em>Treatments</em> on the <em>Cancer Condition</em>. It is based on whether tumours shrink, stay the same, or get bigger. It is evaluated by clinician during a follow-up <em>Visit</em> based on <em>Evidence</em>. It can be one of the following:
+            Represents the standard way to measure how well a <em>CancerPatient</em> responds to all performed <em>Treatments</em> on the <em>Cancer Condition</em>. It is based on whether tumours shrink, stay the same, or get bigger. It is evaluated by clinician during a follow-up <em>Visit</em> based on <em>Evidence</em>. It can be one of the following:
           </p>
           <ul>
-            <li><em>Progression</em> (in case the cancer is grown respect the previous Visit)</li>
-            <li><em>Stable Disease</em> (in case the cancer is not changed respect the previous Visit)</li>
-            <li><em>Partial Remission</em> (in case the cancer shrunk respect the previous Visit)</li>
+            <li><em>Progression</em> (in case the cancer has grown compared to the previous Visit)</li>
+            <li><em>Stable Disease</em> (in case the cancer has not changed compared to the previous Visit)</li>
+            <li><em>Partial Remission</em> (in case the cancer shrunk compared to the previous Visit)</li>
             <li><em>Complete Remission</em> (in case the cancer completely disappeared).</li>
           </ul>
           <p>It <strong>must</strong> have:</p>
@@ -363,7 +363,7 @@
             <li>One <em>CancerConditions(AtDiagnosis)</em></li>
             <li>A possible or more <em>ClinicalCancerProgression</em></li>
           </ul>
-          <p>Basing on the availability in EHR it can be connected with some other concepts as:</p>
+          <p>Based on the availability in EHR it can be connected with some other concepts as:</p>
           <ul>
             <li>One or more pieces of <em>Evidence</em> (on which it the response is evaluated)</li>
             <li>A <em>Visit</em> (when the response is evaluated).</li>
@@ -382,7 +382,7 @@
             <li>A <strong>Disease Status</strong>: represents the status of the <em>Cancer Condition</em> evaluated during a <em>Visit</em>. It could be one of the following: 
               <ul>
                 <li><em>Progression</em>: in case the cancer is grown respect the previous <em>Visit</em></li>
-                <li><em>Stable Disease</em>: in case the cancer is not grown or shrunk respect the previous <em>Visit</em></li>
+                <li><em>Stable Disease</em>: in case the cancer has not grown or shrunk respect the previous <em>Visit</em></li>
                 <li><em>Partial Remission</em>: in case the cancer shrunk respect the previous <em>Visit</em></li>
                 <li><em>Complete Remission</em>: in case the cancer completely disappeared</li>
                 <li><em>Recurrence</em>: in case the cancer after complete remission re-appeared or cancer that has recurred (come back), usually after a period of time during which the cancer <strong>could not be detected</strong>.</li>
@@ -401,11 +401,11 @@
             </li>
             <li>Can have one or more:
               <ul>
-                <li><em>Loco-regional site</em>: the specific site of the surrounding anatomical region involved (it must be present if the the <em>ExtentType</em> is <em>Loco-regional</em>)</li>
+                <li><em>Loco-regional site</em>: the specific site of the surrounding anatomical region involved (it must be present if the <em>ExtentType</em> is <em>Loco-regional</em>)</li>
                 <li><em>Metastatic site</em>: the specific site of the metastases (It must be present if the <em>ExtentType</em> is <em>Metastatic</em>).</li>
               </ul>
             </li>
-            <li>A <strong>Tumour Grade</strong>: the new tumor grade, in case it is changed respect the first diagnosis (it usually doesn't change).</li>
+            <li>A <strong>Tumour Grade</strong>: the new tumor grade, in case it is changed compared to the first diagnosis (it usually doesn't change).</li>
           </ul>
         </td>
         <td>
@@ -423,7 +423,7 @@
             <li>One or more <em>CancerTreatment</em></li>
             <li>One or more <em>OverallCancerTreatmentResponse</em></li>
           </ul>
-          <p>Basing on the availability in EHR it can be directly or indirectly connected with some other concepts as:</p>
+          <p>Based on the availability in EHR it can be directly or indirectly connected with some other concepts as:</p>
           <ul>
             <li>One or more pieces of <em>Evidence</em> (on which it the diagnosis is based)</li>
             <li>An <em>Imaging</em> (on which the <em>ExtentType</em> and the possible <em>Loco-regional sites</em> or <em>Metastatic sites</em> are defined)</li>
@@ -463,7 +463,7 @@
         </td>
       </tr>
       <tr id="future-qol-proms">
-        <td><strong>Quality of Life (QoL)/ Patient-Reported Outcome Measures (PROMs) ect..</strong></td>
+        <td><strong>Quality of Life (QoL)/ Patient-Reported Outcome Measures (PROMs) etc.</strong></td>
         <td>
           <p>
             It could be useful to consider questionnaires to evaluate the quality of life and outcomes, but not with priority. They could be recorded during a <em>Visit</em>.
