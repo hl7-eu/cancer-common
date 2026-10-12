@@ -76,7 +76,7 @@
           </ul>
           <p>Basing on the availability in EHR, it can be directly or indirectly connected with some other concepts as:</p>
           <ul>
-            <li>One or more <em>Evidence</em> (on which the diagnosis is based)</li>
+            <li>One or more pieces of <em>Evidence</em> (on which the diagnosis is based)</li>
             <li>A <em>Surgery</em>  (during which the <em>Biopsy</em> specimen is collected)</li>
             <li>A <em>Biopsy</em>  (on which the <em>TumorGrade</em> and the <em>HistologyBehaviour</em> are defined)</li>
             <li>An <em>Imaging</em> (on which the <em>BodySite</em> is defined)</li>
@@ -336,7 +336,7 @@
         <td><strong>OverallCancerTreatmentResponse</strong></td>
         <td>
           <p>
-            Represents the standard way to measure how well a <em>CancerPatient</em> responds to a all performed <em>Treatments</em> on the <em>Cancer Condition</em>. It is based on whether tumours shrink, stay the same, or get bigger. It is evaluated by clinician during a follow-up <em>Visit</em> based on an <em>Evidence</em>. It can be one of the following:
+            Represents the standard way to measure how well a <em>CancerPatient</em> responds to a all performed <em>Treatments</em> on the <em>Cancer Condition</em>. It is based on whether tumours shrink, stay the same, or get bigger. It is evaluated by clinician during a follow-up <em>Visit</em> based on <em>Evidence</em>. It can be one of the following:
           </p>
           <ul>
             <li><em>Progression</em> (in case the cancer is grown respect the previous Visit)</li>
@@ -365,7 +365,7 @@
           </ul>
           <p>Basing on the availability in EHR it can be connected with some other concepts as:</p>
           <ul>
-            <li>One or more <em>Evidence</em> (on which it the response is evaluated)</li>
+            <li>One or more pieces of <em>Evidence</em> (on which it the response is evaluated)</li>
             <li>A <em>Visit</em> (when the response is evaluated).</li>
           </ul>
         </td>
@@ -425,7 +425,7 @@
           </ul>
           <p>Basing on the availability in EHR it can be directly or indirectly connected with some other concepts as:</p>
           <ul>
-            <li>One or more <em>Evidence</em> (on which it the diagnosis is based)</li>
+            <li>One or more pieces of <em>Evidence</em> (on which it the diagnosis is based)</li>
             <li>An <em>Imaging</em> (on which the <em>ExtentType</em> and the possible <em>Loco-regional sites</em> or <em>Metastatic sites</em> are defined)</li>
             <li>One or more <em>Visit</em> (when the disease evolution is evaluated).</li>
             <li>a <em>Biopsy</em> (on which the <em>Grading</em> and the <em>Histology Behaviour</em> is defined)</li>

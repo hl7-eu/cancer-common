@@ -27,10 +27,10 @@ Business_Event(EV_End, "Follow-up end")
 'Evidence that causes the Diagnosis
 Rel_Triggering(EV_Evidence1, EV_Diagnosis, "defines")
 
-'Diagnosis can need other evidences
+'Diagnosis can need other evidence
 Rel_Triggering(EV_Diagnosis, EV_Evidence1, "can request others")
 
-'Diagnosis can need other evidences
+'Diagnosis can need other evidence
 Rel_Triggering(EV_Diagnosis, PF_Treatment)
 
 ' After any treatment → evidence 

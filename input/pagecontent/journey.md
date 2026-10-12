@@ -1,6 +1,6 @@
 ##	Introduction
 
-A patient’s cancer journey is a longitudinal sequence of events driven by the availability and interpretation of clinical evidence. It begins when one or more relevant evidences are identified, leads to the assertion and characterisation of a cancer condition, and continues through treatment, response assessment, and follow‑up over time.
+A patient’s cancer journey is a longitudinal sequence of events driven by the availability and interpretation of clinical evidence. It begins when one or more relevant pieces of evidence are identified, leads to the assertion and characterisation of a cancer condition, and continues through treatment, response assessment, and follow‑up over time.
 
 Clinical evidence may derive from different contexts, including screening programmes, routine examinations, or investigations performed for reasons unrelated to cancer. The presence of symptoms is not required for the cancer journey to start. Clinical decisions along the cancer journey are based on the evaluation of evidence, on the observed response to treatment when a treatment has been administered, and on the resulting disease status.
 
@@ -21,7 +21,7 @@ The following figure provides a high level representation of a typical cancer jo
   <p></p>
 </div>
 
-The journey usually begins with one or more sources of **clinical evidence** (e.g. imaging examinations, laboratory tests, biopsies). These evidences support the **assertion of a cancer diagnosis**. In some cases, additional evidence may be required to further characterise the cancer condition, for example to refine cancer stage or tumour characteristics (e.g. tumour grade).
+The journey usually begins with one or more sources of **clinical evidence** (e.g. imaging examinations, laboratory tests, biopsies). This evidence supports the **assertion of a cancer diagnosis**. In some cases, additional evidence may be required to further characterise the cancer condition, for example to refine cancer stage or tumour characteristics (e.g. tumour grade).
 
 Once a cancer condition has been asserted, clinicians may decide to initiate a **treatment**. Treatments can occur in one or more episodes and may be of different types (i.e. surgery, radiotherapy, systemic treatment, active surveillance).
 
