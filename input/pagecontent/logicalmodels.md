@@ -126,7 +126,7 @@ FHIR Logical Model: [StructureDefinition-Imaging.html](StructureDefinition-Imagi
 
 #### CancerPatient
 
-Represents the patient affected by one or more cancer conditionsand acts as the central subject for all clinical events, treatments, disease assessments, and follow‑up information recorded along the cancer journey.
+Represents the patient affected by one or more cancer conditions and acts as the central subject for all clinical events, treatments, disease assessments, and follow‑up information recorded along the cancer journey.
 
 <div style="text-align:center;">
   <p></p>
