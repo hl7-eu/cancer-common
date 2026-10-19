@@ -3,11 +3,11 @@
 
 The European Cancer Common Conceptual Model represents the foundational layer of the European Cancer Common Data Model (ECCDM). It defines a **minimum, extensible, and non-exhaustive set of cancer related concepts and their relationships**, providing a shared, platform independent representation of the cancer domain.
 
-The purpose of the conceptual model is to establish a **common semantic backbone** that can be reused consistently across different technical representations and standards. It focuses on defining *what the core cancer concepts are* and *how they relate to each other* throughout the cancer journey, independently from implementation and technology choices.
+The purpose of the conceptual model is to establish a **common semantic backbone** that can be reused consistently across different technical representations. It focuses on defining *what the core cancer concepts are* and *how they relate to each other* throughout the cancer journey, independently from implementation and technology choices.
 
 In its initial scope, the conceptual model focuses on **adult patients with solid tumours**, considering **one cancer condition at a time**, in order to limit modelling complexity and ensure feasibility in early iterations.
 
-This conceptual backbone is refined through the [Logical Model](logicalmodels.html) and, within this Implementation Guide, explicitly mapped to both [HL7 FHIR](fhirmodelmap.html) and [OMOP](omopmodelmap.html), demonstrating how a single shared model can support interoperable representations across different technical ecosystems.
+This conceptual backbone is refined through the [Logical Model](logicalmodels.html).
 
 ### Overview
 
@@ -177,14 +177,10 @@ These topics require dedicated scoping and discussion and will be addressed in f
 ### From Conceptual Model to Logical Model and Implementations
 
 The conceptual model does not stand alone.
-Together with the [Logical Model](logicalmodels.html), it forms a shared backbone that supports consistent and systematic mappings across standards.
+Together with the Logical Model, it provides a shared semantic foundation for representing cancer-related information consistently across different contexts and use cases.
 
 Within this Implementation Guide:
 *	a detailed definition of all concepts and attributes is provided in the [Glossary](glossary.html) page;
 *	the [cancer patient journey](journey.html) page describes a reference cancer journey used to guide and validate the conceptual model.
 *	the [example of model population](journey-data-evolution.html) page provides an illustrative example of how the conceptual and logical models can be instantiated over time.
 *	the [Logical Model](logicalmodels.html) refines the concepts introduced here by defining entities, attributes, relationships, and cardinalities;
-*	mappings of the shared backbone to [HL7 FHIR](fhirmodelmap.html) are documented;
-*	mappings of the same backbone to **OMOP** are documented to support research and data reuse.
-
-By presenting these mappings within a single Implementation Guide, ECCDM demonstrates how a common semantic foundation can support interoperability across different technical ecosystems without redefining the underlying meaning of the data.
