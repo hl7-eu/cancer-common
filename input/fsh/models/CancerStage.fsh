@@ -26,7 +26,7 @@ Characteristics: #can-be-target
 * type ^definition = "It indicates whether the stage instance is of type Clinical or Pathological."
 * type ^comment = "It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological"
 * evidenceReference 0..* Reference(Surgery or Imaging) "EvidenceReference"
-* evidenceReference ^definition = "Reference(s) to the evidence used to define the stage: imaging in case of a Clinical stage, or surgery in case of a Pathological stage."
+* evidenceReference ^definition = "Reference(s) to evidence used to define the stage: imaging in case of a Clinical stage, or surgery in case of a Pathological stage."
 * evidenceReference ^comment = "It shall be present. The reference shall be to one or more imaging procedures in case the stage is Clinical, or to one surgery in case the stage is Pathological."
 
 /* * surgeryReference 0..1 Reference(Surgery) "SurgeryReference"

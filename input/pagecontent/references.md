@@ -12,7 +12,7 @@ The following sources and materials provide additional context and background in
 ### European and national initiatives
 
 ECCDM is informed by experience gained in several European and national initiatives addressing cancer data for clinical care, research, and secondary use, including:
-- IDEA4RC – European project focused on the reuse of health data for rare 
+- IDEA4RC – European project focused on the reuse of health data for rare cancers
 - PanCareSurPass – European project addressing survivorship care and long-term follow-up
 - FLUTE – European initiative addressing data interoperability in oncology
 - OSIRIS – National (French) initiative contributing experience on cancer data modelling

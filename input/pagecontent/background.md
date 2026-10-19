@@ -9,7 +9,7 @@ The **HL7 Europe Cancer Common Data Model (ECCDM)** initiative was launched base
 
 Across these initiatives, a **recurring observation** emerged: although projects focus on different cancer domains, populations, and use cases, they share a common need to represent a consistent set of core concepts and relationships related to cancer. At the same time, the concrete data models adopted by individual projects are often heterogeneous, tailored to specific objectives, and difficult to reuse outside their original context.
 
-Several European projects and initiatives (e.g. IDEA4RC, PanCareSurPass, FLUTE, ect), as well as shared datasets such as MEDOC (Minimal Essential Description of Cancer), have highlighted the value of identifying a minimum common core of cancer-related information. MEDOC, in particular, demonstrated that a limited and shared set of elements can be defined across institutions and countries, while still supporting meaningful reuse.
+Several European projects and initiatives (e.g. IDEA4RC, PanCareSurPass, FLUTE, etc.), as well as shared datasets such as MEDOC (Minimal Essential Description of Cancer), have highlighted the value of identifying a minimum common core of cancer-related information. MEDOC, in particular, demonstrated that a limited and shared set of elements can be defined across institutions and countries, while still supporting meaningful reuse.
 
 ECCDM builds on this experience by extending the concept of a shared dataset into a structured data model, where not only data elements but also their relationships and longitudinal evolution are explicitly represented.
 
@@ -23,7 +23,7 @@ ECCDM therefore treats primary and secondary use as a single **continuum**: seco
 
 In the European context, this challenge is further amplified by the **coexistence** of **different standards** and technical ecosystems. OMOP is widely adopted for research and secondary use of data, while HL7 FHIR is increasingly used for data exchange and interoperability. Mapping between these standards is often complex and addressed on a project-by-project basis.
 
-ECCDM addresses this gap by defining a shared **conceptual** and **logical backbone** that can support consistent **mapping** between **different standard** representations, enabling alignment between HL7 FHIR-based primary data exchange and OMOP-based secondary use.
+ECCDM addresses this gap by defining a shared **conceptual** and **logical backbone** that can support consistent **mapping** between **different standards'** representations, enabling alignment between HL7 FHIR-based primary data exchange and OMOP-based secondary use.
 
 The initial phase of ECCDM focuses on defining a typical cancer journey, guided by extensive discussions with clinicians during initiatives such as IDEA4RC. To limit complexity, the first iteration of the model focuses on **adult patients** with **solid tumours**, covering key phases such as diagnosis, disease progression, treatments, response evaluation, and follow-up including outcomes.
 

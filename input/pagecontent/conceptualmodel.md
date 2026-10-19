@@ -1,7 +1,7 @@
 
 ### The European Cancer Common Conceptual Model
 
-The European Cancer Common Conceptual Model represents the foundational layer of the European Cancer Common Data Model (ECCDM). It defines a **minimum, extensible, and non exhaustive set of cancer related concepts and their relationships**, providing a shared, platform independent representation of the cancer domain.
+The European Cancer Common Conceptual Model represents the foundational layer of the European Cancer Common Data Model (ECCDM). It defines a **minimum, extensible, and non-exhaustive set of cancer related concepts and their relationships**, providing a shared, platform independent representation of the cancer domain.
 
 The purpose of the conceptual model is to establish a **common semantic backbone** that can be reused consistently across different technical representations and standards. It focuses on defining *what the core cancer concepts are* and *how they relate to each other* throughout the cancer journey, independently from implementation and technology choices.
 
@@ -50,7 +50,7 @@ The patient is associated with overall follow up information, including the **La
 
 #### CancerConditionAtDiagnosis
 
-A **CancerConditionAtDiagnosis** represents a cancer diagnosis asserted for a patient at a specific point in time and represent the start point of the cancer journey.
+A **CancerConditionAtDiagnosis** represents a cancer diagnosis asserted for a patient at a specific point in time and represents the start point of the cancer journey.
 
 It captures key diagnostic characteristics such as body site, histology, grade, and the asserted dates, based on available clinical evidence (e.g. imaging, biopsy).
 
@@ -105,7 +105,7 @@ The **LastFollowUp** captures the most recent follow up information available fo
 
 It provides a summary view of the latest known clinical status within the context of the overall cancer journey.
 
-### Detailes Conceptual Model
+### Detailed Conceptual Model
 
 This section presents the **complete conceptual representation** of the first release of the European Cancer Common Conceptual Model, including all concepts, attributes, and relationships.
 

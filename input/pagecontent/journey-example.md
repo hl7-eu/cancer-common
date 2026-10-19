@@ -1,4 +1,4 @@
-This page provides **logical-level example instances** populated according to the [European Cancer Common Logical Model](logicalmodels.html) , following the steps of the [Cancer Patient Journey](journey.html).
+This page provides **logical-level example instances** populated according to the [European Cancer Common Logical Model](logicalmodels.html), following the steps of the [Cancer Patient Journey](journey.html).
 
 The purpose of this section is to show **how the logical model can be populated over time**, by creating concrete instances of its entities at specific moments of the cancer journey, and by explicitly linking these instances to preserve longitudinal traceability.
 
@@ -20,7 +20,7 @@ In particular, **terminology bindings shown in this page should not be interpret
 
 The diagrams presented in the following sections use schematic representations based on the Logical Model, and are intended to support implementers in understanding **how the model can be applied in practice**, without prescribing a specific technical implementation.
 
-For ease of consultation and reuse, especially for readers less familiar with FHIR, a complete representation of the exaple is also available in Excel format ([LogicalModelExample.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/LogicalModelExample_v2.xlsx)).
+For ease of consultation and reuse, especially for readers less familiar with FHIR, a complete representation of the example is also available in Excel format ([LogicalModelExample.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/LogicalModelExample_v2.xlsx)).
 
 ### Diagnosis + First Treatment (Date 0 - 3)
 This section instantiates the logical entities required to represent diagnosis and the initial treatment phase. The example includes instances of CancerPatient, CancerConditionAtDiagnosis, Imaging, CancerStage (clinical and pathological), Surgery and Radiotherapy.
