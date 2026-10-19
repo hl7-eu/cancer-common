@@ -138,7 +138,7 @@ Events and documents are included to reflect real world EHR artefacts and to sup
 
 The conceptual representation is also organised around the notion of a typical cancer journey. In addition to defining concepts and relationships, the model captures how cancer related information unfolds over time, from diagnosis through treatment, response evaluation, disease progression, and follow up. 
 
-To support understanding and validation of the model, a reference typical [cancer patient journey](journey.html) has been defined, together with an [illustrative example](journey-data-evolution.html) showing how the conceptual entities can be instantiated and populated over time. This example is intended to make the model easier to understand for clinicians, researchers, and implementers, and to demonstrate its applicability in real world scenarios.
+To support understanding and validation of the model, a reference typical [cancer patient journey](journey.html) has been defined, together with an [illustrative example](journey-data-evolution.html) showing how the conceptual entities can be instantiated and populated over time.
 
 A detailed description of the typical [cancer patient journey](journey.html) and an [example](journey-data-evolution.html) of model population are provided in the dedicated pages, which complement the conceptual and logical representations presented in this Implementation Guide.
 
