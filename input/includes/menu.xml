@@ -85,12 +85,7 @@
             </li>
         </ul>
     </li>
-    <li class="dropdown">
-        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li>
-                <a class="dropdown-item" href="artifacts.html">Artifacts Summary</a>
-            </li>
-        </ul>
+    <li>
+        <a href="artifacts.html">Artifacts</a>
     </li>
 </ul>
