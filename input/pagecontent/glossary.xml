@@ -76,7 +76,7 @@
           </ul>
           <p>Based on the availability in EHR, it can be directly or indirectly connected with some other concepts as:</p>
           <ul>
-            <li>One or more pieces of <em>Evidence</em> (on which the diagnosis is based)</li>
+            <li>One or more <em>Evidence</em> elements supporting the diagnosis</li>
             <li>A <em>Surgery</em>  (during which the <em>Biopsy</em> specimen is collected)</li>
             <li>A <em>Biopsy</em>  (on which the <em>TumorGrade</em> and the <em>HistologyBehaviour</em> are defined)</li>
             <li>An <em>Imaging</em> (on which the <em>BodySite</em> is defined)</li>
@@ -425,7 +425,7 @@
           </ul>
           <p>Based on the availability in EHR it can be directly or indirectly connected with some other concepts as:</p>
           <ul>
-            <li>One or more pieces of <em>Evidence</em> (on which the diagnosis is based)</li>
+            <li>One or more <em>Evidence</em> elements supporting the diagnosis</li>
             <li>An <em>Imaging</em> (on which the <em>ExtentType</em> and the possible <em>Loco-regional sites</em> or <em>Metastatic sites</em> are defined)</li>
             <li>One or more <em>Visit</em> (when the disease evolution is evaluated).</li>
             <li>a <em>Biopsy</em> (on which the <em>Grading</em> and the <em>Histology Behaviour</em> is defined)</li>

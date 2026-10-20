@@ -1,6 +1,6 @@
 ##	Introduction
 
-A patient’s cancer journey is a longitudinal sequence of events driven by the availability and interpretation of clinical evidence. It begins when one or more relevant pieces of evidence are identified, leads to the assertion and characterisation of a cancer condition, and continues through treatment, response assessment, and follow‑up over time.
+A patient’s cancer journey is a longitudinal sequence of events driven by the availability and interpretation of clinical evidence. It begins when relevant evidence is identified, leads to the assertion and characterisation of a cancer condition, and continues through treatment, response assessment, and follow‑up over time.
 
 Clinical evidence may derive from different contexts, including screening programmes, routine examinations, or investigations performed for reasons unrelated to cancer. The presence of symptoms is not required for the cancer journey to start. Clinical decisions along the cancer journey are based on the evaluation of evidence, on the observed response to treatment when a treatment has been administered, and on the resulting disease status.
 
