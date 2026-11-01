@@ -123,9 +123,7 @@ This section presents the **complete conceptual representation** of the first re
   <p></p>
 </div>
 
-The detailed conceptual diagrams adopt a set of **representation conventions** aimed at balancing clarity for clinicians, researchers, and domain experts with sufficient precision to support downstream modelling activities.
-
-In the conceptual diagrams:
+The representation conventions used in the conceptual diagrams are as follows:
 *	**Black rectangles with rounded corners** represent **Core Model Entities**
 *	**Black rectangles with dotted edges** represent **Attributes**
 *	**Black rectangles** represent possible **Values** of attributes
