@@ -4,7 +4,7 @@ Description: "Example pathological TNM stage supported by the surgery example."
 InstanceOf: CancerStage
 Usage: #example
 
-* cancerConditionAtDiagnosisReference = Reference(CancerConditionAtDiagnosis1-Example)
+* cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * classificationType.text = "TNM"
 // Stage value 1
 * stage[+].code.text = "T category"
@@ -19,4 +19,4 @@ Usage: #example
 * type.coding[0].display = "Pathological"
 * type.text = "Pathological"
 
-* evidenceReference[+] = Reference(Surgery1-Example)
+* evidenceReference = Surgery1-Example

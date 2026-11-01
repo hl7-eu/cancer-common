@@ -8,7 +8,7 @@ Characteristics: #can-be-target
 * obeys cs-ev-e2
 * obeys cs-tnm-1
 * obeys cs-nontnm-1
-* cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerCondition AtDiagnosis Reference"
+* cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerCondition AtDiagnosis Reference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at first diagnosis for which the stage is reported."
 * classificationType 0..1 CodeableConcept "ClassificationType"
 * classificationType ^definition = "Staging classification system used when the staging system needs to be explicitly identified (e.g. TNM)."
@@ -25,9 +25,10 @@ Characteristics: #can-be-target
 * type 1..1 CodeableConcept "Type"
 * type ^definition = "It indicates whether the stage instance is of type Clinical or Pathological."
 * type ^comment = "It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological"
-* evidenceReference 0..* Reference(Surgery or Imaging) "EvidenceReference"
+* evidenceReference 0..* Base "EvidenceReference"
 * evidenceReference ^definition = "Reference(s) to evidence used to define the stage: imaging in case of a Clinical stage, or surgery in case of a Pathological stage."
 * evidenceReference ^comment = "It shall be present. The reference shall be to one or more imaging procedures in case the stage is Clinical, or to one surgery in case the stage is Pathological."
+* evidenceReference only Surgery or Imaging
 
 /* * surgeryReference 0..1 Reference(Surgery) "SurgeryReference"
 * surgeryReference ^definition = "It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical."

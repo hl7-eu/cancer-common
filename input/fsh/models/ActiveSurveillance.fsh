@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 * obeys as-1
 * subject 1..1 CancerPatient "Subject"
 * subject ^definition = "Reference to the patient (subject) under active surveillance."
-* cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerCondition AtDiagnosis Reference"
+* cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerCondition AtDiagnosis Reference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at diagnosis for which surveillance is applied."
 * cancerConditionAtDiagnosisReference ^comment = "The reference to CancerCondition is limited to the CancerConditionAtDiagnosis because ActiveSurveillance is discontinued if a ClinicalCancerProgression occurs, at which point a different treatment strategy is initiated."
 * startDate 1..1 dateTime "StartDate"
