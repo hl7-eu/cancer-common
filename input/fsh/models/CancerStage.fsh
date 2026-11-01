@@ -28,7 +28,7 @@ Characteristics: #can-be-target
 * evidenceReference 0..* Base "EvidenceReference"
 * evidenceReference ^definition = "Reference(s) to evidence used to define the stage: imaging in case of a Clinical stage, or surgery in case of a Pathological stage."
 * evidenceReference ^comment = "It shall be present. The reference shall be to one or more imaging procedures in case the stage is Clinical, or to one surgery in case the stage is Pathological."
-* evidenceReference only Surgery or Imaging
+* evidenceReference only Base or Surgery or Imaging
 
 /* * surgeryReference 0..1 Reference(Surgery) "SurgeryReference"
 * surgeryReference ^definition = "It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical."
