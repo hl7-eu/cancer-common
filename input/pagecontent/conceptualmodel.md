@@ -132,7 +132,7 @@ In the conceptual diagrams:
 *	**Blue shapes** represent **Events** and **Documents**
 
 Events represent all procedures, encounters, or episodes of care in which a cancer patient participates as subject (e.g. outpatient visits, surgery, imaging examinations, laboratory tests).
-Documents represent medical reports produced during events and digitally signed by a doctor, physician, or clinician.
+Documents represent medical reports produced during events.
 
 Events and documents are included to reflect real world EHR artefacts and to support traceability of information, while keeping the conceptual model focused on cancer domain concepts rather than on workflow or document management.
 
