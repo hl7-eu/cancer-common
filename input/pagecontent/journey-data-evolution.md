@@ -82,11 +82,11 @@ This second step represents the first **post treatment assessment** of the cance
 
 At **Date 4** (**2018-10-30**), after the completion of surgery and radiotherapy, new clinical evidence becomes available and a follow up visit takes place. This visit represents the first structured assessment of the response to the initial treatment strategy.
 
-At this point, an **OverallTreatmentResponse** instance (**OverallTreatmentResponse1**) is instantiated to capture the evaluation of how the cancer condition has responded to the treatments administered so far. In this example, the overall treatment response is assessed as:
+At this point, an **OverallCancerTreatmentResponse** instance (**OverallCancerTreatmentResponse1**) is instantiated to capture the evaluation of how the cancer condition has responded to the treatments administered so far. In this example, the overall treatment response is assessed as:
 *	treatmentResponseType = Complete Remission,
 *	date = 2018-10-30.
 
-The OverallTreatmentResponse instance is explicitly linked to the **CancerConditionAtDiagnosis** (**CancerConditionAtDiagnosis1**), ensuring that the response assessment is clearly associated with the condition that has been treated.
+The OverallCancerTreatmentResponse instance is explicitly linked to the **CancerConditionAtDiagnosis** (**CancerConditionAtDiagnosis1**), ensuring that the response assessment is clearly associated with the condition that has been treated.
 
 Based on this treatment response evaluation, clinicians subsequently assess the current status of the disease. This assessment is captured through the instantiation of a **ClinicalCancerProgression** instance (**ClinicalCancerProgression1**), which represents the disease status at Date 4. In this case, the disease status is recorded as:
 *	diseaseStatus = Complete Remission,
@@ -216,11 +216,11 @@ This step illustrates the follow up visit performed after the completion of the 
 
 At **Date 10** (**2020-01-02**), after one or more diagnostic tests, the patient undergoes a follow up visit aimed at assessing the response to the systemic treatment initiated after the documented recurrence.
 
-At this time point, clinicians first evaluate the response to the second treatment course. An **OverallTreatmentResponse** instance (**OverallTreatmentResponse2**) is instantiated to capture this assessment. In this example, the overall treatment response is evaluated as:
+At this time point, clinicians first evaluate the response to the second treatment course. An **OverallCancerTreatmentResponse** instance (**OverallCancerTreatmentResponse2**) is instantiated to capture this assessment. In this example, the overall treatment response is evaluated as:
 *	treatmentResponseType = Partial Remission,
 *	date = 2020-01-02.
 
-The OverallTreatmentResponse instance (**OverallTreatmentResponse2**) is linked to the **CancerConditionAtDiagnosis1** and explicitly refers to the previously recorded **ClinicalCancerProgression** instance representing the recurrence (**ClinicalCancerProgression4**). This relationship makes clear that the response assessment is performed in relation to the disease state identified at the time of recurrence.
+The OverallCancerTreatmentResponse instance (**OverallCancerTreatmentResponse2**) is linked to the **CancerConditionAtDiagnosis1** and explicitly refers to the previously recorded **ClinicalCancerProgression** instance representing the recurrence (**ClinicalCancerProgression4**). This relationship makes clear that the response assessment is performed in relation to the disease state identified at the time of recurrence.
 
 Based on this treatment response assessment, clinicians subsequently update the disease status at the current visit. This is represented through the instantiation of a new **ClinicalCancerProgression** instance (**ClinicalCancerProgression5**), which captures the disease status at Date 10. In this case:
 *	diseaseStatus = Partial Remission,
