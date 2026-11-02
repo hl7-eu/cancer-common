@@ -5,7 +5,7 @@ skinparam classAttributeIconSize 0
 
 class "SystemicTreatment1-Example" as SystemicTreatment1 [[Binary-SystemicTreatment1-Example.html]] {
   Intent: Definitive
-  Type: Chemotherapy (procedure)
+  Type: Chemotherapy
   StartDate: 2019-09-10
   EndDate: 2019-12-16
   Setting: Alone

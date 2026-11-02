@@ -4,7 +4,7 @@ Description: "Example overall treatment response documenting partial remission o
 InstanceOf: OverallCancerTreatmentResponse
 Usage: #example
 
-* cancerConditionAtDiagnosisReference = Reference(CancerConditionAtDiagnosis1-Example)
-* clinicalCancerProgressionReference = Reference(ClinicalCancerProgression4-Example)
+* cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
+* clinicalCancerProgressionReference = ClinicalCancerProgression4-Example
 * treatmentResponseType.text = "Partial Remission"
 * date = "2020-01-02"

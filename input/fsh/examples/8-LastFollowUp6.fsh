@@ -4,7 +4,7 @@ Description: "Example follow-up with the patient alive and evidence of disease o
 InstanceOf: LastFollowUp
 Usage: #example
 
-* subject = Reference(CancerPatient1-Example)
+* subject = CancerPatient1-Example
 * vitalStatus.text = "Alive"
 * evidenceOfDisease = true
 * date = "2020-04-15"

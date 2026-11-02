@@ -6,11 +6,11 @@ Characteristics: #can-be-target
 
 * obeys st-1
 * obeys st-2
-* subject 1..1 Reference(CancerPatient) "Subject"
+* subject 1..1 CancerPatient "Subject"
 * subject ^definition = "Reference to the patient (subject) receiving systemic treatment."
-* cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerConditionAtDiagnosisReference"
+* cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerConditionAtDiagnosisReference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at diagnosis targeted by systemic treatment."
-* clinicalCancerProgressionReference 0..1 Reference(ClinicalCancerProgression) "ClinicalCancerProgresionReference"
+* clinicalCancerProgressionReference 0..1 ClinicalCancerProgression "ClinicalCancerProgresionReference"
 * clinicalCancerProgressionReference ^definition = "Reference to the clinical progression event, if treatment is delivered in response to progression."
 * clinicalCancerProgressionReference ^comment = "It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression."
 * intent 1..1 CodeableConcept "Intent"

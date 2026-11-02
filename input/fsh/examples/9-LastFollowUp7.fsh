@@ -4,7 +4,7 @@ Description: "Example final follow-up documenting death from malignant neoplasm 
 InstanceOf: LastFollowUp
 Usage: #example
 
-* subject = Reference(CancerPatient1-Example)
+* subject = CancerPatient1-Example
 * vitalStatus.text = "Dead"
 * causeOfDeath.coding[0].system = "http://hl7.org/fhir/sid/icd-10"
 * causeOfDeath.coding[0].code = #C34

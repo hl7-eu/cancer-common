@@ -6,7 +6,7 @@ Characteristics: #can-be-target
 
 * obeys ccp-1
 * obeys ccp-2
-* cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerConditionReference"
+* cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerConditionReference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the original cancer condition at diagnosis to which this progression refers."
 * diseaseStatus 1..1 CodeableConcept "DiseaseStatus"
 * diseaseStatus ^definition = "Disease status at this time point (e.g. progression, stable disease, remission, recurrence)."
