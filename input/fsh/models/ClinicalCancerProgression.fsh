@@ -6,6 +6,8 @@ Characteristics: #can-be-target
 
 * obeys ccp-1
 * obeys ccp-2
+* subject 1..1 CancerPatient "Subject"
+* subject ^definition = "Reference to the patient (subject) affected by the cancer condition at first diagnosis to which this progression refers."
 * cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerConditionReference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the original cancer condition at diagnosis to which this progression refers."
 * diseaseStatus 1..1 CodeableConcept "DiseaseStatus"

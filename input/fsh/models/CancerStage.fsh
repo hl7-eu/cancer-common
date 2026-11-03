@@ -8,6 +8,8 @@ Characteristics: #can-be-target
 * obeys cs-ev-e2
 * obeys cs-tnm-1
 * obeys cs-nontnm-1
+* subject 1..1 CancerPatient "Subject"
+* subject ^definition = "Reference to the patient (subject) affected by the cancer condition at first diagnosis for which the stage is reported."
 * cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerCondition AtDiagnosis Reference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at first diagnosis for which the stage is reported."
 * classificationType 0..1 CodeableConcept "ClassificationType"

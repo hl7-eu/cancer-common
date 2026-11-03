@@ -4,6 +4,8 @@ Title: "OverallCancerTreatmentResponse"
 Description: "Logical model representing the overall assessment of the cancer’s response to one or more treatment episodes at a specific time point. Derived from Cancer_Common_Logical_Model_20260521.xlsx (sheet OverallCancerTreatmentResponse)."
 Characteristics: #can-be-target
 
+* subject 1..1 CancerPatient "Subject"
+* subject ^definition = "Reference to the patient (subject) affected by the cancer condition at diagnosis for which overall response is assessed."
 * cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerConditionAtDiagnosisReference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at diagnosis for which overall response is assessed."
 * clinicalCancerProgressionReference 0..1 ClinicalCancerProgression "ClinicalCancerProgressionReference"

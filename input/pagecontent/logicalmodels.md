@@ -22,7 +22,7 @@ This section provides an overview of the European Cancer Common Logical Model, h
 
 The following diagram illustrates the overall structure of the logical model and the dependencies between entities derived from reference relationships. It shows how patient information, cancer condition data, disease evolution, treatments, response assessments, and follow‑up events are connected within the model.
 
-The diagram is intended to support conceptual orientation and navigation. It does not replace the detailed logical definitions of each entity, which are available in the corresponding Logical Model pages.
+The diagram is intended to support conceptual orientation and navigation. It does not replace the detailed logical definitions of each entity, which are available in the corresponding Logical Model pages. Also note that not all the existing relationships have been reported in the diagram.
 
 <style>
   .uml-diagram svg {
