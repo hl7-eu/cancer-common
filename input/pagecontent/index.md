@@ -56,8 +56,6 @@ The development of the European Cancer Common Data Model has been documented thr
 
 This Implementation Guide represents the formal publication view of the work, while the Confluence space provides additional project context and traceability of the modelling process.
 
-Project workspace: [Cancer Common Model Project - Edition 1](https://confluence.hl7.org/spaces/HEU/pages/281282385/Cancer+Common+Model+Project+Edition+1)
-
 ### Example Scenarios
 
 Example scenarios supported by ECCDM include:
