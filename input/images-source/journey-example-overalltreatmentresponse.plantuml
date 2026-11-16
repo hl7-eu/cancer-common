@@ -4,7 +4,7 @@ hide methods
 skinparam classAttributeIconSize 0
 
 class "OverallCancerTreatmentResponse1-Example" as OverallCancerTreatmentResponse1 [[Binary-OverallCancerTreatmentResponse1-Example.html]] {
-  TreatmentResponseType: Complete Remission
+  OverallResponse: Complete Remission
   Date: 2018-10-30
 }
 
@@ -13,7 +13,7 @@ class "ClinicalCancerProgression1-Example" as ClinicalCancerProgression1 [[Binar
   AssertedDate: 2018-10-30
 }
 
-class "LastFollowUp1-Example" as LastFollowUp1 [[Binary-LastFollowUp1-Example.html]] {
+class "FollowUp1-Example" as FollowUp1 [[Binary-FollowUp1-Example.html]] {
   VitalStatus: Alive
   EvidenceOfDisease: False
   Date: 2018-10-30
@@ -24,5 +24,5 @@ class "CancerPatient1-Example" as CancerPatient1 [[Binary-CancerPatient1-Example
 
 OverallCancerTreatmentResponse1 --> CancerConditionAtDiagnosis1 : CancerConditionAtDiagnosis
 ClinicalCancerProgression1 --> CancerConditionAtDiagnosis1 : CancerConditionAtDiagnosis
-LastFollowUp1 --> CancerPatient1 : subject
+FollowUp1 --> CancerPatient1 : subject
 @enduml

@@ -44,11 +44,11 @@ package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
   package "Date 10 (2020-01-02) \nEvidence + Follow-up (Partial Remission)" {
     
     class OverallCancerTreatmentResponse2 {
-      treatmentResponseType = Partial Remission
+      overallResponse = Partial Remission
       date = 2020-01-02   'Date 10
     }
 
-    class LastFollowUp5 {
+    class FollowUp5 {
      vitalStatus = Alive
      evidenceOfDisease = Yes
      causeOfDeath = Null
@@ -70,7 +70,7 @@ package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
 CancerConditionAtDiagnosis1 --> ClinicalCancerProgression4 : evolves throught
 CancerConditionAtDiagnosis1 --> OverallCancerTreatmentResponse2 : has
 ClinicalCancerProgression4 --> OverallCancerTreatmentResponse2 : has
-CancerPatient1 --> LastFollowUp5 : has
+CancerPatient1 --> FollowUp5 : has
 CancerConditionAtDiagnosis1 --> ClinicalCancerProgression5 : evolves throught
 
 

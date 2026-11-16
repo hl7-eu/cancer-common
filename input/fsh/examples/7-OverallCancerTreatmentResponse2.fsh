@@ -6,5 +6,5 @@ Usage: #example
 
 * cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * clinicalCancerProgressionReference = ClinicalCancerProgression4-Example
-* treatmentResponseType.text = "Partial Remission"
+* overallResponse.text = "Partial Remission"
 * date = "2020-01-02"

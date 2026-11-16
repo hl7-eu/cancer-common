@@ -24,14 +24,9 @@ dependencies:
 #   hl7.fhir.uv.ips: current
    hl7.fhir.eu.base: 2.0.0
    hl7.fhir.uv.xver-r5.r4: 0.1.0
-   hl7.fhir.us.mcode: 4.0.0
    
 #   ihe.pharm.cancer-common: current
 
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -81,8 +76,8 @@ pages:
     title: CancerStage Mapping - FHIR
   fhirmap-imaging.xml:
     title: Imaging Mapping - FHIR
-  fhirmap-lastfollowup.xml:
-    title: LastFollowUp Mapping - FHIR
+  fhirmap-followup.xml:
+    title: FollowUp Mapping - FHIR
   fhirmap-clinicalcancerprogression.xml:
     title: ClinicalCancerProgression Mapping - FHIR
   fhirmap-surgery.xml:
@@ -105,8 +100,8 @@ pages:
     title: CancerStage Mapping - OMOP
   omopmap-imaging.xml:
     title: Imaging Mapping - OMOP
-  omopmap-lastfollowup.xml:
-    title: LastFollowUp Mapping - OMOP
+  omopmap-followup.xml:
+    title: FollowUp Mapping - OMOP
   omopmap-clinicalcancerprogression.xml:
     title: ClinicalCancerProgression Mapping - OMOP
   omopmap-surgery.xml:

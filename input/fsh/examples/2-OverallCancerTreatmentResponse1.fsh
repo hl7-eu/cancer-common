@@ -5,5 +5,5 @@ InstanceOf: OverallCancerTreatmentResponse
 Usage: #example
 
 * cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
-* treatmentResponseType.text = "Complete Remission"
+* overallResponse.text = "Complete Remission"
 * date = "2018-10-30"

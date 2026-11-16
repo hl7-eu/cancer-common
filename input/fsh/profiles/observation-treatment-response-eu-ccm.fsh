@@ -24,16 +24,16 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 
 
 * valueCodeableConcept 1..1
-* valueCodeableConcept from TreatmentResponseTypeVS (required)
+* valueCodeableConcept from OverallResponseVS (required)
 
 * effectiveDateTime 1..1
 * effectiveDateTime ^definition = "Date of the response assessment."
 
 // ValueSet needs improvement! Not final!
-ValueSet: TreatmentResponseTypeVS
-Id: treatment-response-type-vs
-Title: "Treatment Response Type VS"
-Description: "This Value Set describes the overall treatment response type of the overall cancer treatment."
+ValueSet: OverallResponseVS
+Id: overall-response-vs
+Title: "Overall Response VS"
+Description: "Overall treatment response assessment (RECIST category) of the overall cancer treatment."
 * ^status = #draft
 * ^experimental = false
 * $sct#103338009 "In full remission (qualifier value)"

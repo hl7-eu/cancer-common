@@ -8,7 +8,7 @@ class "ClinicalCancerProgression3-Example" as ClinicalCancerProgression3 [[Binar
   AssertedDate: 2019-05-30
 }
 
-class "LastFollowUp3-Example" as LastFollowUp3 [[Binary-LastFollowUp3-Example.html]] {
+class "FollowUp3-Example" as FollowUp3 [[Binary-FollowUp3-Example.html]] {
   VitalStatus: Alive
   EvidenceOfDisease: False
   Date: 2019-05-30
@@ -18,5 +18,5 @@ class "CancerConditionAtDiagnosis1-Example" as CancerConditionAtDiagnosis1 [[Bin
 class "CancerPatient1-Example" as CancerPatient1 [[Binary-CancerPatient1-Example.html]] {}
 
 ClinicalCancerProgression3 --> CancerConditionAtDiagnosis1 : CancerConditionAtDiagnosis
-LastFollowUp3 --> CancerPatient1 : subject
+FollowUp3 --> CancerPatient1 : subject
 @enduml

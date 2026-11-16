@@ -83,13 +83,13 @@
         </tr>
         <tr>
           <td>
-            <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
+            <a href="StructureDefinition-FollowUp.html">FollowUp</a>
           </td>
           <td>
             <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="omopmap-lastfollowup.html">LastFollowUp Mapping</a>
+            <a class="pill" href="omopmap-followup.html">FollowUp Mapping</a>
           </td>
         </tr>
         <tr>

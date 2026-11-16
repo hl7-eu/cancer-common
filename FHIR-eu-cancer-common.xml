@@ -50,20 +50,20 @@
 <artifact id="ValueSet/radiotherapy-intent-vs" key="ValueSet-radiotherapy-intent-vs" name="Intent of Radiotherapy"/>
 <artifact id="ValueSet/systematic-treatment-intent-vs" key="ValueSet-systematic-treatment-intent-vs" name="Intent of Systematic Treatment"/>
 <artifact id="StructureDefinition/surgery-intent" key="StructureDefinition-surgery-intent" name="Intent of the Surgery"/>
-<artifact id="Binary/LastFollowUp1-Example" key="Binary-LastFollowUp1-Example" name="Last Follow-Up 1 Example"/>
-<artifact id="Binary/LastFollowUp2-Example" key="Binary-LastFollowUp2-Example" name="Last Follow-Up 2 Example"/>
-<artifact id="Binary/LastFollowUp3-Example" key="Binary-LastFollowUp3-Example" name="Last Follow-Up 3 Example"/>
-<artifact id="Binary/LastFollowUp4-Example" key="Binary-LastFollowUp4-Example" name="Last Follow-Up 4 Example"/>
-<artifact id="Binary/LastFollowUp5-Example" key="Binary-LastFollowUp5-Example" name="Last Follow-Up 5 Example"/>
-<artifact id="Binary/LastFollowUp6-Example" key="Binary-LastFollowUp6-Example" name="Last Follow-Up 6 Example"/>
-<artifact id="Binary/LastFollowUp7-Example" key="Binary-LastFollowUp7-Example" name="Last Follow-Up 7 Example"/>
-<artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
+<artifact id="Binary/FollowUp1-Example" key="Binary-FollowUp1-Example" name="Follow-Up 1 Example"/>
+<artifact id="Binary/FollowUp2-Example" key="Binary-FollowUp2-Example" name="Follow-Up 2 Example"/>
+<artifact id="Binary/FollowUp3-Example" key="Binary-FollowUp3-Example" name="Follow-Up 3 Example"/>
+<artifact id="Binary/FollowUp4-Example" key="Binary-FollowUp4-Example" name="Follow-Up 4 Example"/>
+<artifact id="Binary/FollowUp5-Example" key="Binary-FollowUp5-Example" name="Follow-Up 5 Example"/>
+<artifact id="Binary/FollowUp6-Example" key="Binary-FollowUp6-Example" name="Follow-Up 6 Example"/>
+<artifact id="Binary/FollowUp7-Example" key="Binary-FollowUp7-Example" name="Follow-Up 7 Example"/>
+<artifact id="StructureDefinition/FollowUp" key="StructureDefinition-FollowUp" name="FollowUp"/>
 <artifact id="StructureDefinition/loco-regional-sites" key="StructureDefinition-loco-regional-sites" name="Loco-regional Site"/>
 <artifact id="StructureDefinition/metastatic-sites" key="StructureDefinition-metastatic-sites" name="Metastatic Site"/>
 <artifact id="StructureDefinition/observation-cancer-stage-eu-ccm" key="StructureDefinition-observation-cancer-stage-eu-ccm" name="Observation Cancer Stage (CCM)"/>
 <artifact id="StructureDefinition/observation-clinical-cancer-progression-eu-ccm" key="StructureDefinition-observation-clinical-cancer-progression-eu-ccm" name="Observation Clinical Cancer Progression (CCM)"/>
 <artifact id="StructureDefinition/observation-imaging-eu-ccm" key="StructureDefinition-observation-imaging-eu-ccm" name="Observation Imaging (CCM)"/>
-<artifact id="StructureDefinition/observation-last-follow-up-eu-ccm" key="StructureDefinition-observation-last-follow-up-eu-ccm" name="Observation Last Follow Up (CCM)"/>
+<artifact id="StructureDefinition/observation-follow-up-eu-ccm" key="StructureDefinition-observation-follow-up-eu-ccm" name="Observation Follow Up (CCM)"/>
 <artifact id="StructureDefinition/observation-treatment-response-eu-ccm" key="StructureDefinition-observation-treatment-response-eu-ccm" name="Observation Treatment Response (CCM)"/>
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
 <artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation: Histology Behaviour"/>
@@ -98,7 +98,7 @@
 <artifact id="StructureDefinition/systematic-treatment-setting" key="StructureDefinition-systematic-treatment-setting" name="Systematic Treatment Setting"/>
 <artifact id="Binary/SystemicTreatment1-Example" key="Binary-SystemicTreatment1-Example" name="Systemic Treatment 1 Example"/>
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
-<artifact id="ValueSet/treatment-response-type-vs" key="ValueSet-treatment-response-type-vs" name="Treatment Response Type VS"/>
+<artifact id="ValueSet/overall-response-vs" key="ValueSet-overall-response-vs" name="Overall Response VS"/>
 <artifact id="ValueSet/radiotherapy-setting-vs" key="ValueSet-radiotherapy-setting-vs" name="Value Set for strategic timing/setting of radiotherapy"/>
 <artifact id="ValueSet/systematic-treatment-setting-vs" key="ValueSet-systematic-treatment-setting-vs" name="Value Set for strategic timing/setting of systematic treatment"/>
 <artifact id="StructureDefinition/vital-status" key="StructureDefinition-vital-status" name="Vital Status"/>
@@ -131,8 +131,8 @@
 <page key="fhirmap-imaging" name="Imaging Mapping - FHIR"/>
 <page key="omopmap-imaging" name="Imaging Mapping - OMOP"/>
 <page key="knownissues" name="Known Issues"/>
-<page key="fhirmap-lastfollowup" name="LastFollowUp Mapping - FHIR"/>
-<page key="omopmap-lastfollowup" name="LastFollowUp Mapping - OMOP"/>
+<page key="fhirmap-followup" name="FollowUp Mapping - FHIR"/>
+<page key="omopmap-followup" name="FollowUp Mapping - OMOP"/>
 <page key="logicalmodels" name="Logical Models"/>
 <page key="fhirmodelmap" name="Model Map - FHIR"/>
 <page key="omopmodelmap" name="Model Map - OMOP"/>

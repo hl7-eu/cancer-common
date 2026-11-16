@@ -214,20 +214,20 @@ Represents the overall assessment of how the cancer condition has responded to o
 
 FHIR Logical Model: [StructureDefinition-OverallCancerTreatmentResponse.html](StructureDefinition-OverallCancerTreatmentResponse.html)
 
-#### LastFollowUp
+#### FollowUp
 
 Represents the assessment of the patient’s status at a specific follow‑up visit, including vital status and presence or absence of evidence of disease. Each follow-up visit creates a new instance.
 
 <div style="text-align:center;">
   <p></p>
   <figure>
-    {% include LastFollowUp_LM.svg %}
-    <figcaption><strong>Figure 11: LastFollowUp logical model</strong></figcaption>
+    {% include FollowUp_LM.svg %}
+    <figcaption><strong>Figure 11: FollowUp logical model</strong></figcaption>
   </figure>
   <p></p>
 </div>
 
-FHIR Logical Model: [StructureDefinition-LastFollowUp.html](StructureDefinition-LastFollowUp.html)
+FHIR Logical Model: [StructureDefinition-FollowUp.html](StructureDefinition-FollowUp.html)
 
 #### ClinicalCancerProgression
 

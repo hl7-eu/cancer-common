@@ -1,7 +1,7 @@
-Instance: LastFollowUp7-Example
-Title: "Last Follow-Up 7 Example"
+Instance: FollowUp7-Example
+Title: "Follow-Up 7 Example"
 Description: "Example final follow-up documenting death from malignant neoplasm of bronchus and lung."
-InstanceOf: LastFollowUp
+InstanceOf: FollowUp
 Usage: #example
 
 * subject = CancerPatient1-Example

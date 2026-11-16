@@ -51,7 +51,7 @@ This section therefore illustrates how the logical model can represent both simp
 This section shows the first post-treatment assessment at the logical level. New instances are created for:
 * OverallCancerTreatmentResponse, capturing the response category and assessment date;
 * ClinicalCancerProgression, recording the disease status asserted at the same time point;
-* LastFollowUp, capturing vital status and evidence of disease for the patient.
+* FollowUp, capturing vital status and evidence of disease for the patient.
 
 In this example, the response and disease status are recorded as Complete Remission, with the follow-up date aligned to the same assessment moment.
 
@@ -67,7 +67,7 @@ In this example, the response and disease status are recorded as Complete Remiss
 ### Evidence + Follow-up Visits (Complete Remission) (Date 5)
 This section represents a follow-up visit where the previously recorded remission status is confirmed. Even when no clinical change is observed, the logical model captures the follow-up as a distinct event by creating:
 * a new ClinicalCancerProgression instance (confirmation of disease status),
-* a new LastFollowUp instance (patient status at this date).
+* a new FollowUp instance (patient status at this date).
 
 <div style="text-align:center;">
   <p></p>
@@ -79,7 +79,7 @@ This section represents a follow-up visit where the previously recorded remissio
 </div>
 
 ### Evidence + Follow-up Visits (Complete Remission) (Date 6) 
-This section represents an additional follow-up visit confirming the same disease status. New instances of ClinicalCancerProgression and LastFollowUp are created to preserve temporal traceability across repeated assessments.
+This section represents an additional follow-up visit confirming the same disease status. New instances of ClinicalCancerProgression and FollowUp are created to preserve temporal traceability across repeated assessments.
 
 <div style="text-align:center;">
   <p></p>
@@ -93,7 +93,7 @@ This section represents an additional follow-up visit confirming the same diseas
 ### Evidence + Follow-up Visits (Disease Evolution - Recurrence) (Date 7) 
 This section represents a disease evolution event identified during follow-up. A new ClinicalCancerProgression instance records Recurrence and the associated extent information. In this example, loco-regional extent is captured and a loco-regional site is provided using an illustrative ICD-O-3 code.
 
-A corresponding LastFollowUp instance records that the patient is alive with evidence of disease at the same time point.
+A corresponding FollowUp instance records that the patient is alive with evidence of disease at the same time point.
 
 <div style="text-align:center;">
   <p></p>
@@ -121,7 +121,7 @@ In this example, the systemic treatment type is illustrated using a SNOMED CT pr
 ### Evidence + Follow-up Visit (Partial Remission) (Date 10)
 This section represents the assessment performed after the systemic treatment course. A new OverallCancerTreatmentResponse instance records the response evaluation and explicitly references the previous recurrence context.
 
-A new ClinicalCancerProgression instance captures the updated disease status (Partial Remission) and associated extent information. A new LastFollowUp instance records patient status at the same follow-up date.
+A new ClinicalCancerProgression instance captures the updated disease status (Partial Remission) and associated extent information. A new FollowUp instance records patient status at the same follow-up date.
 
 <div style="text-align:center;">
   <p></p>
@@ -135,7 +135,7 @@ A new ClinicalCancerProgression instance captures the updated disease status (Pa
 ### Evidence + Follow-up Visit (Progression) (Date 11)
 This section represents a further disease evolution event. A new ClinicalCancerProgression instance records Progression and metastatic extent, with an illustrative metastatic site code provided in this example.
 
-A corresponding LastFollowUp instance records that the patient remains alive with evidence of disease at the same time point.
+A corresponding FollowUp instance records that the patient remains alive with evidence of disease at the same time point.
 
 <div style="text-align:center;">
   <p></p>
@@ -147,7 +147,7 @@ A corresponding LastFollowUp instance records that the patient remains alive wit
 </div>
 
 ### Patient's Death (Date 12)
-This final section records the patient outcome. A new LastFollowUp instance captures vital status as Dead, the date of death, and (when available) the cause of death.
+This final section records the patient outcome. A new FollowUp instance captures vital status as Dead, the date of death, and (when available) the cause of death.
 
 In this example, the cause of death is illustrated using an ICD-10 code.
 

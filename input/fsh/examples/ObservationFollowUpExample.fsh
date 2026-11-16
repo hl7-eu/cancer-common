@@ -1,5 +1,5 @@
 Instance: ObservationFollowUp1-Example
-InstanceOf: observation-last-follow-up-eu-ccm
+InstanceOf: observation-follow-up-eu-ccm
 Usage: #example
 Description: "Example of an observation stating the last follow up of the patient."
 
@@ -17,7 +17,7 @@ Description: "Example of an observation stating the last follow up of the patien
 
 
 Instance: ObservationFollowUp2-Example
-InstanceOf: observation-last-follow-up-eu-ccm
+InstanceOf: observation-follow-up-eu-ccm
 Usage: #example
 Description: "Example comorbidity observation documenting the Charlson Comorbidity Index and associated comorbid conditions."
 

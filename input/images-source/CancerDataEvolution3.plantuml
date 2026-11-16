@@ -29,7 +29,7 @@ CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
  package "Date 5 (2019-02-28) \nEvidence + Follow-up (Complete Remission)" {
     
-    class LastFollowUp2 {
+    class FollowUp2 {
      vitalStatus = Alive
      evidenceOfDisease = No
      causeOfDeath = Null
@@ -48,12 +48,12 @@ CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
  }
 
-CancerPatient1 --> LastFollowUp2 : has
+CancerPatient1 --> FollowUp2 : has
 CancerConditionAtDiagnosis1 --> ClinicalCancerProgression2 : evolves throught
 
 package "Date 6 (2019-05-30) \nEvidence + Follow-up (Complete Remission)" {
     
-    class LastFollowUp3 {
+    class FollowUp3 {
      vitalStatus = Alive
      evidenceOfDisease = No
      causeOfDeath = Null
@@ -72,7 +72,7 @@ package "Date 6 (2019-05-30) \nEvidence + Follow-up (Complete Remission)" {
 
  }
 
-CancerPatient1 --> LastFollowUp3 : has
+CancerPatient1 --> FollowUp3 : has
 CancerConditionAtDiagnosis1 --> ClinicalCancerProgression3 : evolves throught
 
 /' ' ===========================================

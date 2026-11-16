@@ -25,9 +25,13 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 
 // We cannot use hasMember because that element does not allow Reference(Condition) or CodeableConcept as a type
 // We cannot use component because that element does not allow References of any type
-// Therefore, we need extensions to record the comorbid conditions
-* extension contains $mcode-related-condition named comorbidConditionPresent 0..*
-* extension contains $mcode-related-condition-absent named comorbidConditionAbsent 0..*
+// Therefore, we need extensions to record the comorbid conditions.
+// The two extensions are defined in this guide (below); they mirror the mCODE
+// related-condition / related-condition-absent extensions so that the guide has no
+// realm-specific package dependency.
+* extension contains
+    ComorbidConditionPresent named comorbidConditionPresent 0..* and
+    ComorbidConditionAbsent named comorbidConditionAbsent 0..*
 
 
 
@@ -50,3 +54,20 @@ This profiles is adapted from the mCode FHIR Implementation Guide
 * device 0..0
 * hasMember 0..0
 * component 0..0
+
+
+Extension: ComorbidConditionPresent
+Id: comorbid-condition-present
+Title: "Comorbid Condition Present"
+Description: "A comorbid condition that is present in the patient, recorded as a code or as a reference to a Condition resource. Defined in this guide after the mCODE Related Condition extension."
+Context: Observation
+* value[x] only CodeableConcept or Reference(Condition)
+* value[x] 1..1
+
+Extension: ComorbidConditionAbsent
+Id: comorbid-condition-absent
+Title: "Comorbid Condition Absent"
+Description: "A comorbid condition that has been assessed and found NOT to be present in the patient. Defined in this guide after the mCODE Related Condition Absent extension."
+Context: Observation
+* value[x] only CodeableConcept
+* value[x] 1..1

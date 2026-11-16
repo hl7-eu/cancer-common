@@ -5,11 +5,11 @@ skinparam classAttributeIconSize 0
 class OverallCancerTreatmentResponse {
   cancerConditionAtDiagnosisReference : CancerConditionAtDiagnosis [1..1]
   clinicalCancerProgressionReference : ClinicalCancerProgression [0..1]
-  treatmentResponseType : codeableConcept [1..1]
+  overallResponse : codeableConcept [1..1]
   date : dateTime [1..1]
 }
 
-note left of OverallCancerTreatmentResponse::treatmentResponseType
+note left of OverallCancerTreatmentResponse::overallResponse
 Choice: Progression | Stable Disease | Partial Remission
 | Complete Remission
 end note

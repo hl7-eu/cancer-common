@@ -9,7 +9,7 @@ class CancerPatient [[StructureDefinition-CancerPatient.html]]
 class CancerStage [[StructureDefinition-CancerStage.html]]
 class ClinicalCancerProgression [[StructureDefinition-ClinicalCancerProgression.html]]
 class Imaging [[StructureDefinition-Imaging.html]]
-class LastFollowUp [[StructureDefinition-LastFollowUp.html]]
+class FollowUp [[StructureDefinition-FollowUp.html]]
 class OverallCancerTreatmentResponse [[StructureDefinition-OverallCancerTreatmentResponse.html]]
 class Radiotherapy [[StructureDefinition-Radiotherapy.html]]
 class Surgery [[StructureDefinition-Surgery.html]]
@@ -29,7 +29,7 @@ note on link
 onlyIfType=Clinical
 end note
 ClinicalCancerProgression --> CancerConditionAtDiagnosis
-LastFollowUp --> CancerPatient
+FollowUp --> CancerPatient
 OverallCancerTreatmentResponse --> CancerConditionAtDiagnosis
 OverallCancerTreatmentResponse --> ClinicalCancerProgression
 Radiotherapy --> CancerPatient
@@ -58,7 +58,7 @@ note on link
 onlyIfType=Clinical
 end note
 ClinicalCancerProgression -u-> CancerConditionAtDiagnosis
-LastFollowUp -u-> CancerPatient
+FollowUp -u-> CancerPatient
 OverallCancerTreatmentResponse -u-> CancerConditionAtDiagnosis
 OverallCancerTreatmentResponse -u-> ClinicalCancerProgression
 CancerTreatment --> ClinicalCancerProgression

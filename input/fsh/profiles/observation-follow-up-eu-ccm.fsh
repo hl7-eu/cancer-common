@@ -1,10 +1,10 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile: ObservationLastFollowUp
+Profile: ObservationFollowUpEuCcm
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Parent: Observation
-Id: observation-last-follow-up-eu-ccm
-Title: "Observation Last Follow Up (CCM)"
-Description: """This informative profile constrains the Observation resource to represent the Last Follow-Up done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
+Id: observation-follow-up-eu-ccm
+Title: "Observation Follow Up (CCM)"
+Description: """This informative profile constrains the Observation resource to represent the Follow-Up done for the purpose of the ECCDM. It is provided as future implementation-oriented content in this publication and is expected to evolve in subsequent iterations of this guide.
 This profiles is adapted from the mCode FHIR Implementation Guide
 """
 * insert SetFmmandStatusRule ( 0, informative )

@@ -73,7 +73,7 @@
             <td>Here the ObservationCancerProgressionCcm can be referenced, if available.</td>
           </tr>
           <tr>
-            <td>treatmentResponseType</td>
+            <td>overallResponse</td>
             <td>related-to</td>
             <td>Observation</td><td>valueCode</td>
             <td>Here out of a Snomed CT value set, which is required, a code must be selected.</td>

@@ -101,9 +101,9 @@ A cancer condition may evolve through **one or more progression events** over ti
 
 #### Follow-up
 
-The **LastFollowUp** captures the most recent follow up information available for the patient.
+The **FollowUp** captures the patient's status as assessed at a follow-up visit: vital status and, for a living patient, whether there is evidence of disease.
 
-It provides a summary view of the latest known clinical status within the context of the overall cancer journey.
+Each follow-up visit creates a new instance, so the sequence of FollowUp instances traces the patient's status over the cancer journey; the most recent one gives the latest known clinical status.
 
 ### Detailed Conceptual Model
 

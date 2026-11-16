@@ -3,7 +3,7 @@ top to bottom direction
 hide methods
 skinparam classAttributeIconSize 0
 
-class "LastFollowUp7-Example" as LastFollowUp7 [[Binary-LastFollowUp7-Example.html]]{
+class "FollowUp7-Example" as FollowUp7 [[Binary-FollowUp7-Example.html]]{
   VitalStatus: Dead
   CauseOfDeath: Malignant neoplasm of bronchus and lung
   Date: 2020-06-28
@@ -12,5 +12,5 @@ class "LastFollowUp7-Example" as LastFollowUp7 [[Binary-LastFollowUp7-Example.ht
 
 class "CancerPatient1-Example" as CancerPatient1 [[Binary-CancerPatient1-Example.html]] {}
 
-LastFollowUp7 --> CancerPatient1 : subject
+FollowUp7 --> CancerPatient1 : subject
 @enduml

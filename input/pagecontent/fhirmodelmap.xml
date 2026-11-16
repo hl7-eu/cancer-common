@@ -85,13 +85,13 @@
         </tr>
         <tr>
           <td>
-            <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
+            <a href="StructureDefinition-FollowUp.html">FollowUp</a>
           </td>
           <td>
-           <a href="StructureDefinition-observation-last-follow-up-eu-ccm.html"><code>ObservationLastFollowUpEuCcm</code></a>
+           <a href="StructureDefinition-observation-follow-up-eu-ccm.html"><code>ObservationFollowUpEuCcm</code></a>
           </td>
           <td>
-            <a class="pill" href="fhirmap-lastfollowup.html">LastFollowUp Mapping</a>
+            <a class="pill" href="fhirmap-followup.html">FollowUp Mapping</a>
           </td>
         </tr>
         <tr>

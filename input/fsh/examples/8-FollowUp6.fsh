@@ -1,7 +1,7 @@
-Instance: LastFollowUp6-Example
-Title: "Last Follow-Up 6 Example"
+Instance: FollowUp6-Example
+Title: "Follow-Up 6 Example"
 Description: "Example follow-up with the patient alive and evidence of disease on 2020-04-15."
-InstanceOf: LastFollowUp
+InstanceOf: FollowUp
 Usage: #example
 
 * subject = CancerPatient1-Example

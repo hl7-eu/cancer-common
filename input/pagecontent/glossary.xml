@@ -281,12 +281,12 @@
         </td>
       </tr>
 
-      <!-- Last Follow Up --> 
-      <tr id="concept-last-follow-up">
-        <td><strong>Last Follow Up</strong></td>
+      <!-- Follow Up --> 
+      <tr id="concept-follow-up">
+        <td><strong>Follow Up</strong></td>
         <td>
           <p>
-            Represents the patient’s health status information collected during the most recent follow-up visit. It has: 
+            Represents the patient’s health status information collected during a follow-up visit; each follow-up visit is a new instance. It has: 
           </p>
           <ul>
             <li><strong>VitalStatus</strong>: that represents the evolving life status of the patient verified during a follow-up <em>Visit</em>, <u>after the first treatment</u>, to indicate if the patient is alive or dead, therefore can be:
@@ -313,10 +313,10 @@
           </ul>
         </td>
         <td>
-          <!-- No notes for LastFollowUp -->
+          <!-- No notes for FollowUp -->
         </td>
         <td>
-          <!-- No AKA for LastFollowUp -->
+          <!-- No AKA for FollowUp -->
         </td>
         <td>
           <p>Directly connected with:</p>
