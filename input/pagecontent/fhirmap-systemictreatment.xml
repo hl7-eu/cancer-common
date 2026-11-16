@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>SystemicTreatment -> FHIR Resource (TBD)</title>
+    <title>SystemicTreatment -> EOCSystematicTreatmentEuCcm</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -20,12 +20,12 @@
       </div>
     </div>
 
-    <h3>SystemicTreatment -> FHIR Resource (TBD)</h3>
+    <h3>SystemicTreatment -> EOCSystematicTreatmentEuCcm</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the SystemicTreatment logical model are expressed
-      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+      in the FHIR Resource EOCSystematicTreatmentEuCcm resource used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -37,19 +37,19 @@
         </li>
         <li>
           <strong>Target FHIR resource:</strong>
-          FHIR Resource (TBD)
+          <a href="StructureDefinition-episode-of-care-systematic-treatment-eu-ccm.html">EOCSystematicTreatmentEuCcm</a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="SystemicTreatment -> FHIR Resource (TBD)">
-        <caption>SystemicTreatment -> FHIR Resource (TBD)</caption>
+      <table summary="SystemicTreatment -> EOCSystematicTreatmentEuCcm">
+        <caption>SystemicTreatment -> EOCSystematicTreatmentEuCcm</caption>
         <thead>
           <tr>
             <th colspan="1" class="src-head">SystemicTreatment (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">EOCSystematicTreatmentEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -62,51 +62,57 @@
         <tbody>
           <tr>
             <td>subject</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Episode of Care</td><td>patient</td>
+            <td>Here the reference to a CancerPatientCcm must be made</td>
           </tr>
           <tr>
             <td>cancerConditionReference</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Episode of Care</td><td>diagnosis.condition</td>
+            <td>Here the reference to a CancerConditionDiagnosisCcm must be made.</td>
           </tr>
           <tr>
             <td>clinicalCancerProgresionReference</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[CancerProgressionReferenceST]</td>
+            <td>Here the ObservationCancerProgressionCcm can be referenced, if available.</td>
           </tr>
           <tr>
             <td>intent</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[SystematicTreatmentIntent]</td>
+            <td>Here the intent of the systematic treatment must be stated. Here the code must stem from a defined Snomed CT value set.</td>
           </tr>
           <tr>
             <td>type</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Episode of Care</td><td>type</td>
+            <td>Here the systematic treatment must be coded.</td>
           </tr>
           <tr>
             <td>startDate</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>period.start</td>
+            <td>Here the start date of the systematic treatment must be noted.</td>
           </tr>
           <tr>
             <td>endDate</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>period.end</td>
+            <td>Here the end date of the systematic treatment shall be noted. It might not be available while the treatment is still ongoing; however, an end date must eventually be recorded.</td>
+          </tr>
+          <tr>
+            <td>ongoing</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[SystematicTreatmentOngoing]</td>
+            <td>Here one can state if the treatment is still ongoing.</td>
           </tr>
           <tr>
             <td>setting</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[SystematicTreatmentSetting]</td>
+            <td>Here the setting of the systematic treatment can be noted. Here a required Snomed CT value set is provided, from which the code must be chosen.</td>
           </tr>
         </tbody>
       </table>
@@ -116,6 +122,3 @@
     </p>
   </body>
 </div>
-
-
-

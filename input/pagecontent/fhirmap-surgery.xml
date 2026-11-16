@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>Surgery -> FHIR Resource (TBD)</title>
+    <title>Surgery -> ProcedureSurgeryEuCcm</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -20,12 +20,12 @@
       </div>
     </div>
 
-    <h3>Surgery -> FHIR Resource (TBD)</h3>
+    <h3>Surgery -> ProcedureSurgeryEuCcm</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the Surgery logical model are expressed
-      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+      in the FHIR Resource ProcedureSurgeryEuCcm resource used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -37,19 +37,19 @@
         </li>
         <li>
           <strong>Target FHIR resource:</strong>
-          FHIR Resource (TBD)
+          <a href="StructureDefinition-procedure-surgery-eu-ccm.html">ProcedureSurgeryEuCcm</a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="Surgery -> FHIR Resource (TBD)">
-        <caption>Surgery -> FHIR Resource (TBD)</caption>
+      <table summary="Surgery -> ProcedureSurgeryEuCcm">
+        <caption>Surgery -> ProcedureSurgeryEuCcm</caption>
         <thead>
           <tr>
             <th colspan="1" class="src-head">Surgery (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">ProcedureSurgeryEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -62,39 +62,39 @@
         <tbody>
           <tr>
             <td>subject</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Procedure</td><td>subject</td>
+            <td>Here the reference to a CancerPatientCcm must be made.</td>
           </tr>
           <tr>
             <td>cancerConditionAtDiagnosisReference</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Procedure</td><td>reasonReference[condition]</td>
+            <td>Here the reference to a CancerConditionDiagnosisCcm must be made.</td>
           </tr>
           <tr>
             <td>clinicalCancerProgressionReference</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Procedure</td><td>reasonReference[progression]</td>
+            <td>Here the ObservationCancerProgressionCcm can be referenced, if available.</td>
           </tr>
           <tr>
             <td>intent</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Procedure</td><td>extension[SurgeryIntent]</td>
+            <td>Here the intent of the surgery must be stated. Here the code must stem from a defined Snomed CT value set.</td>
           </tr>
           <tr>
             <td>date</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Procedure</td><td>performedDateTime</td>
+            <td>The date of the procedure must be noted here.</td>
           </tr>
           <tr>
             <td>bodySite</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Procedure</td><td>bodySite</td>
+            <td>Here the affected body parts of the surgery must be stated.</td>
           </tr>
         </tbody>
       </table>
@@ -104,6 +104,3 @@
     </p>
   </body>
 </div>
-
-
-

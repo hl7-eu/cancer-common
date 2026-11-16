@@ -6,9 +6,13 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/ActiveSurveillance" key="StructureDefinition-ActiveSurveillance" name="Active Surveillance"/>
+<artifact id="StructureDefinition/additional-body-site" key="StructureDefinition-additional-body-site" name="Additional Body Site"/>
+<artifact id="StructureDefinition/cancer-condition-at-diagnosis-eu-ccm" key="StructureDefinition-cancer-condition-at-diagnosis-eu-ccm" name="Cancer Condition at Diagnosis (CCM)"/>
 <artifact id="Binary/CancerConditionAtDiagnosis1-Example" key="Binary-CancerConditionAtDiagnosis1-Example" name="Cancer Condition at Diagnosis Example"/>
 <artifact id="StructureDefinition/CancerPatient" key="StructureDefinition-CancerPatient" name="Cancer Patient"/>
 <artifact id="Binary/CancerPatient1-Example" key="Binary-CancerPatient1-Example" name="Cancer Patient Example"/>
+<artifact id="StructureDefinition/cancer-progression-reference-rt" key="StructureDefinition-cancer-progression-reference-rt" name="Cancer Progression Reference Radiotherapy"/>
+<artifact id="StructureDefinition/cancer-progression-reference-st" key="StructureDefinition-cancer-progression-reference-st" name="Cancer Progression Reference Systematic Treatment"/>
 <artifact id="StructureDefinition/CancerConditionAtDiagnosis" key="StructureDefinition-CancerConditionAtDiagnosis" name="CancerConditionAtDiagnosis"/>
 <artifact id="StructureDefinition/CancerStage" key="StructureDefinition-CancerStage" name="CancerStage"/>
 <artifact id="Binary/ClinicalCancerProgression1-Example" key="Binary-ClinicalCancerProgression1-Example" name="Clinical Cancer Progression 1 Example"/>
@@ -18,10 +22,34 @@
 <artifact id="Binary/ClinicalCancerProgression5-Example" key="Binary-ClinicalCancerProgression5-Example" name="Clinical Cancer Progression 5 Example"/>
 <artifact id="Binary/ClinicalCancerProgression6-Example" key="Binary-ClinicalCancerProgression6-Example" name="Clinical Cancer Progression 6 Example"/>
 <artifact id="Binary/CancerStageClinical1-Example" key="Binary-CancerStageClinical1-Example" name="Clinical Cancer Stage Example"/>
+<artifact id="StructureDefinition/clinical-or-pathological" key="StructureDefinition-clinical-or-pathological" name="Clinical or Pathological"/>
+<artifact id="ValueSet/clinical-or-pathological-vs" key="ValueSet-clinical-or-pathological-vs" name="Clinical or Pathological"/>
 <artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
 <artifact id="Observation/ComorbidityObservation1-Example" key="Observation-ComorbidityObservation1-Example" name="ComorbidityObservation1-Example"/>
+<artifact id="Condition/ConditionAtDiagnosis1-Example" key="Condition-ConditionAtDiagnosis1-Example" name="ConditionAtDiagnosis1-Example"/>
+<artifact id="Condition/ConditionAtDiagnosis2-Example" key="Condition-ConditionAtDiagnosis2-Example" name="ConditionAtDiagnosis2-Example"/>
+<artifact id="ValueSet/dead-or-alive-vs" key="ValueSet-dead-or-alive-vs" name="Dead or Alive"/>
+<artifact id="StructureDefinition/death-info" key="StructureDefinition-death-info" name="Death Information"/>
+<artifact id="StructureDefinition/diagnosis-date" key="StructureDefinition-diagnosis-date" name="Diagnosis Date"/>
+<artifact id="ValueSet/disease-status-vs" key="ValueSet-disease-status-vs" name="Disease Status"/>
+<artifact id="EpisodeOfCare/EOCActiveSurveillance1-Example" key="EpisodeOfCare-EOCActiveSurveillance1-Example" name="EOCActiveSurveillance1-Example"/>
+<artifact id="EpisodeOfCare/EOCRadiotherpay1-Example" key="EpisodeOfCare-EOCRadiotherpay1-Example" name="EOCRadiotherpay1-Example"/>
+<artifact id="EpisodeOfCare/EOCSystemartictreatment1-Example" key="EpisodeOfCare-EOCSystemartictreatment1-Example" name="EOCSystemartictreatment1-Example"/>
+<artifact id="StructureDefinition/episode-of-care-surveillance-eu-ccm" key="StructureDefinition-episode-of-care-surveillance-eu-ccm" name="Episode of Care Active Surveillance (CCM)"/>
+<artifact id="StructureDefinition/episode-of-care-radiotherapy-eu-ccm" key="StructureDefinition-episode-of-care-radiotherapy-eu-ccm" name="Episode of Care Radiotherapy (CCM)"/>
+<artifact id="StructureDefinition/episode-of-care-systematic-treatment-eu-ccm" key="StructureDefinition-episode-of-care-systematic-treatment-eu-ccm" name="Episode of Care Systematic Treatment (CCM)"/>
+<artifact id="StructureDefinition/cancer-stage-evidence-reference-imaging" key="StructureDefinition-cancer-stage-evidence-reference-imaging" name="Evidence Reference (Imaging)"/>
+<artifact id="StructureDefinition/cancer-stage-evidence-reference-surgery" key="StructureDefinition-cancer-stage-evidence-reference-surgery" name="Evidence Reference (Surgery)"/>
+<artifact id="StructureDefinition/evidence-of-disease" key="StructureDefinition-evidence-of-disease" name="Evidence of Disease"/>
+<artifact id="StructureDefinition/extent-type" key="StructureDefinition-extent-type" name="Evidence of Disease"/>
+<artifact id="ValueSet/extent-type-vs" key="ValueSet-extent-type-vs" name="Extent Type"/>
+<artifact id="StructureDefinition/cancer-histology-behaviour-reference" key="StructureDefinition-cancer-histology-behaviour-reference" name="Histology Behaviour"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
 <artifact id="Binary/Imaging1-Example" key="Binary-Imaging1-Example" name="Imaging Example"/>
+<artifact id="Observation/Imaging-Cancer-Stage" key="Observation-Imaging-Cancer-Stage" name="Imaging-Cancer-Stage"/>
+<artifact id="ValueSet/radiotherapy-intent-vs" key="ValueSet-radiotherapy-intent-vs" name="Intent of Radiotherapy"/>
+<artifact id="ValueSet/systematic-treatment-intent-vs" key="ValueSet-systematic-treatment-intent-vs" name="Intent of Systematic Treatment"/>
+<artifact id="StructureDefinition/surgery-intent" key="StructureDefinition-surgery-intent" name="Intent of the Surgery"/>
 <artifact id="Binary/LastFollowUp1-Example" key="Binary-LastFollowUp1-Example" name="Last Follow-Up 1 Example"/>
 <artifact id="Binary/LastFollowUp2-Example" key="Binary-LastFollowUp2-Example" name="Last Follow-Up 2 Example"/>
 <artifact id="Binary/LastFollowUp3-Example" key="Binary-LastFollowUp3-Example" name="Last Follow-Up 3 Example"/>
@@ -30,7 +58,23 @@
 <artifact id="Binary/LastFollowUp6-Example" key="Binary-LastFollowUp6-Example" name="Last Follow-Up 6 Example"/>
 <artifact id="Binary/LastFollowUp7-Example" key="Binary-LastFollowUp7-Example" name="Last Follow-Up 7 Example"/>
 <artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
+<artifact id="StructureDefinition/loco-regional-sites" key="StructureDefinition-loco-regional-sites" name="Loco-regional Site"/>
+<artifact id="StructureDefinition/metastatic-sites" key="StructureDefinition-metastatic-sites" name="Metastatic Site"/>
+<artifact id="StructureDefinition/observation-cancer-stage-eu-ccm" key="StructureDefinition-observation-cancer-stage-eu-ccm" name="Observation Cancer Stage (CCM)"/>
+<artifact id="StructureDefinition/observation-clinical-cancer-progression-eu-ccm" key="StructureDefinition-observation-clinical-cancer-progression-eu-ccm" name="Observation Clinical Cancer Progression (CCM)"/>
+<artifact id="StructureDefinition/observation-imaging-eu-ccm" key="StructureDefinition-observation-imaging-eu-ccm" name="Observation Imaging (CCM)"/>
+<artifact id="StructureDefinition/observation-last-follow-up-eu-ccm" key="StructureDefinition-observation-last-follow-up-eu-ccm" name="Observation Last Follow Up (CCM)"/>
+<artifact id="StructureDefinition/observation-treatment-response-eu-ccm" key="StructureDefinition-observation-treatment-response-eu-ccm" name="Observation Treatment Response (CCM)"/>
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
+<artifact id="StructureDefinition/observation-histology-behaviour-eu-ccm" key="StructureDefinition-observation-histology-behaviour-eu-ccm" name="Observation: Histology Behaviour"/>
+<artifact id="Observation/ObservationCancerStage1-Example" key="Observation-ObservationCancerStage1-Example" name="ObservationCancerStage1-Example"/>
+<artifact id="Observation/ObservationCancerStage2-Example" key="Observation-ObservationCancerStage2-Example" name="ObservationCancerStage2-Example"/>
+<artifact id="Observation/ObservationClinicalCancerProgression1-Example" key="Observation-ObservationClinicalCancerProgression1-Example" name="ObservationClinicalCancerProgression1-Example"/>
+<artifact id="Observation/ObservationClinicalCancerProgression2-Example" key="Observation-ObservationClinicalCancerProgression2-Example" name="ObservationClinicalCancerProgression2-Example"/>
+<artifact id="Observation/ObservationFollowUp1-Example" key="Observation-ObservationFollowUp1-Example" name="ObservationFollowUp1-Example"/>
+<artifact id="Observation/ObservationFollowUp2-Example" key="Observation-ObservationFollowUp2-Example" name="ObservationFollowUp2-Example"/>
+<artifact id="Observation/ObservationHistologyBehaviour1-Example" key="Observation-ObservationHistologyBehaviour1-Example" name="ObservationHistologyBehaviour1-Example"/>
+<artifact id="Observation/ObservationTreatmentResponse1-Example" key="Observation-ObservationTreatmentResponse1-Example" name="ObservationTreatmentResponse1-Example"/>
 <artifact id="Binary/OverallCancerTreatmentResponse1-Example" key="Binary-OverallCancerTreatmentResponse1-Example" name="Overall Cancer Treatment Response 1 Example"/>
 <artifact id="Binary/OverallCancerTreatmentResponse2-Example" key="Binary-OverallCancerTreatmentResponse2-Example" name="Overall Cancer Treatment Response 2 Example"/>
 <artifact id="StructureDefinition/OverallCancerTreatmentResponse" key="StructureDefinition-OverallCancerTreatmentResponse" name="OverallCancerTreatmentResponse"/>
@@ -39,12 +83,25 @@
 <artifact id="StructureDefinition/patient-eu-ccm" key="StructureDefinition-patient-eu-ccm" name="Patient (CCM)"/>
 <artifact id="Patient/Patient1-Example" key="Patient-Patient1-Example" name="Patient1-Example"/>
 <artifact id="Practitioner/Practitioner1-Example" key="Practitioner-Practitioner1-Example" name="Practitioner1-Example"/>
+<artifact id="StructureDefinition/procedure-surgery-eu-ccm" key="StructureDefinition-procedure-surgery-eu-ccm" name="Procedure Surgery (CCM)"/>
+<artifact id="Procedure/ProcedureSurgery1-Example" key="Procedure-ProcedureSurgery1-Example" name="ProcedureSurgery1-Example"/>
 <artifact id="StructureDefinition/Radiotherapy" key="StructureDefinition-Radiotherapy" name="Radiotherapy"/>
 <artifact id="Binary/Radiotherapy1-Example" key="Binary-Radiotherapy1-Example" name="Radiotherapy Example"/>
+<artifact id="StructureDefinition/radiotherapy-intent" key="StructureDefinition-radiotherapy-intent" name="Radiotherapy Intent"/>
+<artifact id="StructureDefinition/radiotherapy-setting" key="StructureDefinition-radiotherapy-setting" name="Radiotherapy Setting"/>
+<artifact id="StructureDefinition/radiotherapy-body-site" key="StructureDefinition-radiotherapy-body-site" name="Radiotherapy Site"/>
 <artifact id="StructureDefinition/Surgery" key="StructureDefinition-Surgery" name="Surgery"/>
 <artifact id="Binary/Surgery1-Example" key="Binary-Surgery1-Example" name="Surgery Example"/>
+<artifact id="ValueSet/surgery-intent-vs" key="ValueSet-surgery-intent-vs" name="Surgery Intent"/>
+<artifact id="StructureDefinition/systematic-treatemmt-intent" key="StructureDefinition-systematic-treatemmt-intent" name="Systematic Treatment Intent"/>
+<artifact id="StructureDefinition/systematic-treatemmt-ongoing" key="StructureDefinition-systematic-treatemmt-ongoing" name="Systematic Treatment Ongoing"/>
+<artifact id="StructureDefinition/systematic-treatment-setting" key="StructureDefinition-systematic-treatment-setting" name="Systematic Treatment Setting"/>
 <artifact id="Binary/SystemicTreatment1-Example" key="Binary-SystemicTreatment1-Example" name="Systemic Treatment 1 Example"/>
 <artifact id="StructureDefinition/SystemicTreatment" key="StructureDefinition-SystemicTreatment" name="SystemicTreatment"/>
+<artifact id="ValueSet/treatment-response-type-vs" key="ValueSet-treatment-response-type-vs" name="Treatment Response Type VS"/>
+<artifact id="ValueSet/radiotherapy-setting-vs" key="ValueSet-radiotherapy-setting-vs" name="Value Set for strategic timing/setting of radiotherapy"/>
+<artifact id="ValueSet/systematic-treatment-setting-vs" key="ValueSet-systematic-treatment-setting-vs" name="Value Set for strategic timing/setting of systematic treatment"/>
+<artifact id="StructureDefinition/vital-status" key="StructureDefinition-vital-status" name="Vital Status"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="fhirmap-activesurveillance" name="ActiveSurveillance Mapping - FHIR"/>

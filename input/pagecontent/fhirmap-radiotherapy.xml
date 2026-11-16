@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>Radiotherapy -> FHIR Resource (TBD)</title>
+    <title>Radiotherapy -> EOCRadiotherapyEuCcm</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -20,12 +20,12 @@
       </div>
     </div>
 
-    <h3>Radiotherapy -> FHIR Resource (TBD)</h3>
+    <h3>Radiotherapy -> EOCRadiotherapyEuCcm</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the Radiotherapy logical model are expressed
-      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+      in the FHIR Resource EOCRadiotherapyEuCcm resource used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -37,19 +37,19 @@
         </li>
         <li>
           <strong>Target FHIR resource:</strong>
-          FHIR Resource (TBD)
+         <a href="StructureDefinition-episode-of-care-radiotherapy-eu-ccm.html">EOCRadiotherapyEuCcm</a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="Radiotherapy -> FHIR Resource (TBD)">
-        <caption>Radiotherapy -> FHIR Resource (TBD)</caption>
+      <table summary="Radiotherapy -> EOCRadiotherapyEuCcm">
+        <caption>Radiotherapy -> EOCRadiotherapyEuCcm</caption>
         <thead>
           <tr>
             <th colspan="1" class="src-head">Radiotherapy (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">EOCRadiotherapyEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -62,50 +62,50 @@
         <tbody>
           <tr>
             <td>subject</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Episode of Care</td><td>patient</td>
+            <td>Here the reference to a CancerPatientCcm must be made.</td>
           </tr>
           <tr>
             <td>cancerConditionAtDiagnosisReference</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Episode of Care</td><td>diagnosis.condition</td>
+            <td>Here the reference to a CancerConditionDiagnosisCcm must be made.</td>
           </tr>
           <tr>
             <td>clinicalCancerProgresionReference</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[CancerProgressionReferenceRT]</td>
+            <td>Here the ObservationCancerProgressionCcm can be referenced, if available.</td>
           </tr>
           <tr>
             <td>intent</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[RadiotherapyIntent]</td>
+            <td>Here an extension is made, where a code out of a Snomed CT value set must be selected.</td>
           </tr>
           <tr>
             <td>startDate</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>period.start</td>
+            <td>Here the start date of the radiotherapy can be noted.</td>
           </tr>
           <tr>
             <td>endDate</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>period.end</td>
+            <td>here the end date of the radiotherapy must be noted, if available. </td>
           </tr>
           <tr>
             <td>bodySite</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[RadiotherapyBodySite]</td>
+            <td>Here with an extension a code for the body site affected by the radiotherapy can be made. It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded.</td>
           </tr>
           <tr>
             <td>setting</td>
-            <td>no map</td>
-            <td></td><td></td>
+            <td>equivalent</td>
+            <td>Episode of Care</td><td>extension[RadiotherapySetting]</td>
             <td>Mapping to be defined.</td>
           </tr>
         </tbody>
@@ -116,6 +116,3 @@
     </p>
   </body>
 </div>
-
-
-

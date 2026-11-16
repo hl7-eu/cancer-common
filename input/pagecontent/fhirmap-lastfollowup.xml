@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>LastFollowUp -> FHIR Resource (TBD)</title>
+    <title>LastFollowUp -> ObservationLastFollowUpEuCcm</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -20,12 +20,12 @@
       </div>
     </div>
 
-    <h3>LastFollowUp -> FHIR Resource (TBD)</h3>
+    <h3>LastFollowUp -> ObservationLastFollowUpEuCcm</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the LastFollowUp logical model are expressed
-      in the FHIR Resource (TBD) resource used by this Implementation Guide.
+      in the FHIR Resource ObservationLastFollowUpEuCcm resource used by this Implementation Guide.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -37,19 +37,19 @@
         </li>
         <li>
           <strong>Target FHIR resource:</strong>
-          FHIR Resource (TBD)
+         <a href="StructureDefinition-observation-last-follow-up-eu-ccm.html">ObservationLastFollowUpEuCcm</a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="LastFollowUp -> FHIR Resource (TBD)">
-        <caption>LastFollowUp -> FHIR Resource (TBD)</caption>
+      <table summary="LastFollowUp -> ObservationLastFollowUpEuCcm">
+        <caption>LastFollowUp -> ObservationLastFollowUpEuCcm</caption>
         <thead>
           <tr>
             <th colspan="1" class="src-head">LastFollowUp (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">FHIR Resource (TBD)</th>
+            <th colspan="3" class="tgt-head">ObservationLastFollowUpEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -62,39 +62,39 @@
         <tbody>
           <tr>
             <td>subject</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Observation</td><td>subject</td>
+            <td>Here the reference to the CancerPatientCcm must be made.</td>
           </tr>
           <tr>
             <td>vitalStatus</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Observation</td><td>extension[VitalStatus]</td>
+            <td>For the vital status an extension is used. Here from a required Snomed CT value set a value can be chosen.</td>
           </tr>
           <tr>
             <td>evidenceOfDisease</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Observation</td><td>extension[EvidenceOfDisease]</td>
+            <td>For the evidence of disease an extension is used. Here then a boolean value must be entered.</td>
           </tr>
           <tr>
             <td>causeOfDeath</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>equivalent</td>
+            <td>Observation</td><td>extension[Death].extension[cause]</td>
+            <td>This information must be filled out, when the vital status is dead.</td>
           </tr>
           <tr>
             <td>date</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Observation</td><td>effectiveDateTime</td>
+            <td>here the date of the follow-up assessment is being reported.</td>
           </tr>
           <tr>
             <td>deathDate</td>
-            <td>no map</td>
-            <td></td><td></td>
-            <td>Mapping to be defined.</td>
+            <td>related-to</td>
+            <td>Observation</td><td>extension[Death].extension[deathDate]</td>
+            <td>This information must be filled out, when the vital status is dead.</td>
           </tr>
         </tbody>
       </table>
@@ -104,6 +104,3 @@
     </p>
   </body>
 </div>
-
-
-
