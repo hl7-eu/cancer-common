@@ -3,7 +3,7 @@
 
 The European Cancer Common Conceptual Model represents the foundational layer of the European Cancer Common Data Model (ECCDM). It defines a **minimum, extensible, and non-exhaustive set of cancer related concepts and their relationships**, providing a shared, platform independent representation of the cancer domain.
 
-The purpose of the conceptual model is to establish a **common semantic backbone** that can be reused consistently across different technical representations. It focuses on defining *what the core cancer concepts are* and *how they relate to each other* throughout the cancer journey, independently from implementation and technology choices.
+The purpose of the conceptual model is to establish a **common semantic backbone** that can be reused consistently across different technical representations and standards. It focuses on defining *what the core cancer concepts are* and *how they relate to each other* throughout the cancer journey, independently from implementation and technology choices.
 
 In its initial scope, the conceptual model focuses on **adult patients with solid tumours**, considering **one cancer condition at a time**, in order to limit modelling complexity and ensure feasibility in early iterations.
 
@@ -127,7 +127,7 @@ The representation conventions used in the conceptual diagrams are as follows:
 *	**Black rectangles with rounded corners** represent **Core Model Entities**
 *	**Black rectangles with dotted edges** represent **Attributes**
 *	**Black rectangles** represent possible **Values** of attributes
-*	**Blue shapes** represent **Events** and **Documents**
+*	**Blue shapes** represent **EHR Artefacts** (events and documents), included to indicate possible sources of information but not formally modelled
 
 Events represent all procedures, encounters, or episodes of care in which a cancer patient participates as subject (e.g. outpatient visits, surgery, imaging examinations, laboratory tests).
 Documents represent medical reports produced during events.
