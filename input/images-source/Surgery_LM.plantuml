@@ -4,8 +4,8 @@ skinparam classAttributeIconSize 0
 
 class Surgery {
   subject : CancerPatient [1..1]
-  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
-  clinicalCancerProgressionReference : Reference(ClinicalCancerProgression) [0..1]
+  cancerConditionAtDiagnosisReference : CancerConditionAtDiagnosis [1..1]
+  clinicalCancerProgressionReference : ClinicalCancerProgression [0..1]
   intent : codeableConcept [1..1]
   date : dateTime [1..1]
   bodySite : codeableConcept [1..*]

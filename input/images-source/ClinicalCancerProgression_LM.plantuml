@@ -3,7 +3,7 @@ hide empty members
 skinparam classAttributeIconSize 0
 
 class ClinicalCancerProgression {
-  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  cancerConditionAtDiagnosisReference : CancerConditionAtDiagnosis [1..1]
   diseaseStatus : codeableConcept [1..1]
   tumourGradeSystem : codeableConcept [0..1]
   tumourGradeValue : string [0..1]

@@ -3,11 +3,11 @@ hide empty members
 skinparam classAttributeIconSize 0
 
 class CancerStage {
-  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
+  cancerConditionAtDiagnosisReference : CancerConditionAtDiagnosis [1..1]
   classificationType : codeableConcept [0..1]
   stage : BackboneElement [1..*]
   type : codeableConcept [1..1]
-  evidenceReference : Reference(Surgery,Imaging) [0..*]  
+  evidenceReference : Base,Surgery,Imaging [0..*]  
 }
 
 note left of CancerStage::classificationType
