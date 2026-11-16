@@ -1,3 +1,15 @@
+<div style="overflow-x:auto; text-align:center;">
+  <p></p>
+  <figure>
+      {% include CancerJourneyTimeline.svg %}
+      <figcaption>
+          <strong>Overview of the Cancer Patient Journey timeline</strong>
+      </figcaption>
+  </figure>
+  <p></p>
+</div>
+
+
 This page illustrates how the entities and relationships defined in the conceptual model are instantiated and evolve over time along the cancer journey.
 
 The purpose of this page is to show how the cancer journey is represented through the creation of multiple progression records of core concepts at different moments in time, and how these records are linked to each other to support a faithful reconstruction of the patient’s cancer history. The focus is therefore on temporal evolution and traceability, rather than on exhaustively describing all possible data elements.

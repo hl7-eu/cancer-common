@@ -1,3 +1,15 @@
+<div style="overflow-x:auto; text-align:center;">
+  <p></p>
+  <figure>
+      {% include CancerJourneyTimeline.svg %}
+      <figcaption>
+          <strong>Overview of the Cancer Patient Journey timeline</strong>
+      </figcaption>
+  </figure>
+  <p></p>
+</div>
+
+
 This page provides **logical-level example instances** populated according to the [European Cancer Common Logical Model](logicalmodels.html), following the steps of the [Cancer Patient Journey](journey.html).
 
 The purpose of this section is to show **how the logical model can be populated over time**, by creating concrete instances of its entities at specific moments of the cancer journey, and by explicitly linking these instances to preserve longitudinal traceability.
