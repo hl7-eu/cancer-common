@@ -1,4 +1,4 @@
-##	Introduction
+###	Introduction
 
 A patient’s cancer journey is a longitudinal sequence of events driven by the availability and interpretation of clinical evidence. It begins when relevant evidence is identified, leads to the assertion and characterisation of a cancer condition, and continues through treatment, response assessment, and follow‑up over time.
 
@@ -6,7 +6,7 @@ Clinical evidence may derive from different contexts, including screening progra
 
 Capturing **dates** consistently at each step of the journey is essential, as cancer care is inherently temporal. Evidence, assessments, and disease status must be interpreted in relation to specific time points in order to accurately reconstruct disease evolution for care continuity and for research and secondary use purposes.
 
-## High‑level view of the cancer journey
+### High‑level view of the cancer journey
 
 At a high level, the cancer journey can be described as an **iterative, evidence driven process**, rather than as a simple linear pathway.
 
@@ -27,7 +27,7 @@ Once a cancer condition has been asserted, clinicians may decide to initiate a *
 
 After a treatment has been delivered, new clinical **evidence** is collected. This post treatment evidence is required to support a **follow up visit**, during which the effect of the treatment is evaluated, the current status of the disease is determined and the next steps are defined. This cycle of **evidence collection → assessment → decision** may repeat multiple times over the course of the disease.
 
-### Follow-up visit
+#### Follow-up visit
 
 More generally, follow up visits are events in which decisions about the continuation, modification, or conclusion of the cancer journey are made. They are always based on available evidence and represent the clinical events in which the disease and patient status are evaluated.
 
@@ -52,7 +52,7 @@ Completion of active cancer follow up reflects a clinical decision that cancer s
 
 Although continued follow up is generally intended, **loss to follow up** may occur when a patient does not return for scheduled assessments. In these situations, the cancer journey does not formally conclude through a clinical outcome but instead reflects **missing information due to limited data availability**.
 
-## Illustrative Example of a Typical Cancer Journey
+### Illustrative Example of a Typical Cancer Journey
 
 The following section presents an illustrative example of a Typical Cancer Journey, intended to show how the [European Cancer Common Conceptual Model](conceptualmodel.html) can be applied to represent the evolution of a cancer condition over time.
 
@@ -60,7 +60,7 @@ The example is provided for explanatory purposes only and does not represent a c
 
 This page focuses on the conceptual level, showing how the cancer journey can be described using the entities and relationships defined in the conceptual model, together with schematic representations of the main steps and their temporal ordering. A more detailed view of how data are instantiated and evolve over time is provided in dedicated [Data Evolution](journey-data-evolution.html) page. The [Logical Model](logicalmodels.html) is described in a dedicated section of this Implementation Guide, where a corresponding Data Evolution at the logical level is also presented in greater detail.
 
-### The overall journey
+#### The overall journey
 
 An example of this journey is described in Figure 2 where steps, relevant dates, and information collected or updated are highlighted.
 
