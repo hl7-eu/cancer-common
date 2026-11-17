@@ -231,7 +231,7 @@ FHIR Logical Model: [StructureDefinition-LastFollowUp.html](StructureDefinition-
 
 #### ClinicalCancerProgression
 
-Represents the evolution of the disease over time, documenting changes in disease status and extent at specific clinical decision points during the cancer journey. Each evaluation creates a new instance.
+Represents the evolution of the disease over time, documenting changes in disease status and extent at specific clinical decision points during the cancer journey. Each evaluation originates a new progression record.
 
 <div style="text-align:center;">
   <p></p>
