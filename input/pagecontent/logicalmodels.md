@@ -216,7 +216,7 @@ FHIR Logical Model: [StructureDefinition-OverallCancerTreatmentResponse.html](St
 
 #### LastFollowUp
 
-Represents the assessment of the patient’s status at a specific follow‑up visit, including vital status and presence or absence of evidence of disease. Each follow-up visit creates a new instance.
+Represents the assessment of the patient’s status at a specific follow‑up visit, including vital status and presence or absence of evidence of disease. Each follow-up visit creates a new record.
 
 <div style="text-align:center;">
   <p></p>
