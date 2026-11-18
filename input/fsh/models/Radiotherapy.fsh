@@ -5,11 +5,11 @@ Description: "Logical model representing a radiotherapy treatment course adminis
 Characteristics: #can-be-target
 
 * obeys rt-1
-* subject 1..1 Reference(CancerPatient) "Subject"
+* subject 1..1 CancerPatient "Subject"
 * subject ^definition = "Reference to the patient (subject) receiving radiotherapy."
-* cancerConditionAtDiagnosisReference 1..1 Reference(CancerConditionAtDiagnosis) "CancerCondition AtDiagnosis Reference"
+* cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerCondition AtDiagnosis Reference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at diagnosis targeted by radiotherapy."
-* clinicalCancerProgressionReference 0..1 Reference(ClinicalCancerProgression) "ClinicalCancerProgresionReference"
+* clinicalCancerProgressionReference 0..1 ClinicalCancerProgression "ClinicalCancerProgresionReference"
 * clinicalCancerProgressionReference ^definition = "Reference to the clinical progression event, if radiotherapy is delivered in response to progression."
 * clinicalCancerProgressionReference ^comment = "It is not only required at the time of diagnosis; it must be provided in the event of ClinicalCancerProgression."
 * intent 1..1 CodeableConcept "Intent"

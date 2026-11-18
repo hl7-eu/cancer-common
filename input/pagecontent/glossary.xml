@@ -7,9 +7,9 @@
     other Concepts.
   </p>
   <p>
-    <strong>On dates and temporality.</strong> To rebuild the cancer journey, dates are fundamental.
+    <strong>On dates and temporality.</strong> To reconstruct the cancer journey, dates are fundamental.
     It is important to define which concepts or attributes can evolve during the journey to
-    understand when to update the same instance versus when to create another one.
+    understand when to update the same record versus when to create another one.
   </p>
 
   <table>
@@ -54,8 +54,8 @@
           </ul>
         </td>
         <td>
-          <p>Each time a patient has a new cancer (so not related and independent from the first one), they have a new <em>Cancer Condition</em>. In case in time, there is an update of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> instance.</p>
-          <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em> instance.</p>
+          <p>Each time a patient has a new cancer (so not related and independent from the first one), they have a new <em>Cancer Condition</em>. In case in time, there is an update of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> record.</p>
+          <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em> record.</p>
           <p>The couple <strong>Histology Behaviour</strong> and <strong>Body Site</strong> identifies the <em>Cancer Condition</em>.</p>
         </td>
         <td>
@@ -129,8 +129,8 @@
           </ul>
         </td>
         <td>
-          <p>In case in time, there is an extension of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> instance with <em>Disease Status</em> (as <em>Progression or Recurrence</em>), while the <em>CancerStage</em> will not change.</p>
-          <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em> instance.</p>
+          <p>In case in time, there is an extension of the <em>Cancer Condition</em> (related to the same cell type, so depending on the first cancer), it will be reflected in a new <em>ClinicalCancerProgression</em> record with <em>Disease Status</em> (as <em>Progression or Recurrence</em>), while the <em>CancerStage</em> will not change.</p>
+          <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em> record.</p>
           <p>If a cancer is metastatic at the diagnosis, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em>.</p>
         </td>
         <td>
@@ -376,7 +376,7 @@
         <td><strong>ClinicalCancerProgression</strong></td>
         <td>
           <p>
-            Represents the evolution over the time and over the space of the <em>Cancer Condition</em>. Every time that there is a new evaluation, there will be a new instance of <em>ClinicalCancerProgression</em> that <strong>must</strong> have:
+            Represents the evolution over the time and over the space of the <em>Cancer Condition</em>. Every time that there is a new evaluation, there will be a new record of <em>ClinicalCancerProgression</em> that <strong>must</strong> have:
           </p>
           <ul>
             <li>A <strong>Disease Status</strong>: represents the status of the <em>Cancer Condition</em> evaluated during a <em>Visit</em>. It could be one of the following: 
@@ -409,7 +409,7 @@
           </ul>
         </td>
         <td>
-          <p>After the First Diagnosis, every time that there is an evaluation of the Cancer Condition during a <em>Visit</em>, a new instance of <em>ClinicalCancerProgression</em> is created.</p>
+          <p>After the First Diagnosis, every time that there is an evaluation of the Cancer Condition during a <em>Visit</em>, a new record of <em>ClinicalCancerProgression</em> is created.</p>
           <p>If a cancer is metastatic at the <em>First diagnosis</em>, the information on the metastasis is collected within the <em>CancerStage</em> not in the <em>ClinicalCancerProgression</em>.</p>
           <p>Please note that, although the term <em>ClinicalCancerProgression</em> includes the word <em>progression</em>, it is intended to describe the <strong>evolution of the disease over time</strong>, which does <strong>not necessarily imply a worsening or progression of the disease</strong>.</p>
         </td>

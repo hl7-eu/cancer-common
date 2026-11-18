@@ -4,7 +4,7 @@ Description: "Example clinical cancer progression documenting metastatic progres
 InstanceOf: ClinicalCancerProgression
 Usage: #example
 
-* cancerConditionAtDiagnosisReference = Reference(CancerConditionAtDiagnosis1-Example)
+* cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * diseaseStatus.text = "Progression"
 * assertedDate = "2020-04-15"
 * extentType.text = "Metastatic"

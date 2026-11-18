@@ -5,7 +5,7 @@ Description: "Logical model representing the cancer condition at first diagnosis
 Characteristics: #can-be-target
 
 * obeys ccad-1
-* subject 1..1 Reference(CancerPatient) "Subject"
+* subject 1..1 CancerPatient "Subject"
 * subject ^definition = "Reference to the patient (subject) affected by the cancer condition at first diagnosis."
 * histologyBehaviour 0..1 CodeableConcept "HistologyBehaviour"
 * histologyBehaviour ^definition = "Histology and behaviour of the neoplasm at first diagnosis. Histology describes the tumour cell type (morphology), while behaviour indicates whether the tumour is malignant, benign, carcinoma in situ, or of uncertain/borderline malignancy. This information may be unavailable during early diagnostic workup (e.g., before biopsy results are final) but is expected to be present once the diagnostic workup is completed."

@@ -1,12 +1,5 @@
 ### Scope
 
-<div class="callout-wrapper">
-  <div class="callout-box contextual-box">
-    <strong>Contextual information</strong>
-    This page provides background and orientation for the guide. It supports understanding of the proposed model, but it is not itself a model artefact or an implementation specification submitted for evaluation.
-  </div>
-</div>
-
 The **HL7 Europe Cancer Common Data Model (ECCDM)** initiative aims to define a European common data model for cancer: a **minimal**, **shared**, and **extensible set of concepts** and **relationships** capable of representing cancer-related information across different contexts and use cases.
 
 The scope of the initiative is to define a model that is **agnostic to cancer type** and **independent from specific technical standards**, providing a **common conceptual and logical backbone** that can be progressively extended over time.

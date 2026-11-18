@@ -31,7 +31,7 @@ package "Date 0 (2018-05-01)\nCancer Condition Diagnosis" {
 CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
 package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete Remission)" {
-  class OverallTreatmentResponse1 {
+  class OverallCancerTreatmentResponse1 {
     treatmentResponseType = Complete Remission
     date = 2018-10-30   'Date 4
   }
@@ -54,7 +54,7 @@ package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete R
   }
 }
 
-CancerConditionAtDiagnosis1 --> OverallTreatmentResponse1 : has
+CancerConditionAtDiagnosis1 --> OverallCancerTreatmentResponse1 : has
 CancerPatient1 --> LastFollowUp1 : has
 CancerConditionAtDiagnosis1 --> ClinicalCancerProgression1 : evolves throught
 

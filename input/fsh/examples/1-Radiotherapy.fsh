@@ -4,8 +4,8 @@ Description: "Example postoperative adjuvant radiotherapy treatment for the canc
 InstanceOf: Radiotherapy
 Usage: #example
 
-* subject = Reference(CancerPatient1-Example)
-* cancerConditionAtDiagnosisReference = Reference(CancerConditionAtDiagnosis1-Example)
+* subject = CancerPatient1-Example
+* cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * intent.coding[0].code = #Definitive
 * intent.coding[0].display = "Definitive"
 * startDate = "2018-09-10"

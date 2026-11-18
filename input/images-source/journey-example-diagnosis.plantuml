@@ -21,19 +21,19 @@ class "CancerConditionAtDiagnosis1-Example" as CCAD [[Binary-CancerConditionAtDi
 }
 
 class "CancerStageClinical1-Example" as CSC [[Binary-CancerStageClinical1-Example.html]] {
-  classificationType: Tumor Linphonode Metastasis
+  classificationType: Tumour, Node, Metastasis
   type: Clinical
   value: T2, N0, M0
 }
 
 class "CancerStagePathological1-Example" as CSP [[Binary-CancerStagePathological1-Example.html]] {
-  classificationType: Tumor Linphonode Metastasis
+  classificationType: Tumour, Node, Metastasis
   type: Pathological
   value: T2, N1, M0
 }
 
 class "Imaging1-Example" as Imaging [[Binary-Imaging1-Example.html]] {
-  type: tbd
+  type: Magnetic resonance imaging
   bodySite: Lower lobe, lung
 }
 

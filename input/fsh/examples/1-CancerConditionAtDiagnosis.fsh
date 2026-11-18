@@ -4,7 +4,7 @@ Description: "Example cancer condition at diagnosis for a lung adenocarcinoma ca
 InstanceOf: CancerConditionAtDiagnosis
 Usage: #example
 
-* subject = Reference(CancerPatient1-Example)
+* subject = CancerPatient1-Example
 
 * histologyBehaviour.coding[0].system = "http://terminology.hl7.org/CodeSystem/icd-o-3"
 * histologyBehaviour.coding[0].code = #8140/3

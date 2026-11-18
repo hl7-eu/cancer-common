@@ -14,7 +14,7 @@ The authoritative definitions of all concepts are maintained in the [Glossary](g
 
 Detailed descriptions of each individual attribute, including clinical meaning, cardinality, data type, terminology bindings, constraints, and notes, are provided in the dedicated **Logical Model** pages linked from each entity.
 
-For ease of consultation and reuse, especially for readers less familiar with FHIR, a complete representation of the Logical Model is also available in Excel format, offering a tabular view of entities, attributes, descriptions, and notes ([Cancer_Common_Logical_Model_20260521.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20260521.xlsx)).
+For ease of consultation and reuse, especially for readers less familiar with FHIR, a complete representation of the Logical Model is also available in Excel format, offering a tabular view of entities, attributes, descriptions, and notes ([Cancer_Common_Logical_Model_20261116.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261116.xlsx)).
 
 ### Overview
 
@@ -216,7 +216,7 @@ FHIR Logical Model: [StructureDefinition-OverallCancerTreatmentResponse.html](St
 
 #### LastFollowUp
 
-Represents the assessment of the patient’s status at a specific follow‑up visit, including vital status and presence or absence of evidence of disease. Each follow-up visit creates a new instance.
+Represents the assessment of the patient’s status at a specific follow‑up visit, including vital status and presence or absence of evidence of disease. Each follow-up visit creates a new record.
 
 <div style="text-align:center;">
   <p></p>
@@ -231,7 +231,7 @@ FHIR Logical Model: [StructureDefinition-LastFollowUp.html](StructureDefinition-
 
 #### ClinicalCancerProgression
 
-Represents the evolution of the disease over time, documenting changes in disease status and extent at specific clinical decision points during the cancer journey. Each evaluation creates a new instance.
+Represents the evolution of the disease over time, documenting changes in disease status and extent at specific clinical decision points during the cancer journey. Each evaluation originates a new progression record.
 
 <div style="text-align:center;">
   <p></p>

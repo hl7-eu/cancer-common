@@ -4,9 +4,9 @@ Description: "Example chemotherapy treatment following the loco-regional recurre
 InstanceOf: SystemicTreatment
 Usage: #example
 
-* subject = Reference(CancerPatient1-Example)
-* cancerConditionAtDiagnosisReference = Reference(CancerConditionAtDiagnosis1-Example)
-* clinicalCancerProgressionReference = Reference(ClinicalCancerProgression4-Example)
+* subject = CancerPatient1-Example
+* cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
+* clinicalCancerProgressionReference = ClinicalCancerProgression4-Example
 * intent.text = "Definitive"
 * type.coding[0].system = "http://snomed.info/sct"
 * type.coding[0].code = #367336001

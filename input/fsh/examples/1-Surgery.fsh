@@ -4,8 +4,8 @@ Description: "Example definitive surgery for the lower lobe lung cancer conditio
 InstanceOf: Surgery
 Usage: #example
 
-* subject = Reference(CancerPatient1-Example)
-* cancerConditionAtDiagnosisReference = Reference(CancerConditionAtDiagnosis1-Example)
+* subject = CancerPatient1-Example
+* cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * intent.coding[0].code = #Definitive
 * intent.coding[0].display = "Definitive"
 * date = "2018-06-12"

@@ -1,10 +1,3 @@
-<div class="callout-wrapper">
-  <div class="callout-box contextual-box">
-    <strong>Contextual information</strong>
-    This page describes the context and rationale for the guide. It supports understanding of the proposed model, but it is not itself a model artefact or an implementation specification submitted for evaluation.
-  </div>
-</div>
-
 The development of the HL7 Europe Cancer Common Data Model (ECCDM) addresses a set of recurring challenges identified through experience in European and national initiatives working on cancer data.
 
 One of the main challenges is the heterogeneity of data models currently adopted across projects, institutions, and countries. Different initiatives support different needs and use cases, leading to the definition of project-specific datasets and models that are difficult to compare, reuse, or align beyond their original context.

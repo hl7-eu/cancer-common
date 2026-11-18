@@ -47,7 +47,7 @@ This section therefore illustrates how the logical model can represent both simp
   <p></p>
 </div>
 
-### Evidence + Overall Treatment Response (Complete Remission) (Date 4)
+### Evidence + Overall Cancer Treatment Response (Complete Remission) (Date 4)
 This section shows the first post-treatment assessment at the logical level. New instances are created for:
 * OverallCancerTreatmentResponse, capturing the response category and assessment date;
 * ClinicalCancerProgression, recording the disease status asserted at the same time point;
@@ -59,7 +59,7 @@ In this example, the response and disease status are recorded as Complete Remiss
   <p></p>
     <figure>
       {% include journey-example-overalltreatmentresponse.svg %}
-      <figcaption><strong>Figure 2 Data evolution: Evidence and Overall Treatment Response</strong></figcaption>
+      <figcaption><strong>Figure 2 Data evolution: Evidence and Overall Cancer Treatment Response</strong></figcaption>
     </figure>
   <p></p>
 </div>

@@ -4,8 +4,8 @@ skinparam classAttributeIconSize 0
 
 class SystemicTreatment {
   subject : CancerPatient [1..1]
-  cancerConditionAtDiagnosisReference : Reference(CancerConditionAtDiagnosis) [1..1]
-  clinicalCancerProgresionReference : Reference(ClinicalCancerProgression) [0..1]
+  cancerConditionAtDiagnosisReference : CancerConditionAtDiagnosis [1..1]
+  clinicalCancerProgresionReference : ClinicalCancerProgression [0..1]
   intent : codeableConcept [1..1]
   type : codeableConcept [1..1]
   startDate : dateTime [1..1]

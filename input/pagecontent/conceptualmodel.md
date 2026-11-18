@@ -7,7 +7,7 @@ The purpose of the conceptual model is to establish a **common semantic backbone
 
 In its initial scope, the conceptual model focuses on **adult patients with solid tumours**, considering **one cancer condition at a time**, in order to limit modelling complexity and ensure feasibility in early iterations.
 
-This conceptual backbone is refined through the [Logical Model](logicalmodels.html) and, within this Implementation Guide, explicitly mapped to both [HL7 FHIR](fhirmodelmap.html) and [OMOP](omopmodelmap.html), demonstrating how a single shared model can support interoperable representations across different technical ecosystems.
+This conceptual backbone is refined through the [Logical Model](logicalmodels.html).
 
 ### Overview
 
@@ -123,24 +123,20 @@ This section presents the **complete conceptual representation** of the first re
   <p></p>
 </div>
 
-The detailed conceptual diagrams adopt a set of **representation conventions** aimed at balancing clarity for clinicians, researchers, and domain experts with sufficient precision to support downstream modelling activities.
-
-In the conceptual diagrams:
-*	**Black rectangles with rounded corners** represent **Concepts**
+The representation conventions used in the conceptual diagrams are as follows:
+*	**Black rectangles with rounded corners** represent **Core Model Entities**
 *	**Black rectangles with dotted edges** represent **Attributes**
 *	**Black rectangles** represent possible **Values** of attributes
-*	**Blue shapes** represent **Events** and **Documents**
+*	**Blue shapes** represent **EHR Artefacts** (events and documents), included to indicate possible sources of information but not formally modelled
 
 Events represent all procedures, encounters, or episodes of care in which a cancer patient participates as subject (e.g. outpatient visits, surgery, imaging examinations, laboratory tests).
-Documents represent medical reports produced during events and digitally signed by a doctor, physician, or clinician.
+Documents represent medical reports produced during events.
 
 Events and documents are included to reflect real world EHR artefacts and to support traceability of information, while keeping the conceptual model focused on cancer domain concepts rather than on workflow or document management.
 
 The conceptual representation is also organised around the notion of a typical cancer journey. In addition to defining concepts and relationships, the model captures how cancer related information unfolds over time, from diagnosis through treatment, response evaluation, disease progression, and follow up. 
 
-To support understanding and validation of the model, a reference typical [cancer patient journey](journey.html) has been defined, together with an [illustrative example](journey-data-evolution.html) showing how the conceptual entities can be instantiated and populated over time. This example is intended to make the model easier to understand for clinicians, researchers, and implementers, and to demonstrate its applicability in real world scenarios.
-
-A detailed description of the typical [cancer patient journey](journey.html) and an [example](journey-data-evolution.html) of model population are provided in the dedicated pages, which complement the conceptual and logical representations presented in this Implementation Guide.
+A reference [cancer journey](journey.html) and an illustrative [example](journey-data-evolution.html) of model population are provided in the dedicated pages.
 
 ### Modelling assumptions and design considerations
 
@@ -156,7 +152,7 @@ The following modelling assumptions apply to the first version of the European C
 
 For the first release of the model, all temporal information is explicitly preserved.
 
-Dates are collected for all entities, and new instances are created for each time point, rather than overwriting existing ones, even when observed values remain unchanged.
+Dates are collected for all entities, and new progression records are created for each time point, rather than overwriting existing ones, even when observed values remain unchanged.
 
 This approach ensures correct longitudinal representation of the cancer journey and supports retrospective analyses, research use cases, and temporal reasoning.
 
@@ -177,14 +173,10 @@ These topics require dedicated scoping and discussion and will be addressed in f
 ### From Conceptual Model to Logical Model and Implementations
 
 The conceptual model does not stand alone.
-Together with the [Logical Model](logicalmodels.html), it forms a shared backbone that supports consistent and systematic mappings across standards.
+Together with the Logical Model, it provides a shared semantic foundation for representing cancer-related information consistently across different contexts and use cases.
 
 Within this Implementation Guide:
 *	a detailed definition of all concepts and attributes is provided in the [Glossary](glossary.html) page;
 *	the [cancer patient journey](journey.html) page describes a reference cancer journey used to guide and validate the conceptual model.
 *	the [example of model population](journey-data-evolution.html) page provides an illustrative example of how the conceptual and logical models can be instantiated over time.
 *	the [Logical Model](logicalmodels.html) refines the concepts introduced here by defining entities, attributes, relationships, and cardinalities;
-*	mappings of the shared backbone to [HL7 FHIR](fhirmodelmap.html) are documented;
-*	mappings of the same backbone to **OMOP** are documented to support research and data reuse.
-
-By presenting these mappings within a single Implementation Guide, ECCDM demonstrates how a common semantic foundation can support interoperability across different technical ecosystems without redefining the underlying meaning of the data.
