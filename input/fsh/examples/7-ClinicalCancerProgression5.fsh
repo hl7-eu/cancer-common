@@ -4,6 +4,7 @@ Description: "Example clinical cancer progression documenting partial remission 
 InstanceOf: ClinicalCancerProgression
 Usage: #example
 
+* subject = CancerPatient1-Example
 * cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * diseaseStatus.text = "Partial Remission"
 * assertedDate = "2020-01-02"

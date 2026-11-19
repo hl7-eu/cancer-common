@@ -14,7 +14,7 @@ The authoritative definitions of all concepts are maintained in the [Glossary](g
 
 Detailed descriptions of each individual attribute, including clinical meaning, cardinality, data type, terminology bindings, constraints, and notes, are provided in the dedicated **Logical Model** pages linked from each entity.
 
-For ease of consultation and reuse, especially for readers less familiar with FHIR, a complete representation of the Logical Model is also available in Excel format, offering a tabular view of entities, attributes, descriptions, and notes ([Cancer_Common_Logical_Model_20261116.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261116.xlsx)).
+For ease of consultation and reuse, especially for readers less familiar with FHIR, a complete representation of the Logical Model is also available in Excel format, offering a tabular view of entities, attributes, descriptions, and notes ([Cancer_Common_Logical_Model_20261119.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261119.xlsx)).
 
 ### Overview
 
@@ -22,7 +22,7 @@ This section provides an overview of the European Cancer Common Logical Model, h
 
 The following diagram illustrates the overall structure of the logical model and the dependencies between entities derived from reference relationships. It shows how patient information, cancer condition data, disease evolution, treatments, response assessments, and follow‑up events are connected within the model.
 
-The diagram is intended to support conceptual orientation and navigation. It does not replace the detailed logical definitions of each entity, which are available in the corresponding Logical Model pages.
+The diagram is intended to support conceptual orientation and navigation. It does not replace the detailed logical definitions of each entity, which are available in the corresponding Logical Model pages. Also note that not all the existing relationships have been reported in the diagram.
 
 <style>
   .uml-diagram svg {

@@ -1,13 +1,15 @@
 Logical: CancerStage
 Id: CancerStage
 Title: "CancerStage"
-Description: "Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from Cancer_Common_Logical_Model_20260521.xlsx (sheet CancerStage)."
+Description: "Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet CancerStage)."
 Characteristics: #can-be-target
 
 * obeys cs-ev-e1
 * obeys cs-ev-e2
 * obeys cs-tnm-1
 * obeys cs-nontnm-1
+* subject 1..1 CancerPatient "Subject"
+* subject ^definition = "Reference to the patient (subject) affected by the cancer condition at first diagnosis for which the stage is reported."
 * cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerCondition AtDiagnosis Reference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the cancer condition at first diagnosis for which the stage is reported."
 * classificationType 0..1 CodeableConcept "ClassificationType"

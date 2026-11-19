@@ -4,6 +4,8 @@ Description: "Example magnetic resonance imaging record for the lower lobe of th
 InstanceOf: Imaging
 Usage: #example
 
+* subject = CancerPatient1-Example
+
 * type.coding[0].system = "http://snomed.info/sct"
 * type.coding[0].code = #113091000
 * type.coding[0].display = "Magnetic resonance imaging"

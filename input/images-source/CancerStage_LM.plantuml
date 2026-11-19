@@ -3,6 +3,7 @@ hide empty members
 skinparam classAttributeIconSize 0
 
 class CancerStage {
+  subject : CancerPatient [1..1]
   cancerConditionAtDiagnosisReference : CancerConditionAtDiagnosis [1..1]
   classificationType : codeableConcept [0..1]
   stage : BackboneElement [1..*]

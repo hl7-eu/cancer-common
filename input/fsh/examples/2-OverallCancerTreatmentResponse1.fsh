@@ -4,6 +4,7 @@ Description: "Example overall treatment response documenting complete remission 
 InstanceOf: OverallCancerTreatmentResponse
 Usage: #example
 
+* subject = CancerPatient1-Example
 * cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * treatmentResponseType.text = "Complete Remission"
 * date = "2018-10-30"

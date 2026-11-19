@@ -3,6 +3,7 @@ hide empty members
 skinparam classAttributeIconSize 0
 
 class Imaging {
+  subject : CancerPatient [1..1]
   type : codeableConcept [1..1]
   bodySite : codeableConcept [1..*]
 }

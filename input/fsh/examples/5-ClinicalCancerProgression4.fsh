@@ -4,6 +4,7 @@ Description: "Example clinical cancer progression documenting loco-regional recu
 InstanceOf: ClinicalCancerProgression
 Usage: #example
 
+* subject = CancerPatient1-Example
 * cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * diseaseStatus.text = "Recurrence"
 * assertedDate = "2019-08-31"
