@@ -1,7 +1,7 @@
 Logical: Radiotherapy
 Id: Radiotherapy
 Title: "Radiotherapy"
-Description: "Logical model representing a radiotherapy treatment course administered to the patient, including intent, timing, and anatomical target. Derived from Cancer_Common_Logical_Model_20260521.xlsx (sheet Radiotherapy)."
+Description: "Logical model representing a radiotherapy treatment course administered to the patient, including intent, timing, and anatomical target. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet Radiotherapy)."
 Characteristics: #can-be-target
 
 * obeys rt-1
