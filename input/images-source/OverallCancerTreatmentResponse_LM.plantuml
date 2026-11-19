@@ -3,6 +3,7 @@ hide empty members
 skinparam classAttributeIconSize 0
 
 class OverallCancerTreatmentResponse {
+  subject : CancerPatient [1..1]
   cancerConditionAtDiagnosisReference : CancerConditionAtDiagnosis [1..1]
   clinicalCancerProgressionReference : ClinicalCancerProgression [0..1]
   treatmentResponseType : codeableConcept [1..1]
