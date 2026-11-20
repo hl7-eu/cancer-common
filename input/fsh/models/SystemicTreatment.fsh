@@ -1,7 +1,7 @@
 Logical: SystemicTreatment
 Id: SystemicTreatment
 Title: "SystemicTreatment"
-Description: "Logical model representing a systemic anti-cancer treatment episode delivered to the patient, either at diagnosis or following disease progression. Derived from Cancer_Common_Logical_Model_20260521.xlsx (sheet SystemicTreatment)."
+Description: "Logical model representing a systemic anti-cancer treatment episode delivered to the patient, either at diagnosis or following disease progression. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet SystemicTreatment)."
 Characteristics: #can-be-target
 
 * obeys st-1

@@ -4,6 +4,7 @@ Description: "Example clinical TNM stage for the cancer condition at diagnosis."
 InstanceOf: CancerStage
 Usage: #example
 
+* subject = CancerPatient1-Example
 * cancerConditionAtDiagnosisReference = CancerConditionAtDiagnosis1-Example
 * classificationType.text = "TNM"
 // Stage value 1

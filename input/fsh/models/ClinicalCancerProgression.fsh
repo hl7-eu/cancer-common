@@ -1,11 +1,13 @@
 Logical: ClinicalCancerProgression
 Id: ClinicalCancerProgression
 Title: "ClinicalCancerProgression"
-Description: "Logical model representing the longitudinal evolution of the cancer disease, documenting disease status and extent at a specific point in time. Derived from Cancer_Common_Logical_Model_20260521.xlsx  (sheet ClinicalCancerProgression)."
+Description: "Logical model representing the longitudinal evolution of the cancer disease, documenting disease status and extent at a specific point in time. Derived from Cancer_Common_Logical_Model_20261119.xlsx  (sheet ClinicalCancerProgression)."
 Characteristics: #can-be-target
 
 * obeys ccp-1
 * obeys ccp-2
+* subject 1..1 CancerPatient "Subject"
+* subject ^definition = "Reference to the patient (subject) affected by the cancer condition at first diagnosis to which this progression refers."
 * cancerConditionAtDiagnosisReference 1..1 CancerConditionAtDiagnosis "CancerConditionReference"
 * cancerConditionAtDiagnosisReference ^definition = "Reference to the original cancer condition at diagnosis to which this progression refers."
 * diseaseStatus 1..1 CodeableConcept "DiseaseStatus"

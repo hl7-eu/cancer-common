@@ -152,7 +152,7 @@ The following modelling assumptions apply to the first version of the European C
 
 For the first release of the model, all temporal information is explicitly preserved.
 
-Dates are collected for all entities, and new instances are created for each time point, rather than overwriting existing ones, even when observed values remain unchanged.
+Dates are collected for all entities, and new progression records are created for each time point, rather than overwriting existing ones, even when observed values remain unchanged.
 
 This approach ensures correct longitudinal representation of the cancer journey and supports retrospective analyses, research use cases, and temporal reasoning.
 
