@@ -132,7 +132,7 @@
             <a href="StructureDefinition-Radiotherapy.html">Radiotherapy</a>
           </td>
           <td>
-            <a href="StructureDefinition-episode-of-care-radiotherapy-eu-ccm.html"><code>EOCRadiotherapyEuCcm</code></a>
+            <a href="StructureDefinition-procedure-radiotherapy-eu-ccm.html"><code>ProcedureRadiotherapyEuCcm</code></a>
           </td>
           <td>
             <a class="pill" href="fhirmap-radiotherapy.html">Radiotherapy Mapping</a>
@@ -143,7 +143,7 @@
             <a href="StructureDefinition-SystemicTreatment.html">SystemicTreatment</a>
           </td>
           <td>
-            <a href="StructureDefinition-episode-of-care-systematic-treatment-eu-ccm.html"><code>EOCSystematicTreatmentEuCcm</code></a>
+            <a href="StructureDefinition-procedure-systemic-treatment-eu-ccm.html"><code>ProcedureSystemicTreatmentEuCcm</code></a>
           </td>
           <td>
             <a class="pill" href="fhirmap-systemictreatment.html">SystemicTreatment Mapping</a>

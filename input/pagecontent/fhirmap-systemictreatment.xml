@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>SystemicTreatment -> EOCSystematicTreatmentEuCcm</title>
+    <title>SystemicTreatment -> ProcedureSystemicTreatmentEuCcm</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -20,12 +20,17 @@
       </div>
     </div>
 
-    <h3>SystemicTreatment -> EOCSystematicTreatmentEuCcm</h3>
+    <h3>SystemicTreatment -> ProcedureSystemicTreatmentEuCcm</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the SystemicTreatment logical model are expressed
-      in the FHIR Resource EOCSystematicTreatmentEuCcm resource used by this Implementation Guide.
+      in the FHIR Resource ProcedureSystemicTreatmentEuCcm resource used by this Implementation Guide.
+      The logical model describes the whole treatment course (type, intent, period, setting) as a single summary,
+      which is why it is mapped to a Procedure with a performed period rather than to an EpisodeOfCare, which in
+      FHIR represents a care-management relationship and not a treatment. In primary systems the course is typically
+      derived from the individual MedicationRequest / MedicationAdministration resources of the regimen; those are
+      out of scope of the ECCDM.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -37,19 +42,19 @@
         </li>
         <li>
           <strong>Target FHIR resource:</strong>
-          <a href="StructureDefinition-episode-of-care-systematic-treatment-eu-ccm.html">EOCSystematicTreatmentEuCcm</a>
+          <a href="StructureDefinition-procedure-systemic-treatment-eu-ccm.html">ProcedureSystemicTreatmentEuCcm</a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="SystemicTreatment -> EOCSystematicTreatmentEuCcm">
-        <caption>SystemicTreatment -> EOCSystematicTreatmentEuCcm</caption>
+      <table summary="SystemicTreatment -> ProcedureSystemicTreatmentEuCcm">
+        <caption>SystemicTreatment -> ProcedureSystemicTreatmentEuCcm</caption>
         <thead>
           <tr>
             <th colspan="1" class="src-head">SystemicTreatment (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">EOCSystematicTreatmentEuCcm</th>
+            <th colspan="3" class="tgt-head">ProcedureSystemicTreatmentEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -62,57 +67,57 @@
         <tbody>
           <tr>
             <td>subject</td>
-            <td>related-to</td>
-            <td>Episode of Care</td><td>patient</td>
-            <td>Here the reference to a CancerPatientCcm must be made</td>
-          </tr>
-          <tr>
-            <td>cancerConditionReference</td>
-            <td>related-to</td>
-            <td>Episode of Care</td><td>diagnosis.condition</td>
-            <td>Here the reference to a CancerConditionDiagnosisCcm must be made.</td>
-          </tr>
-          <tr>
-            <td>clinicalCancerProgresionReference</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[CancerProgressionReferenceST]</td>
-            <td>Here the ObservationCancerProgressionCcm can be referenced, if available.</td>
+            <td>Procedure</td><td>subject</td>
+            <td>Here the reference to a PatientEuCcm must be made.</td>
+          </tr>
+          <tr>
+            <td>cancerConditionAtDiagnosisReference</td>
+            <td>related-to</td>
+            <td>Procedure</td><td>reasonReference[condition]</td>
+            <td>Here the reference to a CancerConditionAtDiagnosisEuCcm must be made.</td>
+          </tr>
+          <tr>
+            <td>clinicalCancerProgressionReference</td>
+            <td>related-to</td>
+            <td>Procedure</td><td>reasonReference[progression]</td>
+            <td>Here the ObservationClinicalCancerProgression can be referenced, if the treatment is delivered in response to a progression.</td>
           </tr>
           <tr>
             <td>intent</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[SystematicTreatmentIntent]</td>
-            <td>Here the intent of the systematic treatment must be stated. Here the code must stem from a defined Snomed CT value set.</td>
+            <td>Procedure</td><td>extension[intent]</td>
+            <td>Extension CancerTreatmentIntent; the code must stem from the Cancer Treatment Intent value set (SNOMED CT curative / palliative).</td>
           </tr>
           <tr>
             <td>type</td>
-            <td>related-to</td>
-            <td>Episode of Care</td><td>type</td>
-            <td>Here the systematic treatment must be coded.</td>
+            <td>equivalent</td>
+            <td>Procedure</td><td>code</td>
+            <td class="highlight-yellow">Category of the systemic treatment, bound (extensible) to the Systemic Treatment Type value set (SNOMED CT chemotherapy, immunotherapy, hormone therapy). A code for targeted therapy still has to be added.</td>
           </tr>
           <tr>
             <td>startDate</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>period.start</td>
-            <td>Here the start date of the systematic treatment must be noted.</td>
+            <td>Procedure</td><td>performedPeriod.start</td>
+            <td>Start date of the treatment course.</td>
           </tr>
           <tr>
             <td>endDate</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>period.end</td>
-            <td>Here the end date of the systematic treatment shall be noted. It might not be available while the treatment is still ongoing; however, an end date must eventually be recorded.</td>
+            <td>Procedure</td><td>performedPeriod.end</td>
+            <td>End date of the treatment course, if available. It might not be available while the treatment is still ongoing; however, an end date must eventually be recorded.</td>
           </tr>
           <tr>
             <td>ongoing</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[SystematicTreatmentOngoing]</td>
-            <td>Here one can state if the treatment is still ongoing.</td>
+            <td>Procedure</td><td>status</td>
+            <td><code>ongoing = true</code> is expressed as <code>status = in-progress</code> with no <code>performedPeriod.end</code> (invariant ccm-st-1); a finished course has <code>status = completed</code>.</td>
           </tr>
           <tr>
             <td>setting</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[SystematicTreatmentSetting]</td>
-            <td>Here the setting of the systematic treatment can be noted. Here a required Snomed CT value set is provided, from which the code must be chosen.</td>
+            <td>Procedure</td><td>extension[setting]</td>
+            <td class="highlight-yellow">Extension CancerTreatmentSetting; the SNOMED CT codes of the Cancer Treatment Setting value set still need review against the model choices (alone, neoadjuvant, adjuvant, concomitant).</td>
           </tr>
         </tbody>
       </table>

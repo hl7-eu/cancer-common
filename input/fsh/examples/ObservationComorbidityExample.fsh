@@ -15,21 +15,6 @@ Description: "Example comorbidity observation documenting the Charlson Comorbidi
 
 * performer = Reference(Practitioner1-Example)
 
-Instance: Patient1-Example
-InstanceOf: patient-eu-ccm
-Usage: #example
-Description: "Example patient used in Cancer Common implementation guide examples."
-
-* identifier.system = "http://example.org/patient-id"
-* identifier.value = "P001"
-
-* name.family = "Doe"
-* name.given = "John"
-
-* gender = #male
-
-* birthDate = "1965-04-12"
-
 Instance: Practitioner1-Example
 InstanceOf: Practitioner
 Usage: #example

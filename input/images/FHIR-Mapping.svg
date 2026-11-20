@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1442" height="1213" viewBox="0 0 1442 1213">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/></marker></defs>
+<rect width="1442" height="1213" fill="#f7f6f2"/>
+<text x="44" y="12" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#666">ECCDM logical models mapped to FHIR profiles (informative) — arrows are references between profiles</text>
+<circle cx="49" cy="34" r="4" fill="#2f6fb3"/><text x="58" y="38" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#444">Patient</text>
+<circle cx="118.5" cy="34" r="4" fill="#b5473f"/><text x="127.5" y="38" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#444">Condition</text>
+<circle cx="201.0" cy="34" r="4" fill="#2e7d4f"/><text x="210.0" y="38" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#444">EpisodeOfCare</text>
+<circle cx="309.5" cy="34" r="4" fill="#5b4fb5"/><text x="318.5" y="38" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#444">Observation</text>
+<circle cx="405.0" cy="34" r="4" fill="#a86a12"/><text x="414.0" y="38" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#444">Procedure</text>
+<path d="M 374.0 155.5 L 394.0 155.5 L 394.0 111.9 L 544.0 111.9" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 178.5 L 406.0 178.5 L 406.0 252.5 L 544.0 252.5" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 201.5 L 418.0 201.5 L 418.0 461.4 L 544.0 461.4" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 372.5 L 430.0 372.5 L 430.0 121.8 L 544.0 121.8" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 395.5 L 442.0 395.5 L 442.0 270.0 L 544.0 270.0" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 418.5 L 454.0 418.5 L 454.0 493.8 L 544.0 493.8" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 604.5 L 466.0 604.5 L 466.0 131.6 L 544.0 131.6" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 627.5 L 478.0 627.5 L 478.0 287.5 L 544.0 287.5" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 650.5 L 490.0 650.5 L 490.0 526.2 L 544.0 526.2" fill="none" stroke="#a86a12" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 836.5 L 502.0 836.5 L 502.0 305.0 L 544.0 305.0" fill="none" stroke="#2e7d4f" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 374.0 859.5 L 514.0 859.5 L 514.0 141.5 L 544.0 141.5" fill="none" stroke="#2e7d4f" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 874.0 288.5 L 894.0 288.5 L 894.0 575.0 L 1044.0 575.0" fill="none" stroke="#b5473f" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 584.0 223.0 L 584.0 193.0" fill="none" stroke="#b5473f" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 602.0 417.0 L 602.0 387.0" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 1374.0 155.5 L 1390.0 155.5 L 1390.0 1110.0 L 1374.0 1110.0" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 1044.0 178.5 L 906.0 178.5 L 906.0 58.0 L 526.0 58.0 L 526.0 183.5 L 374.0 183.5" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 1044.0 201.5 L 918.0 201.5 L 918.0 340.0 L 874.0 340.0" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 1044.0 372.5 L 930.0 372.5 L 930.0 357.5 L 874.0 357.5" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 1044.0 395.5 L 942.0 395.5 L 942.0 558.6 L 874.0 558.6" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 1044.0 729.5 L 954.0 729.5 L 954.0 161.2 L 874.0 161.2" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<path d="M 1044.0 915.5 L 966.0 915.5 L 966.0 171.1 L 874.0 171.1" fill="none" stroke="#5b4fb5" stroke-width="1.3" marker-end="url(#arrow)"/>
+<g>
+<rect x="44" y="90" width="330" height="187" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="44" y="90" width="330" height="3" fill="#a86a12"/>
+<text x="58" y="110" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#a86a12">PROCEDURE</text>
+<text x="58" y="130" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Surgery</text>
+<text x="360" y="110" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#777">referenced by 1</text>
+<line x1="44" y1="144" x2="374" y2="144" stroke="#eeebe5"/>
+<text x="58" y="160" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">subject</text>
+<text x="360" y="160" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Patient</text>
+<line x1="44" y1="167" x2="374" y2="167" stroke="#eeebe5"/>
+<text x="58" y="183" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">reasonReference[condition]</text>
+<text x="360" y="183" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Condition</text>
+<line x1="44" y1="190" x2="374" y2="190" stroke="#eeebe5"/>
+<text x="58" y="206" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">reasonReference[progression]</text>
+<text x="360" y="206" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Obs</text>
+<line x1="44" y1="213" x2="374" y2="213" stroke="#eeebe5"/>
+<text x="58" y="229" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="58" y="244" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[SurgeryIntent] · performed[x]</text>
+<text x="58" y="259" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">performed[x][performedDateTime] · bodySite</text>
+</g>
+<g>
+<rect x="44" y="307" width="330" height="202" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="44" y="307" width="330" height="3" fill="#a86a12"/>
+<text x="58" y="327" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#a86a12">PROCEDURE</text>
+<text x="58" y="347" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Radiotherapy</text>
+<line x1="44" y1="361" x2="374" y2="361" stroke="#eeebe5"/>
+<text x="58" y="377" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">subject</text>
+<text x="360" y="377" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Patient</text>
+<line x1="44" y1="384" x2="374" y2="384" stroke="#eeebe5"/>
+<text x="58" y="400" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">reasonReference[condition]</text>
+<text x="360" y="400" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Condition</text>
+<line x1="44" y1="407" x2="374" y2="407" stroke="#eeebe5"/>
+<text x="58" y="423" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">reasonReference[progression]</text>
+<text x="360" y="423" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Obs</text>
+<line x1="44" y1="430" x2="374" y2="430" stroke="#eeebe5"/>
+<text x="58" y="446" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="58" y="461" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[intent] · extension[setting] · status</text>
+<text x="58" y="476" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">code · performed[x] · performed[x].start</text>
+<text x="58" y="491" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">performed[x].end · bodySite</text>
+</g>
+<g>
+<rect x="44" y="539" width="330" height="202" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="44" y="539" width="330" height="3" fill="#a86a12"/>
+<text x="58" y="559" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#a86a12">PROCEDURE</text>
+<text x="58" y="579" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Systemic Treatment</text>
+<line x1="44" y1="593" x2="374" y2="593" stroke="#eeebe5"/>
+<text x="58" y="609" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">subject</text>
+<text x="360" y="609" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Patient</text>
+<line x1="44" y1="616" x2="374" y2="616" stroke="#eeebe5"/>
+<text x="58" y="632" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">reasonReference[condition]</text>
+<text x="360" y="632" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Condition</text>
+<line x1="44" y1="639" x2="374" y2="639" stroke="#eeebe5"/>
+<text x="58" y="655" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">reasonReference[progression]</text>
+<text x="360" y="655" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Obs</text>
+<line x1="44" y1="662" x2="374" y2="662" stroke="#eeebe5"/>
+<text x="58" y="678" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="58" y="693" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[intent] · extension[setting] · status</text>
+<text x="58" y="708" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">code · performed[x] · performed[x].start</text>
+<text x="58" y="723" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">performed[x].end</text>
+</g>
+<g>
+<rect x="44" y="771" width="330" height="149" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="44" y="771" width="330" height="3" fill="#2e7d4f"/>
+<text x="58" y="791" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#2e7d4f">EPISODEOFCARE</text>
+<text x="58" y="811" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Active Surveillance</text>
+<line x1="44" y1="825" x2="374" y2="825" stroke="#eeebe5"/>
+<text x="58" y="841" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">diagnosis.condition</text>
+<text x="360" y="841" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Condition</text>
+<line x1="44" y1="848" x2="374" y2="848" stroke="#eeebe5"/>
+<text x="58" y="864" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">patient</text>
+<text x="360" y="864" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Patient</text>
+<line x1="44" y1="871" x2="374" y2="871" stroke="#eeebe5"/>
+<text x="58" y="887" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="58" y="902" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">period · period.start · period.end</text>
+</g>
+<g>
+<rect x="544" y="90" width="330" height="103" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="544" y="90" width="330" height="3" fill="#2f6fb3"/>
+<text x="558" y="110" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#2f6fb3">PATIENT</text>
+<text x="558" y="130" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Patient</text>
+<text x="860" y="110" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#777">referenced by 7</text>
+<line x1="544" y1="144" x2="874" y2="144" stroke="#eeebe5"/>
+<text x="558" y="160" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="558" y="175" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[recordedSexOrGender] · gender · birthDate</text>
+</g>
+<g>
+<rect x="544" y="223" width="330" height="164" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="544" y="223" width="330" height="3" fill="#b5473f"/>
+<text x="558" y="243" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#b5473f">CONDITION</text>
+<text x="558" y="263" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Cancer Condition at Diagnosis</text>
+<text x="860" y="243" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#777">referenced by 7</text>
+<line x1="544" y1="277" x2="874" y2="277" stroke="#eeebe5"/>
+<text x="558" y="293" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">extension[HistologyBehaviour]</text>
+<text x="860" y="293" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Obs</text>
+<line x1="544" y1="300" x2="874" y2="300" stroke="#eeebe5"/>
+<text x="558" y="316" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">subject</text>
+<text x="860" y="316" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Patient</text>
+<line x1="544" y1="323" x2="874" y2="323" stroke="#eeebe5"/>
+<text x="558" y="339" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="558" y="354" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[diagnosisDate] · bodySite · stage.summary</text>
+<text x="558" y="369" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">stage.type</text>
+</g>
+<g>
+<rect x="544" y="417" width="330" height="186" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="544" y="417" width="330" height="3" fill="#5b4fb5"/>
+<text x="558" y="437" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#5b4fb5">OBSERVATION</text>
+<text x="558" y="457" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Clinical Cancer Progression</text>
+<text x="860" y="437" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#777">referenced by 4</text>
+<line x1="544" y1="471" x2="874" y2="471" stroke="#eeebe5"/>
+<text x="558" y="487" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">focus</text>
+<text x="860" y="487" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Condition</text>
+<line x1="544" y1="494" x2="874" y2="494" stroke="#eeebe5"/>
+<text x="558" y="510" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="558" y="525" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[ExtentType] · extension[LocoRegionalSites]</text>
+<text x="558" y="540" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[MetastaticSites] · code · effective[x]</text>
+<text x="558" y="555" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">effective[x][effectiveDateTime] · value[x]</text>
+<text x="558" y="570" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">value[x][valueCodeableConcept] · component</text>
+<text x="558" y="585" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">component.code · component.value[x]</text>
+</g>
+<g>
+<rect x="1044" y="90" width="330" height="187" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="1044" y="90" width="330" height="3" fill="#5b4fb5"/>
+<text x="1058" y="110" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#5b4fb5">OBSERVATION</text>
+<text x="1058" y="130" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Cancer Stage</text>
+<line x1="1044" y1="144" x2="1374" y2="144" stroke="#eeebe5"/>
+<text x="1058" y="160" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">extension[EvidenceReferenceImaging]</text>
+<text x="1360" y="160" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Obs</text>
+<line x1="1044" y1="167" x2="1374" y2="167" stroke="#eeebe5"/>
+<text x="1058" y="183" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">extension[EvidenceReferenceSurgery]</text>
+<text x="1360" y="183" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Proc</text>
+<line x1="1044" y1="190" x2="1374" y2="190" stroke="#eeebe5"/>
+<text x="1058" y="206" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">focus</text>
+<text x="1360" y="206" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Condition</text>
+<line x1="1044" y1="213" x2="1374" y2="213" stroke="#eeebe5"/>
+<text x="1058" y="229" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="1058" y="244" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[CinicalOrPathological] · code · value[x]</text>
+<text x="1058" y="259" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">component.code · component.value[x]</text>
+</g>
+<g>
+<rect x="1044" y="307" width="330" height="179" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="1044" y="307" width="330" height="3" fill="#5b4fb5"/>
+<text x="1058" y="327" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#5b4fb5">OBSERVATION</text>
+<text x="1058" y="347" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Treatment Response</text>
+<line x1="1044" y1="361" x2="1374" y2="361" stroke="#eeebe5"/>
+<text x="1058" y="377" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">focus[condition]</text>
+<text x="1360" y="377" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Condition</text>
+<line x1="1044" y1="384" x2="1374" y2="384" stroke="#eeebe5"/>
+<text x="1058" y="400" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">focus[progression]</text>
+<text x="1360" y="400" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Obs</text>
+<line x1="1044" y1="407" x2="1374" y2="407" stroke="#eeebe5"/>
+<text x="1058" y="423" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="1058" y="438" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">code · effective[x]</text>
+<text x="1058" y="453" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">effective[x][effectiveDateTime] · value[x]</text>
+<text x="1058" y="468" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">value[x][valueCodeableConcept]</text>
+</g>
+<g>
+<rect x="1044" y="516" width="330" height="118" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="1044" y="516" width="330" height="3" fill="#5b4fb5"/>
+<text x="1058" y="536" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#5b4fb5">OBSERVATION</text>
+<text x="1058" y="556" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Histology Behaviour</text>
+<text x="1360" y="536" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#777">referenced by 1</text>
+<line x1="1044" y1="570" x2="1374" y2="570" stroke="#eeebe5"/>
+<text x="1058" y="586" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="1058" y="601" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">code · focus · value[x]</text>
+<text x="1058" y="616" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">value[x][valueCodeableConcept]</text>
+</g>
+<g>
+<rect x="1044" y="664" width="330" height="156" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="1044" y="664" width="330" height="3" fill="#5b4fb5"/>
+<text x="1058" y="684" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#5b4fb5">OBSERVATION</text>
+<text x="1058" y="704" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Comorbidities</text>
+<line x1="1044" y1="718" x2="1374" y2="718" stroke="#eeebe5"/>
+<text x="1058" y="734" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">subject</text>
+<text x="1360" y="734" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Patient</text>
+<line x1="1044" y1="741" x2="1374" y2="741" stroke="#eeebe5"/>
+<text x="1058" y="757" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="1058" y="772" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[comorbidConditionPresent]</text>
+<text x="1058" y="787" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[comorbidConditionAbsent] · code · value[x]</text>
+<text x="1058" y="802" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">method</text>
+</g>
+<g>
+<rect x="1044" y="850" width="330" height="171" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="1044" y="850" width="330" height="3" fill="#5b4fb5"/>
+<text x="1058" y="870" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#5b4fb5">OBSERVATION</text>
+<text x="1058" y="890" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Follow Up</text>
+<line x1="1044" y1="904" x2="1374" y2="904" stroke="#eeebe5"/>
+<text x="1058" y="920" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="11" fill="#222">subject</text>
+<text x="1360" y="920" text-anchor="end" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="10" fill="#888">Patient</text>
+<line x1="1044" y1="927" x2="1374" y2="927" stroke="#eeebe5"/>
+<text x="1058" y="943" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="1058" y="958" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[VitalStatus]</text>
+<text x="1058" y="973" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[EvidenceOfDisease] · extension[DeathInfo]</text>
+<text x="1058" y="988" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">code · effective[x]</text>
+<text x="1058" y="1003" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">effective[x][effectiveDateTime]</text>
+</g>
+<g>
+<rect x="1044" y="1051" width="330" height="118" rx="3" fill="#ffffff" stroke="#d8d4cc"/>
+<rect x="1044" y="1051" width="330" height="3" fill="#5b4fb5"/>
+<text x="1058" y="1071" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1" fill="#5b4fb5">OBSERVATION</text>
+<text x="1058" y="1091" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#222">Imaging</text>
+<text x="1360" y="1071" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="9" fill="#777">referenced by 1</text>
+<line x1="1044" y1="1105" x2="1374" y2="1105" stroke="#eeebe5"/>
+<text x="1058" y="1121" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="8" letter-spacing="1" fill="#999">FURTHER ELEMENTS</text>
+<text x="1058" y="1136" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">extension[additionalBodySite] · code · bodySite</text>
+<text x="1058" y="1151" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#555">method</text>
+</g>
+</svg>

@@ -2,7 +2,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-    <title>Radiotherapy -> EOCRadiotherapyEuCcm</title>
+    <title>Radiotherapy -> ProcedureRadiotherapyEuCcm</title>
   </head>
   <body>
     <div class="model-map-block">
@@ -20,12 +20,15 @@
       </div>
     </div>
 
-    <h3>Radiotherapy -> EOCRadiotherapyEuCcm</h3>
+    <h3>Radiotherapy -> ProcedureRadiotherapyEuCcm</h3>
     <a>  </a>
     <p></p>
     <p>
       This page explains how elements from the Radiotherapy logical model are expressed
-      in the FHIR Resource EOCRadiotherapyEuCcm resource used by this Implementation Guide.
+      in the FHIR Resource ProcedureRadiotherapyEuCcm resource used by this Implementation Guide.
+      The logical model describes the whole radiotherapy course as a single summary, which is why it is mapped to a
+      Procedure with a performed period (comparable to the mCODE Radiotherapy Course Summary) rather than to an
+      EpisodeOfCare, which in FHIR represents a care-management relationship and not a treatment.
     </p>
     <p></p>
     <div class="table-wrap">
@@ -37,19 +40,19 @@
         </li>
         <li>
           <strong>Target FHIR resource:</strong>
-         <a href="StructureDefinition-episode-of-care-radiotherapy-eu-ccm.html">EOCRadiotherapyEuCcm</a>
+          <a href="StructureDefinition-procedure-radiotherapy-eu-ccm.html">ProcedureRadiotherapyEuCcm</a>
         </li>
       </ul>
     </div>
     <p></p>
     <div class="table-wrap">
-      <table summary="Radiotherapy -> EOCRadiotherapyEuCcm">
-        <caption>Radiotherapy -> EOCRadiotherapyEuCcm</caption>
+      <table summary="Radiotherapy -> ProcedureRadiotherapyEuCcm">
+        <caption>Radiotherapy -> ProcedureRadiotherapyEuCcm</caption>
         <thead>
           <tr>
             <th colspan="1" class="src-head">Radiotherapy (Logical Model)</th>
             <th class="relhead">Relationship</th>
-            <th colspan="3" class="tgt-head">EOCRadiotherapyEuCcm</th>
+            <th colspan="3" class="tgt-head">ProcedureRadiotherapyEuCcm</th>
           </tr>
           <tr>
             <th class="src-sub">Element</th>
@@ -62,51 +65,57 @@
         <tbody>
           <tr>
             <td>subject</td>
-            <td>related-to</td>
-            <td>Episode of Care</td><td>patient</td>
-            <td>Here the reference to a CancerPatientCcm must be made.</td>
+            <td>equivalent</td>
+            <td>Procedure</td><td>subject</td>
+            <td>Here the reference to a PatientEuCcm must be made.</td>
           </tr>
           <tr>
             <td>cancerConditionAtDiagnosisReference</td>
             <td>related-to</td>
-            <td>Episode of Care</td><td>diagnosis.condition</td>
-            <td>Here the reference to a CancerConditionDiagnosisCcm must be made.</td>
+            <td>Procedure</td><td>reasonReference[condition]</td>
+            <td>Here the reference to a CancerConditionAtDiagnosisEuCcm must be made.</td>
           </tr>
           <tr>
-            <td>clinicalCancerProgresionReference</td>
-            <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[CancerProgressionReferenceRT]</td>
-            <td>Here the ObservationCancerProgressionCcm can be referenced, if available.</td>
+            <td>clinicalCancerProgressionReference</td>
+            <td>related-to</td>
+            <td>Procedure</td><td>reasonReference[progression]</td>
+            <td>Here the ObservationClinicalCancerProgression can be referenced, if the radiotherapy is delivered in response to a progression.</td>
           </tr>
           <tr>
             <td>intent</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[RadiotherapyIntent]</td>
-            <td>Here an extension is made, where a code out of a Snomed CT value set must be selected.</td>
+            <td>Procedure</td><td>extension[intent]</td>
+            <td>Extension CancerTreatmentIntent; the code must stem from the Cancer Treatment Intent value set (SNOMED CT curative / palliative).</td>
           </tr>
           <tr>
             <td>startDate</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>period.start</td>
-            <td>Here the start date of the radiotherapy can be noted.</td>
+            <td>Procedure</td><td>performedPeriod.start</td>
+            <td>Start date of the radiotherapy course.</td>
           </tr>
           <tr>
             <td>endDate</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>period.end</td>
-            <td>here the end date of the radiotherapy must be noted, if available. </td>
+            <td>Procedure</td><td>performedPeriod.end</td>
+            <td>End date of the radiotherapy course, if available. While the course is still ongoing the end is absent and status is <code>in-progress</code>.</td>
           </tr>
           <tr>
             <td>bodySite</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[RadiotherapyBodySite]</td>
-            <td>Here with an extension a code for the body site affected by the radiotherapy can be made. It might not be available while the radiotherapy is still ongoing; however, an end date must eventually be recorded.</td>
+            <td>Procedure</td><td>bodySite</td>
+            <td>Anatomical site(s) targeted by the radiotherapy.</td>
           </tr>
           <tr>
             <td>setting</td>
             <td>equivalent</td>
-            <td>Episode of Care</td><td>extension[RadiotherapySetting]</td>
-            <td>Mapping to be defined.</td>
+            <td>Procedure</td><td>extension[setting]</td>
+            <td class="highlight-yellow">Extension CancerTreatmentSetting; the SNOMED CT codes of the Cancer Treatment Setting value set still need review against the model choices (alone, neoadjuvant, adjuvant, concomitant).</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>related-to</td>
+            <td>Procedure</td><td>code</td>
+            <td>Fixed to SNOMED CT 1287742003 "Radiotherapy (procedure)"; the logical model has no type element for radiotherapy.</td>
           </tr>
         </tbody>
       </table>
