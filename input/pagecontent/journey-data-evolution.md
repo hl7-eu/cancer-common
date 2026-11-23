@@ -107,12 +107,12 @@ Based on this treatment response evaluation, clinicians subsequently assess the 
 
 The ClinicalCancerProgression record (**ClinicalCancerProgression1**) is linked to the same **CancerConditionAtDiagnosis1**, reflecting the evolution of the disease over time without overwriting previous information. This explicit separation between treatment response evaluation and disease status allows the model to preserve the clinical reasoning process and to distinguish between response assessment and disease state assertion.
 
-In parallel, the patient’s status is assessed and recorded through the instantiation of a **LastFollowUp** record (**LastFollowUp1**). At Date 4, the patient is:
+In parallel, the patient’s status is assessed and recorded through the instantiation of a **FollowUp** record (**FollowUp1**). At Date 4, the patient is:
 *	alive,
 *	with no evidence of disease,
 *	date = 2018-10-30.
 
-The LastFollowUp record (**LastFollowUp1**) is linked to the **CancerPatient** (**CancerPatient1**) and captures the patient centred outcome of the follow up visit.
+The FollowUp record (**FollowUp1**) is linked to the **CancerPatient** (**CancerPatient1**) and captures the patient centred outcome of the follow up visit.
 
 At the end of Date 4, the cancer journey includes newly instantiated entities representing the **overall treatment response**, the **current disease status**, and the **patient’s vital and disease related status**, all temporally aligned to the same follow up visit. Together, these entities document the transition from active treatment to a remission state and establish the baseline for subsequent monitoring and follow up assessments.
 
@@ -120,7 +120,7 @@ At the end of Date 4, the cancer journey includes newly instantiated entities re
 
 This step illustrates subsequent follow up visits occurring after the initial assessment of complete remission. From a clinical perspective, the outcome remains unchanged and complete remission is confirmed at each visit.
 
-However, from a data modeling perspective, each follow up visit represents a distinct clinical event that must be explicitly captured. For this reason, even in the absence of changes in disease status or patient outcome, **new records** of **ClinicalCancerProgression** and **LastFollowUp** are created at each follow up visit. This approach ensures that all follow up assessments are temporally traceable and that the longitudinal evolution of the cancer journey is faithfully represented over time.
+However, from a data modeling perspective, each follow up visit represents a distinct clinical event that must be explicitly captured. For this reason, even in the absence of changes in disease status or patient outcome, **new records** of **ClinicalCancerProgression** and **FollowUp** are created at each follow up visit. This approach ensures that all follow up assessments are temporally traceable and that the longitudinal evolution of the cancer journey is faithfully represented over time.
 
 <div>
   <p></p>
@@ -142,22 +142,22 @@ At this time point, clinicians confirm the previously observed disease status. A
 
 Although the disease status does not change compared to the previous assessment, a **new record** is created to explicitly capture the confirmation of complete remission at this specific moment in time. The record is linked to the same **CancerConditionAtDiagnosis** (**CancerConditionAtDiagnosis1**), preserving continuity while maintaining temporal specificity.
 
-In parallel, a new **LastFollowUp** record (**LastFollowUp2**) is instantiated to record the patient’s status at Date 5. The patient is documented as:
+In parallel, a new **FollowUp** record (**FollowUp2**) is instantiated to record the patient’s status at Date 5. The patient is documented as:
 *	vitalStatus = Alive,
 *	evidenceOfDisease = No,
 *	date = 2019 02 28.
 
-The LastFollowUp record (**LastFollowUp2**) is associated with the **CancerPatient1** and reflects the patient centred outcome of the follow up visit.
+The FollowUp record (**FollowUp2**) is associated with the **CancerPatient1** and reflects the patient centred outcome of the follow up visit.
 
 #### Date 6 – Evidence and Follow up Visit (Complete Remission)
 
 At **Date 6** (**2019-05-30**), the patient undergoes another follow up visit supported by newly collected clinical evidence. The same clinical considerations observed at the previous follow up visit apply, and complete remission is confirmed.
 
-In line with the modeling approach adopted throughout the cancer journey, **new records** of **ClinicalCancerProgression** (**ClinicalCancerProgression3**) and **LastFollowUp** (**LastFollowUp3**) are created to explicitly record the disease status and patient status at this specific time point, even though no change in outcome is observed. This ensures full longitudinal traceability of follow up assessments over time.
+In line with the modeling approach adopted throughout the cancer journey, **new records** of **ClinicalCancerProgression** (**ClinicalCancerProgression3**) and **FollowUp** (**FollowUp3**) are created to explicitly record the disease status and patient status at this specific time point, even though no change in outcome is observed. This ensures full longitudinal traceability of follow up assessments over time.
 
 ##### Longitudinal Traceability Across Follow up Visits
 
-At Dates 5 and 6, no modification of previously instantiated entities occurs. Instead, the model captures the confirmation of remission and patient status through the creation of new **ClinicalCancerProgression** and **LastFollowUp** records at each follow up visit.
+At Dates 5 and 6, no modification of previously instantiated entities occurs. Instead, the model captures the confirmation of remission and patient status through the creation of new **ClinicalCancerProgression** and **FollowUp** records at each follow up visit.
 
 This approach reflects the principle that **clinical stability does not imply data immutability**: even when the disease status remains unchanged, each follow up visit represents a distinct clinical event that must be explicitly recorded. This ensures a faithful longitudinal representation of the cancer journey, enabling accurate reconstruction of events over time and supporting robust clinical interpretation and secondary use.
 
@@ -185,12 +185,12 @@ At this time point, a new **ClinicalCancerProgression** record (**ClinicalCancer
 
 The instantiation of a new ClinicalCancerProgression reflects a true **clinical change** with respect to previous assessments. This new record does not overwrite earlier progression records but coexists with them, explicitly marking a new phase in the cancer journey.
 
-In parallel, a new **LastFollowUp** record (**LastFollowUp4**) is created to record the patient’s status at the same visit. At Date 7, the patient is:
+In parallel, a new **FollowUp** record (**FollowUp4**) is created to record the patient’s status at the same visit. At Date 7, the patient is:
 *	vitalStatus = Alive,
 *	evidenceOfDisease = Yes,
 *	date = 2019-08-31.
 
-Both the ClinicalCancerProgression (**ClinicalCancerProgression4**) and LastFollowUp (**LastFollowUp4**) records are linked to the previously instantiated **CancerConditionAtDiagnosis1** and **CancerPatient1**, ensuring continuity while clearly representing the transition from remission to active disease.
+Both the ClinicalCancerProgression (**ClinicalCancerProgression4**) and FollowUp (**FollowUp4**) records are linked to the previously instantiated **CancerConditionAtDiagnosis1** and **CancerPatient1**, ensuring continuity while clearly representing the transition from remission to active disease.
 
 #### Date 8–9 – Second Treatment (Systemic Therapy)
 
@@ -241,12 +241,12 @@ Based on this treatment response assessment, clinicians subsequently update the 
 
 As in previous steps, the new ClinicalCancerProgression record (**ClinicalCancerProgression5**) does not replace earlier progression records but coexists with them, explicitly documenting the evolution of the disease over time.
 
-In parallel, the patient’s status at the follow up visit is recorded through a new **LastFollowUp** record (**LastFollowUp5**). At Date 10, the patient is:
+In parallel, the patient’s status at the follow up visit is recorded through a new **FollowUp** record (**FollowUp5**). At Date 10, the patient is:
 *	vitalStatus = Alive,
 *	evidenceOfDisease = Yes,
 *	date = 2020-01-02.
 
-The LastFollowUp record is linked to the **CancerPatient1** and reflects the persistence of disease despite a partial response to treatment.
+The FollowUp record is linked to the **CancerPatient1** and reflects the persistence of disease despite a partial response to treatment.
 
 At the end of Date 10, the cancer journey includes a newly documented treatment response assessment, an updated disease status reflecting partial remission, and a contemporaneous evaluation of patient status, setting the stage for subsequent follow up and possible further disease evolution.
 
@@ -274,16 +274,16 @@ At this time point, a new **ClinicalCancerProgression** record (**ClinicalCancer
 
 This new record represents a clear clinical change with respect to the previously documented partial remission and marks a further step in disease evolution. As in all previous steps, the progression is recorded through the creation of a new record rather than by updating existing ones, preserving the full history of disease assessments over time.
 
-In parallel, a new **LastFollowUp** record (**LastFollowUp6**) is created to record the patient’s status at the same follow up visit. At Date 11, the patient is:
+In parallel, a new **FollowUp** record (**FollowUp6**) is created to record the patient’s status at the same follow up visit. At Date 11, the patient is:
 *	vitalStatus = Alive,
 *	evidenceOfDisease = Yes,
 *	date = 2020-04-15.
 
-Both the ClinicalCancerProgression (**ClinicalCancerProgression6**) and LastFollowUp (**LastFollowUp6**) records are linked to the existing **CancerConditionAtDiagnosis1** and **CancerPatient1**, ensuring longitudinal consistency while documenting the worsening of disease status.
+Both the ClinicalCancerProgression (**ClinicalCancerProgression6**) and FollowUp (**FollowUp6**) records are linked to the existing **CancerConditionAtDiagnosis1** and **CancerPatient1**, ensuring longitudinal consistency while documenting the worsening of disease status.
 
 #### Date 12 – Patient’s Death
 
-At **Date 12** (**2020-06-28**), the patient dies. This event represents the conclusion of the cancer journey and is captured through the instantiation of a new **LastFollowUp** record (**LastFollowUp7**).
+At **Date 12** (**2020-06-28**), the patient dies. This event represents the conclusion of the cancer journey and is captured through the instantiation of a new **FollowUp** record (**FollowUp7**).
 At this time point, the patient status is recorded as:
 *	vitalStatus = Dead,
 *	deathDate = 2020 06 28,

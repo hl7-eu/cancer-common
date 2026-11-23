@@ -29,7 +29,7 @@ CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
  package "Date 7 (2019-08-31) \nEvidence + Follow-up (Recurrence)" {
     
-    class LastFollowUp4 {
+    class FollowUp4 {
      vitalStatus = Alive
      evidenceOfDisease = Yes
      causeOfDeath = Null
@@ -48,7 +48,7 @@ CancerPatient1 --> CancerConditionAtDiagnosis1 : is affected by
 
  }
 
-CancerPatient1 --> LastFollowUp4 : has
+CancerPatient1 --> FollowUp4 : has
 CancerConditionAtDiagnosis1 --> ClinicalCancerProgression4 : evolves throught
 
 

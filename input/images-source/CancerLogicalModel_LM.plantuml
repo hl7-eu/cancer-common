@@ -5,12 +5,12 @@ skinparam classAttributeIconSize 0
 ' Warning
 note "Warning: This is a preliminary draft subject to revisions." as DraftWarning
 
-' Classes from Cancer_Common_Logical_Model_20261119.xlsx
+' Classes from Cancer_Common_Logical_Model_20261123.xlsx
 class CancerConditionAtDiagnosis [[StructureDefinition-CancerConditionAtDiagnosis.html]]
 class CancerPatient [[StructureDefinition-CancerPatient.html]]
 class CancerStage [[StructureDefinition-CancerStage.html]]
 class Imaging [[StructureDefinition-Imaging.html]]
-class LastFollowUp [[StructureDefinition-LastFollowUp.html]]
+class FollowUp [[StructureDefinition-FollowUp.html]]
 class ClinicalCancerProgression [[StructureDefinition-ClinicalCancerProgression.html]]
 class Surgery [[StructureDefinition-Surgery.html]]
 class ActiveSurveillance [[StructureDefinition-ActiveSurveillance.html]]
@@ -30,7 +30,7 @@ note on link
 onlyIfType=Clinical
 end note
 CancerConditionAtDiagnosis <-- CancerPatient
-CancerPatient --> LastFollowUp
+CancerPatient --> FollowUp
 CancerConditionAtDiagnosis --> OverallCancerTreatmentResponse
 CancerConditionAtDiagnosis --> ClinicalCancerProgression
 CancerConditionAtDiagnosis --> CancerTreatment

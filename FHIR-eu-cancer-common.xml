@@ -20,16 +20,24 @@
 <artifact id="Binary/CancerStageClinical1-Example" key="Binary-CancerStageClinical1-Example" name="Clinical Cancer Stage Example"/>
 <artifact id="StructureDefinition/ClinicalCancerProgression" key="StructureDefinition-ClinicalCancerProgression" name="ClinicalCancerProgression"/>
 <artifact id="Observation/ComorbidityObservation1-Example" key="Observation-ComorbidityObservation1-Example" name="ComorbidityObservation1-Example"/>
+<artifact id="Binary/FollowUp1-Example" key="Binary-FollowUp1-Example" name="Follow-Up 1 Example"/>
+<artifact id="Binary/FollowUp2-Example" key="Binary-FollowUp2-Example" name="Follow-Up 2 Example"/>
+<artifact id="Binary/FollowUp3-Example" key="Binary-FollowUp3-Example" name="Follow-Up 3 Example"/>
+<artifact id="Binary/FollowUp4-Example" key="Binary-FollowUp4-Example" name="Follow-Up 4 Example"/>
+<artifact id="Binary/FollowUp5-Example" key="Binary-FollowUp5-Example" name="Follow-Up 5 Example"/>
+<artifact id="Binary/FollowUp6-Example" key="Binary-FollowUp6-Example" name="Follow-Up 6 Example"/>
+<artifact id="Binary/FollowUp7-Example" key="Binary-FollowUp7-Example" name="Follow-Up 7 Example"/>
+<artifact id="StructureDefinition/FollowUp" key="StructureDefinition-FollowUp" name="FollowUp"/>
 <artifact id="StructureDefinition/Imaging" key="StructureDefinition-Imaging" name="Imaging"/>
 <artifact id="Binary/Imaging1-Example" key="Binary-Imaging1-Example" name="Imaging Example"/>
-<artifact id="Binary/LastFollowUp1-Example" key="Binary-LastFollowUp1-Example" name="Last Follow-Up 1 Example"/>
-<artifact id="Binary/LastFollowUp2-Example" key="Binary-LastFollowUp2-Example" name="Last Follow-Up 2 Example"/>
-<artifact id="Binary/LastFollowUp3-Example" key="Binary-LastFollowUp3-Example" name="Last Follow-Up 3 Example"/>
-<artifact id="Binary/LastFollowUp4-Example" key="Binary-LastFollowUp4-Example" name="Last Follow-Up 4 Example"/>
-<artifact id="Binary/LastFollowUp5-Example" key="Binary-LastFollowUp5-Example" name="Last Follow-Up 5 Example"/>
-<artifact id="Binary/LastFollowUp6-Example" key="Binary-LastFollowUp6-Example" name="Last Follow-Up 6 Example"/>
-<artifact id="Binary/LastFollowUp7-Example" key="Binary-LastFollowUp7-Example" name="Last Follow-Up 7 Example"/>
-<artifact id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
+<artifact deprecated="true" id="Binary/LastFollowUp1-Example" key="Binary-LastFollowUp1-Example" name="Last Follow-Up 1 Example"/>
+<artifact deprecated="true" id="Binary/LastFollowUp2-Example" key="Binary-LastFollowUp2-Example" name="Last Follow-Up 2 Example"/>
+<artifact deprecated="true" id="Binary/LastFollowUp3-Example" key="Binary-LastFollowUp3-Example" name="Last Follow-Up 3 Example"/>
+<artifact deprecated="true" id="Binary/LastFollowUp4-Example" key="Binary-LastFollowUp4-Example" name="Last Follow-Up 4 Example"/>
+<artifact deprecated="true" id="Binary/LastFollowUp5-Example" key="Binary-LastFollowUp5-Example" name="Last Follow-Up 5 Example"/>
+<artifact deprecated="true" id="Binary/LastFollowUp6-Example" key="Binary-LastFollowUp6-Example" name="Last Follow-Up 6 Example"/>
+<artifact deprecated="true" id="Binary/LastFollowUp7-Example" key="Binary-LastFollowUp7-Example" name="Last Follow-Up 7 Example"/>
+<artifact deprecated="true" id="StructureDefinition/LastFollowUp" key="StructureDefinition-LastFollowUp" name="LastFollowUp"/>
 <artifact id="StructureDefinition/observation-comorbidity-eu-ccm" key="StructureDefinition-observation-comorbidity-eu-ccm" name="Observation: Comorbidities"/>
 <artifact id="Binary/OverallCancerTreatmentResponse1-Example" key="Binary-OverallCancerTreatmentResponse1-Example" name="Overall Cancer Treatment Response 1 Example"/>
 <artifact id="Binary/OverallCancerTreatmentResponse2-Example" key="Binary-OverallCancerTreatmentResponse2-Example" name="Overall Cancer Treatment Response 2 Example"/>
@@ -69,13 +77,15 @@
 <page key="dependencies" name="Dependencies"/>
 <page key="designchoices" name="Design Choices"/>
 <page key="downloads" name="Downloads"/>
+<page key="fhirmap-followup" name="FollowUp Mapping - FHIR"/>
+<page key="omopmap-followup" name="FollowUp Mapping - OMOP"/>
 <page key="glossary" name="Glossary"/>
 <page key="index" name="Home"/>
 <page key="fhirmap-imaging" name="Imaging Mapping - FHIR"/>
 <page key="omopmap-imaging" name="Imaging Mapping - OMOP"/>
 <page key="knownissues" name="Known Issues"/>
-<page key="fhirmap-lastfollowup" name="LastFollowUp Mapping - FHIR"/>
-<page key="omopmap-lastfollowup" name="LastFollowUp Mapping - OMOP"/>
+<page deprecated="true" key="fhirmap-lastfollowup" name="LastFollowUp Mapping - FHIR"/>
+<page deprecated="true" key="omopmap-lastfollowup" name="LastFollowUp Mapping - OMOP"/>
 <page key="logicalmodels" name="Logical Models"/>
 <page key="fhirmodelmap" name="Model Map - FHIR"/>
 <page key="omopmodelmap" name="Model Map - OMOP"/>

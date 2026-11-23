@@ -1,7 +1,7 @@
 Logical: Surgery
 Id: Surgery
 Title: "Surgery"
-Description: "Logical model representing a surgical treatment episode delivered to the patient for cancer management. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet Surgery)."
+Description: "Logical model representing a surgical treatment episode delivered to the patient for cancer management. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet Surgery)."
 Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Subject"

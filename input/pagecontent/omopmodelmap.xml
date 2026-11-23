@@ -6,8 +6,8 @@
   </head>
   <div class="callout-wrapper">
     <div class="callout-box informative-box">
-      ⚠️ The OMOP mappings presented in this page are provided for orientation purposes only. Element-level mappings are not yet defined.
-      This content is not a normative artefact of this publication and should not be used as a basis for implementation without further validation.
+      <strong>Future implementation content</strong>
+      This page is provided to show the expected direction of future implementation work. It is not part of the proposed material for evaluation in this publication; mappings, target artefacts and profiling details are expected to evolve in subsequent iterations of this guide.
     </div>
   </div>
   <a name="cancer-logical-models">   </a>
@@ -83,13 +83,13 @@
         </tr>
         <tr>
           <td>
-            <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
+            <a href="StructureDefinition-FollowUp.html">FollowUp</a>
           </td>
           <td>
             <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="omopmap-lastfollowup.html">LastFollowUp Mapping</a>
+            <a class="pill" href="omopmap-followup.html">FollowUp Mapping</a>
           </td>
         </tr>
         <tr>

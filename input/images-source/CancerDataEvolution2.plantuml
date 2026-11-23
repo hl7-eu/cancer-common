@@ -36,7 +36,7 @@ package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete R
     date = 2018-10-30   'Date 4
   }
 
-  class LastFollowUp1 {
+  class FollowUp1 {
      vitalStatus = Alive
      evidenceOfDisease = No
      causeOfDeath = Null
@@ -55,7 +55,7 @@ package "Date 4 (2018-10-30) \nEvidence + overall treatment response (Complete R
 }
 
 CancerConditionAtDiagnosis1 --> OverallCancerTreatmentResponse1 : has
-CancerPatient1 --> LastFollowUp1 : has
+CancerPatient1 --> FollowUp1 : has
 CancerConditionAtDiagnosis1 --> ClinicalCancerProgression1 : evolves throught
 
 @enduml

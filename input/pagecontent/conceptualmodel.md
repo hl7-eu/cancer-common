@@ -101,7 +101,7 @@ A cancer condition may evolve through **one or more progression events** over ti
 
 #### Follow-up
 
-The **LastFollowUp** captures the most recent follow up information available for the patient.
+The **FollowUp** captures the most recent follow up information available for the patient.
 
 It provides a summary view of the latest known clinical status within the context of the overall cancer journey.
 

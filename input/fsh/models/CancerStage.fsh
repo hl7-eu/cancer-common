@@ -1,7 +1,7 @@
 Logical: CancerStage
 Id: CancerStage
 Title: "CancerStage"
-Description: "Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet CancerStage)."
+Description: "Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet CancerStage)."
 Characteristics: #can-be-target
 
 * obeys cs-ev-e1

@@ -1,7 +1,7 @@
 Logical: OverallCancerTreatmentResponse
 Id: OverallCancerTreatmentResponse
 Title: "OverallCancerTreatmentResponse"
-Description: "Logical model representing the overall assessment of the cancer’s response to one or more treatment episodes at a specific time point. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet OverallCancerTreatmentResponse)."
+Description: "Logical model representing the overall assessment of the cancer’s response to one or more treatment episodes at a specific time point. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet OverallCancerTreatmentResponse)."
 Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Subject"
