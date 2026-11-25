@@ -2,7 +2,7 @@ Logical: SystemicTreatment
 Id: SystemicTreatment
 Title: "SystemicTreatment"
 Description: """
-Logical model representing a systemic anti-cancer treatment episode delivered to the patient, either at diagnosis or following disease progression. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet SystemicTreatment).
+Logical model representing a systemic anti-cancer treatment episode delivered to the patient, either at diagnosis or following disease progression. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet SystemicTreatment).
 
 For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-systemictreatment.html)
 and [OMOP Model Map](omopmap-systemictreatment.html) pages.

@@ -2,7 +2,7 @@ Logical: CancerStage
 Id: CancerStage
 Title: "CancerStage"
 Description: """
-Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet CancerStage).
+Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet CancerStage).
 
 For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-cancerstage.html)
 and [OMOP Model Map](omopmap-cancerstage.html) pages.

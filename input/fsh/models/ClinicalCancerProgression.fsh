@@ -2,7 +2,7 @@ Logical: ClinicalCancerProgression
 Id: ClinicalCancerProgression
 Title: "ClinicalCancerProgression"
 Description: """
-Logical model representing the longitudinal evolution of the cancer disease, documenting disease status and extent at a specific point in time. Derived from Cancer_Common_Logical_Model_20261123.xlsx  (sheet ClinicalCancerProgression).
+Logical model representing the longitudinal evolution of the cancer disease, documenting disease status and extent at a specific point in time. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet ClinicalCancerProgression).
 
 For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-clinicalcancerprogression.html)
 and [OMOP Model Map](omopmap-clinicalcancerprogression.html) pages.

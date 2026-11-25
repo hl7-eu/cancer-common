@@ -2,7 +2,7 @@ Logical: CancerPatient
 Id: CancerPatient
 Title: "Cancer Patient"
 Description: """
-Logical model describing the patient affected by cancer, acting as the central subject for diagnosis, treatments, disease evolution and follow-up. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet CancerPatient).
+Logical model describing the patient affected by cancer, acting as the central subject for diagnosis, treatments, disease evolution and follow-up. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet CancerPatient).
 
 For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-cancerpatient.html)
 and [OMOP Model Map](omopmap-cancerpatient.html) pages.

@@ -2,7 +2,7 @@ Logical: CancerConditionAtDiagnosis
 Id: CancerConditionAtDiagnosis
 Title: "CancerConditionAtDiagnosis"
 Description: """
-Logical model representing the cancer condition at first diagnosis, capturing initial tumour characteristics and the diagnostic context that initiates the cancer journey. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet CancerConditionAtDiagnosis).
+Logical model representing the cancer condition at first diagnosis, capturing initial tumour characteristics and the diagnostic context that initiates the cancer journey. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet CancerConditionAtDiagnosis).
 
 For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-cancerconditionatdiagnosis.html)
 and [OMOP Model Map](omopmap-cancerconditionatdiagnosis.html) pages.
