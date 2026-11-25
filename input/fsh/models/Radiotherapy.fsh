@@ -1,7 +1,12 @@
 Logical: Radiotherapy
 Id: Radiotherapy
 Title: "Radiotherapy"
-Description: "Logical model representing a radiotherapy treatment course administered to the patient, including intent, timing, and anatomical target. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet Radiotherapy)."
+Description: """
+Logical model representing a radiotherapy treatment course administered to the patient, including intent, timing, and anatomical target. Derived from Cancer_Common_Logical_Model_20261123.xlsx (sheet Radiotherapy).
+
+For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-radiotherapy.html)
+and [OMOP Model Map](omopmap-radiotherapy.html) pages.
+"""
 Characteristics: #can-be-target
 
 * obeys rt-1
