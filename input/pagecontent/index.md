@@ -44,7 +44,7 @@ ECCDM treats primary and secondary use as a single continuum: secondary-use need
 
 ECCDM builds on experience gained across multiple European and national initiatives addressing cancer data.
 
-Inputs include several European projects (e.g. IDEA4RC, PanCareSurPass, FLUTE, etc.), as well as shared datasets and initiatives such as MEDOC (Minimal Essential Description of Cancer). Complementary national initiatives, such as OSIRIS, have also contributed relevant experience and requirements.
+Inputs include several European projects (e.g. IDEA4RC, PanCareSurPass, FLUTE, etc.), as well as European initiatives such as PHOENIX, the HL7 Europe initiative promoting the development and adoption of interoperable cancer data standards and a common European cancer data model. Shared datasets such as MEDOC (Minimal Essential Description of Cancer) have also contributed relevant experience. Complementary national initiatives, such as OSIRIS, have contributed additional experience and requirements.
 
 ECCDM is informed by existing international specifications, including the HL7 US mCODE Implementation Guide, which provides valuable implementation experience in oncology. ECCDM, however, addresses European interoperability needs through a model-driven approach based on conceptual and logical foundations.
 

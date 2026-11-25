@@ -2,7 +2,7 @@ The **HL7 Europe Cancer Common Data Model (ECCDM)** initiative was launched base
 
 Across these initiatives, a **recurring observation** emerged: although projects focus on different cancer domains, populations, and use cases, they share a common need to represent a consistent set of core concepts and relationships related to cancer. At the same time, the concrete data models adopted by individual projects are often heterogeneous, tailored to specific objectives, and difficult to reuse outside their original context.
 
-Several European projects and initiatives (e.g. IDEA4RC, PanCareSurPass, FLUTE, etc.), as well as shared datasets such as MEDOC (Minimal Essential Description of Cancer), have highlighted the value of identifying a minimum common core of cancer-related information. MEDOC, in particular, demonstrated that a limited and shared set of elements can be defined across institutions and countries, while still supporting meaningful reuse.
+Several European projects and initiatives (e.g. IDEA4RC, PanCareSurPass, FLUTE, etc.), including PHOENIX, the HL7 Europe initiative promoting interoperable cancer data standards and the development of a common European cancer data model, have highlighted the value of identifying a minimum common core of cancer-related information. Shared datasets such as MEDOC (Minimal Essential Description of Cancer), in particular, demonstrated that a limited and shared set of elements can be defined across institutions and countries, while still supporting meaningful reuse.
 
 ECCDM builds on this experience by extending the concept of a shared dataset into a structured data model, where not only data elements but also their relationships and longitudinal evolution are explicitly represented.
 
