@@ -18,11 +18,9 @@ The **Functional** section presents the model from a conceptual and clinical per
 
 The **Logical** section provides the formal logical representation of the model. It defines the entities, attributes, relationships, cardinalities, and constraints that structure the European Cancer Common Logical Model. It also includes a worked example of how the logical model can be instantiated along a cancer patient journey.
 
-The **Implementation** section provides implementation-oriented material, including mappings from the logical model to HL7 FHIR and OMOP. This part of the guide is informative and included to show the expected direction of future work. The FHIR profiling work, detailed FHIR artefacts, and implementation mappings are expected to evolve in subsequent iterations.
+The **Implementation** section provides implementation-oriented material, including mappings from the logical model to HL7 FHIR and OMOP. This part of the guide is provided only for exemplification purposes and included to show the expected direction of future work; it is highlighted in grey to indicate future implementation-oriented content. The FHIR profiling work, detailed FHIR artefacts, and implementation mappings are expected to be provided in subsequent versions.
 
 The **Artifacts** section contains the generated FHIR artefacts associated with this guide. At this stage, these artefacts should be interpreted in the context of the ongoing implementation work and not as a final normative specification.
-
-The **Functional** and **Logical** sections contain the proposed model content for review and evaluation in this publication. The **Home** and **Introduction** pages provide contextual information supporting that review. The **Implementation** section is highlighted in grey to indicate future implementation-oriented content that is informative only at this stage.
 
 ### Purpose
 
@@ -46,7 +44,7 @@ ECCDM treats primary and secondary use as a single continuum: secondary-use need
 
 ECCDM builds on experience gained across multiple European and national initiatives addressing cancer data.
 
-Inputs include several European projects (e.g. IDEA4RC, PanCareSurPass, FLUTE, etc.), as well as shared datasets and initiatives such as MEDOC (Minimal Essential Description of Cancer). Complementary national initiatives, such as OSIRIS, have also contributed relevant experience and requirements.
+Inputs include several European projects (e.g. IDEA4RC, PanCareSurPass, FLUTE, etc.), as well as European initiatives such as PHOENIX, the HL7 Europe initiative promoting the development and adoption of interoperable cancer data standards and a common European cancer data model. Shared datasets such as MEDOC (Minimal Essential Description of Cancer) have also contributed relevant experience. Complementary national initiatives, such as OSIRIS, have contributed additional experience and requirements.
 
 ECCDM is informed by existing international specifications, including the HL7 US mCODE Implementation Guide, which provides valuable implementation experience in oncology. ECCDM, however, addresses European interoperability needs through a model-driven approach based on conceptual and logical foundations.
 

@@ -15,7 +15,7 @@ class "ClinicalCancerProgression5-Example" as ClinicalCancerProgression5 [[Binar
   LocoRegionalSites: Head, face, and neck (including supraclavicular)
 }
 
-class "LastFollowUp5-Example" as LastFollowUp5 [[Binary-LastFollowUp5-Example.html]] {
+class "FollowUp5-Example" as FollowUp5 [[Binary-FollowUp5-Example.html]] {
   VitalStatus: Alive
   EvidenceOfDisease: True
   Date: 2020-01-02
@@ -28,5 +28,5 @@ class "ClinicalCancerProgression4-Example" as ClinicalCancerProgression4 [[Binar
 OverallCancerTreatmentResponse2 --> CancerConditionAtDiagnosis1 : CancerConditionAtDiagnosis
 OverallCancerTreatmentResponse2 --> ClinicalCancerProgression4 : ClinicalCancerProgression
 ClinicalCancerProgression5 --> CancerConditionAtDiagnosis1 : CancerConditionAtDiagnosis
-LastFollowUp5 --> CancerPatient1 : subject
+FollowUp5 --> CancerPatient1 : subject
 @enduml

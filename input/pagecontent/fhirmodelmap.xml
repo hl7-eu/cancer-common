@@ -84,13 +84,13 @@
         </tr>
         <tr>
           <td>
-            <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
+            <a href="StructureDefinition-FollowUp.html">FollowUp</a>
           </td>
           <td>
             <code>FHIR Resource (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="fhirmap-lastfollowup.html">LastFollowUp Mapping</a>
+            <a class="pill" href="fhirmap-followup.html">FollowUp Mapping</a>
           </td>
         </tr>
         <tr>

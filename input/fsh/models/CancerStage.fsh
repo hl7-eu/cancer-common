@@ -1,7 +1,12 @@
 Logical: CancerStage
 Id: CancerStage
 Title: "CancerStage"
-Description: "Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet CancerStage)."
+Description: """
+Logical model representing the cancer stage at the time of first diagnosis. The stage may be clinical or pathological: the clinical stage is derived from imaging evidence, while the pathological stage, when available, is derived from surgical evidence. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet CancerStage).
+
+For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-cancerstage.html)
+and [OMOP Model Map](omopmap-cancerstage.html) pages.
+"""
 Characteristics: #can-be-target
 
 * obeys cs-ev-e1
@@ -28,26 +33,20 @@ Characteristics: #can-be-target
 * type ^definition = "It indicates whether the stage instance is of type Clinical or Pathological."
 * type ^comment = "It indicates whether the stage instance is of type Clinical or Pathological. Choice: Clinical | Pathological"
 * evidenceReference 0..* Base "EvidenceReference"
-* evidenceReference ^definition = "Reference(s) to evidence used to define the stage: imaging in case of a Clinical stage, or surgery in case of a Pathological stage."
-* evidenceReference ^comment = "It shall be present. The reference shall be to one or more imaging procedures in case the stage is Clinical, or to one surgery in case the stage is Pathological."
+* evidenceReference ^definition = "Reference(s) to evidence used to define the stage: surgery in case of a Clinical stage, or imaging in case of a Pathological stage."
+* evidenceReference ^comment = "It shall be present. The reference shall be to one or more surgeries in case the stage is Clinical, or to one or more imaging procedures in case the stage is Pathological."
 * evidenceReference only Base or Surgery or Imaging
 
-/* * surgeryReference 0..1 Reference(Surgery) "SurgeryReference"
-* surgeryReference ^definition = "It shall be present when the stage is of type Pathological and shall not be present when the stage is of type Clinical."
-* imagingReference 0..* Reference(Imaging) "ImagingReference"
-* imagingReference ^definition = "It shall be present when the stage is of type Clinical and shall not be present when the stage is of type Pathological." */
-
-
 Invariant: cs-ev-e1
-Description: "If type is Clinical, imaging evidence must not be provided."
+Description: "If type is Clinical, surgery evidence must not be provided."
 Severity: #error
 //Imaging type is not known
-//Expression: "type.text = 'Clinical' implies evidenceReference.resolve().ofType(Imaging).empty()"
+//Expression: "type.text = 'Clinical' implies evidenceReference.resolve(Surgery).ofType().empty()"
 Invariant: cs-ev-e2
-Description: "If type is Pathological, surgery evidence must not be provided."
+Description: "If type is Pathological, imaging evidence must not be provided."
 Severity: #error
 //Surgery type is not known
-//Expression: "type.text = 'Pathological' implies evidenceReference.resolve().ofType(Surgery).empty()"
+//Expression: "type.text = 'Pathological' implies evidenceReference.resolve().ofType(Imaging).empty()"
 Invariant: cs-tnm-1
 Description: "If classificationType is TNM, 3 values is expected."
 Severity: #warning

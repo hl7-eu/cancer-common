@@ -1,7 +1,12 @@
 Logical: OverallCancerTreatmentResponse
 Id: OverallCancerTreatmentResponse
 Title: "OverallCancerTreatmentResponse"
-Description: "Logical model representing the overall assessment of the cancer’s response to one or more treatment episodes at a specific time point. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet OverallCancerTreatmentResponse)."
+Description: """
+Logical model representing the overall assessment of the cancer’s response to one or more treatment episodes at a specific time point. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet OverallCancerTreatmentResponse).
+
+For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-overallcancertreatmentresponse.html)
+and [OMOP Model Map](omopmap-overallcancertreatmentresponse.html) pages.
+"""
 Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Subject"

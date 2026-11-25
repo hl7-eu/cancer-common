@@ -10,7 +10,7 @@ class "ClinicalCancerProgression4-Example" as ClinicalCancerProgression4 [[Binar
   LocoRegionalSites: Intrathoracic lymph nodes
 }
 
-class "LastFollowUp4-Example" as LastFollowUp4 [[Binary-LastFollowUp4-Example.html]] {
+class "FollowUp4-Example" as FollowUp4 [[Binary-FollowUp4-Example.html]] {
   VitalStatus: Alive
   EvidenceOfDisease: True
   Date: 2019-08-31
@@ -20,5 +20,5 @@ class "CancerConditionAtDiagnosis1-Example" as CancerConditionAtDiagnosis1 [[Bin
 class "CancerPatient1-Example" as CancerPatient1 [[Binary-CancerPatient1-Example.html]] {}
 
 ClinicalCancerProgression4 --> CancerConditionAtDiagnosis1 : CancerConditionAtDiagnosis
-LastFollowUp4 --> CancerPatient1 : subject
+FollowUp4 --> CancerPatient1 : subject
 @enduml

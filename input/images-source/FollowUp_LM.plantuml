@@ -2,7 +2,7 @@
 hide empty members
 skinparam classAttributeIconSize 0
 
-class LastFollowUp {
+class FollowUp {
   subject : CancerPatient [1..1]
   vitalStatus : codeableConcept [1..1]
   evidenceOfDisease : boolean [0..1]
@@ -11,7 +11,7 @@ class LastFollowUp {
   deathDate : dateTime [0..1]
 }
 
-note left of LastFollowUp::vitalStatus
+note left of FollowUp::vitalStatus
 Choice: Alive | Dead
 end note
 

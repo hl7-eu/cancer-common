@@ -6,7 +6,7 @@
   </head>
   <div class="callout-wrapper">
     <div class="callout-box informative-box">
-      ⚠️ The OMOP mappings presented in this page are provided for orientation purposes only. Element-level mappings are not yet defined.
+      ⚠️ The OMOP mappings presented in this page are provided for orientation purposes only. Element-level mappings are not yet defined. 
       This content is not a normative artefact of this publication and should not be used as a basis for implementation without further validation.
     </div>
   </div>
@@ -83,13 +83,13 @@
         </tr>
         <tr>
           <td>
-            <a href="StructureDefinition-LastFollowUp.html">LastFollowUp</a>
+            <a href="StructureDefinition-FollowUp.html">FollowUp</a>
           </td>
           <td>
             <code>OMOP Table (TBD)</code>
           </td>
           <td>
-            <a class="pill" href="omopmap-lastfollowup.html">LastFollowUp Mapping</a>
+            <a class="pill" href="omopmap-followup.html">FollowUp Mapping</a>
           </td>
         </tr>
         <tr>

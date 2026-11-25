@@ -1,7 +1,12 @@
 Logical: ActiveSurveillance
 Id: ActiveSurveillance
 Title: "Active Surveillance"
-Description: "Logical model representing an active surveillance strategy in which the patient is monitored over time without active treatment, prior to disease progression. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet ActiveSurveillance)."
+Description: """
+Logical model representing an active surveillance strategy in which the patient is monitored over time without active treatment, prior to disease progression. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet ActiveSurveillance).
+
+For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-activesurveillance.html)
+and [OMOP Model Map](omopmap-activesurveillance.html) pages.
+"""
 Characteristics: #can-be-target
 
 * obeys as-1

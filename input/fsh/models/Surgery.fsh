@@ -1,7 +1,12 @@
 Logical: Surgery
 Id: Surgery
 Title: "Surgery"
-Description: "Logical model representing a surgical treatment episode delivered to the patient for cancer management. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet Surgery)."
+Description: """
+Logical model representing a surgical treatment episode delivered to the patient for cancer management. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet Surgery).
+
+For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-surgery.html)
+and [OMOP Model Map](omopmap-surgery.html) pages.
+"""
 Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Subject"

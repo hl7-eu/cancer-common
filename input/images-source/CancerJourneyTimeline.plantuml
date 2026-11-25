@@ -1,0 +1,40 @@
+
+@startuml
+left to right direction
+
+skinparam backgroundColor transparent
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultTextAlignment center
+
+skinparam rectangle {
+    BackgroundColor #F2F2F2
+    BorderColor #888888
+    RoundCorner 15
+    FontSize 12
+}
+
+rectangle "DATE 0\n2018-05-01\n\nDiagnosis\nClinical staging" as D0
+rectangle "DATE 1\n2018-06-12\n\nSurgery\nPathological staging" as D1
+rectangle "DATES 2–3\n2018-09-10 → 2018-10-12\n\nRadiotherapy" as D23
+rectangle "DATE 4\n2018-10-30\n\nFollow-up\nComplete remission" as D4
+rectangle "DATE 5\n2019-02-28\n\nFollow-up\nComplete remission" as D5
+rectangle "DATE 6\n2019-05-30\n\nFollow-up\nComplete remission" as D6
+rectangle "DATE 7\n2019-08-31\n\nFollow-up\nRecurrence" as D7
+rectangle "DATES 8–9\n2019-09-10 → 2019-12-16\n\nSystemic treatment" as D89
+rectangle "DATE 10\n2020-01-02\n\nFollow-up\nPartial remission" as D10
+rectangle "DATE 11\n2020-04-15\n\nFollow-up\nProgression" as D11
+rectangle "DATE 12\n2020-06-28\n\nPatient's death" as D12
+
+D0 --> D1
+D1 --> D23
+D23 --> D4
+D4 --> D5
+D5 --> D6
+D6 --> D7
+D7 --> D89
+D89 --> D10
+D10 --> D11
+D11 --> D12
+
+@enduml

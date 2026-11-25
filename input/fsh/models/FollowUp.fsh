@@ -1,7 +1,12 @@
-Logical: LastFollowUp
-Id: LastFollowUp
-Title: "LastFollowUp"
-Description: "Logical model representing the assessment of the patient’s status at a specific follow-up visit, including vital status and evidence of disease. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet LastFollowUp)."
+Logical: FollowUp
+Id: FollowUp
+Title: "FollowUp"
+Description: """
+Logical model representing the assessment of the patient’s status at a specific follow-up visit, including vital status and evidence of disease. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet FollowUp).
+
+For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-followup.html)
+and [OMOP Model Map](omopmap-followup.html) pages.
+"""
 Characteristics: #can-be-target
 
 * obeys lfu-1

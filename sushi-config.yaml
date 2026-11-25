@@ -81,8 +81,8 @@ pages:
     title: CancerStage Mapping - FHIR
   fhirmap-imaging.xml:
     title: Imaging Mapping - FHIR
-  fhirmap-lastfollowup.xml:
-    title: LastFollowUp Mapping - FHIR
+  fhirmap-followup.xml:
+    title: FollowUp Mapping - FHIR
   fhirmap-clinicalcancerprogression.xml:
     title: ClinicalCancerProgression Mapping - FHIR
   fhirmap-surgery.xml:
@@ -105,8 +105,8 @@ pages:
     title: CancerStage Mapping - OMOP
   omopmap-imaging.xml:
     title: Imaging Mapping - OMOP
-  omopmap-lastfollowup.xml:
-    title: LastFollowUp Mapping - OMOP
+  omopmap-followup.xml:
+    title: FollowUp Mapping - OMOP
   omopmap-clinicalcancerprogression.xml:
     title: ClinicalCancerProgression Mapping - OMOP
   omopmap-surgery.xml:

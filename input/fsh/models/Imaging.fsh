@@ -1,7 +1,12 @@
 Logical: Imaging
 Id: Imaging
 Title: "Imaging"
-Description: "Logical model representing a diagnostic imaging procedure performed to define the diagnosis and the clinical stage. Derived from Cancer_Common_Logical_Model_20261119.xlsx (sheet Imaging)."
+Description: """
+Logical model representing a diagnostic imaging procedure performed to define the diagnosis and the clinical stage. Derived from [Cancer_Common_Logical_Model_20261123.xlsx](https://github.com/hl7-eu/cancer-common/raw/refs/heads/master/_sources/Cancer_Common_Logical_Model_20261123.xlsx) (sheet Imaging).
+
+For guidance on how this logical model maps to HL7 FHIR and OMOP, refer to the [FHIR Model Map](fhirmap-imaging.html)
+and [OMOP Model Map](omopmap-imaging.html) pages.
+"""
 Characteristics: #can-be-target
 
 * subject 1..1 CancerPatient "Subject"
